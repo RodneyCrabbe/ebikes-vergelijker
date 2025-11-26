@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest",
+        "--headless=false",
+        "--isolated=true",
+        "--viewport=1280x720"
+      ],
+      "env": {
+        "DEBUG": "*"
+      }
+    },
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
+    },
+    "ref": {
+      "type": "http",
+      "url": "https://api.ref.tools/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_API_KEY_HERE",
+        "Content-Type": "application/json"
+      }
+    }
+  }
+}

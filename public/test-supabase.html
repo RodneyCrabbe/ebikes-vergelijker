@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Supabase Frontend</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <h1>Supabase Frontend Test</h1>
+    <div id="status"></div>
+    <div id="ebikes-list"></div>
+
+    <script>
+        // Test Supabase connection from frontend
+        const supabaseUrl = 'http://127.0.0.1:54321'
+        const supabaseKey = 'sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH'
+        
+        const supabase = window.supabase.createClient(supabaseUrl, supabaseKey)
+        
+        async function testConnection() {
+            const statusDiv = document.getElementById('status')
+            const listDiv = document.getElementById('ebikes-list')
+            
+            try {
+                statusDiv.innerHTML = '<p>🔄 Testing Supabase connection from frontend...</p>'
+                
+                // Test connection
+                const { data, error } = await supabase
+                    .from('ebikes')
+                    .select('*')
+                    .limit(5)
+                
+                if (error) {
+                    statusDiv.innerHTML = `<p style="color: red;">❌ Error: ${error.message}</p>`
+                    console.error('Supabase error:', error)
+                    return
+                }
+                
+                statusDiv.innerHTML = `<p style="color: green;">✅ Connected! Found ${data.length} e-bikes</p>`
+                console.log('E-bikes data:', data)
+                
+                // Display e-bikes
+                if (data.length > 0) {
+                    listDiv.innerHTML = `
+                        <h2>Sample E-bikes:</h2>
+                        <ul>
+                            ${data.map(ebike => `
+                                <li>
+                                    <strong>${ebike.brand} ${ebike.model_name}</strong> - 
+                                    €${ebike.price} - 
+                                    ${ebike.action_radius_km}km range
+                                </li>
+                            `).join('')}
+                        </ul>
+                    `
+                } else {
+                    listDiv.innerHTML = '<p>No e-bikes found in database</p>'
+                }
+                
+            } catch (err) {
+                statusDiv.innerHTML = `<p style="color: red;">❌ Connection failed: ${err.message}</p>`
+                console.error('Connection error:', err)
+            }
+        }
+        
+        // Run test when page loads
+        testConnection()
+    </script>
+</body>
+</html>

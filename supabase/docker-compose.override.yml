@@ -1,0 +1,38 @@
+# Docker Compose override for persistent authentication data
+# This ensures user data persists between Supabase restarts
+
+version: '3.8'
+
+services:
+  # Override the database service to use persistent volumes
+  db:
+    volumes:
+      # Persist the entire database data
+      - supabase_db_data:/var/lib/postgresql/data
+      # Persist authentication data specifically
+      - ./auth-data:/docker-entrypoint-initdb.d/auth-data
+    environment:
+      # Ensure data persistence
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      # Enable persistent connections
+      - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256
+
+  # Override the auth service to ensure proper configuration
+  auth:
+    environment:
+      # Ensure proper JWT configuration
+      - JWT_SECRET=your-super-secret-jwt-token-with-at-least-32-characters-long
+      - JWT_EXPIRY=28800
+      # Enable user persistence
+      - ENABLE_SIGNUP=true
+      - ENABLE_EMAIL_CONFIRMATIONS=false
+      # Site URL configuration
+      - SITE_URL=http://127.0.0.1:5173
+      - ADDITIONAL_REDIRECT_URLS=http://127.0.0.1:5173,http://127.0.0.1:5174
+
+volumes:
+  # Named volume for persistent database data
+  supabase_db_data:
+    driver: local

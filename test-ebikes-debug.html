@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Bikes Debug Test</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>E-Bikes Debug Test</h1>
+        <div v-if="loading">Loading e-bikes...</div>
+        <div v-else-if="error">Error: {{ error }}</div>
+        <div v-else>
+            <h2>Found {{ ebikes.length }} e-bikes</h2>
+            <div v-for="ebike in ebikes.slice(0, 5)" :key="ebike.id" style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+                <h3>{{ ebike.brand }} {{ ebike.model_name }}</h3>
+                <p>Price: €{{ ebike.price }}</p>
+                <p>Range: {{ ebike.action_radius_km }}km</p>
+                <p>Battery: {{ ebike.battery_capacity }}Wh</p>
+                <p>Image: {{ ebike.image_url }}</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const { createApp, ref, onMounted } = Vue;
+        
+        // Supabase configuration
+        const supabaseUrl = 'http://127.0.0.1:54321';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0';
+        
+        const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+        
+        createApp({
+            setup() {
+                const ebikes = ref([]);
+                const loading = ref(true);
+                const error = ref(null);
+                
+                const fetchEBikes = async () => {
+                    try {
+                        console.log('Fetching e-bikes from Supabase...');
+                        loading.value = true;
+                        error.value = null;
+                        
+                        const { data, error: fetchError } = await supabase
+                            .from('ebikes')
+                            .select('*')
+                            .order('created_at', { ascending: false });
+                        
+                        if (fetchError) {
+                            console.error('Supabase error:', fetchError);
+                            throw fetchError;
+                        }
+                        
+                        console.log('Fetched e-bikes:', data);
+                        ebikes.value = data || [];
+                        loading.value = false;
+                        
+                    } catch (e) {
+                        console.error('Error fetching e-bikes:', e);
+                        error.value = e.message;
+                        loading.value = false;
+                    }
+                };
+                
+                onMounted(() => {
+                    fetchEBikes();
+                });
+                
+                return {
+                    ebikes,
+                    loading,
+                    error
+                };
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

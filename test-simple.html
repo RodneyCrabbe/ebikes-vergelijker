@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Bikes Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .ebike { border: 1px solid #ccc; margin: 10px 0; padding: 15px; border-radius: 8px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>E-Bikes Test</h1>
+    <div id="status">Loading...</div>
+    <div id="results"></div>
+
+    <script>
+        async function testEBikes() {
+            const statusDiv = document.getElementById('status');
+            const resultsDiv = document.getElementById('results');
+            
+            try {
+                statusDiv.innerHTML = '<span class="success">Connecting to Supabase...</span>';
+                
+                // Test Supabase connection
+                const response = await fetch('http://127.0.0.1:54321/rest/v1/ebikes?select=*&limit=5', {
+                    headers: {
+                        'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0',
+                        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const ebikes = await response.json();
+                
+                statusDiv.innerHTML = `<span class="success">✅ Found ${ebikes.length} e-bikes!</span>`;
+                
+                resultsDiv.innerHTML = ebikes.map(ebike => `
+                    <div class="ebike">
+                        <h3>${ebike.brand} ${ebike.model_name}</h3>
+                        <p><strong>Price:</strong> €${ebike.price || 'N/A'}</p>
+                        <p><strong>Range:</strong> ${ebike.action_radius_km || 'N/A'}km</p>
+                        <p><strong>Battery:</strong> ${ebike.battery_capacity || 'N/A'}Wh</p>
+                        <p><strong>Top Speed:</strong> ${ebike.top_speed_kmh || 'N/A'}km/h</p>
+                        <p><strong>Image:</strong> ${ebike.image_url ? '✅' : '❌'}</p>
+                    </div>
+                `).join('');
+                
+            } catch (error) {
+                statusDiv.innerHTML = `<span class="error">❌ Error: ${error.message}</span>`;
+                console.error('Error:', error);
+            }
+        }
+        
+        // Run test when page loads
+        testEBikes();
+    </script>
+</body>
+</html>

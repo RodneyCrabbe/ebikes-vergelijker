@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  # Frontend Vite Development Server
+  frontend:
+    build: .
+    ports:
+      - "5195:5195"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev -- --host 0.0.0.0 --port 5195
+    networks:
+      - ebike-network
+
+  # Supabase Database
+  supabase-db:
+    image: supabase/postgres:15.1.0.117
+    ports:
+      - "54322:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - supabase_db_data:/var/lib/postgresql/data
+      - ./supabase/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - ebike-network
+
+  # Supabase API
+  supabase-api:
+    image: supabase/gotrue:v2.99.0
+    ports:
+      - "54321:9999"
+    environment:
+      GOTRUE_API_HOST: 0.0.0.0
+      GOTRUE_API_PORT: 9999
+      GOTRUE_DB_DRIVER: postgres
+      GOTRUE_DB_DATABASE_URL: postgres://postgres:postgres@supabase-db:5432/postgres
+      GOTRUE_SITE_URL: http://localhost:5195
+      GOTRUE_URI_ALLOW_LIST: "*"
+      GOTRUE_DISABLE_SIGNUP: false
+      GOTRUE_JWT_SECRET: your-super-secret-jwt-token-with-at-least-32-characters-long
+      GOTRUE_JWT_EXP: 3600
+      GOTRUE_JWT_DEFAULT_GROUP_NAME: authenticated
+      GOTRUE_EXTERNAL_EMAIL_ENABLED: true
+      GOTRUE_MAILER_AUTOCONFIRM: true
+      GOTRUE_SMTP_HOST: mailpit
+      GOTRUE_SMTP_PORT: 1025
+      GOTRUE_SMTP_USER: test
+      GOTRUE_SMTP_PASS: test
+      GOTRUE_SMTP_ADMIN_EMAIL: admin@example.com
+      GOTRUE_MAILER_URLPATHS_INVITE: /auth/v1/verify
+      GOTRUE_MAILER_URLPATHS_CONFIRMATION: /auth/v1/verify
+      GOTRUE_MAILER_URLPATHS_RECOVERY: /auth/v1/verify
+      GOTRUE_MAILER_URLPATHS_EMAIL_CHANGE: /auth/v1/verify
+    depends_on:
+      - supabase-db
+    networks:
+      - ebike-network
+
+  # Mailpit for email testing
+  mailpit:
+    image: axllent/mailpit
+    ports:
+      - "54324:8025"
+    networks:
+      - ebike-network
+
+volumes:
+  supabase_db_data:
+
+networks:
+  ebike-network:
+    driver: bridge

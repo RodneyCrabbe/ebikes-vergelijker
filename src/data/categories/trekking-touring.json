@@ -1,0 +1,392 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440006",
+    "brand": "Giant",
+    "model_name": "Explore E+",
+    "version": "Trekking/avontuur e-bike (625–800 Wh, lange actieradius)",
+    "price": 3399,
+    "build_date": "2022-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 625,
+    "top_speed": null,
+    "image_url": "/img/Giant Explore E+/GIANT_Explore_E_System-8744-2048x1365.jpg.webp",
+    "affiliate_url": "https://giant-bicycles.com/products/explore-e-plus",
+    "cpl_rate": 25,
+    "description": "De Giant Explore E+ is een avontuurlijke trekking e-bike met grote actieradius.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "70-150 km",
+    "action_radius_km": 70,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8744-2048x1365.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8794-2048x1366.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8803-2048x1365.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8810-2048x1365.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8811-810x540.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8813-810x540.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8814-810x540.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8815-2048x1365.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8829-2048x1365.jpg.webp",
+      "/img/Giant Explore E+/GIANT_Explore_E_System-8846-2048x1365.jpg.webp"
+    ],
+    "colors": [],
+    "highlights": [],
+    "specifications": {},
+    "features": [],
+    "weight_kg": null,
+    "wheel_size": null,
+    "tire_size": null,
+    "frame_material": null,
+    "motor_type": null,
+    "motor_power_w": null,
+    "torque_nm": null,
+    "battery_type": null,
+    "battery_voltage": null,
+    "battery_ah": null,
+    "charging_time_hours": null,
+    "brake_type": null,
+    "gear_system": null,
+    "suspension": null,
+    "lighting": null,
+    "display": null,
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440015",
+    "brand": "Giant",
+    "model_name": "Explore E+ 1",
+    "version": "Trekking e-bike met betrouwbare aandrijving",
+    "price": 2799,
+    "build_date": "2022-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg",
+    "affiliate_url": "https://giant-bicycles.com/products/explore-e-plus-1",
+    "cpl_rate": 25,
+    "description": "De Giant Explore E+ 1 is een betrouwbare trekking e-bike met krachtige aandrijving.",
+    "created_at": "2025-10-12T12:12:25.830Z",
+    "updated_at": "2025-10-12T12:12:25.830Z",
+    "currency": "EUR",
+    "action_radius_text": "Tot 90 km",
+    "action_radius_km": 90,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D2.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D3.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D4.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_Rear.jpg"
+    ],
+    "colors": [],
+    "highlights": [],
+    "specifications": {},
+    "features": [],
+    "weight_kg": null,
+    "wheel_size": null,
+    "tire_size": null,
+    "frame_material": null,
+    "motor_type": null,
+    "motor_power_w": null,
+    "torque_nm": null,
+    "battery_type": null,
+    "battery_voltage": null,
+    "battery_ah": null,
+    "charging_time_hours": null,
+    "brake_type": null,
+    "gear_system": null,
+    "suspension": null,
+    "lighting": null,
+    "display": null,
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440101",
+    "brand": "Specialized",
+    "model_name": "Turbo Vado SL 5.0 EQ",
+    "version": "Ultra-lightweight commuter e-bike",
+    "price": 4500,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 320,
+    "top_speed": null,
+    "image_url": "/img/Specialized Turbo Vado SL 5.0 EQ/placeholder.webp",
+    "affiliate_url": "https://www.specialized.com/us/en/turbo-vado-sl-5-0-eq/p/154888",
+    "cpl_rate": 25,
+    "description": "The Specialized Turbo Vado SL 5.0 EQ is an ultra-lightweight commuter e-bike with premium components and natural ride feel.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "USD",
+    "action_radius_text": "Up to 80 miles",
+    "action_radius_km": 128,
+    "top_speed_text": "28 mph (US)",
+    "top_speed_kmh": 45,
+    "images": [
+      "/img/Specialized Turbo Vado SL 5.0 EQ/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Gloss Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "Satin White",
+        "value": "white",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Ultra-lightweight design",
+      "320Wh battery",
+      "SRAM GX Eagle drivetrain",
+      "Future Shock suspension",
+      "Mission Control app"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Specialized",
+        "type": "SL 1.1",
+        "power": "240W",
+        "torque": "35Nm"
+      },
+      "battery": {
+        "capacity": "320Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "2.5 hours"
+      },
+      "frame": {
+        "material": "Carbon",
+        "weight": "14.5kg",
+        "wheel_size": "700c"
+      }
+    },
+    "features": [
+      "Future Shock",
+      "Mission Control app",
+      "SRAM GX Eagle",
+      "Integrated lights"
+    ],
+    "weight_kg": 14.5,
+    "wheel_size": "700c",
+    "tire_size": "700x38c",
+    "frame_material": "carbon",
+    "motor_type": "SL 1.1",
+    "motor_power_w": 240,
+    "torque_nm": 35,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 9,
+    "charging_time_hours": 2.5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "voorvork",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": true,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "US Class 3"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440119",
+    "brand": "Kalkhoff",
+    "model_name": "Endeavour 7.B Move",
+    "version": "Trekking electric bike",
+    "price": 3299,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Kalkhoff Endeavour 7.B Move/placeholder.webp",
+    "affiliate_url": "https://www.kalkhoff-bikes.com/en/bikes/e-bikes/trekking/endeavour-7-b-move",
+    "cpl_rate": 25,
+    "description": "The Kalkhoff Endeavour 7.B Move is a trekking electric bike with Bosch motor and comfortable geometry.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "EUR",
+    "action_radius_text": "Up to 100 km",
+    "action_radius_km": 100,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Kalkhoff Endeavour 7.B Move/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "Blue",
+        "value": "blue",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Bosch Active Line Plus motor",
+      "500Wh battery",
+      "Comfortable geometry",
+      "Shimano Deore drivetrain",
+      "Trekking features"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Active Line Plus",
+        "power": "250W",
+        "torque": "50Nm"
+      },
+      "battery": {
+        "capacity": "500Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "25kg",
+        "wheel_size": "700c"
+      }
+    },
+    "features": [
+      "Bosch motor",
+      "Comfortable",
+      "Trekking",
+      "Shimano Deore"
+    ],
+    "weight_kg": 25,
+    "wheel_size": "700c",
+    "tire_size": "700x45c",
+    "frame_material": "aluminium",
+    "motor_type": "Active Line Plus",
+    "motor_power_w": 250,
+    "torque_nm": 50,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 14,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "voorvork",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "EU EPAC"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440127",
+    "brand": "Giant",
+    "model_name": "Explore E+ 1",
+    "version": "Trekking electric bike",
+    "price": 2999,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Giant Explore E+ 1/placeholder.webp",
+    "affiliate_url": "https://www.giant-bicycles.com/gb/explore-e-1-2023",
+    "cpl_rate": 25,
+    "description": "The Giant Explore E+ 1 is a trekking electric bike with Yamaha motor and comfortable geometry.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "USD",
+    "action_radius_text": "Up to 80 miles",
+    "action_radius_km": 128,
+    "top_speed_text": "20 mph (US)",
+    "top_speed_kmh": 32,
+    "images": [
+      "/img/Giant Explore E+ 1/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "Blue",
+        "value": "blue",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Yamaha PW-X2 motor",
+      "500Wh battery",
+      "Comfortable geometry",
+      "Trekking features",
+      "Good value"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Yamaha",
+        "type": "PW-X2",
+        "power": "250W",
+        "torque": "70Nm"
+      },
+      "battery": {
+        "capacity": "500Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "24kg",
+        "wheel_size": "700c"
+      }
+    },
+    "features": [
+      "Yamaha motor",
+      "Comfortable",
+      "Trekking",
+      "Good value"
+    ],
+    "weight_kg": 24,
+    "wheel_size": "700c",
+    "tire_size": "700x45c",
+    "frame_material": "aluminium",
+    "motor_type": "PW-X2",
+    "motor_power_w": 250,
+    "torque_nm": 70,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 14,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "voorvork",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "US Class 1"
+  }
+]

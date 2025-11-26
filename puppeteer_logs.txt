@@ -1,0 +1,276 @@
+--- Console Messages ---
+CONSOLE DEBUG: [vite] connecting...
+CONSOLE DEBUG: [vite] connected.
+CONSOLE STARTGROUP: 🔧 Environment Validation
+CONSOLE LOG: Status: ✅ Valid
+CONSOLE LOG: Configuration: JSHandle@object
+CONSOLE ENDGROUP: console.groupEnd
+CONSOLE LOG: Supabase initialized: JSHandle@object
+CONSOLE LOG: Starting app initialization...
+CONSOLE LOG: 🔍 Running startup health check...
+CONSOLE LOG: ✅ Environment validation healthy
+CONSOLE LOG: ✅ Browser environment healthy
+CONSOLE LOG: App mounted successfully!
+CONSOLE LOG: Loading e-bikes data from local storage...
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/reviews"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/afspraak"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/login"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/registreer"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/registreer"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/reviews"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/afspraak"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/privacy-policy"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/disclaimer"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/algemene-voorwaarden"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/cookie-policy"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/sitemap"
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE LOG: ✅ Supabase connection healthy
+CONSOLE LOG: ✅ All health checks passed - Application ready!
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE LOG: Auth state changed: INITIAL_SESSION
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE LOG: E-bikes data loaded: 6 items
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE LOG: Auto-refresh enabled (5 minutes)
+CONSOLE DEBUG: [vite] connecting...
+CONSOLE DEBUG: [vite] connected.
+CONSOLE STARTGROUP: 🔧 Environment Validation
+CONSOLE LOG: Status: ✅ Valid
+CONSOLE LOG: Configuration: JSHandle@object
+CONSOLE ENDGROUP: console.groupEnd
+CONSOLE LOG: Supabase initialized: JSHandle@object
+CONSOLE LOG: Starting app initialization...
+CONSOLE LOG: 🔍 Running startup health check...
+CONSOLE LOG: ✅ Environment validation healthy
+CONSOLE LOG: ✅ Browser environment healthy
+CONSOLE LOG: App mounted successfully!
+CONSOLE LOG: Loading e-bikes data from local storage...
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE LOG: ✅ Supabase connection healthy
+CONSOLE LOG: ✅ All health checks passed - Application ready!
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/reviews"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/afspraak"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/login"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/registreer"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/reviews"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/afspraak"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/privacy-policy"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/disclaimer"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/algemene-voorwaarden"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/cookie-policy"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/sitemap"
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE LOG: Auth state changed: INITIAL_SESSION
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE LOG: E-bikes data loaded: 6 items
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE LOG: Auto-refresh enabled (5 minutes)
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE DEBUG: [vite] connecting...
+CONSOLE STARTGROUP: 🔧 Environment Validation
+CONSOLE LOG: Status: ✅ Valid
+CONSOLE LOG: Configuration: JSHandle@object
+CONSOLE ENDGROUP: console.groupEnd
+CONSOLE LOG: Supabase initialized: JSHandle@object
+CONSOLE LOG: Starting app initialization...
+CONSOLE LOG: 🔍 Running startup health check...
+CONSOLE LOG: ✅ Environment validation healthy
+CONSOLE LOG: ✅ Browser environment healthy
+CONSOLE LOG: App mounted successfully!
+CONSOLE LOG: Loading e-bikes data from local storage...
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE DEBUG: [vite] connected.
+CONSOLE LOG: ✅ Supabase connection healthy
+CONSOLE LOG: ✅ All health checks passed - Application ready!
+CONSOLE LOG: Loading e-bikes from local data...
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/reviews"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/afspraak"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/login"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/registreer"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/reviews"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/afspraak"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/privacy-policy"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/disclaimer"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/algemene-voorwaarden"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/cookie-policy"
+CONSOLE WARN: [Vue Router warn]: No match found for location with path "/sitemap"
+CONSOLE LOG: Fetching e-bike by ID: 1
+CONSOLE LOG: Auth state changed: INITIAL_SESSION
+CONSOLE LOG: Found e-bike: Gazelle Ultimate C380 HMB
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE LOG: E-bikes data loaded: 6 items
+CONSOLE LOG: Loaded e-bikes: 6 items
+CONSOLE LOG: Auto-refresh enabled (5 minutes)
+CONSOLE ERROR: Failed to load resource: the server responded with a status of 404 (Not Found)
+
+--- Failed Network Requests ---
+FAILED IMAGE LOAD (HTTP 304): http://127.0.0.1:5173/img/Gazelle%20Ultimate%20C380%20HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh.avif
+FAILED IMAGE LOAD (HTTP 304): http://127.0.0.1:5173/img/Cannondale%20Tesoro%20Neo%20X%203/2455dd8c-f753-4fec-99a7-0e5b83f3f0a8.avif
+FAILED IMAGE LOAD (HTTP 304): http://127.0.0.1:5173/img/Giant%20Explore%20E+%201/MY23ExploreEplus1DD_ColorAMistyForest.jpg
+FAILED IMAGE LOAD (HTTP 304): http://127.0.0.1:5173/img/Canyon%20PrecedeON%207%20%20Comfort%207/1B02A7D4-6B99-4295-BACEE60AF6C6EFF6.avif
+FAILED IMAGE LOAD (HTTP 304): http://127.0.0.1:5173/img/CUBE%20Kathmandu%20Hybrid%20Pro%20625/812200_D_00.jpg
+FAILED IMAGE LOAD (HTTP 304): http://127.0.0.1:5173/img/Lectric%20XP%203.0/lectric-xp-3-0-1.jpg
+
+--- All Network Requests ---
+RESPONSE: 200 - http://127.0.0.1:5173/
+RESPONSE: 200 - http://127.0.0.1:5173/src/main.ts?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/@vite/client
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/vue.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/router/index.ts?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/pinia.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/App.vue?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/src/style.css?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/ebikes.ts?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/auth.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/userProfile.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/cookieConsent.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/notifications.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/utils/startupHealthCheck.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/CookieBanner.vue
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/vue-router.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/CookieSettings.vue
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-LG6AQRJS.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/@id/__x00__plugin-vue:export-helper
+RESPONSE: 200 - http://127.0.0.1:5173/src/utils/logger.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/ErrorBoundary.vue
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/EnhancedAIChatbot.vue
+RESPONSE: 200 - http://127.0.0.1:5173/src/lib/supabase.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/utils/envValidator.ts
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/@supabase_supabase-js.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/ai.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/services/conversationMemoryService.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/services/voiceService.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/services/multiLanguageService.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/EnhancedAIChatbot.vue?vue&type=style&index=0&scoped=66b957e7&lang.css
+RESPONSE: 200 - http://127.0.0.1:5173/src/services/aiRecommendationEngine.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/services/aiContentGenerator.ts
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/views/HomePage.vue?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/src/composables/useScrollAnimations.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/common/Header.vue
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/common/Footer.vue
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/LazyImage.vue
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/EBikeSkeleton.vue
+RESPONSE: 200 - http://127.0.0.1:5173/src/views/HomePage.vue?vue&type=style&index=0&scoped=9b48b94e&lang.css
+RESPONSE: 200 - http://127.0.0.1:5173/vite.svg
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/LazyImage.vue?vue&type=style&index=0&scoped=c27c5544&lang.css
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/NotificationCenter.vue
+RESPONSE: 200 - http://127.0.0.1:5173/src/components/NotificationCenter.vue?vue&type=style&index=0&scoped=d6f4d0c9&lang.css
+RESPONSE: 200 - http://127.0.0.1:5173/src/img/Aventon/Level2-Traditional-Glacier-02.avif
+RESPONSE: 200 - http://127.0.0.1:54321/rest/v1/ebikes?select=count&limit=1
+RESPONSE: 200 - http://127.0.0.1:54321/rest/v1/ebikes?select=count&limit=1
+RESPONSE: 200 - http://127.0.0.1:5173/img/Gazelle%20Ultimate%20C380%20HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh.avif
+RESPONSE: 200 - http://127.0.0.1:5173/img/Canyon%20PrecedeON%207%20%20Comfort%207/1B02A7D4-6B99-4295-BACEE60AF6C6EFF6.avif
+RESPONSE: 200 - http://127.0.0.1:5173/img/Cannondale%20Tesoro%20Neo%20X%203/2455dd8c-f753-4fec-99a7-0e5b83f3f0a8.avif
+RESPONSE: 200 - http://127.0.0.1:5173/img/CUBE%20Kathmandu%20Hybrid%20Pro%20625/812200_D_00.jpg
+RESPONSE: 200 - http://127.0.0.1:5173/img/Giant%20Explore%20E+%201/MY23ExploreEplus1DD_ColorAMistyForest.jpg
+RESPONSE: 200 - http://127.0.0.1:5173/img/Lectric%20XP%203.0/lectric-xp-3-0-1.jpg
+RESPONSE: 200 - http://127.0.0.1:5173/e-bikes
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/vue.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/pinia.js?v=ce4cd01f
+RESPONSE: 304 - http://127.0.0.1:5173/@vite/client
+RESPONSE: 304 - http://127.0.0.1:5173/src/main.ts?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs
+RESPONSE: 304 - http://127.0.0.1:5173/src/router/index.ts?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/style.css?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/App.vue?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/ebikes.ts?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=ce4cd01f
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/auth.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/cookieConsent.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/utils/startupHealthCheck.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/CookieSettings.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/userProfile.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/notifications.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/CookieBanner.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/ErrorBoundary.vue
+RESPONSE: 304 - http://127.0.0.1:5173/@id/__x00__plugin-vue:export-helper
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/vue-router.js?v=ce4cd01f
+RESPONSE: 304 - http://127.0.0.1:5173/src/utils/logger.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/EnhancedAIChatbot.vue
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-LG6AQRJS.js?v=ce4cd01f
+RESPONSE: 304 - http://127.0.0.1:5173/src/lib/supabase.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/utils/envValidator.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/ai.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/voiceService.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/conversationMemoryService.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/multiLanguageService.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/EnhancedAIChatbot.vue?vue&type=style&index=0&scoped=66b957e7&lang.css
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/aiContentGenerator.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/aiRecommendationEngine.ts
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/@supabase_supabase-js.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/views/EBikeListPage.vue?t=1760307858342
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/comparison.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/utils/imagePlaceholder.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/stores/favorites.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/views/EBikeListPage.vue?vue&type=style&index=0&scoped=2a12d28f&lang.css
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/LazyImage.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/EBikeSkeleton.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/common/Header.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/common/Footer.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/LazyImage.vue?vue&type=style&index=0&scoped=c27c5544&lang.css
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/NotificationCenter.vue
+RESPONSE: 200 - http://127.0.0.1:54321/rest/v1/ebikes?select=count&limit=1
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/NotificationCenter.vue?vue&type=style&index=0&scoped=d6f4d0c9&lang.css
+RESPONSE: 304 - http://127.0.0.1:5173/img/Gazelle%20Ultimate%20C380%20HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh.avif
+RESPONSE: 304 - http://127.0.0.1:5173/img/Cannondale%20Tesoro%20Neo%20X%203/2455dd8c-f753-4fec-99a7-0e5b83f3f0a8.avif
+RESPONSE: 304 - http://127.0.0.1:5173/img/Giant%20Explore%20E+%201/MY23ExploreEplus1DD_ColorAMistyForest.jpg
+RESPONSE: 304 - http://127.0.0.1:5173/img/Canyon%20PrecedeON%207%20%20Comfort%207/1B02A7D4-6B99-4295-BACEE60AF6C6EFF6.avif
+RESPONSE: 304 - http://127.0.0.1:5173/img/CUBE%20Kathmandu%20Hybrid%20Pro%20625/812200_D_00.jpg
+RESPONSE: 304 - http://127.0.0.1:5173/img/Lectric%20XP%203.0/lectric-xp-3-0-1.jpg
+RESPONSE: 200 - http://127.0.0.1:5173/e-bikes/1
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/vue.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/pinia.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/vue-router.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-LG6AQRJS.js?v=ce4cd01f
+RESPONSE: 304 - http://127.0.0.1:5173/@vite/client
+RESPONSE: 304 - http://127.0.0.1:5173/src/main.ts?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/router/index.ts?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/style.css?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/App.vue?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/ebikes.ts?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/auth.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/CookieSettings.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/userProfile.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/notifications.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/cookieConsent.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/utils/startupHealthCheck.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/CookieBanner.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/EnhancedAIChatbot.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/ErrorBoundary.vue
+RESPONSE: 304 - http://127.0.0.1:5173/@id/__x00__plugin-vue:export-helper
+RESPONSE: 304 - http://127.0.0.1:5173/src/utils/logger.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/lib/supabase.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/utils/envValidator.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/ai.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/conversationMemoryService.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/voiceService.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/multiLanguageService.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/EnhancedAIChatbot.vue?vue&type=style&index=0&scoped=66b957e7&lang.css
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/aiContentGenerator.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/services/aiRecommendationEngine.ts
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/@supabase_supabase-js.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=ce4cd01f
+RESPONSE: 200 - http://127.0.0.1:5173/src/views/EBikeDetailPage.vue?t=1760307858342
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/comparison.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/stores/favorites.ts
+RESPONSE: 200 - http://127.0.0.1:5173/src/services/eventTrackingService.ts
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/common/Header.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/common/Footer.vue
+RESPONSE: 200 - http://127.0.0.1:54321/rest/v1/ebikes?select=count&limit=1
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/NotificationCenter.vue
+RESPONSE: 304 - http://127.0.0.1:5173/src/components/NotificationCenter.vue?vue&type=style&index=0&scoped=d6f4d0c9&lang.css
+RESPONSE: 304 - http://127.0.0.1:5173/img/Gazelle%20Ultimate%20C380%20HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh.avif
+RESPONSE: 200 - http://127.0.0.1:54321/rest/v1/analytics_events?columns=%22event_type%22%2C%22user_id%22%2C%22session_id%22%2C%22page_url%22%2C%22referrer%22%2C%22user_agent%22%2C%22properties%22%2C%22metadata%22
+RESPONSE: 404 - http://127.0.0.1:5173/favicon.ico
+RESPONSE: 304 - http://127.0.0.1:5173/img/Cannondale%20Tesoro%20Neo%20X%203/2455dd8c-f753-4fec-99a7-0e5b83f3f0a8.avif
+RESPONSE: 304 - http://127.0.0.1:5173/img/Giant%20Explore%20E+%201/MY23ExploreEplus1DD_ColorAMistyForest.jpg

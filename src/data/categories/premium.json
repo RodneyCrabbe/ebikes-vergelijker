@@ -1,0 +1,152 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440009",
+    "brand": "Gazelle",
+    "model_name": "Ultimate C380 HMB",
+    "version": "Premium stads/trekking e-bike (500/625 Wh, riemaandrijving)",
+    "price": 4499,
+    "build_date": "2022-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Gazelle Ultimate C380 HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh (1).avif",
+    "affiliate_url": "https://gazelle.nl/products/ultimate-c380-hmb",
+    "cpl_rate": 25,
+    "description": "De Gazelle Ultimate C380 HMB is een premium e-bike met riemaandrijving.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "130-155 km",
+    "action_radius_km": 130,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Gazelle Ultimate C380 HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh (1).avif",
+      "/img/Gazelle Ultimate C380 HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh.avif",
+      "/img/Gazelle Ultimate C380 HMB/20230372A01_Gazelle_Ultimate_C380_HMB_500Wh.avif",
+      "/img/Gazelle Ultimate C380 HMB/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL2dhemVsbGUtZWxla3RyaXNjaGUtZmlldHNlblwvVWx0aW1hdGUgQ (1).jpeg",
+      "/img/Gazelle Ultimate C380 HMB/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL2dhemVsbGUtZWxla3RyaXNjaGUtZmlldHNlblwvVWx0aW1hdGUgQ (2).jpeg",
+      "/img/Gazelle Ultimate C380 HMB/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL2dhemVsbGUtZWxla3RyaXNjaGUtZmlldHNlblwvVWx0aW1hdGUgQ (3).jpeg",
+      "/img/Gazelle Ultimate C380 HMB/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL2dhemVsbGUtZWxla3RyaXNjaGUtZmlldHNlblwvVWx0aW1hdGUgQ (4).jpeg",
+      "/img/Gazelle Ultimate C380 HMB/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL2dhemVsbGUtZWxla3RyaXNjaGUtZmlldHNlblwvVWx0aW1hdGUgQzM4M.jpeg",
+      "/img/Gazelle Ultimate C380 HMB/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL2dhemVsbGUtZWxla3RyaXNjaGUtZmlldHNlblwvVWx0aW1hdGUgQzM4MC.png"
+    ],
+    "colors": [],
+    "highlights": [],
+    "specifications": {},
+    "features": [],
+    "weight_kg": null,
+    "wheel_size": null,
+    "tire_size": null,
+    "frame_material": null,
+    "motor_type": null,
+    "motor_power_w": null,
+    "torque_nm": null,
+    "battery_type": null,
+    "battery_voltage": null,
+    "battery_ah": null,
+    "charging_time_hours": null,
+    "brake_type": null,
+    "gear_system": null,
+    "suspension": null,
+    "lighting": null,
+    "display": null,
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440112",
+    "brand": "Gazelle",
+    "model_name": "Ultimate C380 HMB",
+    "version": "Premium Dutch electric bike",
+    "price": 4299,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Gazelle Ultimate C380 HMB/placeholder.webp",
+    "affiliate_url": "https://www.gazellebikes.com/en-us/ultimate-c380-hmb",
+    "cpl_rate": 25,
+    "description": "The Gazelle Ultimate C380 HMB is a premium Dutch electric bike with Bosch motor and high-quality components.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "EUR",
+    "action_radius_text": "Up to 120 km",
+    "action_radius_km": 120,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Gazelle Ultimate C380 HMB/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "White",
+        "value": "white",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Bosch Performance Line motor",
+      "500Wh battery",
+      "Premium Dutch quality",
+      "Comfortable riding position",
+      "High-quality components"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Performance Line",
+        "power": "250W",
+        "torque": "65Nm"
+      },
+      "battery": {
+        "capacity": "500Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "26kg",
+        "wheel_size": "700c"
+      }
+    },
+    "features": [
+      "Bosch motor",
+      "Premium quality",
+      "Comfortable",
+      "Dutch design"
+    ],
+    "weight_kg": 26,
+    "wheel_size": "700c",
+    "tire_size": "700x40c",
+    "frame_material": "aluminium",
+    "motor_type": "Performance Line",
+    "motor_power_w": 250,
+    "torque_nm": 65,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 14,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "naafversnelling",
+    "suspension": "voorvork",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "EU EPAC"
+  }
+]

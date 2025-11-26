@@ -1,0 +1,143 @@
+# Cursor Rules for E-Bike Platform
+
+## MCP Servers Configuration
+The following MCP servers are configured for this project:
+
+### Chrome DevTools MCP
+- **Purpose**: Browser automation, performance testing, and debugging
+- **Package**: chrome-devtools-mcp@latest
+- **Configuration**: 
+  ```json
+  {
+    "mcpServers": {
+      "chrome-devtools": {
+        "command": "npx",
+        "args": [
+          "chrome-devtools-mcp@latest",
+          "--headless=false",
+          "--isolated=true"
+        ]
+      }
+    }
+  }
+  ```
+
+### Browser MCP
+- **Purpose**: Browser automation, web scraping, and testing
+- **Package**: @browsermcp/mcp@latest
+- **Configuration**:
+  ```json
+  {
+    "mcpServers": {
+      "browsermcp": {
+        "command": "npx",
+        "args": ["@browsermcp/mcp@latest"]
+      }
+    }
+  }
+  ```
+
+### Ref MCP
+- **Purpose**: Advanced code analysis, refactoring, and development tools
+- **Type**: HTTP-based MCP server
+- **URL**: https://api.ref.tools/mcp
+- **Authentication**: API Key required
+- **Configuration**:
+  ```json
+  {
+    "mcpServers": {
+      "ref": {
+        "type": "http",
+        "url": "https://api.ref.tools/mcp",
+        "headers": {
+          "Authorization": "Bearer YOUR_API_KEY_HERE",
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  }
+  ```
+
+## Available Tools
+
+### Browser MCP Capabilities
+The Browser MCP provides web automation and testing capabilities:
+
+#### Web Automation
+- **Page Navigation** - Navigate to URLs and manage browser sessions
+- **Element Interaction** - Click, type, and interact with web elements
+- **Form Filling** - Automate form submissions and data entry
+- **Screenshot Capture** - Take screenshots of web pages or specific elements
+- **Content Extraction** - Extract text, links, and data from web pages
+
+#### Testing & Validation
+- **E2E Testing** - End-to-end testing of web applications
+- **Performance Testing** - Measure page load times and performance metrics
+- **Accessibility Testing** - Validate web accessibility standards
+- **Cross-browser Testing** - Test across different browsers and devices
+- **Visual Regression Testing** - Compare screenshots for visual changes
+
+#### Web Scraping
+- **Data Extraction** - Scrape product information, prices, and specifications
+- **Content Monitoring** - Monitor website changes and updates
+- **API Testing** - Test web APIs and endpoints
+- **User Journey Testing** - Simulate user workflows and interactions
+
+### Ref MCP Capabilities
+The Ref MCP provides advanced development capabilities:
+
+### Code Analysis
+- **Code Quality Analysis** - Analyze code quality and suggest improvements
+- **Performance Analysis** - Identify performance bottlenecks and optimization opportunities
+- **Security Analysis** - Detect security vulnerabilities and suggest fixes
+- **Dependency Analysis** - Analyze project dependencies and suggest updates
+
+### Refactoring Tools
+- **Code Refactoring** - Suggest and apply code refactoring improvements
+- **Code Generation** - Generate boilerplate code and templates
+- **Pattern Recognition** - Identify design patterns and suggest implementations
+- **Code Optimization** - Optimize code for better performance and maintainability
+
+### Development Assistance
+- **Documentation Generation** - Generate comprehensive code documentation
+- **Test Generation** - Generate unit tests and integration tests
+- **API Documentation** - Generate API documentation from code
+- **Code Review** - Perform automated code reviews
+
+## Usage Examples
+
+### Browser MCP Examples
+- "Take a screenshot of our e-bike platform homepage"
+- "Test the e-bike comparison functionality end-to-end"
+- "Validate the performance of our image loading"
+- "Check accessibility compliance on our product pages"
+- "Scrape competitor e-bike prices for market analysis"
+- "Test the booking form submission process"
+- "Monitor our website for broken links"
+- "Validate responsive design across different screen sizes"
+
+### Ref MCP Examples
+- "Analyze the code quality of our Vue.js components"
+- "Suggest refactoring improvements for the e-bikes store"
+- "Generate documentation for our API endpoints"
+- "Create unit tests for our utility functions"
+- "Optimize the performance of our image loading"
+- "Review the security of our authentication system"
+
+## Configuration Options
+- `apiKey`: Your Ref API key (required)
+- `url`: Ref MCP server URL (default: https://api.ref.tools/mcp)
+- `timeout`: Request timeout in milliseconds (default: 30000)
+- `retries`: Number of retry attempts (default: 3)
+
+## Setup Instructions
+1. **Get API Key**: Sign up at https://ref.tools to get your API key
+2. **Update Configuration**: Replace `YOUR_API_KEY_HERE` with your actual API key
+3. **Restart Cursor**: Restart Cursor to load the new MCP configuration
+4. **Test Integration**: Use Ref MCP commands to verify the integration
+
+## Troubleshooting
+- **Authentication Errors**: Verify your API key is correct and active
+- **Connection Issues**: Check your internet connection and firewall settings
+- **Rate Limiting**: Ref MCP may have rate limits; check your usage
+- **API Errors**: Check the Ref API documentation for error codes and solutions

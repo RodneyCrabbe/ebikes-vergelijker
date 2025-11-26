@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - E-Bike Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .offline-container {
+            text-align: center;
+            max-width: 500px;
+            padding: 2rem;
+        }
+        
+        .offline-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .retry-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .retry-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .features {
+            margin-top: 3rem;
+            text-align: left;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        
+        .feature-icon {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .status {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff6b6b;
+            margin-right: 0.5rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .cached-content {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cached-link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        
+        .cached-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">📱</div>
+        <h1>Je bent offline</h1>
+        <p>Geen internetverbinding gevonden. Controleer je netwerkverbinding en probeer het opnieuw.</p>
+        
+        <button class="retry-button" onclick="window.location.reload()">
+            Opnieuw proberen
+        </button>
+        
+        <div class="features">
+            <h3>Wat je nog wel kunt doen:</h3>
+            <div class="feature">
+                <span class="feature-icon">📖</span>
+                <span>Bekijk eerder geladen e-bikes</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">⭐</span>
+                <span>Bekijk je favorieten</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📝</span>
+                <span>Lees opgeslagen reviews</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🔍</span>
+                <span>Zoek in gecachte content</span>
+            </div>
+        </div>
+        
+        <div class="status">
+            <span class="status-indicator"></span>
+            <span>Offline modus actief</span>
+        </div>
+        
+        <div class="cached-content">
+            <h4>Beschikbare content:</h4>
+            <a href="/" class="cached-link">🏠 Homepage</a>
+            <a href="/ebikes" class="cached-link">🚲 E-Bikes overzicht</a>
+            <a href="/reviews" class="cached-link">⭐ Reviews</a>
+            <a href="/community" class="cached-link">👥 Community</a>
+        </div>
+    </div>
+    
+    <script>
+        // Check connection status
+        function updateConnectionStatus() {
+            const statusIndicator = document.querySelector('.status-indicator');
+            const statusText = document.querySelector('.status span:last-child');
+            
+            if (navigator.onLine) {
+                statusIndicator.style.background = '#51cf66';
+                statusText.textContent = 'Verbinding hersteld!';
+                
+                // Auto-reload after 2 seconds
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+            } else {
+                statusIndicator.style.background = '#ff6b6b';
+                statusText.textContent = 'Offline modus actief';
+            }
+        }
+        
+        // Listen for online/offline events
+        window.addEventListener('online', updateConnectionStatus);
+        window.addEventListener('offline', updateConnectionStatus);
+        
+        // Initial status check
+        updateConnectionStatus();
+        
+        // Periodic connection check
+        setInterval(() => {
+            fetch('/', { method: 'HEAD', mode: 'no-cors' })
+                .then(() => {
+                    if (!navigator.onLine) {
+                        window.location.reload();
+                    }
+                })
+                .catch(() => {
+                    // Still offline
+                });
+        }, 5000);
+    </script>
+</body>
+</html>

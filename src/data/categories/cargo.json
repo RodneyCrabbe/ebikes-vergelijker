@@ -1,0 +1,614 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440010",
+    "brand": "Riese & Müller",
+    "model_name": "Charger4 GT Vario",
+    "version": "Premium trekking/forenzen e-bike (750 Wh, riem + Enviolo)",
+    "price": 5849,
+    "build_date": "2022-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 750,
+    "top_speed": null,
+    "image_url": "/img/Riese & Müller Charger4 GT/riese_und_muller_charger4_gt_vario_black_matt_2_.jpg?v=1760346847501",
+    "affiliate_url": "https://riese-muller.com/products/charger4-gt-vario",
+    "cpl_rate": 25,
+    "description": "De Riese & Müller Charger4 GT Vario is een premium e-bike met hoogste kwaliteit.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "70-135 km",
+    "action_radius_km": 70,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Riese & Müller Charger4 GT/riese_und_muller_charger4_gt_vario_black_matt_2_.jpg?v=1760346847501",
+      "/img/Riese & Müller Charger4 GT Vario/2_riese-mller-charger4-gt-vario-view2.jpg?v=1760346847501",
+      "/img/Riese & Müller Charger4 GT Vario/3_riese-mller-charger4-gt-vario-view3.jpg?v=1760346847501",
+      "/img/Riese & Müller Charger4 GT Vario/4_riese-mller-charger4-gt-vario-view4.jpg?v=1760346847501",
+      "/img/Riese & Müller Charger4 GT Vario/5_riese-mller-charger4-gt-vario-view5.jpg?v=1760346847501",
+      "/img/Riese & Müller Charger4 GT Vario/6_riese-mller-charger4-gt-vario-view6.jpg?v=1760346847501"
+    ],
+    "colors": [],
+    "highlights": [],
+    "specifications": {},
+    "features": [],
+    "weight_kg": null,
+    "wheel_size": null,
+    "tire_size": null,
+    "frame_material": null,
+    "motor_type": null,
+    "motor_power_w": null,
+    "torque_nm": null,
+    "battery_type": null,
+    "battery_voltage": null,
+    "battery_ah": null,
+    "charging_time_hours": null,
+    "brake_type": null,
+    "gear_system": null,
+    "suspension": null,
+    "lighting": null,
+    "display": null,
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440107",
+    "brand": "Urban Arrow",
+    "model_name": "Family",
+    "version": "Electric cargo bike for families",
+    "price": 6999,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Urban Arrow Family/placeholder.webp",
+    "affiliate_url": "https://urbanarrow.com/family-bikes/family/",
+    "cpl_rate": 25,
+    "description": "The Urban Arrow Family is an electric cargo bike designed for families, featuring a spacious front box and Bosch motor system.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "EUR",
+    "action_radius_text": "Up to 60 km",
+    "action_radius_km": 60,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Urban Arrow Family/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "White",
+        "value": "white",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Spacious front box",
+      "Bosch Performance motor",
+      "500Wh battery",
+      "Family-friendly design",
+      "High-quality components"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Performance Line",
+        "power": "250W",
+        "torque": "65Nm"
+      },
+      "battery": {
+        "capacity": "500Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "45kg",
+        "wheel_size": "20\""
+      }
+    },
+    "features": [
+      "Front cargo box",
+      "Bosch motor",
+      "Family seats",
+      "High capacity"
+    ],
+    "weight_kg": 45,
+    "wheel_size": "20\"",
+    "tire_size": "20x2.0\"",
+    "frame_material": "aluminium",
+    "motor_type": "Performance Line",
+    "motor_power_w": 250,
+    "torque_nm": 65,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 14,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "naafversnelling",
+    "suspension": "geen",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "EU EPAC"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440108",
+    "brand": "Riese & Müller",
+    "model_name": "Load 75",
+    "version": "Premium electric cargo bike",
+    "price": 8329,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Riese & Müller Load 75/placeholder.webp",
+    "affiliate_url": "https://www.r-m.de/en-us/bikes/load-75/",
+    "cpl_rate": 25,
+    "description": "The Riese & Müller Load 75 is a premium electric cargo bike with full suspension and high-quality components.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "EUR",
+    "action_radius_text": "Up to 80 km",
+    "action_radius_km": 80,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Riese & Müller Load 75/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "White",
+        "value": "white",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Full suspension",
+      "Bosch Performance motor",
+      "500Wh battery",
+      "Premium quality",
+      "High cargo capacity"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Performance Line",
+        "power": "250W",
+        "torque": "65Nm"
+      },
+      "battery": {
+        "capacity": "500Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "50kg",
+        "wheel_size": "20\""
+      }
+    },
+    "features": [
+      "Full suspension",
+      "Bosch motor",
+      "Premium quality",
+      "High capacity"
+    ],
+    "weight_kg": 50,
+    "wheel_size": "20\"",
+    "tire_size": "20x2.0\"",
+    "frame_material": "aluminium",
+    "motor_type": "Performance Line",
+    "motor_power_w": 250,
+    "torque_nm": 65,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 14,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "naafversnelling",
+    "suspension": "volledige-vering",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "EU EPAC"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440110",
+    "brand": "Tern",
+    "model_name": "Vektron S10",
+    "version": "Folding electric bike with Bosch motor",
+    "price": 3999,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 400,
+    "top_speed": null,
+    "image_url": "/img/Tern Vektron S10/placeholder.webp",
+    "affiliate_url": "https://www.ternbicycles.com/us/bikes/472/vektron",
+    "cpl_rate": 25,
+    "description": "The Tern Vektron S10 is a folding electric bike with Bosch motor system and 20-inch wheels.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "USD",
+    "action_radius_text": "Up to 70 km",
+    "action_radius_km": 70,
+    "top_speed_text": "20 mph (US)",
+    "top_speed_kmh": 32,
+    "images": [
+      "/img/Tern Vektron S10/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "White",
+        "value": "white",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Folds in 10 seconds",
+      "Bosch Active Line Plus motor",
+      "400Wh battery",
+      "20-inch wheels",
+      "High-quality components"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Active Line Plus",
+        "power": "250W",
+        "torque": "50Nm"
+      },
+      "battery": {
+        "capacity": "400Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "22kg",
+        "wheel_size": "20\""
+      }
+    },
+    "features": [
+      "Folding",
+      "Bosch motor",
+      "20-inch wheels",
+      "High quality"
+    ],
+    "weight_kg": 22,
+    "wheel_size": "20\"",
+    "tire_size": "20x2.0\"",
+    "frame_material": "aluminium",
+    "motor_type": "Active Line Plus",
+    "motor_power_w": 250,
+    "torque_nm": 50,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 11,
+    "charging_time_hours": 4,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "geen",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "US Class 1"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440113",
+    "brand": "Riese & Müller",
+    "model_name": "Charger4 GT Vario",
+    "version": "Premium touring electric bike",
+    "price": 5999,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 750,
+    "top_speed": null,
+    "image_url": "/img/Riese & Müller Charger4 GT Vario/placeholder.webp",
+    "affiliate_url": "https://www.r-m.de/en-de/bikes/charger4/charger4-gt-vario/",
+    "cpl_rate": 25,
+    "description": "The Riese & Müller Charger4 GT Vario is a premium touring electric bike with dual battery system.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "EUR",
+    "action_radius_text": "Up to 150 km",
+    "action_radius_km": 150,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Riese & Müller Charger4 GT Vario/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "White",
+        "value": "white",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Dual battery system",
+      "Bosch Performance Line motor",
+      "750Wh total capacity",
+      "Premium quality",
+      "Long range touring"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Performance Line",
+        "power": "250W",
+        "torque": "65Nm"
+      },
+      "battery": {
+        "capacity": "750Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "6-8 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "28kg",
+        "wheel_size": "700c"
+      }
+    },
+    "features": [
+      "Dual battery",
+      "Bosch motor",
+      "Premium quality",
+      "Long range"
+    ],
+    "weight_kg": 28,
+    "wheel_size": "700c",
+    "tire_size": "700x45c",
+    "frame_material": "aluminium",
+    "motor_type": "Performance Line",
+    "motor_power_w": 250,
+    "torque_nm": 65,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 21,
+    "charging_time_hours": 7,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "naafversnelling",
+    "suspension": "voorvork",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "EU EPAC"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440117",
+    "brand": "Tern",
+    "model_name": "GSD S00",
+    "version": "Electric cargo bike",
+    "price": 4999,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Tern GSD S00/placeholder.webp",
+    "affiliate_url": "https://www.ternbicycles.com/us/bikes/gsd-s00",
+    "cpl_rate": 25,
+    "description": "The Tern GSD S00 is an electric cargo bike perfect for carrying loads and children.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "USD",
+    "action_radius_text": "Up to 60 km",
+    "action_radius_km": 60,
+    "top_speed_text": "20 mph (US)",
+    "top_speed_kmh": 32,
+    "images": [
+      "/img/Tern GSD S00/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "White",
+        "value": "white",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Bosch Performance motor",
+      "500Wh battery",
+      "Cargo capacity",
+      "Compact design",
+      "High quality"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Performance Line",
+        "power": "250W",
+        "torque": "65Nm"
+      },
+      "battery": {
+        "capacity": "500Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "30kg",
+        "wheel_size": "20\""
+      }
+    },
+    "features": [
+      "Cargo capacity",
+      "Bosch motor",
+      "Compact",
+      "High quality"
+    ],
+    "weight_kg": 30,
+    "wheel_size": "20\"",
+    "tire_size": "20x2.0\"",
+    "frame_material": "aluminium",
+    "motor_type": "Performance Line",
+    "motor_power_w": 250,
+    "torque_nm": 65,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 14,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "naafversnelling",
+    "suspension": "geen",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "US Class 1"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440128",
+    "brand": "Cube",
+    "model_name": "Longtail Sport Hybrid 725",
+    "version": "Electric cargo bike",
+    "price": 3999,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 500,
+    "top_speed": null,
+    "image_url": "/img/Cube Longtail Sport Hybrid 725/placeholder.webp",
+    "affiliate_url": "https://www.cube.eu/longtail-sport-hybrid-725",
+    "cpl_rate": 25,
+    "description": "The Cube Longtail Sport Hybrid 725 is an electric cargo bike with long tail design and high capacity.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "EUR",
+    "action_radius_text": "Up to 80 km",
+    "action_radius_km": 80,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Cube Longtail Sport Hybrid 725/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "Blue",
+        "value": "blue",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Long tail design",
+      "Bosch Active Line Plus motor",
+      "500Wh battery",
+      "High cargo capacity",
+      "Sporty handling"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Active Line Plus",
+        "power": "250W",
+        "torque": "50Nm"
+      },
+      "battery": {
+        "capacity": "500Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "32kg",
+        "wheel_size": "26\""
+      }
+    },
+    "features": [
+      "Long tail",
+      "Bosch motor",
+      "High capacity",
+      "Sporty handling"
+    ],
+    "weight_kg": 32,
+    "wheel_size": "26\"",
+    "tire_size": "26x2.0\"",
+    "frame_material": "aluminium",
+    "motor_type": "Active Line Plus",
+    "motor_power_w": 250,
+    "torque_nm": 50,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 14,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "geen",
+    "lighting": "led",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "EU EPAC"
+  }
+]

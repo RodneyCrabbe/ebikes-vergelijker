@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Test User</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .credentials {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👤 Create Test User</h1>
+        <p>Create a test user account for the E-Bike Platform.</p>
+        
+        <form id="userForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="test@example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" value="testpassword123" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="Test User" required>
+            </div>
+            
+            <button type="submit" class="button">Create Test User</button>
+        </form>
+        
+        <div id="status" class="status"></div>
+        
+        <div class="credentials">
+            <h3>Default Test Credentials:</h3>
+            <p><strong>Email:</strong> test@example.com</p>
+            <p><strong>Password:</strong> testpassword123</p>
+            <p><strong>Name:</strong> Test User</p>
+        </div>
+        
+        <h3>After creating a user:</h3>
+        <ol>
+            <li>Go to the main app: <a href="http://localhost:5173" target="_blank">http://localhost:5173</a></li>
+            <li>Click "Login" and use the credentials above</li>
+            <li>You should now be able to log in successfully</li>
+        </ol>
+    </div>
+
+    <script>
+        // Initialize Supabase client
+        const supabaseUrl = 'http://127.0.0.1:54321'
+        const supabaseKey = 'sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH'
+        const supabase = window.supabase.createClient(supabaseUrl, supabaseKey)
+
+        function showStatus(message, type = 'success') {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
+        }
+
+        document.getElementById('userForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const name = document.getElementById('name').value;
+            
+            try {
+                showStatus('Creating user...', 'success');
+                
+                const { data, error } = await supabase.auth.signUp({
+                    email: email,
+                    password: password,
+                    options: {
+                        data: {
+                            name: name,
+                            newsletter_subscribed: false
+                        }
+                    }
+                });
+                
+                if (error) {
+                    throw error;
+                }
+                
+                if (data.user) {
+                    showStatus(`✅ User created successfully! You can now log in with email: ${email}`, 'success');
+                } else {
+                    showStatus('❌ User creation failed. Please try again.', 'error');
+                }
+            } catch (error) {
+                console.error('Error creating user:', error);
+                showStatus(`❌ Error creating user: ${error.message}`, 'error');
+            }
+        });
+    </script>
+</body>
+</html>

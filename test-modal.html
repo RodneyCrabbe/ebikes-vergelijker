@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test E-Bike Modal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .test-button:hover {
+            background-color: #0056b3;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 E-Bike Modal Test</h1>
+        <p>This page tests the e-bike modal functionality.</p>
+        
+        <h2>Test Steps:</h2>
+        <ol>
+            <li>Go to the main app: <a href="http://localhost:5173" target="_blank">http://localhost:5173</a></li>
+            <li>Login to your account</li>
+            <li>Go to Profile → Favorieten tab</li>
+            <li>Click "Bekijk" on any favorite e-bike</li>
+            <li>The e-bike should open in a modal in the center of the page</li>
+        </ol>
+        
+        <h2>Expected Behavior:</h2>
+        <ul>
+            <li>✅ Modal opens in center of page (not navigation)</li>
+            <li>✅ Shows e-bike details with image, specs, and price</li>
+            <li>✅ Has "Bekijk Beste Deal" button</li>
+            <li>✅ Has "Vergelijk" and "Favoriet" buttons</li>
+            <li>✅ Can close with X button or Escape key</li>
+            <li>✅ No routing errors in console</li>
+        </ul>
+        
+        <h2>If Issues:</h2>
+        <ul>
+            <li>Check browser console for errors</li>
+            <li>Make sure you're logged in</li>
+            <li>Try refreshing the page</li>
+            <li>Check if the modal component is properly imported</li>
+        </ul>
+        
+        <div class="status">
+            <strong>✅ Modal Implementation Complete!</strong><br>
+            The e-bike modal should now work properly when clicking "Bekijk" on favorite e-bikes.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .image-test { margin: 20px 0; }
+        .image-test img { max-width: 300px; height: auto; border: 1px solid #ccc; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>E-Bike Image Test</h1>
+    <p>Testing if local images load correctly:</p>
+    
+    <div class="image-test">
+        <h3>Gazelle Ultimate C380 HMB</h3>
+        <img src="/img/Gazelle Ultimate C380 HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh.avif" 
+             alt="Gazelle Ultimate C380 HMB" 
+             onload="this.nextElementSibling.textContent='✅ Image loaded successfully'"
+             onerror="this.nextElementSibling.textContent='❌ Image failed to load'">
+        <p class="status"></p>
+    </div>
+    
+    <div class="image-test">
+        <h3>Cannondale Tesoro Neo X 3</h3>
+        <img src="/img/Cannondale Tesoro Neo X 3/2455dd8c-f753-4fec-99a7-0e5b83f3f0a8.avif" 
+             alt="Cannondale Tesoro Neo X 3" 
+             onload="this.nextElementSibling.textContent='✅ Image loaded successfully'"
+             onerror="this.nextElementSibling.textContent='❌ Image failed to load'">
+        <p class="status"></p>
+    </div>
+    
+    <div class="image-test">
+        <h3>Giant Explore E+ 1</h3>
+        <img src="/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg" 
+             alt="Giant Explore E+ 1" 
+             onload="this.nextElementSibling.textContent='✅ Image loaded successfully'"
+             onerror="this.nextElementSibling.textContent='❌ Image failed to load'">
+        <p class="status"></p>
+    </div>
+    
+    <div class="image-test">
+        <h3>Canyon PrecedeON 7 Comfort 7</h3>
+        <img src="/img/Canyon PrecedeON 7  Comfort 7/1B02A7D4-6B99-4295-BACEE60AF6C6EFF6.avif" 
+             alt="Canyon PrecedeON 7 Comfort 7" 
+             onload="this.nextElementSibling.textContent='✅ Image loaded successfully'"
+             onerror="this.nextElementSibling.textContent='❌ Image failed to load'">
+        <p class="status"></p>
+    </div>
+    
+    <div class="image-test">
+        <h3>CUBE Kathmandu Hybrid Pro 625</h3>
+        <img src="/img/CUBE Kathmandu Hybrid Pro 625/812200_D_00.jpg" 
+             alt="CUBE Kathmandu Hybrid Pro 625" 
+             onload="this.nextElementSibling.textContent='✅ Image loaded successfully'"
+             onerror="this.nextElementSibling.textContent='❌ Image failed to load'">
+        <p class="status"></p>
+    </div>
+    
+    <div class="image-test">
+        <h3>Lectric XP 3.0</h3>
+        <img src="/img/Lectric XP 3.0/lectric-xp-3-0-1.jpg" 
+             alt="Lectric XP 3.0" 
+             onload="this.nextElementSibling.textContent='✅ Image loaded successfully'"
+             onerror="this.nextElementSibling.textContent='❌ Image failed to load'">
+        <p class="status"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://ebike-platform.com/sitemap.xml
+Sitemap: https://ebike-platform.com/sitemap-ebikes.xml
+Sitemap: https://ebike-platform.com/sitemap-categories.xml
+Sitemap: https://ebike-platform.com/sitemap-brands.xml
+
+# Disallow private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profiel/
+Disallow: /notifications/
+Disallow: /dealer/
+Disallow: /subscription/
+
+# Allow important pages
+Allow: /ebikes
+Allow: /reviews
+Allow: /community
+Allow: /vergelijken
+Allow: /ebike/
+
+# Crawl delay
+Crawl-delay: 1

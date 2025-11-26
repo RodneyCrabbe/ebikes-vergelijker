@@ -1,0 +1,46 @@
+{
+  "totalEBikes": 71,
+  "categories": [
+    {
+      "name": "city-commuter",
+      "count": 27,
+      "file": "city-commuter.json"
+    },
+    {
+      "name": "mountain-emtb",
+      "count": 5,
+      "file": "mountain-emtb.json"
+    },
+    {
+      "name": "cargo",
+      "count": 7,
+      "file": "cargo.json"
+    },
+    {
+      "name": "folding",
+      "count": 2,
+      "file": "folding.json"
+    },
+    {
+      "name": "trekking-touring",
+      "count": 5,
+      "file": "trekking-touring.json"
+    },
+    {
+      "name": "fat-tire",
+      "count": 4,
+      "file": "fat-tire.json"
+    },
+    {
+      "name": "premium",
+      "count": 2,
+      "file": "premium.json"
+    },
+    {
+      "name": "budget",
+      "count": 19,
+      "file": "budget.json"
+    }
+  ],
+  "lastUpdated": "2025-10-13T13:13:39.684Z"
+}

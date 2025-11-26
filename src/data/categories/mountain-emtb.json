@@ -1,0 +1,429 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440008",
+    "brand": "CUBE",
+    "model_name": "Kathmandu Hybrid Pro 625",
+    "version": "Trekking/forenzen e-bike (EU, 625 Wh)",
+    "price": 3499,
+    "build_date": "2022-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 625,
+    "top_speed": null,
+    "image_url": "/img/CUBE Kathmandu Hybrid Pro 625/812200_D_00.jpg",
+    "affiliate_url": "https://cube.eu/products/kathmandu-hybrid-pro-625",
+    "cpl_rate": 25,
+    "description": "De CUBE Kathmandu Hybrid Pro 625 is een premium trekking e-bike.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.938Z",
+    "currency": "EUR",
+    "action_radius_text": "Tot 130 km",
+    "action_radius_km": 130,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/CUBE Kathmandu Hybrid Pro 625/812200_D_00.jpg",
+      "/img/CUBE Kathmandu Hybrid Pro 625/812200_D_01.jpg",
+      "/img/CUBE Kathmandu Hybrid Pro 625/812200_D_02.jpg",
+      "/img/CUBE Kathmandu Hybrid Pro 625/812200_D_03.jpg",
+      "/img/CUBE Kathmandu Hybrid Pro 625/812200_D_04.jpg",
+      "/img/CUBE Kathmandu Hybrid Pro 625/812200_P_00.jpg",
+      "/img/CUBE Kathmandu Hybrid Pro 625/812200_S_00.jpg"
+    ],
+    "colors": [],
+    "highlights": [],
+    "specifications": {},
+    "features": [],
+    "weight_kg": null,
+    "wheel_size": null,
+    "tire_size": null,
+    "frame_material": null,
+    "motor_type": null,
+    "motor_power_w": null,
+    "torque_nm": null,
+    "battery_type": null,
+    "battery_voltage": null,
+    "battery_ah": null,
+    "charging_time_hours": null,
+    "brake_type": null,
+    "gear_system": null,
+    "suspension": null,
+    "lighting": null,
+    "display": null,
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440105",
+    "brand": "Specialized",
+    "model_name": "Turbo Levo SL Comp",
+    "version": "Lightweight electric mountain bike",
+    "price": 7500,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 320,
+    "top_speed": null,
+    "image_url": "/img/Specialized Turbo Levo SL Comp/placeholder.webp",
+    "affiliate_url": "https://www.specialized.com/us/en/turbo-levo-sl-comp/p/154888",
+    "cpl_rate": 25,
+    "description": "The Specialized Turbo Levo SL Comp is a lightweight electric mountain bike with natural ride feel and powerful assistance.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "USD",
+    "action_radius_text": "Up to 5 hours trail riding",
+    "action_radius_km": 50,
+    "top_speed_text": "20 mph (US)",
+    "top_speed_kmh": 32,
+    "images": [
+      "/img/Specialized Turbo Levo SL Comp/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Satin Carbon",
+        "value": "carbon",
+        "available": true
+      },
+      {
+        "name": "Gloss Black",
+        "value": "black",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "SL 1.1 motor system",
+      "320Wh battery",
+      "Full suspension",
+      "SRAM GX Eagle drivetrain",
+      "Lightweight carbon frame"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Specialized",
+        "type": "SL 1.1",
+        "power": "240W",
+        "torque": "35Nm"
+      },
+      "battery": {
+        "capacity": "320Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "2.5 hours"
+      },
+      "frame": {
+        "material": "Carbon",
+        "weight": "18.5kg",
+        "wheel_size": "29\""
+      }
+    },
+    "features": [
+      "Full suspension",
+      "SL 1.1 motor",
+      "SRAM GX Eagle",
+      "Carbon frame"
+    ],
+    "weight_kg": 18.5,
+    "wheel_size": "29\"",
+    "tire_size": "29x2.6\"",
+    "frame_material": "carbon",
+    "motor_type": "SL 1.1",
+    "motor_power_w": 240,
+    "torque_nm": 35,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 9,
+    "charging_time_hours": 2.5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "volledige-vering",
+    "lighting": "geen",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": true,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "US Class 1"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440106",
+    "brand": "Trek",
+    "model_name": "Fuel EXe 9.7",
+    "version": "Electric mountain bike with stealth design",
+    "price": 6500,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 360,
+    "top_speed": null,
+    "image_url": "/img/Trek Fuel EXe 9.7/placeholder.webp",
+    "affiliate_url": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/electric-mountain-bikes/fuel-exe/",
+    "cpl_rate": 25,
+    "description": "The Trek Fuel EXe 9.7 is an electric mountain bike with stealth design and natural ride feel.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "USD",
+    "action_radius_text": "Up to 4 hours trail riding",
+    "action_radius_km": 40,
+    "top_speed_text": "20 mph (US)",
+    "top_speed_kmh": 32,
+    "images": [
+      "/img/Trek Fuel EXe 9.7/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Trek Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "Rage Red",
+        "value": "red",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "TQ HPR50 motor",
+      "360Wh battery",
+      "Full suspension",
+      "Shimano XT drivetrain",
+      "Stealth design"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "TQ",
+        "type": "HPR50",
+        "power": "250W",
+        "torque": "50Nm"
+      },
+      "battery": {
+        "capacity": "360Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "3 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "19.5kg",
+        "wheel_size": "29\""
+      }
+    },
+    "features": [
+      "TQ motor",
+      "Full suspension",
+      "Shimano XT",
+      "Stealth design"
+    ],
+    "weight_kg": 19.5,
+    "wheel_size": "29\"",
+    "tire_size": "29x2.5\"",
+    "frame_material": "aluminium",
+    "motor_type": "HPR50",
+    "motor_power_w": 250,
+    "torque_nm": 50,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 10,
+    "charging_time_hours": 3,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "volledige-vering",
+    "lighting": "geen",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "US Class 1"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440114",
+    "brand": "Giant",
+    "model_name": "Trance E+ 3",
+    "version": "Electric mountain bike",
+    "price": 4500,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 625,
+    "top_speed": null,
+    "image_url": "/img/Giant Trance E+ 3/placeholder.webp",
+    "affiliate_url": "https://www.giant-bicycles.com/us/trance-e-plus-3",
+    "cpl_rate": 25,
+    "description": "The Giant Trance E+ 3 is an electric mountain bike with Yamaha motor system and full suspension.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "USD",
+    "action_radius_text": "Up to 5 hours trail riding",
+    "action_radius_km": 50,
+    "top_speed_text": "20 mph (US)",
+    "top_speed_kmh": 32,
+    "images": [
+      "/img/Giant Trance E+ 3/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "Blue",
+        "value": "blue",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Yamaha PW-X3 motor",
+      "625Wh battery",
+      "Full suspension",
+      "Shimano Deore drivetrain",
+      "Aluminum frame"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Yamaha",
+        "type": "PW-X3",
+        "power": "250W",
+        "torque": "80Nm"
+      },
+      "battery": {
+        "capacity": "625Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "4-6 hours"
+      },
+      "frame": {
+        "material": "Aluminum",
+        "weight": "23kg",
+        "wheel_size": "29\""
+      }
+    },
+    "features": [
+      "Yamaha motor",
+      "Full suspension",
+      "Shimano Deore",
+      "Aluminum frame"
+    ],
+    "weight_kg": 23,
+    "wheel_size": "29\"",
+    "tire_size": "29x2.6\"",
+    "frame_material": "aluminium",
+    "motor_type": "PW-X3",
+    "motor_power_w": 250,
+    "torque_nm": 80,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 17,
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "volledige-vering",
+    "lighting": "geen",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "US Class 1"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440118",
+    "brand": "Cube",
+    "model_name": "Stereo Hybrid 140 HPC SL 750",
+    "version": "Electric mountain bike",
+    "price": 5999,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 750,
+    "top_speed": null,
+    "image_url": "/img/Cube Stereo Hybrid 140 HPC SL 750/placeholder.webp",
+    "affiliate_url": "https://www.cube.eu/stereo-hybrid-140-hpc-sl-750",
+    "cpl_rate": 25,
+    "description": "The Cube Stereo Hybrid 140 HPC SL 750 is an electric mountain bike with Bosch motor and full suspension.",
+    "created_at": "2025-01-15T12:00:00.000Z",
+    "updated_at": "2025-01-15T12:00:00.000Z",
+    "currency": "EUR",
+    "action_radius_text": "Up to 6 hours trail riding",
+    "action_radius_km": 60,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [
+      "/img/Cube Stereo Hybrid 140 HPC SL 750/placeholder.webp"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "black",
+        "available": true
+      },
+      {
+        "name": "Blue",
+        "value": "blue",
+        "available": true
+      }
+    ],
+    "highlights": [
+      "Bosch Performance Line CX motor",
+      "750Wh battery",
+      "Full suspension",
+      "Shimano XT drivetrain",
+      "Carbon frame"
+    ],
+    "specifications": {
+      "motor": {
+        "brand": "Bosch",
+        "type": "Performance Line CX",
+        "power": "250W",
+        "torque": "85Nm"
+      },
+      "battery": {
+        "capacity": "750Wh",
+        "type": "Lithium-ion",
+        "voltage": "36V",
+        "charging_time": "5-7 hours"
+      },
+      "frame": {
+        "material": "Carbon",
+        "weight": "21kg",
+        "wheel_size": "29\""
+      }
+    },
+    "features": [
+      "Bosch CX motor",
+      "Full suspension",
+      "Shimano XT",
+      "Carbon frame"
+    ],
+    "weight_kg": 21,
+    "wheel_size": "29\"",
+    "tire_size": "29x2.6\"",
+    "frame_material": "carbon",
+    "motor_type": "Performance Line CX",
+    "motor_power_w": 250,
+    "torque_nm": 85,
+    "battery_type": "lithium-ion",
+    "battery_voltage": 36,
+    "battery_ah": 21,
+    "charging_time_hours": 6,
+    "brake_type": "hydraulische-schijfrem",
+    "gear_system": "derailleur",
+    "suspension": "volledige-vering",
+    "lighting": "geen",
+    "display": "lcd",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
+    "warranty_years": 2,
+    "certification": "EU EPAC"
+  }
+]
