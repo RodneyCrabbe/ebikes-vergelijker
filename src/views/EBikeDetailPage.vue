@@ -27,7 +27,7 @@ const showImageCarousel = ref(false)
 const carouselImageIndex = ref(0)
 
 // External website URLs mapping
-const externalUrls = {
+const externalUrls: Record<string, Record<string, string>> = {
   'Aventon': {
     'Level.2': 'https://www.aventon.com/products/aventon-level-2-commuter-ebike',
     'Aventure.2': 'https://www.aventon.com/products/aventure-2-fat-tire-ebike'
@@ -59,7 +59,8 @@ const externalUrls = {
   },
   'Giant': {
     'Explore E+': 'https://www.giant-bicycles.com/global/showcase/explore-e-plus',
-    'Explore E+ 1': 'https://www.giant-bicycles.com/gb/explore-e-1-2023'
+    'Explore E+ 1': 'https://www.giant-bicycles.com/gb/explore-e-1-2023',
+    'Trance E+ 3': 'https://www.giant-bicycles.com/us/trance-e-plus-3'
   },
   'Knaap': {
     'AMS X': 'https://knaapbikes.com/products/ams-x',
