@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, computed, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useEBikesStore } from '../stores/ebikes-simple'
 import { useComparisonStore } from '../stores/comparison'
 import { useFavoritesStore } from '../stores/favorites'
@@ -84,6 +84,7 @@ const filters = ref<EBikeFilters>({
 // Search
 const searchQuery = ref('')
 const route = useRoute()
+const router = useRouter()
 
 // Initialize search from URL query parameter
 onMounted(() => {
@@ -379,7 +380,7 @@ const toggleFavorite = async (ebike: any) => {
 
 // Navigation function
 const navigateToDetail = (ebikeId: string) => {
-  window.location.href = `/e-bikes/${ebikeId}`
+  router.push(`/e-bikes/${ebikeId}`)
 }
 
 onMounted(async () => {
