@@ -2,10 +2,10 @@
   <div class="min-h-screen bg-gray-50 flex flex-col">
     <Header />
     
-    <main class="flex-1 py-8">
+    <main class="flex-1 py-6 md:py-8 pt-20 md:pt-28 pb-12">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-lg shadow-lg p-8">
-          <h1 class="text-3xl font-bold text-gray-900 mb-6">Mijn Profiel</h1>
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-6">
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mijn Profiel</h1>
           
           <div v-if="!authStore.isAuthenticated" class="text-center py-12">
             <div class="text-gray-500 mb-4">
@@ -22,8 +22,8 @@
           
           <div v-else class="space-y-6">
             <!-- User Info -->
-            <div class="border-b border-gray-200 pb-6">
-              <h2 class="text-xl font-semibold text-gray-900 mb-4">Persoonlijke Informatie</h2>
+            <div class="border-b border-gray-200 pb-6 mb-6">
+              <h2 class="text-lg md:text-xl font-semibold text-gray-900 mb-4">Persoonlijke Informatie</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-sm font-medium text-gray-700">Naam</label>
@@ -47,8 +47,8 @@
             </div>
             
             <!-- Quick Actions -->
-            <div class="border-b border-gray-200 pb-6">
-              <h2 class="text-xl font-semibold text-gray-900 mb-4">Snelle Acties</h2>
+            <div class="border-b border-gray-200 pb-6 mb-6">
+              <h2 class="text-lg md:text-xl font-semibold text-gray-900 mb-4">Snelle Acties</h2>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <RouterLink to="/e-bikes" class="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
                   <svg class="h-8 w-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,8 +83,8 @@
             </div>
             
             <!-- Account Actions -->
-            <div>
-              <h2 class="text-xl font-semibold text-gray-900 mb-4">Account</h2>
+            <div class="mt-6">
+              <h2 class="text-lg md:text-xl font-semibold text-gray-900 mb-4">Account</h2>
               <div class="space-y-3">
                 <button 
                   @click="handleLogout"
