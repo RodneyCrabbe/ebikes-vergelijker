@@ -124,9 +124,9 @@ onUnmounted(() => {
           </RouterLink>
         </div>
 
-        <!-- Center: Search Bar -->
-        <div class="flex-1 max-w-md mx-4">
-          <div class="relative">
+        <!-- Center: Search Bar (hidden on mobile, visible on tablet and desktop) -->
+        <div class="hidden md:flex flex-1 max-w-md mx-4">
+          <div class="relative w-full">
             <input
               v-model="searchQuery"
               @keyup.enter="handleSearch"
@@ -157,13 +157,13 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <!-- Right side: Auth Buttons -->
-        <div class="flex items-center space-x-3">
+        <!-- Right side: Auth Buttons (hidden on mobile, visible on tablet and desktop) -->
+        <div class="hidden md:flex items-center space-x-3">
           <template v-if="authStore.isAuthenticated">
             <RouterLink
               to="/profiel"
               :class="[
-                'hidden sm:flex items-center px-3 py-2 rounded-full text-sm font-medium transition-all duration-300',
+                'flex items-center px-3 py-2 rounded-full text-sm font-medium transition-all duration-300',
                 isHomePage
                   ? (isScrolled 
                       ? 'text-gray-700 hover:bg-gray-100' 
@@ -194,7 +194,7 @@ onUnmounted(() => {
             <RouterLink
               to="/login"
               :class="[
-                'hidden sm:flex items-center px-3 py-2 rounded-full text-sm font-medium transition-all duration-300',
+                'flex items-center px-3 py-2 rounded-full text-sm font-medium transition-all duration-300',
                 isHomePage
                   ? (isScrolled 
                       ? 'text-gray-700 hover:bg-gray-100' 
