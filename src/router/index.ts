@@ -1,5 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
+import { topicalPages } from '../data/topicalPages'
+
+const topicalRoutes: RouteRecordRaw[] = topicalPages.map(page => ({
+  path: page.slug,
+  name: `Topical-${page.slug.replace(/\//g, '-')}`,
+  component: () => import('../views/EBikeListPage.vue'),
+  meta: { topicalSlug: page.slug }
+}))
 
 const routes: RouteRecordRaw[] = [
   {
@@ -62,6 +70,7 @@ const routes: RouteRecordRaw[] = [
     name: 'DealerPortal',
     component: () => import('../views/SimpleDealerPortal.vue'),
   },
+  ...topicalRoutes,
 ]
 
 const router = createRouter({

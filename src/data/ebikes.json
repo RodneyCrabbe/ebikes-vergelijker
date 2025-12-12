@@ -1844,7 +1844,7 @@
     "action_radius": null,
     "battery_capacity": 672,
     "top_speed": null,
-    "image_url": "/img/Rad Power Bikes RadCity 5 Plus/placeholder.webp",
+    "image_url": "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Heren-2022-1.png",
     "affiliate_url": "https://www.radpowerbikes.com/products/radcity-5-plus-electric-commuter-bike",
     "cpl_rate": 25,
     "description": "The RadCity 5 Plus is a comfortable commuter e-bike with powerful motor and long-range battery.",
@@ -1856,7 +1856,8 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Rad Power Bikes RadCity 5 Plus/placeholder.webp"
+      "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Heren-2022-1.png",
+      "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Step-Thru-Dames-2022-2.png"
     ],
     "colors": [
       {
@@ -1937,7 +1938,7 @@
     "action_radius": null,
     "battery_capacity": 360,
     "top_speed": null,
-    "image_url": "/img/Aventon Soltera 2/placeholder.webp",
+    "image_url": "/img/Aventon Soltera 2/01_Soltera_6b230412-9bfa-433e-b1a0-0c99625b5a4a-1.jpg",
     "affiliate_url": "https://www.aventon.com/products/soltera-2",
     "cpl_rate": 25,
     "description": "The Aventon Soltera 2 is a lightweight commuter e-bike with sleek design and great value.",
@@ -1949,7 +1950,11 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Aventon Soltera 2/placeholder.webp"
+      "/img/Aventon Soltera 2/01_Soltera_6b230412-9bfa-433e-b1a0-0c99625b5a4a-1.jpg",
+      "/img/Aventon Soltera 2/soltera-2-black-01-2.jpg",
+      "/img/Aventon Soltera 2/02_Soltera_dd3242ce-f0b8-476c-9a03-8096fd3ae68b-3.jpg",
+      "/img/Aventon Soltera 2/03_Soltera_6eea33c5-93e6-4d53-9150-e386d7a45ec4-4.jpg",
+      "/img/Aventon Soltera 2/04_Soltera_349aa33d-c555-4649-9a4b-2e216fb1e22e-5.jpg"
     ],
     "colors": [
       {
@@ -2030,7 +2035,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Urban Drivestyle UNI MK Classic/placeholder.webp",
+    "image_url": "/img/Urban Drivestyle UNI MK Classic/Urban-Drivestyle-Uni-Mk-Classic-900x900.jpg",
     "affiliate_url": "https://urbandrivestyle.com/products/uni-mk-classic-250w-electric-bike",
     "cpl_rate": 25,
     "description": "The Urban Drivestyle UNI MK Classic is a classic electric bike with modern technology and timeless design.",
@@ -2042,7 +2047,8 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Urban Drivestyle UNI MK Classic/placeholder.webp"
+      "/img/Urban Drivestyle UNI MK Classic/Urban-Drivestyle-Uni-Mk-Classic-900x900.jpg",
+      "/img/Urban Drivestyle UNI MK Classic/urban-drivestyle-uni-moke-mk-classic-zwart.webp"
     ],
     "colors": [
       {
@@ -2123,7 +2129,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Phatfour FLS/placeholder.webp",
+    "image_url": "/img/Phatfour FLS/website_sides.235.1_1728x.webp",
     "affiliate_url": "https://en.phatfour.com/products/fls-phatfour-e-bike",
     "cpl_rate": 25,
     "description": "The Phatfour FLS is a fat tire electric bike with powerful motor and all-terrain capability.",
@@ -2135,7 +2141,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Phatfour FLS/placeholder.webp"
+      "/img/Phatfour FLS/website_sides.235.1_1728x.webp",
+      "/img/Phatfour FLS/website_sides.236.1_1728x.webp",
+      "/img/Phatfour FLS/website_sides.238_1728x.webp"
     ],
     "colors": [
       {
@@ -2270,7 +2278,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Urban Arrow Family/placeholder.webp",
+    "image_url": "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-1.jpg",
     "affiliate_url": "https://urbanarrow.com/family-bikes/family/",
     "cpl_rate": 25,
     "description": "The Urban Arrow Family is an electric cargo bike designed for families, featuring a spacious front box and Bosch motor system.",
@@ -2282,7 +2290,10 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Urban Arrow Family/placeholder.webp"
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-1.jpg",
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-2.jpg",
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-3.jpg",
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-4.jpg"
     ],
     "colors": [
       {
@@ -2363,7 +2374,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Riese & Müller Load 75/placeholder.webp",
+    "image_url": "/img/Riese & Müller Load 75/riese-m_ller-load-75-vario-1.jpg",
     "affiliate_url": "https://www.r-m.de/en-us/bikes/load-75/",
     "cpl_rate": 25,
     "description": "The Riese & Müller Load 75 is a premium electric cargo bike with full suspension and high-quality components.",
@@ -2375,7 +2386,8 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Riese & Müller Load 75/placeholder.webp"
+      "/img/Riese & Müller Load 75/riese-m_ller-load-75-vario-1.jpg",
+      "/img/Riese & Müller Load 75/riese-mueller-load4-75-touring-hs-2023-2.jpg"
     ],
     "colors": [
       {
@@ -2456,7 +2468,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Tern Vektron S10/placeholder.webp",
+    "image_url": "/img/Tern Vektron S10/tn-photo-vektron-s10-g3-forest-grey-unfold-web-1.jpg",
     "affiliate_url": "https://www.ternbicycles.com/us/bikes/472/vektron",
     "cpl_rate": 25,
     "description": "The Tern Vektron S10 is a folding electric bike with Bosch motor system and 20-inch wheels.",
@@ -2468,7 +2480,8 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Tern Vektron S10/placeholder.webp"
+      "/img/Tern Vektron S10/tn-photo-vektron-s10-g3-forest-grey-unfold-web-1.jpg",
+      "/img/Tern Vektron S10/TN-photo-Vektron_S10-G3-Forest-Grey-vfold-web-2.jpg"
     ],
     "colors": [
       {
@@ -2549,7 +2562,7 @@
     "action_radius": null,
     "battery_capacity": 750,
     "top_speed": null,
-    "image_url": "/img/Riese & Müller Charger4 GT Vario/placeholder.webp",
+    "image_url": "/img/Riese & Müller Charger4 GT/riese_und_muller_charger4_gt_vario_black_matt_2_.jpg",
     "affiliate_url": "https://www.r-m.de/en-de/bikes/charger4/charger4-gt-vario/",
     "cpl_rate": 25,
     "description": "The Riese & Müller Charger4 GT Vario is a premium touring electric bike with dual battery system.",
@@ -2561,7 +2574,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Riese & Müller Charger4 GT Vario/placeholder.webp"
+      "/img/Riese & Müller Charger4 GT/riese_und_muller_charger4_gt_vario_black_matt_2_.jpg",
+      "/img/Riese & Müller Charger4 GT/riese_und_muller_charger4_gt_vario_petrol_matt_2_.jpg",
+      "/img/Riese & Müller Charger4 GT/22_hlf_cha4_cockpit_kiox300_0750_1600x1067_4.jpg"
     ],
     "colors": [
       {
@@ -2642,7 +2657,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Tern GSD S00/placeholder.webp",
+    "image_url": "/img/Tern GSD S00/gsd40-768x519-1.webp",
     "affiliate_url": "https://www.ternbicycles.com/us/bikes/gsd-s00",
     "cpl_rate": 25,
     "description": "The Tern GSD S00 is an electric cargo bike perfect for carrying loads and children.",
@@ -2654,7 +2669,9 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Tern GSD S00/placeholder.webp"
+      "/img/Tern GSD S00/gsd40-768x519-1.webp",
+      "/img/Tern GSD S00/gsd7-2.webp",
+      "/img/Tern GSD S00/gsd41-3.webp"
     ],
     "colors": [
       {
@@ -2735,7 +2752,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Cube Longtail Sport Hybrid 725/placeholder.webp",
+    "image_url": "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_0ecc-1.webp",
     "affiliate_url": "https://www.cube.eu/longtail-sport-hybrid-725",
     "cpl_rate": 25,
     "description": "The Cube Longtail Sport Hybrid 725 is an electric cargo bike with long tail design and high capacity.",
@@ -2747,7 +2764,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Cube Longtail Sport Hybrid 725/placeholder.webp"
+      "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_0ecc-1.webp",
+      "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_outdoor_kinderen_2f50-2.webp",
+      "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_frame_bc53-3.webp"
     ],
     "colors": [
       {
@@ -4425,7 +4444,7 @@
     "action_radius": null,
     "battery_capacity": 504,
     "top_speed": null,
-    "image_url": "/img/Cowboy 4 ST/placeholder.webp",
+    "image_url": "/img/Cowboy 4 ST/cowboy-4-st-sand-side-1.jpg",
     "affiliate_url": "https://cowboy.com/products/e-bike-cowboy-4-st",
     "cpl_rate": 25,
     "description": "The Cowboy 4 ST is a connected electric bike with step-through frame, featuring adaptive power and smart connectivity.",
@@ -4437,7 +4456,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Cowboy 4 ST/placeholder.webp"
+      "/img/Cowboy 4 ST/cowboy-4-st-sand-side_1200x-1.jpg",
+      "/img/Cowboy 4 ST/cowboy-4-st-black-side_1200x-2.jpg",
+      "/img/Cowboy 4 ST/cowboy-4-st-sand-front_1200x-3.jpg"
     ],
     "colors": [
       {
@@ -4518,7 +4539,7 @@
     "action_radius": null,
     "battery_capacity": 504,
     "top_speed": null,
-    "image_url": "/img/VanMoof S5/placeholder.webp",
+    "image_url": "/img/Van Moof - S5/S5-Grey-product-foto-1.webp",
     "affiliate_url": "https://www.vanmoof.com/en-US/s5",
     "cpl_rate": 25,
     "description": "The VanMoof S5 is a smart electric bike with integrated technology, featuring automatic shifting and theft protection.",
@@ -4530,7 +4551,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/VanMoof S5/placeholder.webp"
+      "/img/Van Moof - S5/S5-Grey-product-foto-1.webp",
+      "/img/Van Moof - S5/VanMoof_S5_Gray.webp",
+      "/img/Van Moof - S5/423841-2022_S5A5_Master_16x9_01-c35ff0-original-1649148516.webp"
     ],
     "colors": [
       {
@@ -4611,7 +4634,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Batavus Diva E-go/placeholder.webp",
+    "image_url": "/img/Diva E-go/product.webp",
     "affiliate_url": "https://www.batavus.com/nl-nl/elektrische-fietsen/diva-e-go",
     "cpl_rate": 25,
     "description": "The Batavus Diva E-go is a Dutch electric bike designed specifically for women with comfortable geometry.",
@@ -4623,7 +4646,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Batavus Diva E-go/placeholder.webp"
+      "/img/Diva E-go/product.webp",
+      "/img/Diva E-go/product (1).webp",
+      "/img/Diva E-go/product (2).webp"
     ],
     "colors": [
       {
@@ -4797,7 +4822,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Koga E-Nova Evo/placeholder.webp",
+    "image_url": "/img/E-Nova Evo/E-Nova 4419.jpg",
     "affiliate_url": "https://www.koga.com/en/bikes/e-bikes/e-nova-evo-pt.htm",
     "cpl_rate": 25,
     "description": "The Koga E-Nova Evo is a premium Dutch electric bike with high-quality components and comfortable ride.",
@@ -4809,7 +4834,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Koga E-Nova Evo/placeholder.webp"
+      "/img/E-Nova Evo/E-Nova 4419.jpg",
+      "/img/E-Nova Evo/E-Nova 4405.jpg",
+      "/img/E-Nova Evo/Disc Brakes - koga 4493-small.jpg"
     ],
     "colors": [
       {
@@ -4890,7 +4917,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Trek Allant+ 7 Gen 2/placeholder.webp",
+    "image_url": "/img/Trek Allant+ 7 Gen 2/AllantPlus7Stag-24-41022-A-Primary.avif",
     "affiliate_url": "https://www.trekbikes.com/us/en_US/bikes/electric-bikes/e-city-bikes/allant/allant-7-gen-2/p/41549/",
     "cpl_rate": 25,
     "description": "The Trek Allant+ 7 Gen 2 is a premium commuter e-bike with Bosch motor and high-quality components.",
@@ -4902,7 +4929,9 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Trek Allant+ 7 Gen 2/placeholder.webp"
+      "/img/Trek Allant+ 7 Gen 2/AllantPlus7Stag-24-41022-A-Primary.avif",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (1).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (2).jpeg"
     ],
     "colors": [
       {
@@ -4983,7 +5012,7 @@
     "action_radius": null,
     "battery_capacity": 600,
     "top_speed": null,
-    "image_url": "/img/Phatfour FLB/placeholder.webp",
+    "image_url": "/img/Phatfour FLB/FLB+.png",
     "affiliate_url": "https://en.phatfour.com/products/flb-phatfour-e-bike",
     "cpl_rate": 25,
     "description": "The Phatfour FLB is a fat tire electric bike with extended range and powerful performance.",
@@ -4995,7 +5024,8 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Phatfour FLB/placeholder.webp"
+      "/img/Phatfour FLB/FLB+.png",
+      "/img/Phatfour FLB/1963638903.png"
     ],
     "colors": [
       {
@@ -5076,7 +5106,7 @@
     "action_radius": null,
     "battery_capacity": 700,
     "top_speed": null,
-    "image_url": "/img/Phatfour FLX/placeholder.webp",
+    "image_url": "/img/Phatfour FLX/FLX.jpg",
     "affiliate_url": "https://en.phatfour.com/products/flx-phatfour-e-bike",
     "cpl_rate": 25,
     "description": "The Phatfour FLX is a premium fat tire electric bike with maximum range and performance.",
@@ -5088,7 +5118,10 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Phatfour FLX/placeholder.webp"
+      "/img/Phatfour FLX/FLX.jpg",
+      "/img/Phatfour FLX/FLX (1).jpg",
+      "/img/Phatfour FLX/FLX (2).jpg",
+      "/img/Phatfour FLX/FLX (3).jpg"
     ],
     "colors": [
       {
@@ -5262,7 +5295,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Knaap RTD X/placeholder.webp",
+    "image_url": "/img/Knaap RTD X/KNAAP-RTD-X-Zwart-fatbikeskopen_nl.webp",
     "affiliate_url": "https://knaapbikes.com/products/rtd-x",
     "cpl_rate": 25,
     "description": "The Knaap RTD X is a racing electric bike with sporty geometry and high performance.",
@@ -5274,7 +5307,11 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Knaap RTD X/placeholder.webp"
+      "/img/Knaap RTD X/KNAAP-RTD-X-Zwart-fatbikeskopen_nl.webp",
+      "/img/Knaap RTD X/KNAAP-RTD-X-Zwart-fatbikeskopen_nl-2.webp",
+      "/img/Knaap RTD X/KNAAP-RTD-X-Zwart-fatbikeskopen_nl-3.webp",
+      "/img/Knaap RTD X/KNAAP-RTD-X-Zwart-fatbikeskopen_nl-4.webp",
+      "/img/Knaap RTD X/KNAAP-RTD-X-Zwart-fatbikeskopen_nl-5.webp"
     ],
     "colors": [
       {
@@ -5355,7 +5392,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Knaap LON/placeholder.webp",
+    "image_url": "/img/Knaap LON/Knaaplon-600x600-1.webp",
     "affiliate_url": "https://knaapbikes.com/products/lon",
     "cpl_rate": 25,
     "description": "The Knaap LON is an urban electric bike with compact design and city-friendly features.",
@@ -5367,7 +5404,7 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Knaap LON/placeholder.webp"
+      "/img/Knaap LON/Knaaplon-600x600-1.webp"
     ],
     "colors": [
       {
@@ -5740,7 +5777,7 @@
     "action_radius": null,
     "battery_capacity": 615,
     "top_speed": null,
-    "image_url": "/img/SUPER73 S2/placeholder.webp",
+    "image_url": "/img/SUPER73 S2/super73-S2-gal-black-01.jpg",
     "affiliate_url": "https://super73.com/products/super73-s2",
     "cpl_rate": 25,
     "description": "The SUPER73 S2 is an electric moped-style bike with retro design and powerful performance.",
@@ -5752,7 +5789,9 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/SUPER73 S2/placeholder.webp"
+      "/img/SUPER73 S2/super73-S2-gal-black-01.jpg",
+      "/img/SUPER73 S2/super73-S2-gal-black-02.jpg",
+      "/img/SUPER73 S2/super73-S2-gal-black-03.jpg"
     ],
     "colors": [
       {
@@ -5833,7 +5872,7 @@
     "action_radius": null,
     "battery_capacity": 320,
     "top_speed": null,
-    "image_url": "/img/SUPER73 ZX/placeholder.webp",
+    "image_url": "/img/SUPER73 ZX/SUPER73_MY24_ZX_SE_Bandit_FrontHero_7dd10438-c2c5-4e79-b2e9-0fa9caafe79f_800x.webp",
     "affiliate_url": "https://super73.com/products/super73-zx",
     "cpl_rate": 25,
     "description": "The SUPER73 ZX is a compact electric bike with retro design and affordable price.",
@@ -5845,7 +5884,11 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/SUPER73 ZX/placeholder.webp"
+      "/img/SUPER73 ZX/SUPER73_MY24_ZX_SE_Bandit_FrontHero_7dd10438-c2c5-4e79-b2e9-0fa9caafe79f_800x.webp",
+      "/img/SUPER73 ZX/SUPER73_MY24_ZX_SE_Bandit_StudioRight_ed0b2277-3ef1-4849-a46d-d4bdda14e1b1_800x.webp",
+      "/img/SUPER73 ZX/SUPER73_MY24_ZX_SE_Bandit_RearHero_eea32f4b-ee83-45a1-9d83-dedeb917218e_800x.webp",
+      "/img/SUPER73 ZX/SUPER73_MY24_ZX_SE_Bandit_Detail1_35afa443-2006-4687-82fd-cee5bbb7eacd_800x.webp",
+      "/img/SUPER73 ZX/SUPER73_MY24_ZX_SE_Bandit_Detail2_5a90d3c2-9ae7-452b-9b27-eee2786cf19c_800x.webp"
     ],
     "colors": [
       {
@@ -5926,7 +5969,7 @@
     "action_radius": null,
     "battery_capacity": 300,
     "top_speed": null,
-    "image_url": "/img/Brompton Electric P Line/placeholder.webp",
+    "image_url": "/img/Brompton Electric P Line/Brompton-Electric-P-Line-Bolt-Blue-Mid-Bar-1.jpg",
     "affiliate_url": "https://www.brompton.com/electric-bikes/electric-p-line",
     "cpl_rate": 25,
     "description": "The Brompton Electric P Line is a folding electric bike with titanium components and compact design.",
@@ -5938,7 +5981,7 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Brompton Electric P Line/placeholder.webp"
+      "/img/Brompton Electric P Line/Brompton-Electric-P-Line-Bolt-Blue-Mid-Bar-1.jpg"
     ],
     "colors": [
       {
@@ -6019,7 +6062,7 @@
     "action_radius": null,
     "battery_capacity": 300,
     "top_speed": null,
-    "image_url": "/img/GoCycle G4/placeholder.webp",
+    "image_url": "/img/GoCycle G4/Gocycle-G4-black-side-shot_700x-1.jpg",
     "affiliate_url": "https://www.gocycle.com/gocycle-g4/",
     "cpl_rate": 25,
     "description": "The GoCycle G4 is a premium folding electric bike with magnesium frame and integrated design.",
@@ -6031,7 +6074,9 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/GoCycle G4/placeholder.webp"
+      "/img/GoCycle G4/Gocycle-G4-black-side-shot_700x-1.jpg",
+      "/img/GoCycle G4/Gocycle-G4-black-folded_160x-2.jpg",
+      "/img/GoCycle G4/Gocycle-G4-black-front-3-4_160x-3.jpg"
     ],
     "colors": [
       {
@@ -6167,7 +6212,7 @@
     "action_radius": null,
     "battery_capacity": 320,
     "top_speed": null,
-    "image_url": "/img/Specialized Turbo Levo SL Comp/placeholder.webp",
+    "image_url": "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_HERO.webp",
     "affiliate_url": "https://www.specialized.com/us/en/turbo-levo-sl-comp/p/154888",
     "cpl_rate": 25,
     "description": "The Specialized Turbo Levo SL Comp is a lightweight electric mountain bike with natural ride feel and powerful assistance.",
@@ -6179,7 +6224,9 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Specialized Turbo Levo SL Comp/placeholder.webp"
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_HERO.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_FDSQ.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_RDSQ.webp"
     ],
     "colors": [
       {
@@ -6260,7 +6307,7 @@
     "action_radius": null,
     "battery_capacity": 360,
     "top_speed": null,
-    "image_url": "/img/Trek Fuel EXe 9.7/placeholder.webp",
+    "image_url": "/img/Trek Fuel EXe 9.7/FuelEXe97SLXXT_23_36365_C_Primary-1",
     "affiliate_url": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/electric-mountain-bikes/fuel-exe/",
     "cpl_rate": 25,
     "description": "The Trek Fuel EXe 9.7 is an electric mountain bike with stealth design and natural ride feel.",
@@ -6272,7 +6319,10 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Trek Fuel EXe 9.7/placeholder.webp"
+      "/img/Trek Fuel EXe 9.7/FuelEXe97SLXXT_23_36365_C_Primary-1",
+      "/img/Trek Fuel EXe 9.7/FuelEXe97SLXXT_23_36365_C_Portrait-2",
+      "/img/Trek Fuel EXe 9.7/FuelEXe97SLXXT_23_36365_C_Alt1-3",
+      "/img/Trek Fuel EXe 9.7/FuelEXe97SLXXT_23_36365_C_Alt2-4"
     ],
     "colors": [
       {
@@ -6353,7 +6403,7 @@
     "action_radius": null,
     "battery_capacity": 625,
     "top_speed": null,
-    "image_url": "/img/Giant Trance E+ 3/placeholder.webp",
+    "image_url": "/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg",
     "affiliate_url": "https://www.giant-bicycles.com/us/trance-e-plus-3",
     "cpl_rate": 25,
     "description": "The Giant Trance E+ 3 is an electric mountain bike with Yamaha motor system and full suspension.",
@@ -6365,7 +6415,7 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Giant Trance E+ 3/placeholder.webp"
+      "/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg"
     ],
     "colors": [
       {
@@ -6446,7 +6496,7 @@
     "action_radius": null,
     "battery_capacity": 750,
     "top_speed": null,
-    "image_url": "/img/Cube Stereo Hybrid 140 HPC SL 750/placeholder.webp",
+    "image_url": "/img/Cube Stereo Hybrid 140 HPC SL 750/22_242.webp",
     "affiliate_url": "https://www.cube.eu/stereo-hybrid-140-hpc-sl-750",
     "cpl_rate": 25,
     "description": "The Cube Stereo Hybrid 140 HPC SL 750 is an electric mountain bike with Bosch motor and full suspension.",
@@ -6458,7 +6508,7 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Cube Stereo Hybrid 140 HPC SL 750/placeholder.webp"
+      "/img/Cube Stereo Hybrid 140 HPC SL 750/22_242.webp"
     ],
     "colors": [
       {
@@ -6596,7 +6646,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Gazelle Ultimate C380 HMB/placeholder.webp",
+    "image_url": "/img/Gazelle Ultimate C380 HMB/product.webp",
     "affiliate_url": "https://www.gazellebikes.com/en-us/ultimate-c380-hmb",
     "cpl_rate": 25,
     "description": "The Gazelle Ultimate C380 HMB is a premium Dutch electric bike with Bosch motor and high-quality components.",
@@ -6608,7 +6658,10 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Gazelle Ultimate C380 HMB/placeholder.webp"
+      "/img/Gazelle Ultimate C380 HMB/product.webp",
+      "/img/Gazelle Ultimate C380 HMB/product (1).webp",
+      "/img/Gazelle Ultimate C380 HMB/product (2).webp",
+      "/img/Gazelle Ultimate C380 HMB/product (3).webp"
     ],
     "colors": [
       {
@@ -6800,7 +6853,7 @@
     "action_radius": null,
     "battery_capacity": 320,
     "top_speed": null,
-    "image_url": "/img/Specialized Turbo Vado SL 5.0 EQ/placeholder.webp",
+    "image_url": "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_HERO.webp",
     "affiliate_url": "https://www.specialized.com/us/en/turbo-vado-sl-5-0-eq/p/154888",
     "cpl_rate": 25,
     "description": "The Specialized Turbo Vado SL 5.0 EQ is an ultra-lightweight commuter e-bike with premium components and natural ride feel.",
@@ -6812,7 +6865,11 @@
     "top_speed_text": "28 mph (US)",
     "top_speed_kmh": 45,
     "images": [
-      "/img/Specialized Turbo Vado SL 5.0 EQ/placeholder.webp"
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_HERO.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_FDSQ.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_RDSQ.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D1-POV.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D2-BAR.webp"
     ],
     "colors": [
       {
@@ -6893,7 +6950,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Kalkhoff Endeavour 7.B Move/placeholder.webp",
+    "image_url": "/img/Kalkhoff Endeavour 7.B Move/Kalkhoff Endeavour 7.B Move+ 2024 _ 12GO Biking_files/kh0020030v2022_2023_27_di_gry_090_pre_endeavour-7-b-move-plus.jpg",
     "affiliate_url": "https://www.kalkhoff-bikes.com/en/bikes/e-bikes/trekking/endeavour-7-b-move",
     "cpl_rate": 25,
     "description": "The Kalkhoff Endeavour 7.B Move is a trekking electric bike with Bosch motor and comfortable geometry.",
@@ -6905,7 +6962,8 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Kalkhoff Endeavour 7.B Move/placeholder.webp"
+      "/img/Kalkhoff Endeavour 7.B Move/Kalkhoff Endeavour 7.B Move+ 2024 _ 12GO Biking_files/kh0020030v2022_2023_27_di_gry_090_pre_endeavour-7-b-move-plus.jpg",
+      "/img/Kalkhoff Endeavour 7.B Move/Kalkhoff Endeavour 7.B Move+ 2024 _ 12GO Biking_files/kh0020030v2022_2023_27_di_gry_090_pre_endeavour-7-b-move-plus.webp"
     ],
     "colors": [
       {
@@ -6986,7 +7044,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Giant Explore E+ 1/placeholder.webp",
+    "image_url": "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg",
     "affiliate_url": "https://www.giant-bicycles.com/gb/explore-e-1-2023",
     "cpl_rate": 25,
     "description": "The Giant Explore E+ 1 is a trekking electric bike with Yamaha motor and comfortable geometry.",
@@ -6998,7 +7056,11 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Giant Explore E+ 1/placeholder.webp"
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D2.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D3.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D4.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_Rear.jpg"
     ],
     "colors": [
       {

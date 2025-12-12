@@ -152,6 +152,11 @@ export const useEBikesStore = defineStore('ebikes', () => {
     )
   }
 
+  function getEBikesByIds(ids: string[]): EBike[] {
+    const set = new Set(ids)
+    return allEBikes.filter(ebike => set.has(ebike.id))
+  }
+
   // Auto-refresh functionality
   let refreshInterval: NodeJS.Timeout | null = null
 
@@ -209,6 +214,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
     getEBikeById,
     fetchEBikeById,
     searchEBikes,
+    getEBikesByIds,
     startAutoRefresh,
     stopAutoRefresh,
     trackLead,

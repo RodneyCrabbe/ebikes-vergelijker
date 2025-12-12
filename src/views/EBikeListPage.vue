@@ -7,6 +7,7 @@ import { useFavoritesStore } from '../stores/favorites'
 import { useAuthStore } from '../stores/auth'
 import type { EBikeFilters } from '../types/ebike'
 import { getEBikeImageUrl } from '../utils/imagePlaceholder'
+import { topicalPages, getTopicalPageBySlug } from '../data/topicalPages'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
 import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
@@ -86,6 +87,21 @@ const searchQuery = ref('')
 const route = useRoute()
 const router = useRouter()
 
+const topicalPage = computed(() => {
+  const metaSlug = route.meta?.topicalSlug as string | undefined
+  const querySlug = (route.query.topical as string) || metaSlug
+  return getTopicalPageBySlug(querySlug || route.path) || null
+})
+
+const topicalIdSet = computed(() => {
+  if (!topicalPage.value) return null
+  return new Set(topicalPage.value.ebikeIds)
+})
+
+const topicalTitle = computed(() => topicalPage.value?.title ?? 'Alle e-bikes')
+const topicalDescription = computed(() => topicalPage.value?.description ?? 'Vind de beste e-bikes met onze filters en vergelijkingen.')
+const topicalIntent = computed(() => topicalPage.value?.intent)
+
 // Initialize search from URL query parameter
 onMounted(() => {
   if (route.query.search) {
@@ -155,7 +171,9 @@ const filteredEBikes = computed(() => {
   if (!ebikeStore.ebikes || !Array.isArray(ebikeStore.ebikes)) {
     return []
   }
-  let result = [...ebikeStore.ebikes]
+  let result = topicalIdSet.value
+    ? ebikeStore.ebikes.filter(e => topicalIdSet.value?.has(e.id))
+    : [...ebikeStore.ebikes]
 
   // Apply search
   if (searchQuery.value) {
@@ -245,6 +263,11 @@ const filteredEBikes = computed(() => {
   })
 
   return result
+})
+
+const totalPool = computed(() => {
+  if (topicalPage.value) return topicalPage.value.ebikeIds.length
+  return ebikeStore.totalEBikes || ebikeStore.ebikes.length
 })
 
 // Clear filters
@@ -401,6 +424,27 @@ onMounted(async () => {
       <div class="w-full">
         <!-- Add spacing at the top -->
         <div class="mb-8 lg:mb-12"></div>
+
+        <!-- Topical banner -->
+        <div
+          v-if="topicalPage"
+          class="mx-6 lg:mx-8 mb-6 lg:mb-8 rounded-2xl overflow-hidden bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white shadow-lg"
+        >
+          <div class="p-6 lg:p-8 space-y-3">
+            <div class="flex items-center gap-3 flex-wrap">
+              <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wide bg-white/20 rounded-full">
+                {{ topicalPage.template }}
+              </span>
+              <span v-if="topicalIntent" class="text-sm text-white/90">
+                {{ topicalIntent }}
+              </span>
+            </div>
+            <h1 class="text-2xl lg:text-3xl font-bold leading-snug">{{ topicalTitle }}</h1>
+            <p class="text-white/90 max-w-4xl text-sm lg:text-base">
+              {{ topicalDescription }}
+            </p>
+          </div>
+        </div>
 
         <!-- Mobile Filter Status and View Toggle -->
         <div class="mb-6 flex flex-col lg:flex-row gap-4 items-center justify-between px-6">
@@ -851,7 +895,7 @@ onMounted(async () => {
             <div v-else class="px-6">
               <!-- Count indicator -->
               <div class="mb-4 text-sm text-gray-600">
-                {{ filteredEBikes.length }} van {{ ebikeStore.totalEBikes }} e-bikes
+                {{ filteredEBikes.length }} van {{ totalPool }} e-bikes
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
               <div

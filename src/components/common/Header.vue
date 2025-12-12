@@ -3,13 +3,16 @@ import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useAuthStore } from '../../stores/auth'
 import { useRouter, useRoute } from 'vue-router'
 import NotificationCenter from '../NotificationCenter.vue'
+import { topicalPages } from '../../data/topicalPages'
 
 const authStore = useAuthStore()
 const router = useRouter()
 const route = useRoute()
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
+const isEbikeSubmenuOpen = ref(false)
 const searchQuery = ref('')
+const allTopicalLinks = computed(() => topicalPages)
 
 const handleLogout = async () => {
   try {
@@ -40,6 +43,7 @@ const toggleMobileMenu = () => {
 
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
+  isEbikeSubmenuOpen.value = false
 }
 
 const handleSearch = () => {
@@ -268,16 +272,45 @@ onUnmounted(() => {
         <!-- Navigation Links -->
         <div class="flex-1 overflow-y-auto">
           <nav class="p-6 space-y-2">
-            <RouterLink
-              to="/e-bikes"
-              @click="closeMobileMenu"
-              class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50/50 hover:text-blue-600 rounded-xl transition-all duration-300 group backdrop-blur-sm"
+            <button
+              type="button"
+              @click="isEbikeSubmenuOpen = !isEbikeSubmenuOpen"
+              class="flex items-center w-full px-4 py-3 text-gray-700 hover:bg-blue-50/50 hover:text-blue-600 rounded-xl transition-all duration-300 group backdrop-blur-sm"
             >
               <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
               </svg>
               E-Bikes
+              <svg
+                class="w-4 h-4 ml-auto text-gray-400 group-hover:text-blue-500 transition-transform"
+                :class="isEbikeSubmenuOpen ? 'rotate-180' : ''"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div v-if="isEbikeSubmenuOpen" class="pl-12 space-y-2">
+              <RouterLink
+                to="/e-bikes"
+                @click="closeMobileMenu"
+                class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50/70 hover:text-blue-600 rounded-lg transition-all duration-300"
+              >
+                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
+                Alle e-bikes
+              </RouterLink>
+              <RouterLink
+                v-for="link in allTopicalLinks"
+                :key="link.slug"
+                :to="link.slug"
+                @click="closeMobileMenu"
+                class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50/70 hover:text-blue-600 rounded-lg transition-all duration-300"
+              >
+                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
+                {{ link.title }}
             </RouterLink>
+            </div>
             
             <RouterLink
               to="/vergelijk"
@@ -333,6 +366,24 @@ onUnmounted(() => {
               </svg>
               Contact
             </RouterLink>
+
+            <div class="pt-4 border-t border-gray-200/60">
+              <p class="text-xs font-semibold text-gray-500 mb-2">Topical pages</p>
+              <div class="flex flex-col space-y-2">
+                <RouterLink
+                  v-for="link in allTopicalLinks"
+                  :key="link.slug"
+                  :to="link.slug"
+                  @click="closeMobileMenu"
+                  class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50/50 hover:text-blue-600 rounded-xl transition-all duration-300 group backdrop-blur-sm"
+                >
+                  <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                  {{ link.title }}
+                </RouterLink>
+              </div>
+            </div>
           </nav>
         </div>
 
