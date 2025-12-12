@@ -113,8 +113,8 @@ export class WordPressService {
             })
         })
         
-        // If custom endpoint doesn't exist (404), try standard endpoint
-        if (response.status === 404) {
+        // If custom endpoint doesn't exist (404) or method not allowed (405), try standard endpoint
+        if (response.status === 404 || response.status === 405) {
           response = await fetch(standardEndpoint, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },

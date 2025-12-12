@@ -294,8 +294,25 @@ class EventTrackingService {
   // Send events to server
   private async sendEvents(events: EventData[]) {
     try {
+      // Skip Supabase analytics in production if not configured
+      // Only use Supabase if it's properly configured (not localhost)
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || ''
+      const isLocalhost = supabaseUrl.includes('127.0.0.1') || supabaseUrl.includes('localhost')
+      
+      // In production, skip analytics if Supabase is not configured
+      if (import.meta.env.PROD && (isLocalhost || !supabaseUrl)) {
+        logger.log('Skipping analytics events - Supabase not configured for production')
+        return
+      }
+      
       // Import Supabase client dynamically to avoid circular dependencies
       const { supabase } = await import('../lib/supabase')
+      
+      // Check if Supabase is available (not the dummy client)
+      if (!supabase || !supabase.from) {
+        logger.log('Skipping analytics events - Supabase not available')
+        return
+      }
       
       // Insert events in batches
       const batchSize = 100
@@ -316,11 +333,21 @@ class EventTrackingService {
           })))
         
         if (error) {
+          // Don't throw in production - just log and continue
+          if (import.meta.env.PROD) {
+            logger.warn('Analytics event insertion failed (non-critical):', error.message)
+            return
+          }
           console.error('Error inserting analytics events:', error)
           throw error
         }
       }
     } catch (error) {
+      // In production, don't let analytics errors break the app
+      if (import.meta.env.PROD) {
+        logger.warn('Analytics error (non-critical):', error instanceof Error ? error.message : 'Unknown error')
+        return
+      }
       console.error('Error sending events to Supabase:', error)
       throw error
     }
