@@ -39,18 +39,45 @@ export class WordPressService {
 
   static async login(data: LoginData): Promise<WPAuthResponse> {
     try {
+      // WordPress JWT plugin accepts both username and email
+      // Try email first, if that fails, try as username
       const response = await fetch(`${WP_API_URL}/jwt-auth/v1/token`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
-            username: data.email, // WP JWT usually expects username, but we can often use email if plugin allows or if we map it
+            username: data.email, // JWT plugin can accept email as username
             password: data.password 
         }),
       })
 
       if (!response.ok) {
         const error = await response.json()
-        throw new Error(error.message || 'Login failed')
+        // If login with email fails, try with username extracted from email
+        if (error.code === 'invalid_username' || error.code === 'incorrect_password') {
+          // Try with username (first part of email)
+          const username = data.email.split('@')[0]
+          const retryResponse = await fetch(`${WP_API_URL}/jwt-auth/v1/token`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                username: username,
+                password: data.password 
+            }),
+          })
+          
+          if (!retryResponse.ok) {
+            const retryError = await retryResponse.json()
+            throw new Error(retryError.message || 'Login failed. Please check your credentials.')
+          }
+          
+          const retryResult = await retryResponse.json()
+          if (retryResult.token) {
+              this.setStoredToken(retryResult.token)
+          }
+          return retryResult
+        }
+        
+        throw new Error(error.message || 'Login failed. Please check your credentials.')
       }
 
       const result = await response.json()
@@ -66,23 +93,57 @@ export class WordPressService {
 
   static async register(data: RegisterData): Promise<any> {
       try {
-        // Note: Public registration needs to be enabled in WP or use a plugin endpoint
-        const response = await fetch(`${WP_API_URL}/wp/v2/users`, {
+        // Try custom registration endpoint first (if you've added it to WordPress)
+        // Otherwise fall back to standard endpoint
+        const customEndpoint = `${WP_API_URL}/ebikes/v1/register`
+        const standardEndpoint = `${WP_API_URL}/wp/v2/users`
+        
+        // Generate username from email (WordPress doesn't allow email as username)
+        const username = data.email.split('@')[0].toLowerCase().replace(/[^a-z0-9]/g, '') || 'user' + Date.now()
+        
+        // Try custom endpoint first
+        let response = await fetch(customEndpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                username: data.email, // Using email as username for simplicity
+                username: username,
                 email: data.email,
                 password: data.password,
-                name: data.name
+                name: data.name || username
             })
         })
         
-        if (!response.ok) {
-             const error = await response.json()
-             throw new Error(error.message || 'Registration failed')
+        // If custom endpoint doesn't exist (404), try standard endpoint
+        if (response.status === 404) {
+          response = await fetch(standardEndpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                  username: username,
+                  email: data.email,
+                  password: data.password,
+                  name: data.name || username
+              })
+          })
         }
-        return await response.json()
+        
+        if (!response.ok) {
+          const error = await response.json()
+          
+          // Provide helpful error messages
+          if (response.status === 401 || response.status === 403) {
+            throw new Error('Registration requires administrator approval. Please enable "Anyone can register" in WordPress Settings → General, or contact the administrator.')
+          }
+          
+          if (error.code === 'existing_user_email' || error.code === 'existing_user_login') {
+            throw new Error('An account with this email or username already exists. Please log in instead.')
+          }
+          
+          throw new Error(error.message || error.code || 'Registration failed. Please try again or contact support.')
+        }
+        
+        const userData = await response.json()
+        return userData
       } catch (error) {
           logger.error('WP Register Error:', error)
           throw error
