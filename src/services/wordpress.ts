@@ -98,6 +98,16 @@ export class WordPressService {
         const customEndpoint = `${WP_API_URL}/ebikes/v1/register`
         const standardEndpoint = `${WP_API_URL}/wp/v2/users`
         
+        // Helper to safely parse JSON (WordPress may return empty body on 405)
+        const safeParse = async (response: Response) => {
+          const contentType = response.headers.get('content-type') || ''
+          if (contentType.includes('application/json')) {
+            return response.json()
+          }
+          const text = await response.text()
+          return { message: text || null }
+        }
+
         // Generate username from email (WordPress doesn't allow email as username)
         const username = data.email.split('@')[0].toLowerCase().replace(/[^a-z0-9]/g, '') || 'user' + Date.now()
         
@@ -113,8 +123,8 @@ export class WordPressService {
             })
         })
         
-        // If custom endpoint doesn't exist (404) or method not allowed (405), try standard endpoint
-        if (response.status === 404 || response.status === 405) {
+        // If custom endpoint doesn't exist (404), try standard endpoint
+        if (response.status === 404) {
           response = await fetch(standardEndpoint, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
@@ -125,10 +135,16 @@ export class WordPressService {
                   name: data.name || username
               })
           })
+        } else if (response.status === 405) {
+          // Method not allowed on custom endpoint means registration disabled server-side
+          throw new Error('Registration is disabled on the server. Please enable "Anyone can register" in WordPress or activate the custom registration plugin.')
         }
         
         if (!response.ok) {
-          const error = await response.json()
+          if (response.status === 405) {
+            throw new Error('Registration is disabled on the server. Please enable "Anyone can register" in WordPress or activate the custom registration plugin.')
+          }
+          const error = await safeParse(response)
           
           // Provide helpful error messages
           if (response.status === 401 || response.status === 403) {
