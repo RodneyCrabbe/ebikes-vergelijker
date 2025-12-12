@@ -28,15 +28,60 @@ export function generateEBikePlaceholder(brand: string, model: string, width = 3
   return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
 }
 
-export function getEBikeImageUrl(ebike: any): string {
-  // If the e-bike has an images array with at least one image, use the first one
-  if (ebike.images && Array.isArray(ebike.images) && ebike.images.length > 0) {
-    return ebike.images[0];
+/**
+ * Convert local image paths to WordPress URLs in production
+ */
+function convertToWordPressUrl(imageUrl: string): string {
+  if (!imageUrl) return imageUrl;
+  
+  // If already a full URL (http/https), return as is
+  if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
+    return imageUrl;
   }
   
+  // If it's a data URI, return as is
+  if (imageUrl.startsWith('data:')) {
+    return imageUrl;
+  }
+  
+  // In production, convert local /img/ paths to WordPress URLs
+  const wpApiUrl = import.meta.env.VITE_WP_API_URL || '';
+  if (wpApiUrl && (import.meta.env.PROD || import.meta.env.MODE === 'production')) {
+    // Extract WordPress base URL (remove /wp-json)
+    const wpBaseUrl = wpApiUrl.replace('/wp-json', '');
+    
+    // Convert /img/... paths to WordPress media URLs
+    if (imageUrl.startsWith('/img/')) {
+      // WordPress media URLs typically use /wp-content/uploads/
+      // For now, we'll use the WordPress site URL + the image path
+      return `${wpBaseUrl}${imageUrl}`;
+    }
+    
+    // For other relative paths, prepend WordPress base URL
+    if (imageUrl.startsWith('/')) {
+      return `${wpBaseUrl}${imageUrl}`;
+    }
+  }
+  
+  // In development, return local paths as is
+  return imageUrl;
+}
+
+export function getEBikeImageUrl(ebike: any): string {
+  let imageUrl: string = '';
+  
+  // If the e-bike has an images array with at least one image, use the first one
+  if (ebike.images && Array.isArray(ebike.images) && ebike.images.length > 0) {
+    imageUrl = ebike.images[0];
+  }
   // If the e-bike has an image URL, use it
-  if (ebike.image_url && ebike.image_url.trim() !== '') {
-    return ebike.image_url;
+  else if (ebike.image_url && ebike.image_url.trim() !== '') {
+    imageUrl = ebike.image_url;
+  }
+  
+  // Convert to WordPress URL if needed
+  if (imageUrl) {
+    return convertToWordPressUrl(imageUrl);
   }
   
   // Otherwise, generate a placeholder
