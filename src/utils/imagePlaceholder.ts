@@ -29,9 +29,10 @@ export function generateEBikePlaceholder(brand: string, model: string, width = 3
 }
 
 /**
- * Convert local image paths to WordPress URLs in production
+ * Normalize image URLs for both development and production
+ * Images in /public/img/ are served by Vite/Vercel, so keep them as-is
  */
-function convertToWordPressUrl(imageUrl: string): string {
+function normalizeImageUrl(imageUrl: string): string {
   if (!imageUrl) return imageUrl;
   
   // If already a full URL (http/https), return as is
@@ -44,27 +45,15 @@ function convertToWordPressUrl(imageUrl: string): string {
     return imageUrl;
   }
   
-  // In production, convert local /img/ paths to WordPress URLs
-  const wpApiUrl = import.meta.env.VITE_WP_API_URL || '';
-  if (wpApiUrl && (import.meta.env.PROD || import.meta.env.MODE === 'production')) {
-    // Extract WordPress base URL (remove /wp-json)
-    const wpBaseUrl = wpApiUrl.replace('/wp-json', '');
-    
-    // Convert /img/... paths to WordPress media URLs
-    if (imageUrl.startsWith('/img/')) {
-      // WordPress media URLs typically use /wp-content/uploads/
-      // For now, we'll use the WordPress site URL + the image path
-      return `${wpBaseUrl}${imageUrl}`;
-    }
-    
-    // For other relative paths, prepend WordPress base URL
-    if (imageUrl.startsWith('/')) {
-      return `${wpBaseUrl}${imageUrl}`;
-    }
+  // Images in /public/img/ are served by Vite/Vercel at the root
+  // So /img/... paths work in both dev and production
+  // Don't convert them - Vite handles serving public assets
+  if (imageUrl.startsWith('/img/') || imageUrl.startsWith('/')) {
+    return imageUrl;
   }
   
-  // In development, return local paths as is
-  return imageUrl;
+  // For relative paths without leading slash, add one
+  return `/${imageUrl}`;
 }
 
 export function getEBikeImageUrl(ebike: any): string {
@@ -79,9 +68,9 @@ export function getEBikeImageUrl(ebike: any): string {
     imageUrl = ebike.image_url;
   }
   
-  // Convert to WordPress URL if needed
+  // Normalize the image URL (keep /img/ paths as-is - they're served by Vite/Vercel)
   if (imageUrl) {
-    return convertToWordPressUrl(imageUrl);
+    return normalizeImageUrl(imageUrl);
   }
   
   // Otherwise, generate a placeholder
