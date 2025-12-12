@@ -6,6 +6,7 @@ import { useComparisonStore } from '../stores/comparison'
 import { useFavoritesStore } from '../stores/favorites'
 import { useAuthStore } from '../stores/auth'
 import { eventTrackingService } from '../services/eventTrackingService'
+import { getEBikeImageUrl } from '../utils/imagePlaceholder'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
 import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
@@ -259,7 +260,7 @@ const isFavorite = computed(() => {
               @click="openImageCarousel(selectedImage)"
             >
               <img 
-                :src="ebike.images && ebike.images.length > 0 ? ebike.images[selectedImage] : ebike.image_url" 
+                :src="ebike.images && ebike.images.length > 0 ? ebike.images[selectedImage] : getEBikeImageUrl(ebike)" 
                 :alt="ebike.model_name" 
                 class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
               />
@@ -500,8 +501,8 @@ const isFavorite = computed(() => {
           class="max-w-full max-h-full object-contain"
         />
         <img
-          v-else-if="ebike?.image_url"
-          :src="ebike.image_url"
+          v-else
+          :src="getEBikeImageUrl(ebike)"
           :alt="ebike.model_name"
           class="max-w-full max-h-full object-contain"
         />
