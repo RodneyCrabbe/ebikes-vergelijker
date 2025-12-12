@@ -90,3 +90,4 @@ fs.writeFileSync(ebikesFile, JSON.stringify(data, null, 2))
 console.log(`Updated entries: ${changed}`)
 
 
+
