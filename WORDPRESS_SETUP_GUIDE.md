@@ -329,7 +329,7 @@ add_action('rest_api_init', function() {
 
 **Important:** For production, replace `*` with your actual Vercel domain:
 ```php
-header('Access-Control-Allow-Origin: https://ebikes-vergelijker.vercel.app');
+header('Access-Control-Allow-Origin: https://ebikesvergelijker.nl');
 ```
 
 ---
@@ -484,7 +484,7 @@ node scripts/migrate-to-wordpress.js
 ## Step 10: Test Frontend Authentication
 
 1. **Deploy your changes to Vercel** (if you made any code changes)
-2. Visit your live site: `https://ebikes-vergelijker.vercel.app`
+2. Visit your live site: `https://ebikesvergelijker.nl`
 3. Click on **"Registreer"** (Register)
 4. Fill in the registration form
 5. Submit the form
