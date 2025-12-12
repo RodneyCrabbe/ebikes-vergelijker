@@ -12,15 +12,21 @@ try {
   const envPath = path.join(__dirname, '../.env');
   if (fs.existsSync(envPath)) {
     const envFile = fs.readFileSync(envPath, 'utf-8');
-    envFile.split('\n').forEach(line => {
-      const match = line.match(/^([^=:#]+)=(.*)$/);
-      if (match && !process.env[match[1].trim()]) {
-        process.env[match[1].trim()] = match[2].trim().replace(/^["']|["']$/g, '');
+    envFile.split(/\r?\n/).forEach(line => {
+      const trimmed = line.trim();
+      if (trimmed && !trimmed.startsWith('#')) {
+        const match = trimmed.match(/^([^=:#]+)=(.*)$/);
+        if (match) {
+          const key = match[1].trim();
+          const value = match[2].trim().replace(/^["']|["']$/g, '');
+          process.env[key] = value;
+        }
       }
     });
   }
 } catch (error) {
   // Ignore if .env doesn't exist or can't be read
+  console.warn('Warning: Could not read .env file:', error.message);
 }
 
 const WP_API_URL = process.env.VITE_WP_API_URL;
