@@ -10,6 +10,7 @@ import { getEBikeImageUrl } from '../utils/imagePlaceholder'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
 import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
+import MarkdownRenderer from '../components/common/MarkdownRenderer.vue'
 
 const route = useRoute()
 const ebikeStore = useEBikesStore()
@@ -231,6 +232,38 @@ const toggleFavorite = () => {
 const isFavorite = computed(() => {
   return ebike.value ? favoritesStore.isFavorite(ebike.value.id) : false
 })
+
+// Filter out "Specificaties" section from description to avoid duplication with the tab
+const filteredDescription = computed(() => {
+  if (!ebike.value?.description) return ''
+  
+  const description = ebike.value.description
+  // Remove any "Specificaties" heading section (##, ###, ####, etc.) and everything after it
+  // Match patterns like: ## Specificaties, ### Specificaties, ##Specificaties, etc.
+  // Case-insensitive matching
+  const specsPattern = /^#{1,6}\s*[Ss]pecificaties\s*$/m
+  
+  // Split by lines to find the heading
+  const lines = description.split('\n')
+  let filteredLines: string[] = []
+  let foundSpecs = false
+  
+  for (const line of lines) {
+    // Check if this line is a "Specificaties" heading
+    if (specsPattern.test(line.trim())) {
+      foundSpecs = true
+      break
+    }
+    filteredLines.push(line)
+  }
+  
+  // If we found the "Specificaties" section, return everything before it
+  if (foundSpecs) {
+    return filteredLines.join('\n').trim()
+  }
+  
+  return description
+})
 </script>
 
 <template>
@@ -365,9 +398,10 @@ const isFavorite = computed(() => {
                 </div>
               </div>
 
-              <p class="mt-8 text-gray-600 leading-relaxed">
-                {{ ebike.description }}
-              </p>
+              <!-- Product Description -->
+              <div v-if="filteredDescription" class="mt-8 sm:mt-10">
+                <MarkdownRenderer :content="filteredDescription" />
+              </div>
 
               <!-- Action Buttons -->
               <div class="mt-8 flex flex-col sm:flex-row gap-4">
