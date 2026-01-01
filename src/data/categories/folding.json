@@ -10,7 +10,7 @@
     "action_radius": null,
     "battery_capacity": 300,
     "top_speed": null,
-    "image_url": "/img/Brompton Electric P Line/placeholder.webp",
+    "image_url": "/img/Brompton Electric P Line/Brompton-Electric-P-Line-Bolt-Blue-Mid-Bar-1.jpg",
     "affiliate_url": "https://www.brompton.com/electric-bikes/electric-p-line",
     "cpl_rate": 25,
     "description": "The Brompton Electric P Line is a folding electric bike with titanium components and compact design.",
@@ -22,7 +22,7 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Brompton Electric P Line/placeholder.webp"
+      "/img/Brompton Electric P Line/Brompton-Electric-P-Line-Bolt-Blue-Mid-Bar-1.jpg"
     ],
     "colors": [
       {
@@ -103,7 +103,7 @@
     "action_radius": null,
     "battery_capacity": 300,
     "top_speed": null,
-    "image_url": "/img/GoCycle G4/placeholder.webp",
+    "image_url": "/img/GoCycle G4/Gocycle-G4-black-folded_160x-2.jpg",
     "affiliate_url": "https://www.gocycle.com/gocycle-g4/",
     "cpl_rate": 25,
     "description": "The GoCycle G4 is a premium folding electric bike with magnesium frame and integrated design.",
@@ -115,7 +115,9 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/GoCycle G4/placeholder.webp"
+      "/img/GoCycle G4/Gocycle-G4-black-folded_160x-2.jpg",
+      "/img/GoCycle G4/Gocycle-G4-black-front-3-4_160x-3.jpg",
+      "/img/GoCycle G4/Gocycle-G4-black-side-shot_700x-1.jpg"
     ],
     "colors": [
       {

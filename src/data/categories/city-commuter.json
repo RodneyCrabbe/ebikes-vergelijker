@@ -1565,7 +1565,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Trek FX+ 1/placeholder.webp",
+    "image_url": "/img/Trek FX+ 1/trek-fx-1s-all-road-1240804-1.png",
     "affiliate_url": "https://www.trekbikes.com/us/en_US/fx-plus-one/",
     "cpl_rate": 25,
     "description": "The Trek FX+ 1 is a lightweight commuter e-bike with throttle assist, perfect for urban commuting and fitness riding.",
@@ -1577,7 +1577,7 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Trek FX+ 1/placeholder.webp"
+      "/img/Trek FX+ 1/trek-fx-1s-all-road-1240804-1.png"
     ],
     "colors": [
       {
@@ -1658,7 +1658,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Cannondale Tesoro Neo X 3/placeholder.webp",
+    "image_url": "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_3Q.webp",
     "affiliate_url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-3",
     "cpl_rate": 25,
     "description": "The Cannondale Tesoro Neo X 3 is an adventure e-bike perfect for touring and commuting with Bosch motor system.",
@@ -1670,7 +1670,11 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Cannondale Tesoro Neo X 3/placeholder.webp"
+      "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_3Q.webp",
+      "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_D1.webp",
+      "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_D2.webp",
+      "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_D9.webp",
+      "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_PD.webp"
     ],
     "colors": [
       {
@@ -1751,7 +1755,7 @@
     "action_radius": null,
     "battery_capacity": 504,
     "top_speed": null,
-    "image_url": "/img/Cowboy 4 ST/placeholder.webp",
+    "image_url": "/img/Cowboy 4 ST/Screenshot2023-02-21at17-13-12Cowboy4ST-EinenSchrittvoraus-Cowboy_1024x1024@2x.webp",
     "affiliate_url": "https://cowboy.com/products/e-bike-cowboy-4-st",
     "cpl_rate": 25,
     "description": "The Cowboy 4 ST is a connected electric bike with step-through frame, featuring adaptive power and smart connectivity.",
@@ -1763,7 +1767,7 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Cowboy 4 ST/placeholder.webp"
+      "/img/Cowboy 4 ST/Screenshot2023-02-21at17-13-12Cowboy4ST-EinenSchrittvoraus-Cowboy_1024x1024@2x.webp"
     ],
     "colors": [
       {
@@ -1937,7 +1941,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Batavus Diva E-go/placeholder.webp",
+    "image_url": "/img/Diva E-go/product (1).webp",
     "affiliate_url": "https://www.batavus.com/nl-nl/elektrische-fietsen/diva-e-go",
     "cpl_rate": 25,
     "description": "The Batavus Diva E-go is a Dutch electric bike designed specifically for women with comfortable geometry.",
@@ -1949,7 +1953,12 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Batavus Diva E-go/placeholder.webp"
+      "/img/Diva E-go/product (1).webp",
+      "/img/Diva E-go/product (2).webp",
+      "/img/Diva E-go/product (3).webp",
+      "/img/Diva E-go/product (4).webp",
+      "/img/Diva E-go/product (5).webp",
+      "/img/Diva E-go/product.webp"
     ],
     "colors": [
       {
@@ -2030,7 +2039,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Sparta e-Speed D11S/placeholder.webp",
+    "image_url": "/img/Sparta e-Speed D11S/trek-fx-1s-1240804-1.png",
     "affiliate_url": "https://www.sparta.nl/elektrische-fietsen",
     "cpl_rate": 25,
     "description": "The Sparta e-Speed D11S is a Dutch electric bike with reliable performance and good value.",
@@ -2042,7 +2051,11 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Sparta e-Speed D11S/placeholder.webp"
+      "/img/Sparta e-Speed D11S/trek-fx-1s-1240804-1.png",
+      "/img/Sparta e-Speed D11S/trek-fx-1s-all-road-1240804-1.png",
+      "/img/Sparta e-Speed D11S/trek-fx-1s-all-road-1240804-11.png",
+      "/img/Sparta e-Speed D11S/trek-fx-1s-all-road-1240804-12.png",
+      "/img/Sparta e-Speed D11S/trek-fx-1s-all-road-1240804-14.png"
     ],
     "colors": [
       {
@@ -2123,7 +2136,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Koga E-Nova Evo/placeholder.webp",
+    "image_url": "/img/E-Nova Evo/Disc Brakes - koga 4493-small.jpg",
     "affiliate_url": "https://www.koga.com/en/bikes/e-bikes/e-nova-evo-pt.htm",
     "cpl_rate": 25,
     "description": "The Koga E-Nova Evo is a premium Dutch electric bike with high-quality components and comfortable ride.",
@@ -2135,7 +2148,11 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Koga E-Nova Evo/placeholder.webp"
+      "/img/E-Nova Evo/Disc Brakes - koga 4493-small.jpg",
+      "/img/E-Nova Evo/E-Nova 4405.jpg",
+      "/img/E-Nova Evo/E-Nova 4419.jpg",
+      "/img/E-Nova Evo/KNOL0302.png",
+      "/img/E-Nova Evo/PACE B10 4544.jpg"
     ],
     "colors": [
       {
@@ -2216,7 +2233,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Trek Allant+ 7 Gen 2/placeholder.webp",
+    "image_url": "/img/Trek Allant+ 7 Gen 2/AllantPlus7Stag-24-41022-A-Primary.avif",
     "affiliate_url": "https://www.trekbikes.com/us/en_US/bikes/electric-bikes/e-city-bikes/allant/allant-7-gen-2/p/41549/",
     "cpl_rate": 25,
     "description": "The Trek Allant+ 7 Gen 2 is a premium commuter e-bike with Bosch motor and high-quality components.",
@@ -2228,7 +2245,15 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Trek Allant+ 7 Gen 2/placeholder.webp"
+      "/img/Trek Allant+ 7 Gen 2/AllantPlus7Stag-24-41022-A-Primary.avif",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (1).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (2).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (3).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (4).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (5).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (6).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVH (7).jpeg",
+      "/img/Trek Allant+ 7 Gen 2/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVHJlay.jpeg"
     ],
     "colors": [
       {
@@ -2309,7 +2334,7 @@
     "action_radius": null,
     "battery_capacity": 600,
     "top_speed": null,
-    "image_url": "/img/Phatfour FLB/placeholder.webp",
+    "image_url": "/img/Phatfour FLB/1963638903.png",
     "affiliate_url": "https://en.phatfour.com/products/flb-phatfour-e-bike",
     "cpl_rate": 25,
     "description": "The Phatfour FLB is a fat tire electric bike with extended range and powerful performance.",
@@ -2321,7 +2346,8 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Phatfour FLB/placeholder.webp"
+      "/img/Phatfour FLB/1963638903.png",
+      "/img/Phatfour FLB/FLB+.png"
     ],
     "colors": [
       {
@@ -2402,7 +2428,7 @@
     "action_radius": null,
     "battery_capacity": 700,
     "top_speed": null,
-    "image_url": "/img/Phatfour FLX/placeholder.webp",
+    "image_url": "/img/Phatfour FLX/FLX (1).jpg",
     "affiliate_url": "https://en.phatfour.com/products/flx-phatfour-e-bike",
     "cpl_rate": 25,
     "description": "The Phatfour FLX is a premium fat tire electric bike with maximum range and performance.",
@@ -2414,7 +2440,12 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Phatfour FLX/placeholder.webp"
+      "/img/Phatfour FLX/FLX (1).jpg",
+      "/img/Phatfour FLX/FLX (2).jpg",
+      "/img/Phatfour FLX/FLX (3).jpg",
+      "/img/Phatfour FLX/FLX (Black, 500Wh accu).png",
+      "/img/Phatfour FLX/FLX.jpg",
+      "/img/Phatfour FLX/[A0172] 1 persoonszadel Diamond stiched (FLS+ en FLB+).png"
     ],
     "colors": [
       {
@@ -2495,7 +2526,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Knaap AMS X/placeholder.webp",
+    "image_url": "/img/Knaap AMS X/ebikes-33-knaap-amsx-high.webp",
     "affiliate_url": "https://knaapbikes.com/products/ams-x",
     "cpl_rate": 25,
     "description": "The Knaap AMS X is a premium Dutch electric bike with modern design and high-quality components.",
@@ -2507,7 +2538,10 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Knaap AMS X/placeholder.webp"
+      "/img/Knaap AMS X/ebikes-33-knaap-amsx-high.webp",
+      "/img/Knaap AMS X/fat-bike-bordeaux-knaap-high.webp",
+      "/img/Knaap AMS X/fatbike-biplace-knaap-ams-high-papq3w.webp",
+      "/img/Knaap AMS X/vae-ebikes-33-biplace-high-0ot2wk.webp"
     ],
     "colors": [
       {
@@ -2588,7 +2622,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Knaap RTD X/placeholder.webp",
+    "image_url": "/img/Knaap RTD X/2.webp",
     "affiliate_url": "https://knaapbikes.com/products/rtd-x",
     "cpl_rate": 25,
     "description": "The Knaap RTD X is a racing electric bike with sporty geometry and high performance.",
@@ -2600,7 +2634,7 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Knaap RTD X/placeholder.webp"
+      "/img/Knaap RTD X/2.webp"
     ],
     "colors": [
       {
@@ -2681,7 +2715,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Knaap LON/placeholder.webp",
+    "image_url": "/img/Knaap LON/Screenshot2023-04-17at11-46-19KnaapLONBlackEdition_1024x1024@2x.webp",
     "affiliate_url": "https://knaapbikes.com/products/lon",
     "cpl_rate": 25,
     "description": "The Knaap LON is an urban electric bike with compact design and city-friendly features.",
@@ -2693,7 +2727,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Knaap LON/placeholder.webp"
+      "/img/Knaap LON/Screenshot2023-04-17at11-46-19KnaapLONBlackEdition_1024x1024@2x.webp",
+      "/img/Knaap LON/knaap_low_1024x1024@2x.webp",
+      "/img/Knaap LON/knaap_low_2_1024x1024@2x.jpg"
     ],
     "colors": [
       {

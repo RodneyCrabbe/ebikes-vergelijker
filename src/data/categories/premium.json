@@ -67,7 +67,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Gazelle Ultimate C380 HMB/placeholder.webp",
+    "image_url": "/img/Gazelle Ultimate C380 HMB/1280_2N0xiBU5ML412Mre.webp",
     "affiliate_url": "https://www.gazellebikes.com/en-us/ultimate-c380-hmb",
     "cpl_rate": 25,
     "description": "The Gazelle Ultimate C380 HMB is a premium Dutch electric bike with Bosch motor and high-quality components.",
@@ -79,7 +79,11 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Gazelle Ultimate C380 HMB/placeholder.webp"
+      "/img/Gazelle Ultimate C380 HMB/1280_2N0xiBU5ML412Mre.webp",
+      "/img/Gazelle Ultimate C380 HMB/1280_2hhfPK3Xx51kEISe.webp",
+      "/img/Gazelle Ultimate C380 HMB/1280_2zKoAmil68174k9R.webp",
+      "/img/Gazelle Ultimate C380 HMB/1280_UcC1noIQYpy36UC2.webp",
+      "/img/Gazelle Ultimate C380 HMB/1280_ceUlRgFdx983MgqJ.webp"
     ],
     "colors": [
       {

@@ -1670,7 +1670,7 @@
       "Shimano 8-speed",
       "Hydraulische remmen"
     ],
-    "weight_kg": 41.0,
+    "weight_kg": 41,
     "wheel_size": "26 inch",
     "tire_size": "26×4.0",
     "frame_material": "6061 aluminium(legering)",
@@ -1986,7 +1986,7 @@
     "action_radius": null,
     "battery_capacity": 672,
     "top_speed": null,
-    "image_url": "/img/Rad Power Bikes RadCity 5 Plus/placeholder.webp",
+    "image_url": "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Heren-2022-1.png",
     "affiliate_url": "https://www.radpowerbikes.com/products/radcity-5-plus-electric-commuter-bike",
     "cpl_rate": 25,
     "description": "The RadCity 5 Plus is a comfortable commuter e-bike with powerful motor and long-range battery.",
@@ -1998,7 +1998,8 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Rad Power Bikes RadCity 5 Plus/placeholder.webp"
+      "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Heren-2022-1.png",
+      "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Step-Thru-Dames-2022-2.png"
     ],
     "colors": [
       {
@@ -2079,7 +2080,7 @@
     "action_radius": null,
     "battery_capacity": 360,
     "top_speed": null,
-    "image_url": "/img/Aventon Soltera 2/placeholder.webp",
+    "image_url": "/img/Aventon Soltera 2/01_Soltera_6b230412-9bfa-433e-b1a0-0c99625b5a4a-1.jpg",
     "affiliate_url": "https://www.aventon.com/products/soltera-2",
     "cpl_rate": 25,
     "description": "The Aventon Soltera 2 is a lightweight commuter e-bike with sleek design and great value.",
@@ -2091,7 +2092,11 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Aventon Soltera 2/placeholder.webp"
+      "/img/Aventon Soltera 2/01_Soltera_6b230412-9bfa-433e-b1a0-0c99625b5a4a-1.jpg",
+      "/img/Aventon Soltera 2/02_Soltera_dd3242ce-f0b8-476c-9a03-8096fd3ae68b-3.jpg",
+      "/img/Aventon Soltera 2/03_Soltera_6eea33c5-93e6-4d53-9150-e386d7a45ec4-4.jpg",
+      "/img/Aventon Soltera 2/04_Soltera_349aa33d-c555-4649-9a4b-2e216fb1e22e-5.jpg",
+      "/img/Aventon Soltera 2/soltera-2-black-01-2.jpg"
     ],
     "colors": [
       {
@@ -2172,7 +2177,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Urban Drivestyle UNI MK Classic/placeholder.webp",
+    "image_url": "/img/Urban Drivestyle UNI MK Classic/Urban-Drivestyle-Uni-Mk-Classic-900x900.jpg",
     "affiliate_url": "https://urbandrivestyle.com/products/uni-mk-classic-250w-electric-bike",
     "cpl_rate": 25,
     "description": "The Urban Drivestyle UNI MK Classic is a classic electric bike with modern technology and timeless design.",
@@ -2184,7 +2189,8 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Urban Drivestyle UNI MK Classic/placeholder.webp"
+      "/img/Urban Drivestyle UNI MK Classic/Urban-Drivestyle-Uni-Mk-Classic-900x900.jpg",
+      "/img/Urban Drivestyle UNI MK Classic/urban-drivestyle-uni-moke-mk-classic-zwart.webp"
     ],
     "colors": [
       {
@@ -2265,7 +2271,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Phatfour FLS/placeholder.webp",
+    "image_url": "/img/Phatfour FLS/website_sides.235.1_1728x.webp",
     "affiliate_url": "https://en.phatfour.com/products/fls-phatfour-e-bike",
     "cpl_rate": 25,
     "description": "The Phatfour FLS is a fat tire electric bike with powerful motor and all-terrain capability.",
@@ -2277,7 +2283,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Phatfour FLS/placeholder.webp"
+      "/img/Phatfour FLS/website_sides.235.1_1728x.webp",
+      "/img/Phatfour FLS/website_sides.236.1_1728x.webp",
+      "/img/Phatfour FLS/website_sides.238_1728x.webp"
     ],
     "colors": [
       {

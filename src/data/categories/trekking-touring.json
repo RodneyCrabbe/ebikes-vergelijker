@@ -166,7 +166,7 @@
     "action_radius": null,
     "battery_capacity": 320,
     "top_speed": null,
-    "image_url": "/img/Specialized Turbo Vado SL 5.0 EQ/placeholder.webp",
+    "image_url": "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D1-POV.webp",
     "affiliate_url": "https://www.specialized.com/us/en/turbo-vado-sl-5-0-eq/p/154888",
     "cpl_rate": 25,
     "description": "The Specialized Turbo Vado SL 5.0 EQ is an ultra-lightweight commuter e-bike with premium components and natural ride feel.",
@@ -178,7 +178,15 @@
     "top_speed_text": "28 mph (US)",
     "top_speed_kmh": 45,
     "images": [
-      "/img/Specialized Turbo Vado SL 5.0 EQ/placeholder.webp"
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D1-POV.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D19-CROP12.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D2-BAR.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D3-HT.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D5-MOTOR.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_D7-TCU.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_FDSQ.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_HERO.webp",
+      "/img/Specialized Turbo Vado SL 5.0 EQ/93920-32_VADO-SL-50-EQ-BRSH-BLKREFL_RDSQ.webp"
     ],
     "colors": [
       {
@@ -352,7 +360,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Giant Explore E+ 1/placeholder.webp",
+    "image_url": "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg",
     "affiliate_url": "https://www.giant-bicycles.com/gb/explore-e-1-2023",
     "cpl_rate": 25,
     "description": "The Giant Explore E+ 1 is a trekking electric bike with Yamaha motor and comfortable geometry.",
@@ -364,7 +372,11 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Giant Explore E+ 1/placeholder.webp"
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D2.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D3.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D4.jpg",
+      "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_Rear.jpg"
     ],
     "colors": [
       {

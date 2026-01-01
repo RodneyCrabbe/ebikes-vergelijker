@@ -65,7 +65,7 @@
     "action_radius": null,
     "battery_capacity": 320,
     "top_speed": null,
-    "image_url": "/img/Specialized Turbo Levo SL Comp/placeholder.webp",
+    "image_url": "/img/Specialized Turbo Levo SL Comp/2022-Gocycle-G4i-black-12_webstore-700x700.jpg",
     "affiliate_url": "https://www.specialized.com/us/en/turbo-levo-sl-comp/p/154888",
     "cpl_rate": 25,
     "description": "The Specialized Turbo Levo SL Comp is a lightweight electric mountain bike with natural ride feel and powerful assistance.",
@@ -77,7 +77,15 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Specialized Turbo Levo SL Comp/placeholder.webp"
+      "/img/Specialized Turbo Levo SL Comp/2022-Gocycle-G4i-black-12_webstore-700x700.jpg",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_D3-HT.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_D4-SSTT.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_D5-MOTOR.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_D6-LINK.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_FDSQ.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_HERO.webp",
+      "/img/Specialized Turbo Levo SL Comp/96820-50_LEVO-SL-COMP-DSTTUR-BLK_RDSQ.webp",
+      "/img/Specialized Turbo Levo SL Comp/Gocycle-G4-matte-black-01_webstore-500x500.jpg"
     ],
     "colors": [
       {
@@ -251,7 +259,7 @@
     "action_radius": null,
     "battery_capacity": 625,
     "top_speed": null,
-    "image_url": "/img/Giant Trance E+ 3/placeholder.webp",
+    "image_url": "/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg",
     "affiliate_url": "https://www.giant-bicycles.com/us/trance-e-plus-3",
     "cpl_rate": 25,
     "description": "The Giant Trance E+ 3 is an electric mountain bike with Yamaha motor system and full suspension.",
@@ -263,7 +271,7 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Giant Trance E+ 3/placeholder.webp"
+      "/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg"
     ],
     "colors": [
       {
@@ -344,7 +352,7 @@
     "action_radius": null,
     "battery_capacity": 750,
     "top_speed": null,
-    "image_url": "/img/Cube Stereo Hybrid 140 HPC SL 750/placeholder.webp",
+    "image_url": "/img/Cube Stereo Hybrid 140 HPC SL 750/22_242.webp",
     "affiliate_url": "https://www.cube.eu/stereo-hybrid-140-hpc-sl-750",
     "cpl_rate": 25,
     "description": "The Cube Stereo Hybrid 140 HPC SL 750 is an electric mountain bike with Bosch motor and full suspension.",
@@ -356,7 +364,7 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Cube Stereo Hybrid 140 HPC SL 750/placeholder.webp"
+      "/img/Cube Stereo Hybrid 140 HPC SL 750/22_242.webp"
     ],
     "colors": [
       {

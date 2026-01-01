@@ -64,7 +64,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Urban Arrow Family/placeholder.webp",
+    "image_url": "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-1.jpg",
     "affiliate_url": "https://urbanarrow.com/family-bikes/family/",
     "cpl_rate": 25,
     "description": "The Urban Arrow Family is an electric cargo bike designed for families, featuring a spacious front box and Bosch motor system.",
@@ -76,7 +76,10 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Urban Arrow Family/placeholder.webp"
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-1.jpg",
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-2.jpg",
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-3.jpg",
+      "/img/Urban Arrow Family/urban-arrow-family-active-plus-connected-2025-zwart-bes3-4.jpg"
     ],
     "colors": [
       {
@@ -157,7 +160,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Riese & Müller Load 75/placeholder.webp",
+    "image_url": "/img/Riese & Müller Load 75/riese-m_ller-load-75-vario-1.jpg",
     "affiliate_url": "https://www.r-m.de/en-us/bikes/load-75/",
     "cpl_rate": 25,
     "description": "The Riese & Müller Load 75 is a premium electric cargo bike with full suspension and high-quality components.",
@@ -169,7 +172,8 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Riese & Müller Load 75/placeholder.webp"
+      "/img/Riese & Müller Load 75/riese-m_ller-load-75-vario-1.jpg",
+      "/img/Riese & Müller Load 75/riese-mueller-load4-75-touring-hs-2023-2.jpg"
     ],
     "colors": [
       {
@@ -250,7 +254,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": null,
-    "image_url": "/img/Tern Vektron S10/placeholder.webp",
+    "image_url": "/img/Tern Vektron S10/TN-photo-Vektron_S10-G3-Forest-Grey-vfold-web-2.jpg",
     "affiliate_url": "https://www.ternbicycles.com/us/bikes/472/vektron",
     "cpl_rate": 25,
     "description": "The Tern Vektron S10 is a folding electric bike with Bosch motor system and 20-inch wheels.",
@@ -262,7 +266,8 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Tern Vektron S10/placeholder.webp"
+      "/img/Tern Vektron S10/TN-photo-Vektron_S10-G3-Forest-Grey-vfold-web-2.jpg",
+      "/img/Tern Vektron S10/tn-photo-vektron-s10-g3-forest-grey-unfold-web-1.jpg"
     ],
     "colors": [
       {
@@ -436,7 +441,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Tern GSD S00/placeholder.webp",
+    "image_url": "/img/Tern GSD S00/gsd40-768x519-1.webp",
     "affiliate_url": "https://www.ternbicycles.com/us/bikes/gsd-s00",
     "cpl_rate": 25,
     "description": "The Tern GSD S00 is an electric cargo bike perfect for carrying loads and children.",
@@ -448,7 +453,9 @@
     "top_speed_text": "20 mph (US)",
     "top_speed_kmh": 32,
     "images": [
-      "/img/Tern GSD S00/placeholder.webp"
+      "/img/Tern GSD S00/gsd40-768x519-1.webp",
+      "/img/Tern GSD S00/gsd41-3.webp",
+      "/img/Tern GSD S00/gsd7-2.webp"
     ],
     "colors": [
       {
@@ -529,7 +536,7 @@
     "action_radius": null,
     "battery_capacity": 500,
     "top_speed": null,
-    "image_url": "/img/Cube Longtail Sport Hybrid 725/placeholder.webp",
+    "image_url": "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_outdoor_kinderen_2f50-2.webp",
     "affiliate_url": "https://www.cube.eu/longtail-sport-hybrid-725",
     "cpl_rate": 25,
     "description": "The Cube Longtail Sport Hybrid 725 is an electric cargo bike with long tail design and high capacity.",
@@ -541,7 +548,9 @@
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
-      "/img/Cube Longtail Sport Hybrid 725/placeholder.webp"
+      "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_outdoor_kinderen_2f50-2.webp",
+      "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_0ecc-1.webp",
+      "/img/Cube Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_frame_bc53-3.webp"
     ],
     "colors": [
       {
