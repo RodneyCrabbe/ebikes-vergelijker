@@ -862,7 +862,7 @@ onMounted(async () => {
             </div>
 
             <!-- E-bike Grid -->
-            <div v-if="!ebikeStore.loading && !ebikeStore.error && filteredEBikes.length > 0" class="px-6">
+            <div v-if="!ebikeStore.loading && !ebikeStore.error" class="px-6">
               <!-- Count indicator -->
               <div class="mb-4 text-sm text-gray-600">
                 {{ filteredEBikes.length }} van {{ totalPool }} e-bikes

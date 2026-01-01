@@ -91,3 +91,4 @@ Install a plugin like:
 ## Current Status
 The code has been updated to provide better error messages. Choose one of the options above to enable registration.
 
+

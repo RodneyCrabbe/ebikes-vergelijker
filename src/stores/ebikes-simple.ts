@@ -3,8 +3,9 @@ import { ref, computed } from 'vue'
 import type { EBike, EBikeFilters } from '../types/ebike'
 import { logger } from '../utils/logger'
 
-// Import all e-bikes data
-import allEBikesData from '../data/ebikes.json'
+// Load e-bikes data dynamically from public directory to avoid Vite JSON parsing issues
+let allEBikesData: any[] = []
+let dataLoaded = false
 
 export const useEBikesStore = defineStore('ebikes', () => {
   const ebikes = ref<EBike[]>([])
@@ -14,24 +15,88 @@ export const useEBikesStore = defineStore('ebikes', () => {
   const initialized = ref(false)
   const fetching = ref(false) // Guard to prevent concurrent fetches
 
+  // Load data from public directory
+  async function loadEBikesData(): Promise<any[]> {
+    if (dataLoaded && allEBikesData.length > 0) {
+      return allEBikesData
+    }
+    
+    try {
+      const response = await fetch('/ebikes-data.json')
+      if (!response.ok) {
+        throw new Error(`Failed to load e-bikes data: ${response.status}`)
+      }
+      const data = await response.json()
+      if (Array.isArray(data)) {
+        allEBikesData = data
+        dataLoaded = true
+        logger.log(`Loaded ${data.length} e-bikes from public data file`)
+        return data
+      }
+      throw new Error('E-bikes data is not an array')
+    } catch (err) {
+      logger.error('Error loading e-bikes data:', err)
+      // Try fallback from src/data if available
+      try {
+        const fallbackResponse = await fetch('/src/data/ebikes.json')
+        if (fallbackResponse.ok) {
+          const data = await fallbackResponse.json()
+          if (Array.isArray(data)) {
+            allEBikesData = data
+            dataLoaded = true
+            return data
+          }
+        }
+      } catch (e) {
+        logger.error('Fallback data load also failed:', e)
+      }
+      return []
+    }
+  }
+  
   // Lazy data transformation - only convert when needed
   let allEBikesCache: EBike[] | null = null
+  let dataLoadPromise: Promise<any[]> | null = null
   
-  const getAllEBikes = (): EBike[] => {
+  const getAllEBikes = async (): Promise<EBike[]> => {
     if (!allEBikesCache) {
-      allEBikesCache = allEBikesData.map((item: any) => ({
-        ...item,
-        build_date: item.build_date ? new Date(item.build_date) : undefined,
-        created_at: new Date(item.created_at),
-        updated_at: new Date(item.updated_at),
-        images: item.images || [item.image_url || '/api/placeholder/600/600']
-      })) as EBike[]
+      try {
+        // Load data if not already loaded
+        if (!dataLoadPromise) {
+          dataLoadPromise = loadEBikesData()
+        }
+        const data = await dataLoadPromise
+        
+        // Ensure we have data
+        if (!data || !Array.isArray(data) || data.length === 0) {
+          logger.error('E-bikes data is empty or invalid')
+          return []
+        }
+        
+        allEBikesCache = data.map((item: any) => ({
+          ...item,
+          build_date: item.build_date ? new Date(item.build_date) : undefined,
+          created_at: new Date(item.created_at),
+          updated_at: new Date(item.updated_at),
+          images: item.images || [item.image_url || '/api/placeholder/600/600']
+        })) as EBike[]
+        
+        logger.log(`Successfully transformed ${allEBikesCache.length} e-bikes`)
+        console.log('E-bikes data loaded:', allEBikesCache.length, 'items')
+      } catch (err) {
+        logger.error('Error transforming e-bikes data:', err)
+        return []
+      }
     }
     return allEBikesCache
   }
 
   // Computed properties
-  const totalEBikes = computed(() => getAllEBikes().length)
+  const totalEBikes = computed(() => {
+    if (allEBikesCache) return allEBikesCache.length
+    if (allEBikesData.length > 0) return allEBikesData.length
+    return 0
+  })
   const isLoading = computed(() => loading.value)
   const hasError = computed(() => !!error.value)
 
@@ -57,7 +122,15 @@ export const useEBikesStore = defineStore('ebikes', () => {
       // Simulate small delay to prevent blocking
       await new Promise(resolve => setTimeout(resolve, 100))
 
-      let filteredData = [...getAllEBikes()]
+      const allEBikes = await getAllEBikes()
+      
+      if (allEBikes.length === 0) {
+        logger.error('No e-bikes data available')
+        error.value = 'Geen e-bikes data beschikbaar'
+        return
+      }
+
+      let filteredData = [...allEBikes]
 
       // Apply filters if provided
       if (filters) {
@@ -68,13 +141,15 @@ export const useEBikesStore = defineStore('ebikes', () => {
       initialized.value = true
 
       logger.log(`Loaded ${filteredData.length} e-bikes successfully`)
+      console.log('E-bikes loaded:', filteredData.length, 'items')
     } catch (err) {
       error.value = 'Failed to load e-bikes'
       logger.error('Error loading e-bikes:', err)
       
       // Fallback: try to load at least some e-bikes
       try {
-        ebikes.value = getAllEBikes().slice(0, 20) // Load first 20 as fallback
+        const fallbackData = await getAllEBikes()
+        ebikes.value = fallbackData.slice(0, 20) // Load first 20 as fallback
         initialized.value = true
         logger.log('Loaded fallback e-bikes')
       } catch (fallbackErr) {
@@ -144,7 +219,8 @@ export const useEBikesStore = defineStore('ebikes', () => {
     }
 
     // If not found, search in all e-bikes
-    ebike = getAllEBikes().find(e => e.id === id)
+    const allEBikes = await getAllEBikes()
+    ebike = allEBikes.find(e => e.id === id)
     if (ebike) {
       currentEBike.value = ebike
       return ebike
@@ -161,16 +237,18 @@ export const useEBikesStore = defineStore('ebikes', () => {
   // Search e-bikes
   async function searchEBikes(query: string): Promise<EBike[]> {
     const searchQuery = query.toLowerCase()
-    return getAllEBikes().filter(ebike => 
+    const allEBikes = await getAllEBikes()
+    return allEBikes.filter(ebike => 
       ebike.brand.toLowerCase().includes(searchQuery) ||
       ebike.model_name.toLowerCase().includes(searchQuery) ||
       (ebike.description && ebike.description.toLowerCase().includes(searchQuery))
     )
   }
 
-  function getEBikesByIds(ids: string[]): EBike[] {
+  async function getEBikesByIds(ids: string[]): Promise<EBike[]> {
     const set = new Set(ids)
-    return getAllEBikes().filter(ebike => set.has(ebike.id))
+    const allEBikes = await getAllEBikes()
+    return allEBikes.filter(ebike => set.has(ebike.id))
   }
 
   // Auto-refresh functionality

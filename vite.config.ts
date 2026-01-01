@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   publicDir: 'public',
-  assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp', '**/*.avif'],
+  assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp', '**/*.avif', '**/*.json'],
   server: {
     host: '127.0.0.1',
     port: 5195,

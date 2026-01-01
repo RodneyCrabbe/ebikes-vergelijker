@@ -102,3 +102,4 @@ Resolve-DnsName ebikesvergelijker.nl -Type A | Select-Object Name, IPAddress
 
 If the IP is NOT `76.76.21.21`, that's the issue!
 
+

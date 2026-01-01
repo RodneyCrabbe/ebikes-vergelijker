@@ -73,3 +73,4 @@ If the domain doesn't work after 24 hours:
 3. Ensure no conflicting DNS records exist
 4. Contact Vercel support if issues persist
 
+

@@ -107,3 +107,4 @@ function ebikes_register_user($request) {
     );
 }
 
+
