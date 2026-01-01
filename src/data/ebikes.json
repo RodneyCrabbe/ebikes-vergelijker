@@ -8243,7 +8243,7 @@
     "action_radius": null,
     "battery_capacity": 400,
     "top_speed": 25,
-    "image_url": "/img/Tern Vektron S10/placeholder.webp",
+    "image_url": "/img/Tern Vektron S10/tn-photo-vektron-s10-g3-forest-grey-unfold-web-1.jpg",
     "affiliate_url": "https://www.ternbicycles.com/vektron-s10",
     "cpl_rate": 25,
     "description": "De Tern Vektron S10 is een vouw-e-bike met Bosch Performance middenmotor.",
@@ -8254,7 +8254,10 @@
     "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
-    "images": [],
+    "images": [
+      "/img/Tern Vektron S10/tn-photo-vektron-s10-g3-forest-grey-unfold-web-1.jpg",
+      "/img/Tern Vektron S10/TN-photo-Vektron_S10-G3-Forest-Grey-vfold-web-2.jpg"
+    ],
     "colors": [],
     "highlights": [],
     "specifications": {
@@ -8330,7 +8333,7 @@
     "action_radius": 206,
     "battery_capacity": 500,
     "top_speed": 25,
-    "image_url": "/img/Tern GSD S00/placeholder.webp",
+    "image_url": "/img/Tern GSD S00/gsd40-768x519-1.webp",
     "affiliate_url": "https://www.ternbicycles.com/gsd-s00",
     "cpl_rate": 25,
     "description": "De Tern GSD S00 is een compacte longtail cargo e-bike met Bosch Cargo Line motor.",
@@ -8341,7 +8344,11 @@
     "action_radius_km": 206,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
-    "images": [],
+    "images": [
+      "/img/Tern GSD S00/gsd40-768x519-1.webp",
+      "/img/Tern GSD S00/gsd41-3.webp",
+      "/img/Tern GSD S00/gsd7-2.webp"
+    ],
     "colors": [],
     "highlights": [],
     "specifications": {
@@ -8417,7 +8424,7 @@
     "action_radius": null,
     "battery_capacity": 725,
     "top_speed": 25,
-    "image_url": "/img/CUBE Longtail Sport Hybrid 725/placeholder.webp",
+    "image_url": "/img/CUBE Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_0ecc-1.webp",
     "affiliate_url": "https://www.cube.eu/longtail-sport-hybrid-725",
     "cpl_rate": 25,
     "description": "De CUBE Longtail Sport Hybrid 725 is een longtail cargo e-bike met Bosch Cargo Line Gen4 motor.",
@@ -8428,7 +8435,11 @@
     "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
-    "images": [],
+    "images": [
+      "/img/CUBE Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_0ecc-1.webp",
+      "/img/CUBE Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_outdoor_kinderen_2f50-2.webp",
+      "/img/CUBE Longtail Sport Hybrid 725/cube_longtail_sport_hybrid_swampgrey_frame_bc53-3.webp"
+    ],
     "colors": [],
     "highlights": [],
     "specifications": {
@@ -8504,7 +8515,7 @@
     "action_radius": 65,
     "battery_capacity": 360,
     "top_speed": 25,
-    "image_url": "/img/Cowboy 4 ST/placeholder.webp",
+    "image_url": "/img/Cowboy 4 ST/Screenshot2023-02-21at17-13-12Cowboy4ST-EinenSchrittvoraus-Cowboy_1024x1024@2x.webp",
     "affiliate_url": "https://www.cowboy.com/cruiser-st",
     "cpl_rate": 25,
     "description": "De Cowboy 4 ST is een connected city e-bike met app-first bediening en geïntegreerde GPS-tracker.",
@@ -8515,7 +8526,9 @@
     "action_radius_km": 65,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
-    "images": [],
+    "images": [
+      "/img/Cowboy 4 ST/Screenshot2023-02-21at17-13-12Cowboy4ST-EinenSchrittvoraus-Cowboy_1024x1024@2x.webp"
+    ],
     "colors": [],
     "highlights": [],
     "specifications": {
