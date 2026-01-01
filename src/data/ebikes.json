@@ -232,40 +232,40 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "672 Wh (48V, 14Ah) (opgave)",
-        "type": "Li-ion, extern (opgave)",
+        "accu": "48V 14Ah (672Wh)",
+        "type": "externe, uitneembare accu (opgave)",
         "lader_laadtijd": "n.t.b.",
         "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
         "materiaal": "n.t.b.",
-        "vork_vering": "geen (opgave)",
-        "bijzonderheden": "utility/cargo inzet; achterdrager geïntegreerd (opgave)",
-        "ergonomie_zadel": "n.t.b."
+        "vork_vering": "geen vering (opgave)",
+        "bijzonderheden": "compact utility/fat-tyres, drager geïntegreerd (opgave)",
+        "ergonomie_zadel": "zadelhoogte 800–1080 mm (opgave)"
       },
       "motor": {
-        "type": "geared hubmotor (opgave)",
-        "vermogen_eu": "250 W (opgave)",
+        "type": "achterwiel-naafmotor, geared hub",
+        "vermogen_eu": "250W (opgave)",
         "koppel_opgave": "n.t.b.",
         "display_bediening": "n.t.b."
       },
       "wielen": {
         "remmen": "n.t.b.",
-        "wielmaat": "20\" (opgave)",
-        "bandenmaat": "20\" x 4\" (opgave)",
+        "wielmaat": "20\"",
+        "bandenmaat": "20\" x 4\"",
         "aandrijving_versnellingen": "n.t.b."
       },
       "algemeen": {
         "gewicht": "29 kg (opgave)",
         "prijs_eu": "n.t.b.",
-        "categorie": "cargo/utility e-bike",
-        "doelgroep": "stadsritten, lichte cargo/2e passagier opties",
-        "merk_model": "Rad Power Bikes RadRunner 2 (EU)",
-        "afmetingen_zithoogte": "zadelhoogte ca. 800–1080 mm (opgave)",
+        "categorie": "utility/compact cargo",
+        "doelgroep": "stadsgebruik, passagier/lasten licht",
+        "merk_model": "Rad Power Bikes RadRunner 2",
+        "afmetingen_zithoogte": "zadelhoogte zie boven; overige afmetingen n.t.b.",
         "payload_totaal_toelaatbaar": "136 kg (opgave)"
       },
       "features": {
-        "accessoires": "spatborden voor/achter; achterdrager geïntegreerd; voordrager optioneel (opgave)",
+        "accessoires": "geïntegreerde achterdrager; voordrager optioneel (opgave)",
         "verlichting": "n.t.b.",
         "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
@@ -276,10 +276,10 @@
     "wheel_size": "20\"",
     "tire_size": "20\" x 4\"",
     "frame_material": null,
-    "motor_type": "geared hubmotor",
+    "motor_type": "achterwiel-naafmotor, geared hub",
     "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": "Li-ion, extern",
+    "battery_type": "externe, uitneembare accu",
     "battery_voltage": 48,
     "battery_ah": 14,
     "charging_time_hours": null,
@@ -733,42 +733,42 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "36V 13Ah (≈470Wh) of 36V 17,5Ah (≈630Wh) (470Wh is opgave; 36×13=468Wh is afgeleid)",
-        "type": "uitneembare Li-ion \"Unit Pack Power\" (opgave)",
-        "lader_laadtijd": "42V 2A – ca. 5 uur (100%) / ca. 80 min (50%) (opgave; ladervermogen afgeleid: ~84W)",
-        "actieradius_claim_opgave": "470Wh: 25 km (full power) – 45 km (economy) / 630Wh: 40 km (full power) – 65 km (economy) (opgave)"
+        "accu": "470Wh óf 630Wh (opgave; varianten)",
+        "type": "uitneembare Unit Pack Power (36V 13Ah bij 470Wh; 17,5Ah bij 630Wh wordt ook genoemd door retailers)",
+        "lader_laadtijd": "42V 2A; \"~5 uur full\" en \"~80 min tot 50%\" (opgave)",
+        "actieradius_claim_opgave": "• 470Wh: 25–45 km (full power–eco) (opgave)\n    • 630Wh: 40–65 km (full power–eco) (opgave)"
       },
       "frame": {
-        "materiaal": "handgemaakt, dubbel gecoat stalen frame (opgave)",
-        "vork_vering": "geveerde, hydraulisch gedempte voorvork (opgave)",
-        "bijzonderheden": "lage zit (FLS+); verstelbaar stuur; vernieuwd elektronisch systeem met 9 ondersteuningsstanden (opgave)",
-        "ergonomie_zadel": "handgestikt skai (duo)zadel; zithoogte ca. 83 cm (opgave)"
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "n.t.b.",
+        "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Bafang SWXH achterwiel-naafmotor (hub) (opgave)",
-        "vermogen_eu": "250W (opgave; EU/25 km/h)",
-        "koppel_opgave": "n.t.b. (Phatfour geeft geen Nm op voor FLS/FLS+)",
-        "display_bediening": "UKS2 kleurendisplay (snelheid/batterij/afstand/assist + USB) (opgave)"
+        "type": "achterwielmotor (Bafang SWXH)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "kleurendisplay + USB (opgave)"
       },
       "wielen": {
-        "remmen": "hydraulische schijfremmen; 180mm Tektro remschijven (opgave)",
-        "wielmaat": "20\" (opgave; velg 20×3,5\")",
-        "bandenmaat": "20×4,25 Kenda fat tires (handleiding noemt 20×3,5; uitvoering/batch kan verschillen)",
-        "aandrijving_versnellingen": "Shimano 7-speed (opgave)"
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
       },
       "algemeen": {
-        "gewicht": "35 kg incl. accu (opgave op Phatfour productpagina) (algemene FLS+/FLB+ handleiding noemt 27 kg; conflicterende opgave)",
-        "prijs_eu": "vanaf € 2.540 incl. btw (opgave)",
-        "categorie": "urban e-fatbike (FLS-serie, lage zit)",
-        "doelgroep": "stadsgebruik/cruisen (ook met accessoires zoals rekken/kinderzitje)",
-        "merk_model": "Phatfour FLS+ (aangenomen: huidige FLS-uitvoering op Phatfour-site; \"FLS\" wordt in praktijk vaak als FLS+ aangeboden)",
-        "afmetingen_zithoogte": "zithoogte 83 cm; lengte bestuurder 155–180 cm (productpagina) (handleiding noemt 170–200 cm; conflicterende opgave)",
-        "payload_totaal_toelaatbaar": "n.t.b. (niet gevonden in officiële productpagina/handleiding)"
+        "gewicht": "n.t.b. (let op: online wordt vaak FLS+ / FLB / FLXS door elkaar gehaald; FLS-gewicht niet eenduidig gevonden)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "fat e-bike",
+        "doelgroep": "urban fun",
+        "merk_model": "Phatfour FLS",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
       },
       "features": {
-        "accessoires": "o.a. kinderzitje, mandje, telefoonhouder; sidecar-koppeling; surfplank-optie genoemd (opgave)",
-        "verlichting": "LED koplamp; achterlicht aanwezig/bediend via accuschakelaar; bij gemonteerd achterrek kan extra batterij-achterlicht meegeleverd worden (handleiding/opgave)",
-        "connectiviteit": "optioneel \"Phatfour Connected\" (tracker + app-lokalisatie; gebruikt voor verzekering) (opgave)",
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
       }
     },
@@ -1212,37 +1212,37 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48V Silverfish Li-ion, meestal ~684Wh (opgave; varianten gezien: 662,4Wh / 696Wh / 720Wh / 960Wh – afhankelijk van uitvoering/accu-upgrade)",
-        "type": "uitneembare Li-ion (Silverfish behuizing, opgave)",
-        "lader_laadtijd": "ca. 6–8 uur (opgave; laderdetails n.t.b.)",
-        "actieradius_claim_opgave": "tot ca. 60–100 km (opgave; sterk afhankelijk van accucapaciteit en rijstijl)"
+        "accu": "n.t.b.",
+        "type": "n.t.b.",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "materiaal": "ChroMo / chromoly staal (meest genoemd in Urban Drivestyle/press) (let op: sommige refurbished/retailer listings noemen \"aluminium\")",
-        "vork_vering": "geveerde voorvork (basic/low travel; opgave in reviews)",
-        "bijzonderheden": "moped-style \"family/utility\" e-fatbike met extra lang bench-zadel; geschikt voor passagier/kinderen (opgave)",
-        "ergonomie_zadel": "extra lang bench/duo-zadel (\"extended bench seat\", opgave)"
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "long-seat/bench; 20\" fat tyres; modeljaar vermeld als 2023 (opgave)",
+        "ergonomie_zadel": "\"extended bench seat\" (opgave)"
       },
       "motor": {
-        "type": "achterwiel-naafmotor (hub), brushless; MXUS/XMUS genoemd bij EU-aanbieders (andere listings noemen Bafang G06 — dus uitvoering-afhankelijk)",
-        "vermogen_eu": "250W (EPAC/25 km/h uitvoering, opgave)",
-        "koppel_opgave": "n.t.b. voor MXUS/XMUS-EU; 50 Nm genoemd bij Bafang G06-uitvoering (opgave) (hogere waarden zoals 80 Nm komen uit (niet-EU) reviews/varianten)",
-        "display_bediening": "LCD (Bafang LCD genoemd in listings; exact model n.t.b.)"
+        "type": "achterwielmotor (XMUS)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
       },
       "wielen": {
-        "remmen": "schijfremmen (opgave; merk/type wisselt per bron: Shimano / Tektro / Nutt; hydraulisch vaak genoemd)",
-        "wielmaat": "20 inch",
-        "bandenmaat": "20×4.0 fat tires (opgave)",
+        "remmen": "\"Shimano\" (type n.t.b.)",
+        "wielmaat": "20\"",
+        "bandenmaat": "20\" fat tyres (exacte maat n.t.b.)",
         "aandrijving_versnellingen": "Shimano 7-speed (opgave)"
       },
       "algemeen": {
-        "gewicht": "ca. 32–36 kg incl. accu (opgave; verschilt per bouwjaar/uitvoering)",
-        "prijs_eu": "ca. €2.490–€3.290 (opgave; verschilt per land/retailer/jaar)",
-        "categorie": "moped-style e-fatbike (urban utility / family)",
-        "doelgroep": "stadsgebruik + vervoer van passagier/kind(eren) of lichte cargo; fun/comfort boven \"efficiënt fietsen\"",
-        "merk_model": "Urban Drivestyle UNI MK Classic (wordt ook \"UNI Moke/Unimoke MK\" genoemd in oudere benamingen)",
-        "afmetingen_zithoogte": "lengte ca. 171–172 cm; zadelhoogte ca. 79–110 cm (opgave; exacte totale hoogte n.t.b. per uitvoering)",
-        "payload_totaal_toelaatbaar": "175 kg (opgave bij EU-aanbieder) (varianten gezien: 150 kg en 185 kg bij andere uitvoeringen/edities)"
+        "gewicht": "n.t.b.",
+        "prijs_eu": "ca. €2.490 \"new\" (opgave; kan verhuur-/storeprijs zijn)",
+        "categorie": "utility/fat e-bike",
+        "doelgroep": "urban fun, duo/gezinsritten licht",
+        "merk_model": "Urban Drivestyle UNI MK Classic",
+        "afmetingen_zithoogte": "rijderslengte 150–210 cm (opgave)",
+        "payload_totaal_toelaatbaar": "toegestaan totaalgewicht 175 kg (opgave)"
       },
       "features": {
         "accessoires": "(afhankelijk van pakket) voetsteunen/pegs, verlengde zit/seat-extension & racks als opties; standaard vaak: bel + standaard + (soms) spatborden (opgave)",
@@ -2093,40 +2093,40 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "672 Wh (48V, 14Ah) (opgave)",
-        "type": "Li-ion, semi-geïntegreerd (opgave)",
+        "accu": "48V 14Ah (672Wh)",
+        "type": "semi-geïntegreerde, uitneembare accu (opgave)",
         "lader_laadtijd": "n.t.b.",
         "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
         "materiaal": "n.t.b.",
         "vork_vering": "n.t.b.",
-        "bijzonderheden": "stads-utility; spatborden; achterdrager geïntegreerd (opgave)",
-        "ergonomie_zadel": "n.t.b."
+        "bijzonderheden": "spatborden, geïntegreerde achterdrager (opgave)",
+        "ergonomie_zadel": "zadelhoogte 810–1055 mm (High-Step) / 750–945 mm (Step-Thru) (opgave)"
       },
       "motor": {
-        "type": "250W geared hubmotor (opgave)",
-        "vermogen_eu": "250 W (opgave)",
+        "type": "achterwiel-naafmotor, geared hub",
+        "vermogen_eu": "250W (opgave)",
         "koppel_opgave": "n.t.b.",
         "display_bediening": "n.t.b."
       },
       "wielen": {
         "remmen": "n.t.b.",
-        "wielmaat": "27,5\" (opgave via bandmaat)",
-        "bandenmaat": "27.5\" x 2.0\" (opgave)",
+        "wielmaat": "27.5\"",
+        "bandenmaat": "27.5\" x 2.0\"",
         "aandrijving_versnellingen": "n.t.b."
       },
       "algemeen": {
         "gewicht": "29,5 kg (opgave)",
         "prijs_eu": "n.t.b.",
-        "categorie": "stads e-bike / utility",
-        "doelgroep": "woon-werk + dagelijks gebruik",
-        "merk_model": "Rad Power Bikes RadCity 5 Plus (EU)",
-        "afmetingen_zithoogte": "zadelhoogte ca. 810–1055 mm (High-Step) / 750–945 mm (Step-Thru) (opgave)",
+        "categorie": "e-city/commuter",
+        "doelgroep": "woon-werk, allround stadsgebruik",
+        "merk_model": "Rad Power Bikes RadCity 5 Plus",
+        "afmetingen_zithoogte": "zit-/zadelhoogte zie boven; overige afmetingen n.t.b.",
         "payload_totaal_toelaatbaar": "125 kg (opgave)"
       },
       "features": {
-        "accessoires": "spatborden voor/achter; achterdrager geïntegreerd; voordrager optioneel (opgave)",
+        "accessoires": "achterdrager geïntegreerd; voordrager optioneel (opgave)",
         "verlichting": "n.t.b.",
         "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
@@ -2142,13 +2142,13 @@
     "wheel_size": "27.5\"",
     "tire_size": "27.5\" x 2.0\"",
     "frame_material": null,
-    "motor_type": "250W geared hubmotor",
-    "motor_power_w": 750,
-    "torque_nm": 80,
-    "battery_type": "lithium-ion",
+    "motor_type": "achterwiel-naafmotor, geared hub",
+    "motor_power_w": 250,
+    "torque_nm": null,
+    "battery_type": "semi-geïntegreerde, uitneembare accu",
     "battery_voltage": 48,
     "battery_ah": 14,
-    "charging_time_hours": 5.5,
+    "charging_time_hours": null,
     "brake_type": "hydraulische-schijfrem",
     "gear_system": "derailleur",
     "suspension": "voorvork",
@@ -2211,22 +2211,44 @@
       "7-speed drivetrain"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Aventon",
-        "type": "Hub motor",
-        "power": "350W",
-        "torque": "40Nm"
-      },
-      "battery": {
-        "capacity": "360Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "4 hours"
+      "accu": {
+        "accu": "36V 9,6Ah (345,6Wh)",
+        "type": "interne, uitneembare Li-ion accu (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "tot ca. 46 miles ≈ 74 km (opgave; PAS)"
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "19kg",
-        "wheel_size": "700c"
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "geïntegreerde richtingaanwijzers (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "achterwiel-naafmotor",
+        "vermogen_eu": "niet-EU (Aventon noemt 350W \"sustained\", 540W piek)",
+        "koppel_opgave": "45 Nm (opgave)",
+        "display_bediening": "Aventon BC280 (opgave)"
+      },
+      "wielen": {
+        "remmen": "hydraulische schijfremmen (opgave, Soltera 2.5)",
+        "wielmaat": "700c (opgave, Soltera 2.5)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "46 lb ≈ 20,9 kg (opgave via retailer)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "light e-commuter",
+        "doelgroep": "urban/woon-werk",
+        "merk_model": "Aventon Soltera 2 / 2.5",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "300 lb ≈ 136 kg (opgave via retailer)"
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "geïntegreerde voor/achterlichten + turn signals (opgave)",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "IPX4 (opgave via retailer)"
       }
     },
     "features": [
@@ -2235,16 +2257,17 @@
       "Great value",
       "7-speed"
     ],
-    "weight_kg": 19,
+    "weight_kg": 20.9,
     "wheel_size": "700c",
-    "tire_size": "700x32c",
-    "frame_material": "aluminium",
-    "motor_type": "Hub motor",
+    "tire_size": null,
+    "frame_material": null,
+    "motor_type": "achterwiel-naafmotor",
     "motor_power_w": 350,
-    "torque_nm": 40,
-    "battery_type": "lithium-ion",
+    "torque_nm": 45,
+    "battery_type": "interne, uitneembare Li-ion accu",
     "battery_voltage": 36,
-    "battery_ah": 10,
+    "battery_ah": 9.6,
+    "battery_capacity": 345.6,
     "charging_time_hours": 4,
     "brake_type": "mechanische-schijfrem",
     "gear_system": "derailleur",
