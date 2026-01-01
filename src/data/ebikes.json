@@ -325,62 +325,62 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "720 Wh (48V, 15Ah) (opgave; ook afleidbaar uit V×Ah)",
-        "type": "Li-ion, uitneembaar (opgave)",
-        "lader_laadtijd": "ca. 4–5 uur met 3A lader (opgave)",
-        "actieradius_claim_opgave": "tot ca. 60 mi (≈ 97 km) (opgave)"
+        "accu": "48V, 15Ah = 720Wh (LG-cellen) (opgave)",
+        "type": "geïntegreerd/uitneembaar (downtube) (opgave)",
+        "lader_laadtijd": "48V 3A; ca. 3–7 uur (brede opgave; afhankelijk SOC/temperatuur)",
+        "actieradius_claim_opgave": "\"up to 60 miles\" ≈ 97 km (claim; US-context)"
       },
       "frame": {
-        "materiaal": "n.t.b.",
-        "vork_vering": "verende voorvork (opgave)",
-        "bijzonderheden": "torque sensor; fat tires 4\" (opgave)",
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "verende voorvork ~80 mm (opgave)",
+        "bijzonderheden": "torque-sensor; 4\" fat tires; throttle aanwezig (US)",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "achterwiel-hubmotor (opgave)",
-        "vermogen_eu": "n.t.b. (opgave: 750W sustained / piek hoger)",
-        "koppel_opgave": "ca. 80 Nm (opgave)",
-        "display_bediening": "kleurendisplay + app-koppeling genoemd (opgave)"
+        "type": "achternaafmotor",
+        "vermogen_eu": "n.t.b. (US-opgave 750W nominal; EU-variant niet bevestigd)",
+        "koppel_opgave": "variant: \"tot 80 Nm\" (review-opgave; Aventon specpagina toont dit niet helder in leesbare tabel)",
+        "display_bediening": "kleur/LCD + Aventon-app (genoemd) + bediening op stuur (opgave)"
       },
       "wielen": {
-        "remmen": "n.t.b.",
-        "wielmaat": "n.t.b.",
-        "bandenmaat": "4\" fat tires (opgave)",
-        "aandrijving_versnellingen": "n.t.b."
+        "remmen": "hydraulische schijfremmen (opgave)",
+        "wielmaat": "26\"",
+        "bandenmaat": "26\" × 4\" (opgave)",
+        "aandrijving_versnellingen": "ketting; 1×8 derailleur (opgave)"
       },
       "algemeen": {
-        "gewicht": "ca. 77 lb (≈ 34,9 kg) (opgave)",
+        "gewicht": "77 lb ≈ 34,9 kg (opgave)",
         "prijs_eu": "n.t.b.",
-        "categorie": "fatbike / all-terrain e-bike",
-        "doelgroep": "gemengd terrein, comfort/offroad light",
+        "categorie": "all-terrain / fat e-bike",
+        "doelgroep": "recreatief, zand/sneeuw/ruwer terrein",
         "merk_model": "Aventon Aventure.2",
         "afmetingen_zithoogte": "n.t.b.",
-        "payload_totaal_toelaatbaar": "n.t.b."
+        "payload_totaal_toelaatbaar": "400 lb ≈ 181 kg (opgave retailer)"
       },
       "features": {
-        "accessoires": "n.t.b.",
-        "verlichting": "geïntegreerde verlichting (opgave)",
-        "connectiviteit": "Aventon-app (opgave)",
+        "accessoires": "spatborden + rear rack genoemd bij sommige retailers (variant)",
+        "verlichting": "geïntegreerd (opgave)",
+        "connectiviteit": "app-sync genoemd (modelafhankelijk) (opgave)",
         "waterdichtheid": "n.t.b."
       }
     },
     "features": [],
     "weight_kg": 34.9,
-    "wheel_size": null,
-    "tire_size": "4\" fat tires",
-    "frame_material": null,
-    "motor_type": "achterwiel-hubmotor",
+    "wheel_size": "26\"",
+    "tire_size": "26\" × 4\"",
+    "frame_material": "aluminium",
+    "motor_type": "achternaafmotor",
     "motor_power_w": 250,
     "torque_nm": 80,
-    "battery_type": "Li-ion, uitneembaar",
+    "battery_type": "geïntegreerd/uitneembaar (downtube)",
     "battery_voltage": 48,
     "battery_ah": 15,
-    "charging_time_hours": 4.5,
-    "brake_type": null,
-    "gear_system": null,
-    "suspension": "verende voorvork",
-    "lighting": "geïntegreerde verlichting",
-    "display": "kleurendisplay + app-koppeling",
+    "charging_time_hours": 5,
+    "brake_type": "hydraulische schijfremmen",
+    "gear_system": "ketting; 1×8 derailleur",
+    "suspension": "verende voorvork ~80 mm",
+    "lighting": "geïntegreerd",
+    "display": "kleur/LCD + Aventon-app + bediening op stuur",
     "connectivity": {
       "app": true,
       "gps": false,
@@ -2475,62 +2475,62 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "750 Wh (opgave)",
-        "type": "Bosch PowerTube (opgave)",
-        "lader_laadtijd": "n.t.b.",
+        "accu": "Bosch PowerTube 750Wh (optioneel + PowerMore 250 range extender) (opgave)",
+        "type": "geïntegreerd (vertical)",
+        "lader_laadtijd": "Bosch BES3 4A (230V) (opgave dealer; laadtijd afhankelijk van Bosch accu/SoC)",
         "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
         "materiaal": "n.t.b.",
-        "vork_vering": "SR Suntour Mobie34, 100 mm (opgave)",
-        "bijzonderheden": "trekking/SUV-stijl; configuraties afhankelijk van \"equipment line\" (GT Vario)",
+        "vork_vering": "SR Suntour Mobie 34, 100 mm (optie/variant incl. ABS-voorvork) (opgave)",
+        "bijzonderheden": "Gates CDX riem; Enviolo Trekking naaf (traploos); optioneel Bosch eBike ABS; GVWR 160 kg (opgave)",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Bosch Performance Line CX (Smart System) middenmotor (opgave)",
-        "vermogen_eu": "250 W (Bosch EU-klasse; n.t.b. expliciet op pagina)",
-        "koppel_opgave": "n.t.b.",
-        "display_bediening": "Bosch Kiox 300 + LED Remote (opgave)"
+        "type": "Bosch Performance Line CX (smart system) middenmotor (opgave)",
+        "vermogen_eu": "250W nominaal (EU) (algemene EU-classificatie; R&M levert EU-configuraties)",
+        "koppel_opgave": "85 Nm (Bosch CX standaardwaarde)",
+        "display_bediening": "Bosch Intuvia 100 (standaard) of Kiox 300 (optie) (opgave)"
       },
       "wielen": {
         "remmen": "n.t.b.",
-        "wielmaat": "27,5\" (opgave)",
-        "bandenmaat": "Schwalbe Super Moto-X 62-584 (27.5\" x 2.4\") (opgave)",
-        "aandrijving_versnellingen": "Enviolo \"Vario\" (naaf, traploos) (afgeleid uit modelnaam; n.t.b. op bron)"
+        "wielmaat": "27,5\" (opgave datasectie R&M)",
+        "bandenmaat": "Schwalbe Super Moto-X 62-584 (basis) of Johnny Watts 365 60-584 (optie) (opgave)",
+        "aandrijving_versnellingen": "Gates riem; Enviolo (traploos) (opgave)"
       },
       "algemeen": {
-        "gewicht": "30,1 kg (opgave)",
-        "prijs_eu": "n.t.b.",
-        "categorie": "trekking/SUV e-bike",
-        "doelgroep": "woon-werk + toeren, zwaardere belasting",
-        "merk_model": "Riese & Müller Charger4 GT Vario",
+        "gewicht": "~30,5 kg (afhankelijk framemaat/uitvoering) (opgave R&M)",
+        "prijs_eu": "€ 5.849 (R&M configurator basisprijs)",
+        "categorie": "trekking / allround premium",
+        "doelgroep": "woon-werk + lange tochten, ook met belading",
+        "merk_model": "Riese & Müller Charger4 GT vario",
         "afmetingen_zithoogte": "n.t.b.",
-        "payload_totaal_toelaatbaar": "150 kg (opgave)"
+        "payload_totaal_toelaatbaar": "160 kg (gross vehicle weight rating) (opgave R&M)"
       },
       "features": {
-        "accessoires": "n.t.b.",
-        "verlichting": "n.t.b.",
-        "connectiviteit": "Bosch Smart System (app-ecosysteem; n.t.b. op bron)",
+        "accessoires": "opties o.a. voordrager, slotketting, RX-chip (tracking services), comfort/offroad kit (opgave configurator)",
+        "verlichting": "n.t.b. (afhankelijk van uitrustingsoptie)",
+        "connectiviteit": "Bosch smart system (Flow app) (algemeen Bosch smart)",
         "waterdichtheid": "n.t.b."
       }
     },
     "features": [],
-    "weight_kg": 30.1,
+    "weight_kg": 30.5,
     "wheel_size": "27.5\"",
-    "tire_size": "Schwalbe Super Moto-X 62-584 (27.5\" x 2.4\")",
+    "tire_size": "Schwalbe Super Moto-X 62-584 (basis) of Johnny Watts 365 60-584 (optie)",
     "frame_material": null,
-    "motor_type": "Bosch Performance Line CX (Smart System) middenmotor",
+    "motor_type": "Bosch Performance Line CX (smart system) middenmotor",
     "motor_power_w": 250,
-    "torque_nm": null,
-    "battery_type": "Bosch PowerTube",
+    "torque_nm": 85,
+    "battery_type": "Bosch PowerTube, geïntegreerd (vertical)",
     "battery_voltage": 36,
     "battery_ah": 20.8,
     "charging_time_hours": null,
     "brake_type": null,
-    "gear_system": "Enviolo \"Vario\" (naaf, traploos)",
-    "suspension": "SR Suntour Mobie34, 100 mm",
+    "gear_system": "Gates riem; Enviolo (traploos)",
+    "suspension": "SR Suntour Mobie 34, 100 mm",
     "lighting": null,
-    "display": "Bosch Kiox 300 + LED Remote",
+    "display": "Bosch Intuvia 100 (standaard) of Kiox 300 (optie)",
     "connectivity": {
       "app": true,
       "gps": false,
@@ -3139,62 +3139,63 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "n.t.b. (in specsheet wordt \"internal battery\" genoemd; capaciteit niet zichtbaar in de gebruikte bronfragmenten)",
-        "type": "Mahle/ebikemotion X35-systeem (interne accu + optionele Range Extender) (opgave)",
-        "lader_laadtijd": "n.t.b. (lader: 42V-2A uitgang)",
-        "actieradius_claim_opgave": "n.t.b."
+        "accu": "Mahle 36V, 6,9Ah = 248Wh (opgave)",
+        "type": "geïntegreerd (uitneembaar: afhankelijk uitvoering/jaar; vaak intern)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b. (soms worden range-extender opties genoemd; niet eenduidig als officiële EU-claim)"
       },
       "frame": {
-        "materiaal": "aluminium (Hydro 6061) (opgave)",
-        "vork_vering": "carbon vork (rigid) (opgave)",
-        "bijzonderheden": "geschikt voor spatborden/achterdrager (opgave)",
-        "ergonomie_zadel": "Selle Royal Lift (opgave bij retailer)"
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "carbon star (rigid) (opgave)",
+        "bijzonderheden": "slanke \"stealth\" e-bike; Mahle iWoc TRIO bediening (opgave)",
+        "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Mahle/ebikemotion X35 (achterwielmotor, systeemvermelding)",
-        "vermogen_eu": "n.t.b. (X35 is EU-klasse, 25 km/h; n.t.b. expliciet)",
-        "koppel_opgave": "n.t.b.",
-        "display_bediening": "n.t.b."
+        "type": "Mahle X35 Plus achternaaf (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "40 Nm (opgave)",
+        "display_bediening": "Mahle iWoc TRIO (top-tube/controller) (opgave)"
       },
       "wielen": {
-        "remmen": "Shimano MT200 hydraulisch (opgave)",
-        "wielmaat": "700c / \"29\" genoemd door retailer (opgave)",
-        "bandenmaat": "max 700x45 (opgave)",
-        "aandrijving_versnellingen": "Shimano Acera 8-speed (opgave)"
+        "remmen": "hydraulische schijfremmen (Shimano MT200 genoemd) (opgave)",
+        "wielmaat": "28\" / 700c",
+        "bandenmaat": "ca. 700×45C (max 45 mm genoemd) (opgave)",
+        "aandrijving_versnellingen": "ketting; 1×8 (Shimano Acera genoemd) (opgave)"
       },
       "algemeen": {
-        "gewicht": "n.t.b.",
-        "prijs_eu": "€ 3.199 (opgave, voorbeeldlisting)",
-        "categorie": "lichte urban/fitness e-bike",
-        "doelgroep": "stad + licht toeren",
-        "merk_model": "Orbea Vibe H30 (referentielisting: Vibe H30 EQ modeljaar 2024)",
+        "gewicht": "n.t.b. (bronafhankelijk; \"~40 lb\" ≈ 18,1 kg wordt genoemd voor een EQ-variant in review-context)",
+        "prijs_eu": "ca. € 2.799 (retailerprijs – kan variëren)",
+        "categorie": "lichtgewicht city/commuter",
+        "doelgroep": "stedelijk, woon-werk, \"analoge fietsgevoel\"",
+        "merk_model": "Orbea Vibe H30 (MID)",
         "afmetingen_zithoogte": "n.t.b.",
         "payload_totaal_toelaatbaar": "n.t.b."
       },
       "features": {
-        "accessoires": "spatborden (EQ), drager-compatibel (opgave)",
-        "verlichting": "voorlicht (StVZO) genoemd in EQ-listing (opgave)",
+        "accessoires": "n.t.b. (EQ varianten hebben vaak spatborden/rek)",
+        "verlichting": "n.t.b.",
         "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
       }
     },
     "features": [],
-    "weight_kg": null,
-    "wheel_size": "700c",
-    "tire_size": "max 700x45",
-    "frame_material": "aluminium (Hydro 6061)",
-    "motor_type": "Mahle/ebikemotion X35 (achterwielmotor)",
+    "weight_kg": 18.1,
+    "wheel_size": "28\" / 700c",
+    "tire_size": "ca. 700×45C (max 45 mm)",
+    "frame_material": "aluminium",
+    "motor_type": "Mahle X35 Plus achternaaf",
     "motor_power_w": 250,
-    "torque_nm": null,
-    "battery_type": "Mahle/ebikemotion X35-systeem",
-    "battery_voltage": 42,
-    "battery_ah": null,
+    "torque_nm": 40,
+    "battery_type": "Mahle, geïntegreerd",
+    "battery_voltage": 36,
+    "battery_ah": 6.9,
+    "battery_capacity": 248,
     "charging_time_hours": null,
-    "brake_type": "Shimano MT200 hydraulisch",
-    "gear_system": "Shimano Acera 8-speed",
+    "brake_type": "hydraulische schijfremmen (Shimano MT200)",
+    "gear_system": "ketting; 1×8 (Shimano Acera)",
     "suspension": "geen",
-    "lighting": "voorlicht (StVZO)",
-    "display": null,
+    "lighting": null,
+    "display": "Mahle iWoc TRIO (top-tube/controller)",
     "connectivity": {},
     "warranty_years": null,
     "certification": null
@@ -3226,63 +3227,154 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "500 Wh (XS–M) / 625 Wh (L) (opgave)",
-        "type": "Bosch PowerTube (opgave)",
-        "lader_laadtijd": "Bosch 4A of 6A \"Fast Charger\" genoemd (opgave)",
+        "accu": "variant: 500Wh of 625Wh (verschilt per uitvoering/jaar; niet meer eenduidig op Canyon EU-pagina teruggevonden)",
+        "type": "geïntegreerd (Bosch Powertube) (typisch)",
+        "lader_laadtijd": "n.t.b.",
         "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "materiaal": "n.t.b.",
-        "vork_vering": "rigid (typisch urban; n.t.b. expliciet)",
-        "bijzonderheden": "veel integratie; (vaak) riemaandrijving + naafversnelling afhankelijk van uitvoering (n.t.b.)",
+        "materiaal": "aluminium (opgave via model-overzichten)",
+        "vork_vering": "n.t.b. (sommige Precede:ON's hebben voorvorkvering; niet eenduidig voor \"7\" zonder jaartal)",
+        "bijzonderheden": "alledaags urban/trekking; vaak riem + Enviolo; geïntegreerde verlichting wordt genoemd in onafhankelijke overzichten",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Bosch Performance Line middenmotor (opgave)",
-        "vermogen_eu": "n.t.b.",
+        "type": "Bosch middenmotor (waarschijnlijk Performance Line smart; afhankelijk jaargang)",
+        "vermogen_eu": "250W (EU)",
         "koppel_opgave": "n.t.b.",
         "display_bediening": "n.t.b."
       },
       "wielen": {
         "remmen": "n.t.b.",
-        "wielmaat": "n.t.b.",
-        "bandenmaat": "n.t.b.",
-        "aandrijving_versnellingen": "naafversnelling genoemd in gebruikers-/testfeedback (opgave)"
+        "wielmaat": "27,5\" (650b) wordt genoemd (opgave modeloverzicht)",
+        "bandenmaat": "n.t.b. (Schwalbe G-One Allround wordt genoemd in artikel/overzicht)",
+        "aandrijving_versnellingen": "vaak riem + Enviolo (variant)"
       },
       "algemeen": {
-        "gewicht": "ca. 24,5 kg (opgave)",
-        "prijs_eu": "n.t.b.",
-        "categorie": "urban/city e-bike",
-        "doelgroep": "stad + forenzen",
+        "gewicht": "n.t.b.",
+        "prijs_eu": "ca. € 3.499 (opgave modeloverzicht; kan historisch zijn)",
+        "categorie": "urban/commuter",
+        "doelgroep": "stad + dagelijkse ritten",
         "merk_model": "Canyon Precede:ON 7",
         "afmetingen_zithoogte": "n.t.b.",
         "payload_totaal_toelaatbaar": "n.t.b."
       },
       "features": {
-        "accessoires": "verlichting-varianten (o.a. Supernova set genoemd) + rack/fenders genoemd (opgave)",
-        "verlichting": "zie hierboven (opgave)",
+        "accessoires": "n.t.b.",
+        "verlichting": "vaste verlichting wordt genoemd (bronafhankelijk)",
         "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
       }
     },
     "features": [],
     "weight_kg": 24.5,
-    "wheel_size": null,
+    "wheel_size": "27.5\" (650b)",
     "tire_size": null,
-    "frame_material": null,
-    "motor_type": "Bosch Performance Line middenmotor",
+    "frame_material": "aluminium",
+    "motor_type": "Bosch middenmotor (waarschijnlijk Performance Line smart)",
     "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": "Bosch PowerTube",
+    "battery_type": "Bosch Powertube, geïntegreerd",
     "battery_voltage": 36,
     "battery_ah": 13.9,
     "charging_time_hours": null,
     "brake_type": null,
-    "gear_system": "naafversnelling",
-    "suspension": "rigid",
-    "lighting": "verlichting-varianten (o.a. Supernova set)",
+    "gear_system": "vaak riem + Enviolo (variant)",
+    "suspension": null,
+    "lighting": "vaste verlichting",
     "display": null,
     "connectivity": {},
+    "warranty_years": null,
+    "certification": null
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440011b",
+    "brand": "Canyon",
+    "model_name": "Precede:ON Comfort 7",
+    "version": "City/comfort e-bike (625 Wh, comfort focus)",
+    "price": null,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 625,
+    "top_speed": 25,
+    "image_url": "/img/Canyon PrecedeON 7  Comfort 7/777DD2E1-8680-4494-828D81C7DCB510CF.avif",
+    "affiliate_url": "https://canyon.com/products/precede-on-comfort-7",
+    "cpl_rate": 25,
+    "description": "De Canyon Precede:ON Comfort 7 is een comfortabele stads e-bike met focus op comfort.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [],
+    "colors": [],
+    "highlights": [],
+    "specifications": {
+      "accu": {
+        "accu": "Bosch PowerTube 625Wh (opgave)",
+        "type": "geïntegreerd",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "star carbon vork genoemd op componentpagina (frame/fork details) (opgave)",
+        "bijzonderheden": "\"Comfort\" focus; zadelpenvering genoemd; 5-speed Nexus naaf; Gates riem (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance Line middenmotor (opgave)",
+        "vermogen_eu": "250W (EU)",
+        "koppel_opgave": "tot 75 Nm (Bosch Performance Line max-waarde; fabrikant kan limiteren)",
+        "display_bediening": "Bosch Purion 200 (opgave test)"
+      },
+      "wielen": {
+        "remmen": "hydraulische schijfremmen (genoemd in test) (opgave)",
+        "wielmaat": "27,5\" / 650B (opgave)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "Gates riem; Shimano Nexus 5 naaf (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "27,27 kg (opgave Bosch ePowered listing)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "city/comfort",
+        "doelgroep": "comfortabel stadsgebruik, licht voorover tot rechtop",
+        "merk_model": "Canyon Precede:ON Comfort 7 (625Wh)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "Bosch smart system (Flow app) (algemeen)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
+    "features": [],
+    "weight_kg": 27.27,
+    "wheel_size": "27.5\" / 650B",
+    "tire_size": null,
+    "frame_material": "aluminium",
+    "motor_type": "Bosch Performance Line middenmotor",
+    "motor_power_w": 250,
+    "torque_nm": 75,
+    "battery_type": "Bosch PowerTube, geïntegreerd",
+    "battery_voltage": 36,
+    "battery_ah": 17.4,
+    "charging_time_hours": null,
+    "brake_type": "hydraulische schijfremmen",
+    "gear_system": "Gates riem; Shimano Nexus 5 naaf",
+    "suspension": "zadelpenvering",
+    "lighting": null,
+    "display": "Bosch Purion 200",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -3323,63 +3415,67 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "625 Wh (opgave in productnaam)",
-        "type": "geïntegreerde, uitneembare accu (\"Removable Integrated Battery\" genoemd)",
+        "accu": "Bosch PowerTube 625Wh (opgave Trek)",
+        "type": "geïntegreerd",
         "lader_laadtijd": "n.t.b.",
-        "actieradius_claim_opgave": "n.t.b."
+        "actieradius_claim_opgave": "tot 147 km (claim Trek – afhankelijk omstandigheden)"
       },
       "frame": {
-        "materiaal": "aluminium (opgave)",
-        "vork_vering": "SR Suntour XCR32, coil, lockout; 63 mm travel (opgave)",
-        "bijzonderheden": "urban/trekking hybride e-bike; interne kabelrouting (opgave)",
+        "materiaal": "aluminium (opgave Trek)",
+        "vork_vering": "63 mm (opgave Trek)",
+        "bijzonderheden": "Bosch smart system; spatborden/rek/verlichting inbegrepen (opgave Trek)",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Bosch middenmotor (opgave; exact type n.t.b.)",
-        "vermogen_eu": "n.t.b.",
-        "koppel_opgave": "n.t.b.",
-        "display_bediening": "n.t.b."
+        "type": "Bosch Performance Line CX middenmotor (opgave Trek)",
+        "vermogen_eu": "250W (EU)",
+        "koppel_opgave": "85 Nm (Bosch CX standaardwaarde)",
+        "display_bediening": "Bosch Purion 200 (opgave Trek)"
       },
       "wielen": {
-        "remmen": "n.t.b.",
-        "wielmaat": "27,5\" (opgave)",
+        "remmen": "hydraulische schijfremmen (opgave Trek)",
+        "wielmaat": "27,5\" (opgave Trek)",
         "bandenmaat": "n.t.b.",
-        "aandrijving_versnellingen": "n.t.b."
+        "aandrijving_versnellingen": "ketting; derailleur (aantal n.t.b.)"
       },
       "algemeen": {
-        "gewicht": "22,3 kg (opgave, framemaat M in listing)",
+        "gewicht": "22,5 kg (excl. accu) (opgave Trek)",
         "prijs_eu": "n.t.b.",
-        "categorie": "elektrische hybride/stadsfiets",
-        "doelgroep": "woon-werk + toeren",
-        "merk_model": "Trek Allant+ 7 Lowstep Gen 2 (625Wh)",
+        "categorie": "trekking/commuter",
+        "doelgroep": "woon-werk + toeren, ook in heuvels",
+        "merk_model": "Trek Allant+ 7 Gen 2",
         "afmetingen_zithoogte": "n.t.b.",
         "payload_totaal_toelaatbaar": "n.t.b."
       },
       "features": {
-        "accessoires": "n.t.b.",
-        "verlichting": "n.t.b.",
-        "connectiviteit": "n.t.b.",
+        "accessoires": "bagagedrager + spatborden + standaard (genoemd) (opgave Trek)",
+        "verlichting": "geïntegreerd (opgave Trek)",
+        "connectiviteit": "Bosch smart system / Flow app (algemeen)",
         "waterdichtheid": "n.t.b."
       }
     },
     "features": [],
-    "weight_kg": 22.3,
+    "weight_kg": 22.5,
     "wheel_size": "27.5\"",
     "tire_size": null,
     "frame_material": "aluminium",
-    "motor_type": "Bosch middenmotor",
+    "motor_type": "Bosch Performance Line CX middenmotor",
     "motor_power_w": 250,
-    "torque_nm": null,
-    "battery_type": "geïntegreerde, uitneembare accu",
+    "torque_nm": 85,
+    "battery_type": "Bosch PowerTube, geïntegreerd",
     "battery_voltage": 36,
     "battery_ah": 17.4,
     "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
-    "suspension": "SR Suntour XCR32, coil, lockout; 63 mm travel",
-    "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "brake_type": "hydraulische schijfremmen",
+    "gear_system": "ketting; derailleur",
+    "suspension": "63 mm",
+    "lighting": "geïntegreerd",
+    "display": "Bosch Purion 200",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -3416,40 +3512,40 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "500 Wh (opgave)",
-        "type": "Bosch PowerTube (opgave)",
-        "lader_laadtijd": "n.t.b. (Bosch 2A lader genoemd)",
+        "accu": "Bosch PowerTube 500Wh (opgave)",
+        "type": "geïntegreerd",
+        "lader_laadtijd": "n.t.b.",
         "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "materiaal": "n.t.b.",
+        "materiaal": "aluminium (SmartForm C2 genoemd in reviews; Cannondale noemt aluminium frame) (bronafhankelijk)",
         "vork_vering": "n.t.b.",
-        "bijzonderheden": "trekking/adventure e-touring",
+        "bijzonderheden": "\"right-sized wheels\": kleine maat 27,5\", grotere maten 29\" (opgave Cannondale)",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Bosch Active Line Plus, Smart System (25 km/h) (opgave, Cannondale NL)",
-        "vermogen_eu": "250 W (EU-klasse; n.t.b. expliciet)",
-        "koppel_opgave": "n.t.b. (let op: retailer noemt soms Performance Line 65Nm)",
+        "type": "Bosch Active Line Plus middenmotor (opgave Cannondale NL/EU listing)",
+        "vermogen_eu": "250W (EU)",
+        "koppel_opgave": "n.t.b. (Active Line Plus is lager dan CX; Cannondale noemt het koppel niet in de zichtbare snippet)",
         "display_bediening": "Bosch Purion 200 (opgave)"
       },
       "wielen": {
-        "remmen": "Shimano MT200 hydraulisch, 180/180 mm (opgave)",
-        "wielmaat": "n.t.b.",
+        "remmen": "n.t.b.",
+        "wielmaat": "27,5\" (SM) / 29\" (MD-XL) (opgave)",
         "bandenmaat": "n.t.b.",
-        "aandrijving_versnellingen": "Shimano CUES, 9-speed (opgave)"
+        "aandrijving_versnellingen": "n.t.b."
       },
       "algemeen": {
         "gewicht": "n.t.b.",
         "prijs_eu": "n.t.b.",
-        "categorie": "e-touring / trekking",
-        "doelgroep": "woon-werk + langere ritten",
+        "categorie": "e-touring / adventure trekking",
+        "doelgroep": "gemengd gebruik (asfalt + licht onverhard)",
         "merk_model": "Cannondale Tesoro Neo X 3",
         "afmetingen_zithoogte": "n.t.b.",
         "payload_totaal_toelaatbaar": "n.t.b."
       },
       "features": {
-        "accessoires": "n.t.b.",
+        "accessoires": "phone-mount \"Intellimount stem\" genoemd (opgave Cannondale)",
         "verlichting": "n.t.b.",
         "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
@@ -3457,18 +3553,18 @@
     },
     "features": [],
     "weight_kg": null,
-    "wheel_size": null,
+    "wheel_size": "27.5\" (SM) / 29\" (MD-XL)",
     "tire_size": null,
-    "frame_material": null,
-    "motor_type": "Bosch Active Line Plus, Smart System",
+    "frame_material": "aluminium (SmartForm C2)",
+    "motor_type": "Bosch Active Line Plus middenmotor",
     "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": "Bosch PowerTube",
+    "battery_type": "Bosch PowerTube, geïntegreerd",
     "battery_voltage": 36,
     "battery_ah": 13.9,
     "charging_time_hours": null,
-    "brake_type": "Shimano MT200 hydraulisch, 180/180 mm",
-    "gear_system": "Shimano CUES, 9-speed",
+    "brake_type": null,
+    "gear_system": null,
     "suspension": null,
     "lighting": null,
     "display": "Bosch Purion 200",
@@ -6735,40 +6831,40 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "625 Wh (opgave)",
-        "type": "Bosch PowerTube (opgave)",
-        "lader_laadtijd": "n.t.b. (Bosch Compact Charger 2A genoemd)",
+        "accu": "Bosch 625Wh (opgave retailer)",
+        "type": "geïntegreerd (Powertube) (typisch)",
+        "lader_laadtijd": "n.t.b.",
         "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
         "materiaal": "aluminium (opgave)",
-        "vork_vering": "Suntour NVX30, 100 mm (opgave)",
-        "bijzonderheden": "trekking met bagagedrager/spatborden (typisch; n.t.b. in bronfragment)",
+        "vork_vering": "100 mm (hardtail trekking) (opgave retailer/overzichten)",
+        "bijzonderheden": "trekking-setup, gericht op toeren/bagage",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
         "type": "Bosch Performance Line CX Gen4 middenmotor (opgave)",
-        "vermogen_eu": "250 W (EU-klasse; n.t.b. expliciet)",
-        "koppel_opgave": "85 Nm (opgave)",
-        "display_bediening": "Bosch Intuvia (opgave)"
+        "vermogen_eu": "250W (EU)",
+        "koppel_opgave": "85 Nm (Bosch CX standaardwaarde)",
+        "display_bediening": "n.t.b. (verschilt per bouwjaar/uitvoering)"
       },
       "wielen": {
-        "remmen": "Shimano BR-MT200 hydraulisch (opgave)",
-        "wielmaat": "n.t.b.",
-        "bandenmaat": "bandbreedte 55 mm genoemd (opgave)",
-        "aandrijving_versnellingen": "Shimano Deore 11-speed (opgave)"
+        "remmen": "hydraulische schijfremmen (opgave)",
+        "wielmaat": "n.t.b. (meestal 28\" bij Kathmandu; niet eenduidig in bron-snippet)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "ketting; 11 versnellingen (opgave)"
       },
       "algemeen": {
-        "gewicht": "26 kg (opgave)",
+        "gewicht": "ca. 26 kg (opgave)",
         "prijs_eu": "n.t.b.",
-        "categorie": "trekking e-bike",
-        "doelgroep": "woon-werk + toeren met bagage",
+        "categorie": "trekking / toer e-bike",
+        "doelgroep": "langere tochten, woon-werk met belading",
         "merk_model": "CUBE Kathmandu Hybrid Pro 625",
         "afmetingen_zithoogte": "n.t.b.",
         "payload_totaal_toelaatbaar": "n.t.b."
       },
       "features": {
-        "accessoires": "n.t.b.",
+        "accessoires": "n.t.b. (Kathmandu-lijn staat bekend om geïntegreerde drager; niet hard bevestigd in gebruikte snippet)",
         "verlichting": "n.t.b.",
         "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
@@ -6777,20 +6873,20 @@
     "features": [],
     "weight_kg": 26,
     "wheel_size": null,
-    "tire_size": "bandbreedte 55 mm",
+    "tire_size": null,
     "frame_material": "aluminium",
     "motor_type": "Bosch Performance Line CX Gen4 middenmotor",
     "motor_power_w": 250,
     "torque_nm": 85,
-    "battery_type": "Bosch PowerTube",
+    "battery_type": "Bosch Powertube, geïntegreerd",
     "battery_voltage": 36,
     "battery_ah": 17.4,
     "charging_time_hours": null,
-    "brake_type": "Shimano BR-MT200 hydraulisch",
-    "gear_system": "Shimano Deore 11-speed",
-    "suspension": "Suntour NVX30, 100 mm",
+    "brake_type": "hydraulische schijfremmen",
+    "gear_system": "ketting; 11 versnellingen",
+    "suspension": "100 mm (hardtail trekking)",
     "lighting": null,
-    "display": "Bosch Intuvia",
+    "display": null,
     "connectivity": {},
     "warranty_years": null,
     "certification": null
@@ -7205,62 +7301,62 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "keuze 540 / 600 / 800 Wh (opgave, Gazelle)",
-        "type": "Bosch Smart System PowerTube, geïntegreerd in frame (opgave)",
-        "lader_laadtijd": "540 Wh: 7u42 (2A) / 4u54 (4A); 600 Wh: 9u18 (2A) / 5u24 (4A); 800 Wh: 12u24 (2A) / 6u54 (4A) (opgave, Gazelle)",
-        "actieradius_claim_opgave": "540 Wh: Eco 120 km / Turbo 50 km; 600 Wh: Eco 140 km / Turbo 55 km; 800 Wh: Eco 185 km / Turbo 70 km (opgave, Gazelle – per accu en modus)"
+        "accu": "variant A (nieuwere NL Ultimate C380): 540Wh / 600Wh / 800Wh (opgave Gazelle NL)",
+        "type": "geïntegreerd/uitneembaar",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
         "materiaal": "n.t.b.",
         "vork_vering": "n.t.b.",
-        "bijzonderheden": "Enviolo Trekking traploos + Gates riem; \"Bosch PX\"/Smart System positionering (opgave)",
+        "bijzonderheden": "variant A (Gazelle NL \"Ultimate C380\"): Bosch Performance Line PX + Kiox 500 + Enviolo Trekking + riem (opgave Gazelle)",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Bosch Performance Line PX middenmotor (Smart System) (opgave)",
-        "vermogen_eu": "250 W (EU-klasse; n.t.b. expliciet)",
-        "koppel_opgave": "85 Nm (met optie tot 90 Nm via app genoemd) (opgave)",
-        "display_bediening": "Bosch Kiox 500 kleurendisplay (opgave)"
+        "type": "variant A: Bosch Performance Line PX middenmotor (opgave Gazelle)",
+        "vermogen_eu": "250W (EU)",
+        "koppel_opgave": "variant A: tot 90 Nm (Bosch PX max)",
+        "display_bediening": "variant A: Bosch Kiox 500 (opgave Gazelle)"
       },
       "wielen": {
-        "remmen": "Magura MT-C4 hydraulische schijfremmen (opgave in shoplisting)",
-        "wielmaat": "28\" (opgave in shoplisting)",
+        "remmen": "n.t.b.",
+        "wielmaat": "28\" (opgave retailer voor HMB 2026)",
         "bandenmaat": "n.t.b.",
-        "aandrijving_versnellingen": "Gates riem + Enviolo Trekking (traploos) (opgave)"
+        "aandrijving_versnellingen": "riem; Enviolo Trekking (traploos) (opgave Gazelle/Fietstest)"
       },
       "algemeen": {
-        "gewicht": "25,6 kg excl. accu (opgave in shoplisting)",
-        "prijs_eu": "n.t.b.",
-        "categorie": "trekking/toer e-bike",
-        "doelgroep": "sportief comfort toeren, woon-werk",
-        "merk_model": "Gazelle Ultimate C380 HMB (referentie: Ultimate C380 NL + HMB 2025 shoplisting)",
+        "gewicht": "variant B (Ultimate C380 HMB 2024): 28,4 kg (opgave Fietstest; 500Wh)",
+        "prijs_eu": "variant B (2024): € 4.499 (adviesprijs) (opgave Fietstest)",
+        "categorie": "sportief woon-werk / trekking",
+        "doelgroep": "toeren + woon-werk, premium comfort/sport mix",
+        "merk_model": "Gazelle Ultimate C380 HMB (jaar/accu/motor variant)",
         "afmetingen_zithoogte": "n.t.b.",
-        "payload_totaal_toelaatbaar": "n.t.b."
+        "payload_totaal_toelaatbaar": "variant B: 130 kg \"gewichtslimiet\" (opgave Mantel; kan per jaar verschillen)"
       },
       "features": {
-        "accessoires": "MIK HD achterdrager (opgave in shoplisting)",
-        "verlichting": "n.t.b.",
-        "connectiviteit": "Bluetooth + smartphone-koppeling genoemd; navigatie via Kiox 500 genoemd (opgave)",
+        "accessoires": "vaak ringslot, spatborden, drager (afhankelijk uitvoering/jaar)",
+        "verlichting": "geïntegreerd (modelafhankelijk)",
+        "connectiviteit": "Bosch smart system (bij nieuwere PX/Kiox 500 varianten)",
         "waterdichtheid": "n.t.b."
       }
     },
     "features": [],
-    "weight_kg": 25.6,
+    "weight_kg": 28.4,
     "wheel_size": "28\"",
     "tire_size": null,
     "frame_material": null,
-    "motor_type": "Bosch Performance Line PX middenmotor (Smart System)",
+    "motor_type": "Bosch Performance Line PX middenmotor",
     "motor_power_w": 250,
-    "torque_nm": 85,
-    "battery_type": "Bosch Smart System PowerTube, geïntegreerd in frame",
+    "torque_nm": 90,
+    "battery_type": "geïntegreerd/uitneembaar",
     "battery_voltage": 36,
     "battery_ah": 16.7,
-    "charging_time_hours": 5.4,
-    "brake_type": "Magura MT-C4 hydraulische schijfremmen",
-    "gear_system": "Gates riem + Enviolo Trekking (traploos)",
+    "charging_time_hours": null,
+    "brake_type": null,
+    "gear_system": "riem; Enviolo Trekking (traploos)",
     "suspension": null,
-    "lighting": null,
-    "display": "Bosch Kiox 500 kleurendisplay",
+    "lighting": "geïntegreerd",
+    "display": "Bosch Kiox 500",
     "connectivity": {
       "app": true,
       "gps": false,
@@ -7404,35 +7500,35 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "EnergyPak Smart 625 (opgave)",
-        "type": "Li-ion (EnergyPak) (opgave)",
+        "accu": "EnergyPak Smart 625Wh (optioneel EnergyPak Plus 250 range extender) (opgave)",
+        "type": "geïntegreerd",
         "lader_laadtijd": "n.t.b.",
-        "actieradius_claim_opgave": "(opgave) zwaar 50 km / goed 100 km / ideaal 180 km"
+        "actieradius_claim_opgave": "50 / 100 / 180 km (claim; sterk afhankelijk van omstandigheden/stand)"
       },
       "frame": {
         "materiaal": "n.t.b.",
         "vork_vering": "n.t.b.",
-        "bijzonderheden": "trekking/\"toer\" e-bike",
+        "bijzonderheden": "trekking/utility gericht; range-extender optie genoemd",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "SyncDrive Sport 2 (opgave)",
-        "vermogen_eu": "n.t.b.",
-        "koppel_opgave": "n.t.b.",
-        "display_bediening": "n.t.b."
+        "type": "SyncDrive Sport 2 middenmotor (powered by Yamaha) (opgave)",
+        "vermogen_eu": "250W (EU)",
+        "koppel_opgave": "75 Nm (opgave)",
+        "display_bediening": "RideControl Dash (full color LCD) (opgave)"
       },
       "wielen": {
         "remmen": "n.t.b.",
-        "wielmaat": "n.t.b.",
+        "wielmaat": "n.t.b. (vaak 28\"/700c in Explore-lijn; niet hard bevestigd in gebruikte snippets)",
         "bandenmaat": "n.t.b.",
         "aandrijving_versnellingen": "n.t.b."
       },
       "algemeen": {
         "gewicht": "n.t.b.",
-        "prijs_eu": "€ 4.099 (opgave)",
-        "categorie": "trekking e-bike",
-        "doelgroep": "toeren/woon-werk",
-        "merk_model": "Giant Explore E+ 2 Heren (2026) als proxy voor \"Explore E+\"",
+        "prijs_eu": "n.t.b.",
+        "categorie": "trekking / allround e-bike",
+        "doelgroep": "woon-werk + toertochten, ook heuvelachtig",
+        "merk_model": "Giant Explore E+ (aangenomen: Explore E+ 1 / Sport 2 platform)",
         "afmetingen_zithoogte": "n.t.b.",
         "payload_totaal_toelaatbaar": "n.t.b."
       },
@@ -7448,10 +7544,10 @@
     "wheel_size": null,
     "tire_size": null,
     "frame_material": null,
-    "motor_type": "SyncDrive Sport 2",
+    "motor_type": "SyncDrive Sport 2 middenmotor (powered by Yamaha)",
     "motor_power_w": 250,
-    "torque_nm": null,
-    "battery_type": "Li-ion (EnergyPak)",
+    "torque_nm": 75,
+    "battery_type": "Li-ion (EnergyPak), geïntegreerd",
     "battery_voltage": 36,
     "battery_ah": 17.4,
     "charging_time_hours": null,
@@ -7459,7 +7555,7 @@
     "gear_system": null,
     "suspension": null,
     "lighting": null,
-    "display": null,
+    "display": "RideControl Dash (full color LCD)",
     "connectivity": {},
     "warranty_years": null,
     "certification": null
