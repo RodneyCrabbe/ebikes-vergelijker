@@ -2498,42 +2498,42 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "Bosch PowerTube 750Wh (optioneel + PowerMore 250 range extender) (opgave)",
-        "type": "geïntegreerd (vertical)",
-        "lader_laadtijd": "Bosch BES3 4A (230V) (opgave dealer; laadtijd afhankelijk van Bosch accu/SoC)",
+        "accu": "750Wh (Bosch PowerTube 750 Vertical) (opgave)",
+        "type": "geïntegreerd; optioneel Bosch PowerMore 250 range extender (opgave)",
+        "lader_laadtijd": "n.t.b.",
         "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
         "materiaal": "n.t.b.",
-        "vork_vering": "SR Suntour Mobie 34, 100 mm (optie/variant incl. ABS-voorvork) (opgave)",
-        "bijzonderheden": "Gates CDX riem; Enviolo Trekking naaf (traploos); optioneel Bosch eBike ABS; GVWR 160 kg (opgave)",
+        "vork_vering": "SR Suntour Mobie 34, 100 mm (opgave)",
+        "bijzonderheden": "block lock; MIK-drager; offroad kit optie (opgave)",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
         "type": "Bosch Performance Line CX (smart system) middenmotor (opgave)",
-        "vermogen_eu": "250W nominaal (EU) (algemene EU-classificatie; R&M levert EU-configuraties)",
-        "koppel_opgave": "85 Nm (Bosch CX standaardwaarde)",
+        "vermogen_eu": "250W (EPAC)",
+        "koppel_opgave": "n.t.b. (niet expliciet in de R&M-pagina-uittrek)",
         "display_bediening": "Bosch Intuvia 100 (standaard) of Kiox 300 (optie) (opgave)"
       },
       "wielen": {
-        "remmen": "n.t.b.",
-        "wielmaat": "27,5\" (opgave datasectie R&M)",
-        "bandenmaat": "Schwalbe Super Moto-X 62-584 (basis) of Johnny Watts 365 60-584 (optie) (opgave)",
-        "aandrijving_versnellingen": "Gates riem; Enviolo (traploos) (opgave)"
+        "remmen": "Magura MT4 / MT5 (optie) / ABS-variant (opgave)",
+        "wielmaat": "27,5\" (opgave)",
+        "bandenmaat": "o.a. Schwalbe Super Moto-X 62-584 of Johnny Watts 365 60-584 (optie) (opgave)",
+        "aandrijving_versnellingen": "Enviolo Trekking naaf + Gates CDX riem (opgave)"
       },
       "algemeen": {
-        "gewicht": "~30,5 kg (afhankelijk framemaat/uitvoering) (opgave R&M)",
-        "prijs_eu": "€ 5.849 (R&M configurator basisprijs)",
-        "categorie": "trekking / allround premium",
-        "doelgroep": "woon-werk + lange tochten, ook met belading",
+        "gewicht": "30,1–30,7 kg (framemaat-afhankelijk) (opgave)",
+        "prijs_eu": "€5.849 (basisprijs in configurator) (opgave)",
+        "categorie": "e-trekking/commuter",
+        "doelgroep": "woon-werk, touring",
         "merk_model": "Riese & Müller Charger4 GT vario",
-        "afmetingen_zithoogte": "n.t.b.",
-        "payload_totaal_toelaatbaar": "160 kg (gross vehicle weight rating) (opgave R&M)"
+        "afmetingen_zithoogte": "totale lengte 185,5–193,5 cm (framemaat-afhankelijk) (opgave)",
+        "payload_totaal_toelaatbaar": "max totaalgewicht 160 kg (opgave)"
       },
       "features": {
-        "accessoires": "opties o.a. voordrager, slotketting, RX-chip (tracking services), comfort/offroad kit (opgave configurator)",
-        "verlichting": "n.t.b. (afhankelijk van uitrustingsoptie)",
-        "connectiviteit": "Bosch smart system (Flow app) (algemeen Bosch smart)",
+        "accessoires": "MIK-bagagedrager; voordrager/kettingslot/ABS/RX-chip opties (opgave)",
+        "verlichting": "Supernova mini 2 Pro voor; Axa Juno Signal of Supernova M99 remlicht (optie) achter (opgave)",
+        "connectiviteit": "RX Services (RX Chip optie) (opgave)",
         "waterdichtheid": "n.t.b."
       }
     },
@@ -8059,5 +8059,357 @@
     },
     "warranty_years": 2,
     "certification": "US Class 1"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440120",
+    "brand": "Tern",
+    "model_name": "Vektron S10",
+    "version": "Folding e-bike (400Wh, Bosch Performance)",
+    "price": null,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 400,
+    "top_speed": 25,
+    "image_url": "/img/Tern Vektron S10/placeholder.webp",
+    "affiliate_url": "https://www.ternbicycles.com/vektron-s10",
+    "cpl_rate": 25,
+    "description": "De Tern Vektron S10 is een vouw-e-bike met Bosch Performance middenmotor.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [],
+    "colors": [],
+    "highlights": [],
+    "specifications": {
+      "accu": {
+        "accu": "400Wh (opgave)",
+        "type": "Bosch PowerPack (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "aluminium (retailer-opgave)",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "vouw-e-bike",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance middenmotor",
+        "vermogen_eu": "250W (EPAC)",
+        "koppel_opgave": "65 Nm (opgave)",
+        "display_bediening": "Bosch Purion (opgave)"
+      },
+      "wielen": {
+        "remmen": "Magura MT4 hydraulische schijfremmen (opgave)",
+        "wielmaat": "20\"",
+        "bandenmaat": "Schwalbe Big Apple (opgave; exacte maat n.t.b.)",
+        "aandrijving_versnellingen": "Shimano Deore 10-speed (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "22,1 kg (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "vouw e-bike",
+        "doelgroep": "forenzen, OV-combi, compacte opslag",
+        "merk_model": "Tern Vektron S10",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "bagagedrager (opgave via retailer)",
+        "verlichting": "verlichting aanwezig (opgave via retailer; details n.t.b.)",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
+    "features": [],
+    "weight_kg": 22.1,
+    "wheel_size": "20\"",
+    "tire_size": null,
+    "frame_material": "aluminium",
+    "motor_type": "Bosch Performance middenmotor",
+    "motor_power_w": 250,
+    "torque_nm": 65,
+    "battery_type": "Bosch PowerPack",
+    "battery_voltage": 36,
+    "battery_ah": 11.1,
+    "charging_time_hours": null,
+    "brake_type": "Magura MT4 hydraulische schijfremmen",
+    "gear_system": "Shimano Deore 10-speed",
+    "suspension": null,
+    "lighting": "verlichting aanwezig",
+    "display": "Bosch Purion",
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": "EU EPAC"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440121",
+    "brand": "Tern",
+    "model_name": "GSD S00",
+    "version": "Longtail cargo e-bike (500/1000Wh, Bosch Cargo Line)",
+    "price": null,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": 206,
+    "battery_capacity": 500,
+    "top_speed": 25,
+    "image_url": "/img/Tern GSD S00/placeholder.webp",
+    "affiliate_url": "https://www.ternbicycles.com/gsd-s00",
+    "cpl_rate": 25,
+    "description": "De Tern GSD S00 is een compacte longtail cargo e-bike met Bosch Cargo Line motor.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "tot 206 km wordt genoemd (opgave; sterk afhankelijk)",
+    "action_radius_km": 206,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [],
+    "colors": [],
+    "highlights": [],
+    "specifications": {
+      "accu": {
+        "accu": "500Wh (standaard) óf 1000Wh (dual battery) (opgave)",
+        "type": "Bosch DualBattery-systeem (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "tot 206 km wordt genoemd (opgave; sterk afhankelijk)"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "longtail cargo; compact (zelfde lengte als \"normale\" e-bike wordt vaak genoemd)",
+        "ergonomie_zadel": "verstelbare cockpit; rijderslengte vaak 150–195 cm (opgave via retailer)"
+      },
+      "motor": {
+        "type": "Bosch Cargo Line middenmotor",
+        "vermogen_eu": "250W (EPAC)",
+        "koppel_opgave": "tot 85 Nm (opgave)",
+        "display_bediening": "Bosch Purion (opgave)"
+      },
+      "wielen": {
+        "remmen": "Magura MT5 4-zuiger hydraulisch (opgave via retailer)",
+        "wielmaat": "20\"",
+        "bandenmaat": "voor Schwalbe Big Ben Plus 55-406; achter Tern x Schwalbe Super Moto-X 62-406 (opgave via retailer)",
+        "aandrijving_versnellingen": "Enviolo traploos + Gates CDX riem (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "~35,0 kg (opgave; 34,98–35 kg)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "longtail e-cargobike",
+        "doelgroep": "gezin/cargo, autovervanger",
+        "merk_model": "Tern GSD S00",
+        "afmetingen_zithoogte": "folding size 176 × 40,5 × 83 cm (opgave via retailer)",
+        "payload_totaal_toelaatbaar": "200 kg maximaal toegestaan totaalgewicht (opgave)"
+      },
+      "features": {
+        "accessoires": "zeer uitgebreide cargo-accessoirelijn (Clubhouse/Stormbox e.d.; uitvoering-afhankelijk)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
+    "features": [],
+    "weight_kg": 35.0,
+    "wheel_size": "20\"",
+    "tire_size": "voor Schwalbe Big Ben Plus 55-406; achter Tern x Schwalbe Super Moto-X 62-406",
+    "frame_material": null,
+    "motor_type": "Bosch Cargo Line middenmotor",
+    "motor_power_w": 250,
+    "torque_nm": 85,
+    "battery_type": "Bosch DualBattery-systeem",
+    "battery_voltage": 36,
+    "battery_ah": 13.9,
+    "charging_time_hours": null,
+    "brake_type": "Magura MT5 4-zuiger hydraulisch",
+    "gear_system": "Enviolo traploos + Gates CDX riem",
+    "suspension": null,
+    "lighting": null,
+    "display": "Bosch Purion",
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": "EU EPAC"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440122",
+    "brand": "CUBE",
+    "model_name": "Longtail Sport Hybrid 725",
+    "version": "Longtail cargo e-bike (725Wh, Bosch Cargo Line Gen4)",
+    "price": null,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": null,
+    "battery_capacity": 725,
+    "top_speed": 25,
+    "image_url": "/img/CUBE Longtail Sport Hybrid 725/placeholder.webp",
+    "affiliate_url": "https://www.cube.eu/longtail-sport-hybrid-725",
+    "cpl_rate": 25,
+    "description": "De CUBE Longtail Sport Hybrid 725 is een longtail cargo e-bike met Bosch Cargo Line Gen4 motor.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [],
+    "colors": [],
+    "highlights": [],
+    "specifications": {
+      "accu": {
+        "accu": "725Wh (Bosch PowerPack 725) (opgave)",
+        "type": "uitneembaar; \"twin-battery ready\" (review-opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "starre aluminium cargo-vork (opgave)",
+        "bijzonderheden": "lockable downtube storage; tweede accu in opbergbox bij 1750-variant (review-opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Cargo Line Gen4 middenmotor (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "85 Nm (opgave)",
+        "display_bediening": "Bosch Kiox 300 + LED remote (opgave)"
+      },
+      "wielen": {
+        "remmen": "Magura MT5, 203/203 mm (opgave)",
+        "wielmaat": "26\" (opgave)",
+        "bandenmaat": "n.t.b. (max bandbreedte 67 mm genoemd)",
+        "aandrijving_versnellingen": "Shimano Deore 1x10 (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "n.t.b.",
+        "categorie": "longtail e-cargobike",
+        "doelgroep": "gezin/cargo",
+        "merk_model": "Cube Longtail Sport Hybrid 725",
+        "afmetingen_zithoogte": "one size / aanbevolen rijderslengte 160–190 cm (opgave)",
+        "payload_totaal_toelaatbaar": "200 kg totaal; max 60 kg op achterdrager (opgave)"
+      },
+      "features": {
+        "accessoires": "veel cargo-accessoires (running boards, bench, safety cage, front rack opties) (review-opgave)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
+    "features": [],
+    "weight_kg": null,
+    "wheel_size": "26\"",
+    "tire_size": null,
+    "frame_material": "aluminium",
+    "motor_type": "Bosch Cargo Line Gen4 middenmotor",
+    "motor_power_w": 250,
+    "torque_nm": 85,
+    "battery_type": "uitneembaar; twin-battery ready",
+    "battery_voltage": 36,
+    "battery_ah": 20.1,
+    "charging_time_hours": null,
+    "brake_type": "Magura MT5, 203/203 mm",
+    "gear_system": "Shimano Deore 1x10",
+    "suspension": null,
+    "lighting": null,
+    "display": "Bosch Kiox 300 + LED remote",
+    "connectivity": {},
+    "warranty_years": null,
+    "certification": "EU EPAC"
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440123",
+    "brand": "Cowboy",
+    "model_name": "4 ST",
+    "version": "Connected city e-bike (360Wh, comfort low-step)",
+    "price": 3299,
+    "build_date": "2024-01-01T00:00:00.000Z",
+    "gender_type": "unisex",
+    "action_radius": 65,
+    "battery_capacity": 360,
+    "top_speed": 25,
+    "image_url": "/img/Cowboy 4 ST/placeholder.webp",
+    "affiliate_url": "https://www.cowboy.com/cruiser-st",
+    "cpl_rate": 25,
+    "description": "De Cowboy 4 ST is een connected city e-bike met app-first bediening en geïntegreerde GPS-tracker.",
+    "created_at": "2025-10-12T12:12:25.826Z",
+    "updated_at": "2025-10-12T12:12:25.826Z",
+    "currency": "EUR",
+    "action_radius_text": "40–90 km (opgave; helpcenter noemt 40–80 km)",
+    "action_radius_km": 65,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
+    "images": [],
+    "colors": [],
+    "highlights": [],
+    "specifications": {
+      "accu": {
+        "accu": "360Wh (36V 10Ah) (opgave)",
+        "type": "uitneembare Li-ion, 2,4 kg (opgave)",
+        "lader_laadtijd": "100% in 2u54 (productpagina) of \"3,5h\" (helpcenter; afhankelijk van lader/communicatie)",
+        "actieradius_claim_opgave": "40–90 km (opgave; helpcenter noemt 40–80 km)"
+      },
+      "frame": {
+        "materiaal": "aluminium (algemeen; niet expliciet in snippet)",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "geïntegreerde smartphonehouder + wireless charging (uitvoering-afhankelijk), connected features",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "achterwiel-naafmotor (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "45 Nm (opgave)",
+        "display_bediening": "app-first; geen klassiek display (n.t.b. in bronnen)"
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "27.5\" (historisch voor Cowboy 4; niet in snippets)",
+        "bandenmaat": "47 mm (opgave via retailer)",
+        "aandrijving_versnellingen": "single speed (opgave via retailer)"
+      },
+      "algemeen": {
+        "gewicht": "19,2 kg incl. accu (opgave)",
+        "prijs_eu": "€3.299 (Cruiser; ST-prijs kan afwijken per regio/actie)",
+        "categorie": "connected city e-bike",
+        "doelgroep": "stadscommuter, comfort low-step",
+        "merk_model": "Cowboy Cruiser ST (Cowboy 4 ST)",
+        "afmetingen_zithoogte": "geoptimaliseerd voor 165–190 cm (opgave)",
+        "payload_totaal_toelaatbaar": "n.t.b. (retailer noemt soms ~121 kg max; niet officieel in Cowboy helpcenter)"
+      },
+      "features": {
+        "accessoires": "geïntegreerde GPS-tracker, digitale sleutel, theft alerts, crash detection (opgave)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "Cowboy-app + GPS/security features (opgave)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
+    "features": [],
+    "weight_kg": 19.2,
+    "wheel_size": "27.5\"",
+    "tire_size": "47 mm",
+    "frame_material": "aluminium",
+    "motor_type": "achterwiel-naafmotor",
+    "motor_power_w": 250,
+    "torque_nm": 45,
+    "battery_type": "uitneembare Li-ion",
+    "battery_voltage": 36,
+    "battery_ah": 10,
+    "charging_time_hours": 2.9,
+    "brake_type": null,
+    "gear_system": "single speed",
+    "suspension": null,
+    "lighting": null,
+    "display": "app-first; geen klassiek display",
+    "connectivity": {
+      "app": true,
+      "gps": true,
+      "bluetooth": true
+    },
+    "warranty_years": null,
+    "certification": "EU EPAC"
   }
 ]
