@@ -6458,42 +6458,42 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "615 Wh (48V 12.8Ah)",
-        "type": "Li-ion (opgave)",
+        "accu": "615 Wh (48 V, 12,8 Ah) (opgave)",
+        "type": "uitneembare Li-ion (opgave)",
         "lader_laadtijd": "6–7 uur (opgave)",
-        "actieradius_claim_opgave": "40–80 km (80 km in PAS mode 1, opgave)"
+        "actieradius_claim_opgave": "40–80 km (opgave; 80 km in PAS Mode 1)"
       },
       "frame": {
-        "materiaal": "aluminium",
-        "vork_vering": "rigid",
-        "bijzonderheden": "cadence sensor; 8-speed",
-        "ergonomie_zadel": "zadelhoogte 78 cm (opgave)"
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "star (rigid) (opgave)",
+        "bijzonderheden": "cadence-sensor; EU zonder gashendel (opgave)",
+        "ergonomie_zadel": "zithoogte 78 cm (opgave)"
       },
       "motor": {
-        "type": "naafmotor (opgave: 250W EPAC)",
-        "vermogen_eu": "250 W (EPAC)",
+        "type": "naafmotor voor (EPAC) (opgave)",
+        "vermogen_eu": "250 W (nominaal, opgave)",
         "koppel_opgave": "n.t.b.",
-        "display_bediening": "n.t.b. (productpagina noemt specs, geen duidelijke display-naam)"
+        "display_bediening": "\"smart display\" + SUPER73 app (Bluetooth) (opgave)"
       },
       "wielen": {
         "remmen": "mechanisch (opgave)",
-        "wielmaat": "n.t.b. (inner tubes 20\" genoemd)",
-        "bandenmaat": "LZRD 4.5\" voor/achter; inner tubes 20\" x 4.5/5\" (opgave)",
-        "aandrijving_versnellingen": "8-speed derailleur"
+        "wielmaat": "20\" (afgeleid uit 20\" binnenbandmaat)",
+        "bandenmaat": "20\" x 4.5\" (opgave)",
+        "aandrijving_versnellingen": "8-speed (EU) (opgave)"
       },
       "algemeen": {
-        "gewicht": "28 kg",
-        "prijs_eu": "€ 2.799 (getoonde EU verkoopprijs op pagina)",
-        "categorie": "comfortabele commuter (moped-style)",
-        "doelgroep": "korte/middellange ritten in stad",
-        "merk_model": "SUPER73 ZX",
-        "afmetingen_zithoogte": "68\" x 27.5\" x 42\" (opgave); zithoogte 78 cm",
-        "payload_totaal_toelaatbaar": "rider weight limit 147 kg (opgave)"
+        "gewicht": "28 kg (opgave)",
+        "prijs_eu": "€ 2.799 (opgave; gezien op pagina)",
+        "categorie": "moped-style e-bike / urban fatbike",
+        "doelgroep": "woon-werk / relaxed urban",
+        "merk_model": "SUPER73 ZX (EU, \"Core | Presale\", pagina vermeldt \"Coming January 2026\")",
+        "afmetingen_zithoogte": "L×B×H 68\"×27.5\"×42\" (opgave); zithoogte 78 cm (opgave)",
+        "payload_totaal_toelaatbaar": "147 kg \"rider weight limit\" (opgave)"
       },
       "features": {
-        "accessoires": "n.t.b.",
-        "verlichting": "LED voor/achter; bel",
-        "connectiviteit": "Bluetooth genoemd op pagina (app-ecosysteem)",
+        "accessoires": "bel (opgave)",
+        "verlichting": "LED koplamp + LED achterlicht (opgave)",
+        "connectiviteit": "Bluetooth, SUPER73 app, OTA-updates (opgave)",
         "waterdichtheid": "n.t.b."
       }
     },
@@ -6763,22 +6763,44 @@
       "Premium quality"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Brompton",
-        "type": "Front hub",
-        "power": "250W",
-        "torque": "40Nm"
-      },
-      "battery": {
-        "capacity": "300Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "3 hours"
+      "accu": {
+        "accu": "300 Wh (36 V) (opgave)",
+        "type": "uitneembare Li-ion batterij met LED-display + USB (5V 1.5A) (opgave)",
+        "lader_laadtijd": "4 uur (meegeleverde 2A-lader) (opgave)",
+        "actieradius_claim_opgave": "30–70 km (opgave)"
       },
       "frame": {
-        "material": "Steel/Titanium",
-        "weight": "16.5kg",
-        "wheel_size": "16\""
+        "materiaal": "titaan & staal (opgave)",
+        "vork_vering": "geen (Brompton elastomeer-achterophanging aanwezig als \"suspension\") (opgave)",
+        "bijzonderheden": "vouwfiets; torque/rotatiesensor in trapas (opgave)",
+        "ergonomie_zadel": "zadel \"Superlight\"; zadelpen \"Extended, 35 inch\" (opgave)"
+      },
+      "motor": {
+        "type": "voorwielnaafmotor, borstelloos DC (opgave)",
+        "vermogen_eu": "250 W (opgave)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "Brompton electric app + Quadlock mount; (basis) LED-info op batterij, ondersteuning via fietsbediening (opgave)"
+      },
+      "wielen": {
+        "remmen": "Brompton Dual Pivot remklauwen (opgave)",
+        "wielmaat": "16\" (ETRTO 349) (opgave)",
+        "bandenmaat": "349 x 35C Continental Contact Urban (opgave)",
+        "aandrijving_versnellingen": "12-speed Brompton drivetrain (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "vanaf 16,3 kg (opgave; configuratie-afhankelijk)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "vouw-e-bike / multimodaal",
+        "doelgroep": "pendel, OV-combi, compacte opslag",
+        "merk_model": "Brompton Electric P Line – Explore 12-speed (EU)",
+        "afmetingen_zithoogte": "gevouwen 645×565×270 mm (opgave)",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "spatborden inbegrepen; \"Essentials\" bag 1,5 L (opgave)",
+        "verlichting": "AVY geïntegreerde verlichting (opgave)",
+        "connectiviteit": "Brompton Electric iOS/Android app; Quad Lock mount (opgave)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -6858,22 +6880,44 @@
       "Lightweight"
     ],
     "specifications": {
-      "motor": {
-        "brand": "GoCycle",
-        "type": "Hub motor",
-        "power": "250W",
-        "torque": "40Nm"
-      },
-      "battery": {
-        "capacity": "300Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "3 hours"
+      "accu": {
+        "accu": "ca. 300 Wh (36 V, 8,1 Ah) (opgave)",
+        "type": "uitneembare Li-ion \"quick removable\" (opgave)",
+        "lader_laadtijd": "3 uur (4A 36V) (opgave)",
+        "actieradius_claim_opgave": "tot 65 km (opgave)"
       },
       "frame": {
-        "material": "Magnesium",
-        "weight": "17kg",
-        "wheel_size": "20\""
+        "materiaal": "hydroformed 6061-T6 alu + carbon mid-frame + magnesium Cleandrive (opgave)",
+        "vork_vering": "enkelzijdige (single-sided) carbon voorvork, vast (opgave)",
+        "bijzonderheden": "achter \"Lockshock\" 25 mm veerweg; torque-sensing; snel vouwbaar (opgave)",
+        "ergonomie_zadel": "minimum zadelhoogte 880 mm (opgave)"
+      },
+      "motor": {
+        "type": "proprietary voornaafmotor (G4drive) met traction control (opgave)",
+        "vermogen_eu": "250 W continu (EU) (opgave)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "LED fuel gauge of via smartphone + GocycleConnect app (Bluetooth) (opgave)"
+      },
+      "wielen": {
+        "remmen": "hydraulische schijfremmen v/a (opgave)",
+        "wielmaat": "20\" (406) (opgave)",
+        "bandenmaat": "406-60 / 20 x 2.25\" (opgave)",
+        "aandrijving_versnellingen": "Shimano Nexus 3-speed + Microshift bediening (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "ca. 17,6 kg (incl. standaard & pedalen) (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "premium vouw-e-bike / urban",
+        "doelgroep": "stedelijk, woon-werk, compacte opslag",
+        "merk_model": "GoCycle G4 (EU)",
+        "afmetingen_zithoogte": "opgevouwen: L830×W390×H750 mm (kickstand down) / L880×W390×H615 mm (kickstand up) (opgave)",
+        "payload_totaal_toelaatbaar": "max \"rider weight\" 100 kg (incl. kleding + bagage) (opgave)"
+      },
+      "features": {
+        "accessoires": "USB-C poort 1.5A (opgave)",
+        "verlichting": "DRL: nee (en advies om extra goedgekeurde verlichting te gebruiken) (opgave)",
+        "connectiviteit": "GocycleConnect app via Bluetooth (opgave)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -7048,22 +7092,44 @@
       "Lightweight carbon frame"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Specialized",
-        "type": "SL 1.1",
-        "power": "240W",
-        "torque": "35Nm"
-      },
-      "battery": {
-        "capacity": "320Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "2.5 hours"
+      "accu": {
+        "accu": "320 Wh (opgave)",
+        "type": "Specialized SL1-320, volledig geïntegreerd (opgave)",
+        "lader_laadtijd": "n.t.b. (alleen \"Custom charger, 48V system\" vermeld)",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "material": "Carbon",
-        "weight": "18.5kg",
-        "wheel_size": "29\""
+        "materiaal": "carbon (FACT 11m) (opgave)",
+        "vork_vering": "FOX FLOAT 36 Rhythm, 150–160 mm (maat-afhankelijk) (opgave)",
+        "bijzonderheden": "achtervering 150 mm; compatible met 27.5 of 29\" wielen (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Specialized 1.2 SL Custom RX Trail Tuned (opgave)",
+        "vermogen_eu": "250 W (EPAC-klasse) (afgeleid); fabrikant noemt 320 W \"power\" (opgave)",
+        "koppel_opgave": "50 Nm (opgave)",
+        "display_bediening": "MasterMind TCU + stuurremote, ANT+/Bluetooth, OTA-updates, MicroTune (opgave)"
+      },
+      "wielen": {
+        "remmen": "SRAM Maven Bronze 4-piston, 200 mm rotors (opgave)",
+        "wielmaat": "27.5\" of 29\" (opgave)",
+        "bandenmaat": "n.t.b. (niet in getoonde snippet)",
+        "aandrijving_versnellingen": "n.t.b. (niet in getoonde snippet)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "n.t.b.",
+        "categorie": "light e-MTB full suspension",
+        "doelgroep": "trail / sportief offroad",
+        "merk_model": "Specialized Turbo Levo SL 2 Comp (EU/NL productpagina)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "dropper post (opgave)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "ANT+/Bluetooth + Specialized app/eco-systeem (opgave)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -7144,22 +7210,44 @@
       "Stealth design"
     ],
     "specifications": {
-      "motor": {
-        "brand": "TQ",
-        "type": "HPR50",
-        "power": "250W",
-        "torque": "50Nm"
-      },
-      "battery": {
-        "capacity": "360Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "3 hours"
+      "accu": {
+        "accu": "360 Wh (opgave)",
+        "type": "geïntegreerd; range extender mogelijk (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "19.5kg",
-        "wheel_size": "29\""
+        "materiaal": "carbon (opgave)",
+        "vork_vering": "ca. 150 mm voor / 140 mm achter (opgave)",
+        "bijzonderheden": "\"light assist\" eMTB met compacte middenmotor (TQ) (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "TQ HPR50 middenmotor (opgave)",
+        "vermogen_eu": "250 W (nominaal, opgave)",
+        "koppel_opgave": "50 Nm (opgave)",
+        "display_bediening": "TQ display/bediening (opgave; details variëren per build)"
+      },
+      "wielen": {
+        "remmen": "n.t.b. (build-afhankelijk)",
+        "wielmaat": "29\" (opgave)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "ca. 19,3 kg (variant-afhankelijk; retailer-opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "light e-MTB full suspension",
+        "doelgroep": "trail / all-mountain",
+        "merk_model": "Trek Fuel EXe 9.7",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -7237,22 +7325,44 @@
       "Aluminum frame"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Yamaha",
-        "type": "PW-X3",
-        "power": "250W",
-        "torque": "80Nm"
-      },
-      "battery": {
-        "capacity": "625Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "4-6 hours"
+      "accu": {
+        "accu": "625 Wh (EnergyPak Smart) (opgave)",
+        "type": "geïntegreerd; range extender compatibel (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "23kg",
-        "wheel_size": "29\""
+        "materiaal": "aluminium (ALUXX SL-grade) + forged composite linkage (opgave)",
+        "vork_vering": "RockShox 35 Gold RL DebonAir 150 mm (opgave)",
+        "bijzonderheden": "Maestro 140 mm achter; dropper post; tubeless-ready kit (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "SyncDrive Pro (powered by Yamaha) middenmotor (opgave)",
+        "vermogen_eu": "250 W (nominaal, EPAC) (opgave)",
+        "koppel_opgave": "85 Nm (opgave)",
+        "display_bediening": "RideControl GO (LED frame display) + RideControl Ergo 3 (opgave)"
+      },
+      "wielen": {
+        "remmen": "Shimano BR-M420 4-piston, 203 mm (opgave)",
+        "wielmaat": "29\" (opgave)",
+        "bandenmaat": "29x2.6\" (Maxxis Assegai voor / Dissector achter) (opgave)",
+        "aandrijving_versnellingen": "Shimano Deore 12-speed (10–51T) (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b. (Giant vermeldt geen gewicht); varianten in omloop: 21,1 kg excl. accu (retailer) vs ~19–19,9 kg (reviews/databases)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "e-MTB full suspension",
+        "doelgroep": "trail / all-mountain",
+        "merk_model": "Giant Trance X E+ 3 (2022)",
+        "afmetingen_zithoogte": "wielbasis/geo per maat beschikbaar (opgave)",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "tubeless kit meegeleverd (opgave)",
+        "verlichting": "optioneel (Giant Recon e-bike lights, direct connectable) (opgave)",
+        "connectiviteit": "ANT+ wireless display compatible (opgave)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -7330,22 +7440,44 @@
       "Carbon frame"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Bosch",
-        "type": "Performance Line CX",
-        "power": "250W",
-        "torque": "85Nm"
-      },
-      "battery": {
-        "capacity": "750Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "5-7 hours"
+      "accu": {
+        "accu": "750 Wh (Bosch PowerTube) (opgave; bij XS/S: 625 Wh volgens listing)",
+        "type": "geïntegreerd Bosch PowerTube (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "material": "Carbon",
-        "weight": "21kg",
-        "wheel_size": "29\""
+        "materiaal": "C:62 carbon front triangle + alu achterdriehoek (opgave)",
+        "vork_vering": "Fox 34 Rhythm 150 mm (opgave)",
+        "bijzonderheden": "full suspension; dropper post; Smart System (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance Line CX Gen4 (Smart System) middenmotor (opgave)",
+        "vermogen_eu": "250 W (nominaal, opgave)",
+        "koppel_opgave": "85 Nm (opgave)",
+        "display_bediening": "Bosch Kiox 300 (opgave)"
+      },
+      "wielen": {
+        "remmen": "Shimano XT hydraulisch, 203/203 mm (opgave)",
+        "wielmaat": "29\" (opgave)",
+        "bandenmaat": "Schwalbe Hans Dampf 2.6\" (opgave)",
+        "aandrijving_versnellingen": "Shimano XT/Deore 1x12 (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "23,8 kg (opgave)",
+        "prijs_eu": "€ 4.899 (voorbeeldprijs listing; retailer)",
+        "categorie": "e-MTB full suspension",
+        "doelgroep": "trail / all-mountain",
+        "merk_model": "CUBE Stereo Hybrid 140 HPC SL 750 (2022, 29\")",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "135 kg max totaalgewicht (opgave)"
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -7411,42 +7543,42 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "variant A (nieuwere NL Ultimate C380): 540Wh / 600Wh / 800Wh (opgave Gazelle NL)",
-        "type": "geïntegreerd/uitneembaar",
-        "lader_laadtijd": "n.t.b.",
-        "actieradius_claim_opgave": "n.t.b."
+        "accu": "540 / 600 / 800 Wh opties (36 V; Ah afhankelijk van keuze) (opgave)",
+        "type": "Bosch geïntegreerd in frame (\"in de buis\") (opgave)",
+        "lader_laadtijd": "met 4A-lader: 540Wh 4u54 / 600Wh 5u24 / 800Wh 6u54 (opgave)",
+        "actieradius_claim_opgave": "(opgave, per accu/stand) 540Wh: 50–120 km; 600Wh: 55–140 km; 800Wh: 70–185 km"
       },
       "frame": {
-        "materiaal": "n.t.b.",
-        "vork_vering": "n.t.b.",
-        "bijzonderheden": "variant A (Gazelle NL \"Ultimate C380\"): Bosch Performance Line PX + Kiox 500 + Enviolo Trekking + riem (opgave Gazelle)",
-        "ergonomie_zadel": "n.t.b."
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "SR Suntour MOBIE34 AIR (lucht), lock-out (opgave)",
+        "bijzonderheden": "High-Step of Low-Step; geïntegreerde kabels; MIK HD drager (opgave)",
+        "ergonomie_zadel": "zithouding \"Actief, Rechtop\"; zadel Selle Royal Essenza Plus Gel; geveerde zadelpen (opgave)"
       },
       "motor": {
-        "type": "variant A: Bosch Performance Line PX middenmotor (opgave Gazelle)",
-        "vermogen_eu": "250W (EU)",
-        "koppel_opgave": "variant A: tot 90 Nm (Bosch PX max)",
-        "display_bediening": "variant A: Bosch Kiox 500 (opgave Gazelle)"
+        "type": "Bosch Smart System Performance Line PX middenmotor (opgave)",
+        "vermogen_eu": "250 W (nominaal, EPAC) (opgave)",
+        "koppel_opgave": "85 Nm (upgrade naar 90 Nm via app genoemd) (opgave)",
+        "display_bediening": "Bosch Kiox 500 + Bluetooth smartphone-koppeling (opgave)"
       },
       "wielen": {
-        "remmen": "n.t.b.",
-        "wielmaat": "28\" (opgave retailer voor HMB 2026)",
-        "bandenmaat": "n.t.b.",
-        "aandrijving_versnellingen": "riem; Enviolo Trekking (traploos) (opgave Gazelle/Fietstest)"
+        "remmen": "Shimano MT420 hydraulische schijfremmen (180/160 mm) (opgave)",
+        "wielmaat": "28\" (opgave)",
+        "bandenmaat": "ETRTO 55-622 (Schwalbe \"The Green Marathon\") (opgave)",
+        "aandrijving_versnellingen": "riem (Gates CDX) + Enviolo Trekking (traploos) (opgave)"
       },
       "algemeen": {
-        "gewicht": "variant B (Ultimate C380 HMB 2024): 28,4 kg (opgave Fietstest; 500Wh)",
-        "prijs_eu": "variant B (2024): € 4.499 (adviesprijs) (opgave Fietstest)",
-        "categorie": "sportief woon-werk / trekking",
-        "doelgroep": "toeren + woon-werk, premium comfort/sport mix",
-        "merk_model": "Gazelle Ultimate C380 HMB (jaar/accu/motor variant)",
-        "afmetingen_zithoogte": "n.t.b.",
-        "payload_totaal_toelaatbaar": "variant B: 130 kg \"gewichtslimiet\" (opgave Mantel; kan per jaar verschillen)"
+        "gewicht": "27 kg \"WithoutBattery\" (opgave)",
+        "prijs_eu": "vanaf € 4.799 (opgave)",
+        "categorie": "e-trekking / sportieve toer e-bike",
+        "doelgroep": "toerritten, woon-werk, comfort-sportief",
+        "merk_model": "Gazelle Ultimate C380 (HMB; Bosch PX Smart System, Enviolo + riem)",
+        "afmetingen_zithoogte": "framehoogtes 46–65 cm; HS/LS (opgave)",
+        "payload_totaal_toelaatbaar": "maximale totaalgewicht 150 kg (opgave)"
       },
       "features": {
-        "accessoires": "vaak ringslot, spatborden, drager (afhankelijk uitvoering/jaar)",
-        "verlichting": "geïntegreerd (modelafhankelijk)",
-        "connectiviteit": "Bosch smart system (bij nieuwere PX/Kiox 500 varianten)",
+        "accessoires": "MIK HD bagagedrager (max 27 kg) + standaard + slot (AXA, ART**) (opgave)",
+        "verlichting": "Herrmans MR10 (90 lux) voor + Spanninga Commuter Glow achter (opgave)",
+        "connectiviteit": "Bluetooth (Kiox 500 / smartphone) (opgave)",
         "waterdichtheid": "n.t.b."
       }
     },
@@ -7703,42 +7835,42 @@
     "highlights": [],
     "specifications": {
       "accu": {
-        "accu": "625 Wh (EnergyPak Smart, geïntegreerd)",
-        "type": "Li-ion (opgave)",
-        "lader_laadtijd": "variant (bronnen verschillen): 6A (2022 retailer) of 4A (2023 retailer)",
-        "actieradius_claim_opgave": "(Giant range table, 625 / SyncDrive Sport 2) zwaar 50 km / goed 100 km / ideaal 180 km (opgave)"
+        "accu": "625 Wh (EnergyPak Smart) (opgave)",
+        "type": "geïntegreerd; range extender compatibel (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "materiaal": "ALUXX aluminium (opgave)",
-        "vork_vering": "SR Suntour NEX E25 63 mm (2022 retail) of SR Suntour XCM34 100 mm (2023 retail)",
-        "bijzonderheden": "duidelijke modeljaar-variant: \"SyncDrive Sport 70Nm\" (2022 retail) vs \"SyncDrive Sport (2) 75Nm\" (Giant 2023)",
+        "materiaal": "aluminium (ALUXX) (opgave)",
+        "vork_vering": "SR Suntour NEX E25, 63 mm (opgave)",
+        "bijzonderheden": "trekking/ATB-achtige e-bike; RideControl Dash (opgave)",
         "ergonomie_zadel": "n.t.b."
       },
       "motor": {
-        "type": "Giant SyncDrive Sport (Yamaha) middenmotor",
-        "vermogen_eu": "250 W klasse (niet expliciet als \"250W\" op Giant NL pagina, wel EPAC-context)",
-        "koppel_opgave": "70 Nm (2022 retail) of 75 Nm (Giant 2023)",
-        "display_bediening": "RideControl Dash 2-in-1 (kleurdisplay + bediening; ANT+ genoemd door Giant)"
+        "type": "SyncDrive Sport 2 (powered by Yamaha) middenmotor (opgave)",
+        "vermogen_eu": "250 W (nominaal, EPAC) (opgave)",
+        "koppel_opgave": "75 Nm (opgave)",
+        "display_bediening": "RideControl Dash (opgave)"
       },
       "wielen": {
-        "remmen": "Shimano BR-MT200 hydraulische schijfremmen, 180 mm (2022 retail)",
-        "wielmaat": "28\" (700c)",
-        "bandenmaat": "GIANT Crosscut Gravel 2, 700x45c (2022 retail) of 700x57C (2023 retail—afhankelijk van uitvoering)",
-        "aandrijving_versnellingen": "2022 retail: Shimano Deore (2x10 = 20) / ketting; 2023 retail verschilt per listing (9/10-speed genoemd)"
+        "remmen": "Tektro HD-M275 hydraulische schijfremmen (opgave)",
+        "wielmaat": "700C / 28\" (afgeleid uit ETRTO)",
+        "bandenmaat": "50-622 (700x50C) (opgave)",
+        "aandrijving_versnellingen": "Shimano Deore 1x10 (11–42T) (opgave)"
       },
       "algemeen": {
-        "gewicht": "n.t.b. (niet eenduidig gevonden)",
-        "prijs_eu": "€ 3.799 (Giant NL pagina, 2023)",
-        "categorie": "trekking / toer e-bike",
-        "doelgroep": "woon-werk + langere tochten buiten de stad",
-        "merk_model": "Giant Explore E+ 1",
+        "gewicht": "n.t.b. (Giant vermeldt vaak geen exact gewicht)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "e-trekking / allroad",
+        "doelgroep": "woon-werk + langere toerritten, ook licht onverhard",
+        "merk_model": "Giant Explore E+ 1 (2023, NL/EU)",
         "afmetingen_zithoogte": "n.t.b.",
         "payload_totaal_toelaatbaar": "n.t.b."
       },
       "features": {
-        "accessoires": "MIK rack (2022 retail); spatborden/standaard (afhankelijk van uitvoering)",
-        "verlichting": "AXA BlueLine Steady E6 50 lux (2022 retail)",
-        "connectiviteit": "ANT+ (Giant noemt op RideControl Dash); app n.t.b.",
+        "accessoires": "bagagedrager + spatborden (opgave)",
+        "verlichting": "Giant Recon E HL 100 / Recon E TL 100 (opgave)",
+        "connectiviteit": "n.t.b.",
         "waterdichtheid": "n.t.b."
       }
     },
@@ -7817,22 +7949,44 @@
       "Mission Control app"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Specialized",
-        "type": "SL 1.1",
-        "power": "240W",
-        "torque": "35Nm"
-      },
-      "battery": {
-        "capacity": "320Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "2.5 hours"
+      "accu": {
+        "accu": "320 Wh (opgave)",
+        "type": "Specialized SL1-320, geïntegreerd; range extender compatibel (opgave)",
+        "lader_laadtijd": "n.t.b. (alleen \"Custom charger, 48V system\" vermeld)",
+        "actieradius_claim_opgave": "tot 195 km (claim, met range extender) (opgave)"
       },
       "frame": {
-        "material": "Carbon",
-        "weight": "14.5kg",
-        "wheel_size": "700c"
+        "materiaal": "E5 aluminium (opgave)",
+        "vork_vering": "Future Shock 1.5 + starre carbon vork (opgave)",
+        "bijzonderheden": "EQ-uitvoering met spatborden + bagagedrager; montagepunten (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Specialized SL 1.1 (lichtgewicht) (opgave)",
+        "vermogen_eu": "n.t.b. (fabrikant noemt piek 240 W) (opgave)",
+        "koppel_opgave": "35 Nm (opgave)",
+        "display_bediening": "MasterMind TCU + stuurremote, ANT+/Bluetooth, OTA-updates (opgave)"
+      },
+      "wielen": {
+        "remmen": "Tektro HD-R510 hydraulisch, 160/160 mm (opgave)",
+        "wielmaat": "700C (afgeleid uit 700x38 bandenmaat)",
+        "bandenmaat": "700x38 mm (Nimbus II Sport Reflect) (opgave)",
+        "aandrijving_versnellingen": "SRAM GX Eagle 12-speed (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "n.t.b.",
+        "categorie": "speed-pedelec? nee (25 km/h EPAC) / lichte e-trekking/commuter",
+        "doelgroep": "woon-werk, snelle toerritten met lage massa",
+        "merk_model": "Specialized Turbo Vado SL 5.0 EQ (NL)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "bagagedrager (Racktime-compatibel) + DRYTECH spatborden (opgave)",
+        "verlichting": "extra heldere voor- en achterverlichting (opgave)",
+        "connectiviteit": "ANT+/Bluetooth + Mission Control / Specialized app (opgave)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -7911,22 +8065,44 @@
       "Trekking features"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Bosch",
-        "type": "Active Line Plus",
-        "power": "250W",
-        "torque": "50Nm"
-      },
-      "battery": {
-        "capacity": "500Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "4-6 hours"
+      "accu": {
+        "accu": "750 Wh (opgave)",
+        "type": "Bosch PowerTube (geïntegreerd) (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b. (retailers noemen vaak ~70–135 km; sterk afhankelijk)"
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "25kg",
-        "wheel_size": "700c"
+        "materiaal": "aluminium (opgave, algemeen in listings)",
+        "vork_vering": "Suntour Mobie 25 Air (opgave)",
+        "bijzonderheden": "\"Plus+\" uitvoering vaak met hoger toelaatbaar totaalgewicht (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance Line CX (Smart System) middenmotor (opgave)",
+        "vermogen_eu": "250 W (nominaal, opgave)",
+        "koppel_opgave": "85 Nm (opgave)",
+        "display_bediening": "Bosch Kiox 300 (opgave)"
+      },
+      "wielen": {
+        "remmen": "Tektro M-535 schijfremmen (opgave)",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "Shimano Deore 10-speed (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "n.t.b.",
+        "categorie": "e-trekking / trekking e-bike",
+        "doelgroep": "toeren + woon-werk (ook zwaardere belading)",
+        "merk_model": "Kalkhoff Endeavour 7.B Move+ (interpreteer \"Move\" als Move+; Smart System / 750Wh)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "tot 170 kg (Plus+ uitvoering, opgave)"
+      },
+      "features": {
+        "accessoires": "volledig uitgerust (verlichting/spatborden/drager) (opgave)",
+        "verlichting": "LED (opgave; details n.t.b.)",
+        "connectiviteit": "Bosch smart system / Flow-app (opgave)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
