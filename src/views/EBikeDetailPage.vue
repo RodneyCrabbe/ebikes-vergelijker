@@ -238,31 +238,45 @@ const filteredDescription = computed(() => {
   if (!ebike.value?.description) return ''
   
   const description = ebike.value.description
-  // Remove any "Specificaties" heading section (##, ###, ####, etc.) and everything after it
-  // Match patterns like: ## Specificaties, ### Specificaties, ##Specificaties, etc.
+  // Normalize line endings (handle both \r\n and \n)
+  const normalized = description.replace(/\r\n/g, '\n')
+  
+  // Remove any "Specificaties" heading section (##, ###, ####, etc.)
+  // Match patterns like: 
+  // - ## Specificaties
+  // - ### Specificaties  
+  // - ##Specificaties
+  // - ## Specificaties (with extra text)
   // Case-insensitive matching
-  const specsPattern = /^#{1,6}\s*[Ss]pecificaties\s*$/m
+  const specsPattern = /^#{1,6}\s*specificaties\s*.*$/im
   
-  // Split by lines to find the heading
-  const lines = description.split('\n')
-  let filteredLines: string[] = []
-  let foundSpecs = false
+  // Find the index of the "Specificaties" heading
+  const match = normalized.match(specsPattern)
   
-  for (const line of lines) {
-    // Check if this line is a "Specificaties" heading
-    if (specsPattern.test(line.trim())) {
-      foundSpecs = true
-      break
+  if (match && match.index !== undefined) {
+    // Get the text before "Specificaties"
+    const beforeSpecs = normalized.substring(0, match.index).trim()
+    
+    // Get everything after "Specificaties" heading
+    const afterSpecsStart = match.index + match[0].length
+    const afterSpecs = normalized.substring(afterSpecsStart)
+    
+    // Find the next major heading (## or ###) that is NOT "Specificaties"
+    // This allows us to keep sections like "Prijs & beschikbaarheid", "Wettelijke noot", "Links"
+    const nextHeadingPattern = /^#{1,3}\s+(?!specificaties).+$/im
+    const nextHeadingMatch = afterSpecs.match(nextHeadingPattern)
+    
+    if (nextHeadingMatch && nextHeadingMatch.index !== undefined) {
+      // There's another section after "Specificaties", keep it
+      const nextSectionContent = afterSpecs.substring(nextHeadingMatch.index).trim()
+      return (beforeSpecs + '\n\n' + nextSectionContent).trim()
     }
-    filteredLines.push(line)
+    
+    // No next section found, return everything before "Specificaties"
+    return beforeSpecs
   }
   
-  // If we found the "Specificaties" section, return everything before it
-  if (foundSpecs) {
-    return filteredLines.join('\n').trim()
-  }
-  
-  return description
+  return normalized
 })
 </script>
 
