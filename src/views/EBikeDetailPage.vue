@@ -241,29 +241,31 @@ const filteredDescription = computed(() => {
   // Normalize line endings (handle both \r\n and \n)
   const normalized = description.replace(/\r\n/g, '\n')
   
-  // Remove any "Specificaties" heading section (##, ###, ####, etc.)
+  // Remove any "Specificaties" or "Volledige specificaties" heading section (##, ###, ####, etc.)
   // Match patterns like: 
   // - ## Specificaties
+  // - ## Volledige specificaties
   // - ### Specificaties  
   // - ##Specificaties
   // - ## Specificaties (with extra text)
   // Case-insensitive matching
-  const specsPattern = /^#{1,6}\s*specificaties\s*.*$/im
+  // This pattern matches "Specificaties" or "Volledige specificaties" (with optional "volledige" prefix)
+  const specsPattern = /^#{1,6}\s*(volledige\s+)?specificaties\s*.*$/im
   
-  // Find the index of the "Specificaties" heading
+  // Find the index of the "Specificaties" or "Volledige specificaties" heading
   const match = normalized.match(specsPattern)
   
   if (match && match.index !== undefined) {
-    // Get the text before "Specificaties"
+    // Get the text before "Specificaties" or "Volledige specificaties"
     const beforeSpecs = normalized.substring(0, match.index).trim()
     
-    // Get everything after "Specificaties" heading
+    // Get everything after the specifications heading
     const afterSpecsStart = match.index + match[0].length
     const afterSpecs = normalized.substring(afterSpecsStart)
     
-    // Find the next major heading (## or ###) that is NOT "Specificaties"
+    // Find the next major heading (## or ###) that is NOT "Specificaties" or "Volledige specificaties"
     // This allows us to keep sections like "Prijs & beschikbaarheid", "Wettelijke noot", "Links"
-    const nextHeadingPattern = /^#{1,3}\s+(?!specificaties).+$/im
+    const nextHeadingPattern = /^#{1,3}\s+(?!(volledige\s+)?specificaties).+$/im
     const nextHeadingMatch = afterSpecs.match(nextHeadingPattern)
     
     if (nextHeadingMatch && nextHeadingMatch.index !== undefined) {
