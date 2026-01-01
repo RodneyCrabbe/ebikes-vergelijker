@@ -4998,22 +4998,44 @@
       "Lightweight aluminum frame"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Trek",
-        "type": "Hub motor",
-        "power": "500W",
-        "torque": "50Nm"
-      },
-      "battery": {
-        "capacity": "500Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "4-6 hours"
+      "accu": {
+        "accu": "540Wh (Trek productpagina snippet) of 520Wh (99Spokes-database)",
+        "type": "geïntegreerd in downtube (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "~80 km wordt in media genoemd (claim; afhankelijk)"
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "22kg",
-        "wheel_size": "700c"
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "throttle, hybride/commuter",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "achterwiel-naafmotor",
+        "vermogen_eu": "niet-EU (Trek/99Spokes noemen 500W; klasse afhankelijk)",
+        "koppel_opgave": "60 Nm (opgave)",
+        "display_bediening": "LCD display (opgave)"
+      },
+      "wielen": {
+        "remmen": "hydraulische schijfremmen (Rush BH-286; opgave via 99Spokes)",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "650x50 mm (Bontrager GR0 Comp; opgave via 99Spokes)",
+        "aandrijving_versnellingen": "1x8 (opgave via release-info; detail n.t.b.)"
+      },
+      "algemeen": {
+        "gewicht": "22,0 kg (maat M; opgave)",
+        "prijs_eu": "n.t.b. (US MSRP ~$2.099 wordt genoemd; EU-prijs kan afwijken)",
+        "categorie": "e-hybrid commuter",
+        "doelgroep": "woon-werk, instap e-bike met throttle",
+        "merk_model": "Trek FX+ 1 (Midstep)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -5022,29 +5044,30 @@
       "Integrated lights",
       "USB charging"
     ],
-    "weight_kg": 22,
-    "wheel_size": "700c",
-    "tire_size": "700x35c",
-    "frame_material": "aluminium",
-    "motor_type": "Hub motor",
+    "weight_kg": 22.0,
+    "wheel_size": null,
+    "tire_size": "650x50 mm",
+    "frame_material": null,
+    "motor_type": "achterwiel-naafmotor",
     "motor_power_w": 500,
-    "torque_nm": 50,
-    "battery_type": "lithium-ion",
+    "torque_nm": 60,
+    "battery_type": "geïntegreerd in downtube",
     "battery_voltage": 36,
-    "battery_ah": 14,
-    "charging_time_hours": 5,
-    "brake_type": "hydraulische-schijfrem",
-    "gear_system": "derailleur",
+    "battery_ah": 15,
+    "battery_capacity": 540,
+    "charging_time_hours": null,
+    "brake_type": "hydraulische schijfremmen (Rush BH-286)",
+    "gear_system": "1x8",
     "suspension": "geen",
-    "lighting": "led",
-    "display": "lcd",
+    "lighting": null,
+    "display": "LCD display",
     "connectivity": {
       "app": true,
       "gps": false,
       "bluetooth": true
     },
     "warranty_years": 2,
-    "certification": "US Class 1"
+    "certification": "US Class 2/3"
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440102",
@@ -5064,10 +5087,10 @@
     "created_at": "2025-01-15T12:00:00.000Z",
     "updated_at": "2025-01-15T12:00:00.000Z",
     "currency": "USD",
-    "action_radius_text": "Up to 100 miles",
-    "action_radius_km": 160,
-    "top_speed_text": "20 mph (US)",
-    "top_speed_kmh": 32,
+    "action_radius_text": "tot 136 km (opgave; Cannondale)",
+    "action_radius_km": 136,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
     "images": [
       "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_3Q.webp",
       "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_D1.webp",
@@ -5095,22 +5118,44 @@
       "Adventure-ready design"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Bosch",
-        "type": "Active Line Plus",
-        "power": "250W",
-        "torque": "50Nm"
-      },
-      "battery": {
-        "capacity": "500Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "4-6 hours"
+      "accu": {
+        "accu": "500Wh (opgave)",
+        "type": "Bosch (PowerTube/500Wh wordt genoemd)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "tot 136 km (opgave; Cannondale)"
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "25kg",
-        "wheel_size": "700c"
+        "materiaal": "SmartForm C2 Alloy (opgave)",
+        "vork_vering": "100 mm (opgave)",
+        "bijzonderheden": "e-touring/adventure setup",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "bronverschil",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "variant\n    • Cannondale SMU-pagina noemt \"Bosch Performance Line Sport 250W\" (koppel niet genoemd)\n    • NL-retailer noemt \"Bosch Performance Line CX Smart… 85Nm\" (kan andere (2025/EU) uitvoering zijn)",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "Shimano hydraulische schijfremmen (opgave)",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "mixed-surface tyres (n.t.b.)",
+        "aandrijving_versnellingen": "microSHIFT Marvo 9-speed (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "55,3 lb ≈ 25,1 kg (review-opgave; uitvoering-afhankelijk)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "e-touring / e-trekking (adventure)",
+        "doelgroep": "woon-werk + gravel/backroads",
+        "merk_model": "Cannondale Tesoro Neo X 3",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -5119,29 +5164,29 @@
       "Hydraulic brakes",
       "Adventure geometry"
     ],
-    "weight_kg": 25,
-    "wheel_size": "700c",
-    "tire_size": "700x45c",
-    "frame_material": "aluminium",
-    "motor_type": "Active Line Plus",
+    "weight_kg": 25.1,
+    "wheel_size": null,
+    "tire_size": "mixed-surface tyres",
+    "frame_material": "SmartForm C2 Alloy",
+    "motor_type": "bronverschil",
     "motor_power_w": 250,
-    "torque_nm": 50,
-    "battery_type": "lithium-ion",
+    "torque_nm": null,
+    "battery_type": "Bosch (PowerTube/500Wh)",
     "battery_voltage": 36,
-    "battery_ah": 14,
-    "charging_time_hours": 5,
-    "brake_type": "hydraulische-schijfrem",
-    "gear_system": "derailleur",
-    "suspension": "geen",
-    "lighting": "led",
-    "display": "lcd",
+    "battery_ah": 13.9,
+    "charging_time_hours": null,
+    "brake_type": "Shimano hydraulische schijfremmen",
+    "gear_system": "microSHIFT Marvo 9-speed",
+    "suspension": "100 mm",
+    "lighting": null,
+    "display": null,
     "connectivity": {
       "app": true,
       "gps": false,
       "bluetooth": true
     },
     "warranty_years": 2,
-    "certification": "US Class 1"
+    "certification": "EU EPAC"
   },
   {
     "id": "550e8400-e29b-41d4-a716-446655440103",
