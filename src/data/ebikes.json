@@ -2610,22 +2610,44 @@
       "High-quality components"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Bosch",
-        "type": "Performance Line",
-        "power": "250W",
-        "torque": "65Nm"
-      },
-      "battery": {
-        "capacity": "500Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "4-6 hours"
+      "accu": {
+        "accu": "n.t.b. (huidige pagina noemt wél \"range ~50 km\" en \"double battery set\" als optie)",
+        "type": "n.t.b.",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "\"average range 50 km\" (opgave)"
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "45kg",
-        "wheel_size": "20\""
+        "materiaal": "n.t.b.",
+        "vork_vering": "starre vork (2019 spec sheet: stalen rigid fork)",
+        "bijzonderheden": "bak (EPP), kinder-/cargo accessoires (algemeen)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "afhankelijk van generatie/uitvoering",
+        "vermogen_eu": "250W",
+        "koppel_opgave": "varianten (opgave, 2019):\n    • Bosch Performance CX: 75 Nm\n    • Bosch Performance: 65 Nm\n    • Bosch Active Plus: 50 Nm",
+        "display_bediening": "varianten (opgave, 2019): Intuvia of Purion"
+      },
+      "wielen": {
+        "remmen": "varianten (opgave, 2019): o.a. Shimano Zee/Deore schijfremmen of rollerbrakes",
+        "wielmaat": "20\" voor / 26\" achter (opgave, 2019)",
+        "bandenmaat": "Schwalbe Big Ben 55-406 (voor) / 55-559 (achter) (opgave, 2019)",
+        "aandrijving_versnellingen": "Enviolo naaf, traploos (opgave, 2019)"
+      },
+      "algemeen": {
+        "gewicht": "50 kg (huidige FAQ) óf 51 kg (spec sheet 2019)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "long-john e-cargobike",
+        "doelgroep": "gezin/kindvervoer",
+        "merk_model": "Urban Arrow Family",
+        "afmetingen_zithoogte": "• huidige FAQ: lengte 274 cm, breedte 70 cm, hoogte 110 cm (opgave)\n    • spec sheet 2019: L 260 cm x W 70 cm x H 110 cm (opgave)",
+        "payload_totaal_toelaatbaar": "• huidige FAQ: max totaalgewicht 250 kg (opgave)\n    • spec sheet 2019: max totaalgewicht 275 kg (Performance/Performance CX uitvoeringen) óf 200 kg (Active Plus uitvoeringen) (opgave)"
+      },
+      "features": {
+        "accessoires": "veel accessoires (regen-/zoncover, extra bankje, dragers) (algemeen)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b. (Urban Arrow Connected bestaat, maar model/uitvoering-afhankelijk)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -2634,11 +2656,11 @@
       "Family seats",
       "High capacity"
     ],
-    "weight_kg": 45,
-    "wheel_size": "20\"",
-    "tire_size": "20x2.0\"",
-    "frame_material": "aluminium",
-    "motor_type": "Performance Line",
+    "weight_kg": 50,
+    "wheel_size": "20\" voor / 26\" achter",
+    "tire_size": "Schwalbe Big Ben 55-406 (voor) / 55-559 (achter)",
+    "frame_material": null,
+    "motor_type": "afhankelijk van generatie/uitvoering",
     "motor_power_w": 250,
     "torque_nm": 65,
     "battery_type": "lithium-ion",
@@ -2676,8 +2698,8 @@
     "created_at": "2025-01-15T12:00:00.000Z",
     "updated_at": "2025-01-15T12:00:00.000Z",
     "currency": "EUR",
-    "action_radius_text": "Up to 80 km",
-    "action_radius_km": 80,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -2699,51 +2721,75 @@
     "highlights": [
       "Full suspension",
       "Bosch Performance motor",
-      "500Wh battery",
+      "725Wh battery",
       "Premium quality",
       "High cargo capacity"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Bosch",
-        "type": "Performance Line",
-        "power": "250W",
-        "torque": "65Nm"
-      },
-      "battery": {
-        "capacity": "500Wh",
-        "type": "Lithium-ion",
-        "voltage": "36V",
-        "charging_time": "4-6 hours"
+      "accu": {
+        "accu": "725Wh (opgave; \"upgrade mogelijk\") óf 545Wh (opgave; \"EASY\" uitvoering)",
+        "type": "Bosch PowerPack (configuratie-afhankelijk)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b. (R&M gebruikt doorgaans range-calculator; niet als vaste km in specs)"
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "50kg",
-        "wheel_size": "20\""
+        "materiaal": "n.t.b.",
+        "vork_vering": "full suspension / \"Control Technology\" (modelserie-eigenschap; exacte specs n.t.b.)",
+        "bijzonderheden": "long-john cargobike",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Cargo Line (opgave)",
+        "vermogen_eu": "250W (Bosch/R&M EPAC)",
+        "koppel_opgave": "85 Nm (typisch voor Cargo Line; niet expliciet in de R&M snippets hierboven → n.t.b. als formele opgave)",
+        "display_bediening": "o.a. Bosch Purion 200 (opgave; touring)"
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "vanaf 37,1 kg (t touring) of \"vanaf 48 kg\" (EASY configuratie op NL-pagina; waarschijnlijk andere uitrusting/config)",
+        "prijs_eu": "vanaf ca. €7.629 (touring, opgave)",
+        "categorie": "long-john e-cargobike",
+        "doelgroep": "gezin/cargo, autovervanger",
+        "merk_model": "Riese & Müller Load4 75 (Load 75)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "\"Gross vehicle weight rating 200 kg\" (opgave)"
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
       "Full suspension",
-      "Bosch motor",
+      "Bosch Cargo Line motor",
+      "725Wh battery",
       "Premium quality",
-      "High capacity"
+      "High cargo capacity"
     ],
-    "weight_kg": 50,
-    "wheel_size": "20\"",
-    "tire_size": "20x2.0\"",
-    "frame_material": "aluminium",
-    "motor_type": "Performance Line",
+    "weight_kg": 37.1,
+    "wheel_size": null,
+    "tire_size": null,
+    "frame_material": null,
+    "motor_type": "Bosch Cargo Line",
     "motor_power_w": 250,
-    "torque_nm": 65,
-    "battery_type": "lithium-ion",
+    "torque_nm": 85,
+    "battery_type": "Bosch PowerPack",
     "battery_voltage": 36,
-    "battery_ah": 14,
-    "charging_time_hours": 5,
-    "brake_type": "hydraulische-schijfrem",
-    "gear_system": "naafversnelling",
-    "suspension": "volledige-vering",
-    "lighting": "led",
-    "display": "lcd",
+    "battery_ah": 20.1,
+    "battery_capacity": 725,
+    "charging_time_hours": null,
+    "brake_type": null,
+    "gear_system": null,
+    "suspension": "full suspension",
+    "lighting": null,
+    "display": "Bosch Purion 200",
     "connectivity": {
       "app": true,
       "gps": false,
