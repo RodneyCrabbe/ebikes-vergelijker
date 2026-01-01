@@ -9,7 +9,6 @@ import type { EBikeFilters } from '../types/ebike'
 import { getEBikeImageUrl } from '../utils/imagePlaceholder'
 import { topicalPages, getTopicalPageBySlug } from '../data/topicalPages'
 import { useDebounce } from '../composables/useDebounce'
-import { useVirtualizer } from '@tanstack/vue-virtual'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
 import LazyImage from '../components/LazyImage.vue'
@@ -401,38 +400,6 @@ const toggleFavorite = async (ebike: any) => {
 const navigateToDetail = (ebikeId: string) => {
   router.push(`/e-bikes/${ebikeId}`)
 }
-
-// Virtual scrolling setup for grid layout
-const gridContainerRef = ref<HTMLElement>()
-const itemsPerRow = computed(() => {
-  // Calculate based on screen size (matching grid-cols classes)
-  if (typeof window === 'undefined') return 5
-  const width = window.innerWidth
-  if (width >= 1536) return 5 // 2xl
-  if (width >= 1280) return 4 // xl
-  if (width >= 1024) return 3 // lg
-  if (width >= 640) return 2  // sm
-  return 1 // mobile
-})
-
-// Calculate rows for virtual scrolling
-const rows = computed(() => {
-  const items = filteredEBikes.value
-  const perRow = itemsPerRow.value
-  const rowCount = Math.ceil(items.length / perRow)
-  return Array.from({ length: rowCount }, (_, i) => {
-    const start = i * perRow
-    const end = start + perRow
-    return items.slice(start, end)
-  })
-})
-
-const rowVirtualizer = useVirtualizer({
-  count: computed(() => rows.value.length),
-  getScrollElement: () => gridContainerRef.value || undefined,
-  estimateSize: () => 320, // Estimated row height
-  overscan: 5, // Render 5 extra rows for smooth scrolling
-})
 
 onMounted(async () => {
   await ebikeStore.fetchEBikes()
@@ -894,38 +861,15 @@ onMounted(async () => {
               </div>
             </div>
 
-            <!-- E-bike Grid with Virtual Scrolling -->
+            <!-- E-bike Grid -->
             <div v-if="!ebikeStore.loading && !ebikeStore.error && filteredEBikes.length > 0" class="px-6">
               <!-- Count indicator -->
               <div class="mb-4 text-sm text-gray-600">
                 {{ filteredEBikes.length }} van {{ totalPool }} e-bikes
               </div>
-              <div
-                ref="gridContainerRef"
-                class="overflow-auto"
-                style="height: calc(100vh - 300px);"
-              >
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
                 <div
-                  :style="{
-                    height: `${rowVirtualizer.getTotalSize()}px`,
-                    position: 'relative',
-                  }"
-                >
-                  <div
-                    v-for="virtualRow in rowVirtualizer.getVirtualItems()"
-                    :key="virtualRow.key"
-                    :style="{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      width: '100%',
-                      height: `${virtualRow.size}px`,
-                      transform: `translateY(${virtualRow.start}px)`,
-                    }"
-                  >
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 pb-4">
-                      <div
-                        v-for="ebike in rows[virtualRow.index]"
+                  v-for="ebike in filteredEBikes"
                         :key="ebike.id"
                         @click="navigateToDetail(ebike.id)"
                         class="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border border-gray-100/50 cursor-pointer"
@@ -1049,13 +993,10 @@ onMounted(async () => {
                     </button>
                   </div>
                 </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
 
         <!-- Mobile Filter Modal -->
