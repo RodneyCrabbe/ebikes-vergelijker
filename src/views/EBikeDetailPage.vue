@@ -111,8 +111,16 @@ const externalUrls: Record<string, Record<string, string>> = {
 }
 
 // Get external URL for current e-bike
+// Priority: 1. affiliate_url from data, 2. externalUrls mapping
 const getExternalUrl = computed(() => {
   if (!ebike.value) return null
+  
+  // First priority: use affiliate_url from e-bike data
+  if (ebike.value.affiliate_url) {
+    return ebike.value.affiliate_url
+  }
+  
+  // Fallback: use hardcoded externalUrls mapping
   const brand = ebike.value.brand
   const model = ebike.value.model_name
   return externalUrls[brand]?.[model] || null
@@ -127,9 +135,11 @@ const handleExternalLinkClick = () => {
     eventTrackingService.trackEvent({
       category: 'external_link',
       action: 'click',
-      label: `${ebike.value.brand} ${ebike.value.model_name} - ${url}`,
+      label: `${ebike.value?.brand} ${ebike.value?.model_name} - ${url}`,
       value: 1
     })
+  } else {
+    console.warn('No external URL available for this e-bike')
   }
 }
 
@@ -233,53 +243,173 @@ const isFavorite = computed(() => {
   return ebike.value ? favoritesStore.isFavorite(ebike.value.id) : false
 })
 
-// Filter out "Specificaties" section from description to avoid duplication with the tab
+// Helper function to remove a section from markdown content
+function removeSection(content: string, sectionPattern: RegExp): string {
+  const lines = content.split('\n')
+  const result: string[] = []
+  let skipSection = false
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+    
+    // Check if this line matches the section heading pattern
+    if (sectionPattern.test(line)) {
+      skipSection = true
+      continue // Skip the heading line
+    }
+    
+    // If we're in a section to skip, check if we've reached the next major heading
+    if (skipSection) {
+      // Check if this is a new heading (starts with #)
+      if (/^#{1,6}\s+/.test(line)) {
+        // We've reached the next section, stop skipping
+        skipSection = false
+        result.push(line) // Include this heading
+      }
+      // Otherwise, continue skipping this line
+      continue
+    }
+    
+    // Normal line, include it
+    result.push(line)
+  }
+  
+  return result.join('\n')
+}
+
+// Filter out unwanted sections from description
 const filteredDescription = computed(() => {
   if (!ebike.value?.description) return ''
   
   const description = ebike.value.description
   // Normalize line endings (handle both \r\n and \n)
-  const normalized = description.replace(/\r\n/g, '\n')
+  let normalized = description.replace(/\r\n/g, '\n')
   
-  // Remove any "Specificaties" or "Volledige specificaties" heading section (##, ###, ####, etc.)
-  // Match patterns like: 
-  // - ## Specificaties
-  // - ## Volledige specificaties
-  // - ### Specificaties  
-  // - ##Specificaties
-  // - ## Specificaties (with extra text)
-  // Case-insensitive matching
-  // This pattern matches "Specificaties" or "Volledige specificaties" (with optional "volledige" prefix)
+  // Remove "Specificaties" or "Volledige specificaties" section
   const specsPattern = /^#{1,6}\s*(volledige\s+)?specificaties\s*.*$/im
+  normalized = removeSection(normalized, specsPattern)
   
-  // Find the index of the "Specificaties" or "Volledige specificaties" heading
-  const match = normalized.match(specsPattern)
+  // Remove "Prijs & beschikbaarheid" section (with variations)
+  // Matches: "Prijs & beschikbaarheid", "Prijs & Beschikbaarheid", "Prijs en beschikbaarheid", etc.
+  const pricePattern = /^#{1,6}\s*prijs\s*(&\s+|en\s+)beschikbaarheid.*$/im
+  normalized = removeSection(normalized, pricePattern)
   
-  if (match && match.index !== undefined) {
-    // Get the text before "Specificaties" or "Volledige specificaties"
-    const beforeSpecs = normalized.substring(0, match.index).trim()
+  // Remove "Links" section
+  const linksPattern = /^#{1,6}\s*links\s*.*$/im
+  normalized = removeSection(normalized, linksPattern)
+  
+  return normalized.trim()
+})
+
+// Category icons mapping with styling
+const categoryIcons = {
+  accu: {
+    color: 'text-yellow-500',
+    bgColor: 'bg-yellow-50'
+  },
+  frame: {
+    color: 'text-blue-500',
+    bgColor: 'bg-blue-50'
+  },
+  motor: {
+    color: 'text-green-500',
+    bgColor: 'bg-green-50'
+  },
+  wielen: {
+    color: 'text-purple-500',
+    bgColor: 'bg-purple-50'
+  },
+  algemeen: {
+    color: 'text-indigo-500',
+    bgColor: 'bg-indigo-50'
+  },
+  features: {
+    color: 'text-orange-500',
+    bgColor: 'bg-orange-50'
+  }
+}
+
+// Transform technical keys to human-readable labels
+const getReadableLabel = (key: string): string => {
+  const labelMap: Record<string, string> = {
+    // Accu
+    accu: 'Accu',
+    type: 'Type',
+    lader_laadtijd: 'Laadtijd',
+    actieradius_claim_opgave: 'Actieradius (claim)',
     
-    // Get everything after the specifications heading
-    const afterSpecsStart = match.index + match[0].length
-    const afterSpecs = normalized.substring(afterSpecsStart)
+    // Frame
+    materiaal: 'Materiaal',
+    vork_vering: 'Vork/Vering',
+    bijzonderheden: 'Bijzonderheden',
+    ergonomie_zadel: 'Ergonomie Zadel',
     
-    // Find the next major heading (## or ###) that is NOT "Specificaties" or "Volledige specificaties"
-    // This allows us to keep sections like "Prijs & beschikbaarheid", "Wettelijke noot", "Links"
-    const nextHeadingPattern = /^#{1,3}\s+(?!(volledige\s+)?specificaties).+$/im
-    const nextHeadingMatch = afterSpecs.match(nextHeadingPattern)
+    // Motor
+    vermogen_eu: 'Vermogen (EU)',
+    koppel_opgave: 'Koppel',
+    display_bediening: 'Display/Bediening',
     
-    if (nextHeadingMatch && nextHeadingMatch.index !== undefined) {
-      // There's another section after "Specificaties", keep it
-      const nextSectionContent = afterSpecs.substring(nextHeadingMatch.index).trim()
-      return (beforeSpecs + '\n\n' + nextSectionContent).trim()
-    }
+    // Wielen
+    remmen: 'Remmen',
+    wielmaat: 'Wielmaat',
+    bandenmaat: 'Bandenmaat',
+    aandrijving_versnellingen: 'Versnellingen',
     
-    // No next section found, return everything before "Specificaties"
-    return beforeSpecs
+    // Algemeen
+    gewicht: 'Gewicht',
+    prijs_eu: 'Prijs (EU)',
+    categorie: 'Categorie',
+    doelgroep: 'Doelgroep',
+    merk_model: 'Merk/Model',
+    afmetingen_zithoogte: 'Afmetingen/Zithoogte',
+    payload_totaal_toelaatbaar: 'Max. Belading',
+    
+    // Features
+    accessoires: 'Accessoires',
+    verlichting: 'Verlichting',
+    connectiviteit: 'Connectiviteit',
+    waterdichtheid: 'Waterdichtheid'
   }
   
-  return normalized
-})
+  return labelMap[key] || key.split('_').map(word => 
+    word.charAt(0).toUpperCase() + word.slice(1)
+  ).join(' ')
+}
+
+// Get category display name
+const getCategoryName = (category: string): string => {
+  const categoryNames: Record<string, string> = {
+    accu: 'Accu',
+    frame: 'Frame',
+    motor: 'Motor',
+    wielen: 'Wielen',
+    algemeen: 'Algemeen',
+    features: 'Features'
+  }
+  return categoryNames[category] || category.charAt(0).toUpperCase() + category.slice(1)
+}
+
+// Get category icon and styling
+const getCategoryIcon = (category: string) => {
+  return categoryIcons[category as keyof typeof categoryIcons] || {
+    icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z',
+    color: 'text-gray-500',
+    bgColor: 'bg-gray-50'
+  }
+}
+
+// Format value display (handle n.t.b. and special cases)
+const formatValue = (value: string | null | undefined): string => {
+  if (!value || value === 'n.t.b.' || value === 'n.t.b') {
+    return 'Niet opgegeven'
+  }
+  return value
+}
+
+// Check if value is empty/not provided
+const isEmptyValue = (value: string | null | undefined): boolean => {
+  return !value || value === 'n.t.b.' || value === 'n.t.b'
+}
 </script>
 
 <template>
@@ -469,21 +599,96 @@ const filteredDescription = computed(() => {
           <!-- Tab Content -->
           <div class="p-8">
             <!-- Specifications Tab -->
-            <div v-if="showSpecs" class="space-y-8">
+            <div v-if="showSpecs" class="space-y-6">
               <div 
                 v-for="(specs, category) in ebike.specifications" 
                 :key="category"
-                class="space-y-4"
+                class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-200"
               >
-                <h3 class="text-xl font-semibold text-gray-900 capitalize">{{ category }}</h3>
+                <!-- Category Header with Icon -->
+                <div class="flex items-center mb-6 pb-4 border-b border-gray-100">
+                  <div :class="['p-2 rounded-lg', getCategoryIcon(category).bgColor]">
+                    <svg 
+                      class="w-6 h-6"
+                      :class="getCategoryIcon(category).color"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      v-if="category === 'accu'"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h12v10z" />
+                    </svg>
+                    <svg 
+                      class="w-6 h-6"
+                      :class="getCategoryIcon(category).color"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      v-else-if="category === 'frame'"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <svg 
+                      class="w-6 h-6"
+                      :class="getCategoryIcon(category).color"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      v-else-if="category === 'motor'"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <svg 
+                      class="w-6 h-6"
+                      :class="getCategoryIcon(category).color"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      v-else-if="category === 'wielen'"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                    <svg 
+                      class="w-6 h-6"
+                      :class="getCategoryIcon(category).color"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      v-else-if="category === 'algemeen'"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <svg 
+                      class="w-6 h-6"
+                      :class="getCategoryIcon(category).color"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      v-else
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                    </svg>
+                  </div>
+                  <h3 class="ml-3 text-xl font-semibold text-gray-900">{{ getCategoryName(category) }}</h3>
+                </div>
+                
+                <!-- Specification Items -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div 
                     v-for="(value, key) in specs" 
                     :key="key"
-                    class="flex justify-between py-2 border-b border-gray-100"
+                    class="flex flex-col sm:flex-row sm:justify-between py-3 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
                   >
-                    <span class="font-medium text-gray-700">{{ key }}:</span>
-                    <span class="text-gray-900">{{ value }}</span>
+                    <span class="font-medium text-gray-700 mb-1 sm:mb-0 sm:mr-4">{{ getReadableLabel(key) }}:</span>
+                    <span 
+                      :class="[
+                        'text-gray-900 font-normal sm:text-right flex-1',
+                        isEmptyValue(value) ? 'text-gray-400 italic' : ''
+                      ]"
+                    >
+                      {{ formatValue(value) }}
+                    </span>
                   </div>
                 </div>
               </div>
