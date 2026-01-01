@@ -894,33 +894,8 @@ onMounted(async () => {
               </div>
             </div>
 
-            <!-- Loading State -->
-            <div v-if="ebikeStore.loading" class="px-6 py-12 text-center">
-              <div class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-blue-500 hover:bg-blue-400 transition ease-in-out duration-150 cursor-not-allowed">
-                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                E-bikes laden...
-              </div>
-            </div>
-
-            <!-- Error State -->
-            <div v-else-if="ebikeStore.error" class="px-6 py-12 text-center">
-              <div class="text-red-600 mb-4">
-                <svg class="mx-auto h-12 w-12 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-medium text-gray-900 mb-2">Fout bij laden</h3>
-              <p class="text-gray-500 mb-4">{{ ebikeStore.error }}</p>
-              <button @click="ebikeStore.fetchEBikes()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
-                Opnieuw proberen
-              </button>
-            </div>
-
             <!-- E-bike Grid with Virtual Scrolling -->
-            <div v-else class="px-6">
+            <div v-if="!ebikeStore.loading && !ebikeStore.error && filteredEBikes.length > 0" class="px-6">
               <!-- Count indicator -->
               <div class="mb-4 text-sm text-gray-600">
                 {{ filteredEBikes.length }} van {{ totalPool }} e-bikes
@@ -1073,7 +1048,6 @@ onMounted(async () => {
                       {{ isInComparison(ebike.id) ? 'Verwijder' : 'Vergelijk' }}
                     </button>
                   </div>
-                  </div>
                 </div>
                       </div>
                     </div>
@@ -1081,6 +1055,8 @@ onMounted(async () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
         <!-- Mobile Filter Modal -->
         <Transition name="slide-up">
