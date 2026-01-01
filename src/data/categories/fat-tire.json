@@ -7,9 +7,9 @@
     "price": 3499,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 100,
     "battery_capacity": 960,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/SUPER73 S2/Super73_EU_YM22_S2-White_Right_068a112d-4680-46cf-85c2-9ebf5a13f13d.webp",
     "affiliate_url": "https://eu.super73.com/products/super73-s2-bone-white",
     "cpl_rate": 25,
@@ -74,40 +74,66 @@
       }
     ],
     "specifications": {
-      "e_systeem": {
-        "accu": "48 V / 20 Ah ≈ 960 Wh",
-        "motor": "achternaaf 250 W (EU)",
-        "ondersteuning": "tot 25 km/u (EU-pedelec)"
+      "accu": {
+        "accu": "960 Wh (48V 20Ah)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "6–7 uur (opgave)",
+        "actieradius_claim_opgave": "80–120 km (120 km in PAS mode 1, opgave)"
       },
-      "frame_remmen": {
-        "frame": "aluminium, moped-stijl, one-size",
-        "remmen": "hydraulische schijfremmen"
+      "frame": {
+        "materiaal": "aluminium",
+        "vork_vering": "voorvering, achter rigid",
+        "bijzonderheden": "cadence sensor; 8-speed; \"Smart Display\" + app functies (navigatie/OTA)",
+        "ergonomie_zadel": "zadelhoogte 78 cm (opgave)"
       },
-      "wielen_maten": {
-        "banden": "20×4,5–5,0″ (SUPER73 BDGR)",
-        "wielen": "20″"
+      "motor": {
+        "type": "naafmotor (opgave: 250W EPAC)",
+        "vermogen_eu": "250 W (EPAC)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "Smart display + app (Bluetooth) (opgave)"
+      },
+      "wielen": {
+        "remmen": "hydraulisch",
+        "wielmaat": "n.t.b. (binnenband 20\" genoemd)",
+        "bandenmaat": "MAXXIS SuperSucker 4.5\" voor / 5\" achter; inner tubes 20\" x 4.5/5\" (opgave)",
+        "aandrijving_versnellingen": "8-speed derailleur"
+      },
+      "algemeen": {
+        "gewicht": "33 kg",
+        "prijs_eu": "n.t.b.",
+        "categorie": "\"moped-style\" urban cruiser",
+        "doelgroep": "stadscruisen/comfort",
+        "merk_model": "SUPER73 S2",
+        "afmetingen_zithoogte": "68\" x 27.5\" x 42\" (LxBxH, opgave); zithoogte 78 cm",
+        "payload_totaal_toelaatbaar": "rider weight limit 147 kg (opgave)"
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "LED voor/achter; claxon (horn)",
+        "connectiviteit": "Bluetooth (iOS/Android)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
       "EU EPAC gecertificeerd",
       "Geïntegreerde verlichting",
-      "Single-speed setup",
+      "8-speed derailleur",
       "Moped-stijl frame",
       "Hydraulische schijfremmen",
       "Fat-tire banden",
-      "One-size fits all"
+      "Smart Display + app"
     ],
-    "weight_kg": 25.5,
+    "weight_kg": 33,
     "wheel_size": "20\"",
-    "tire_size": "20×4,5–5,0″",
-    "frame_material": "Aluminium",
-    "motor_type": "Achternaaf 250 W (EU)",
+    "tire_size": "MAXXIS SuperSucker 4.5\" voor / 5\" achter",
+    "frame_material": "aluminium",
+    "motor_type": "naafmotor (250W EPAC)",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "Lithium-ion",
+    "torque_nm": null,
+    "battery_type": "Li-ion",
     "battery_voltage": 48,
     "battery_ah": 20,
-    "charging_time_hours": 6,
+    "charging_time_hours": 6.5,
     "brake_type": "Hydraulische schijfremmen",
     "gear_system": "Single-speed",
     "suspension": "Geen",
@@ -126,16 +152,16 @@
     "brand": "SUPER73",
     "model_name": "ZX",
     "version": "Fat-tire e-bike (EU)",
-    "price": 2499,
+    "price": 2799,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 480,
-    "top_speed": null,
+    "action_radius": 60,
+    "battery_capacity": 615,
+    "top_speed": 25,
     "image_url": "/img/SUPER73 ZX/1844817042.jpg",
     "affiliate_url": "https://eu.super73.com/products/super73-zx",
     "cpl_rate": 25,
-    "description": "# SUPER73 ZX — Fat-tire e-bike (48 V 10 Ah ≈ 480 Wh, 25 km/u EU)\r\n\r\n**Kort overzicht**  \r\nDe SUPER73 ZX (EU) is de toegankelijke, stadsgerichte fat-bike in de Z-serie. Hij heeft een EU-legale 250 W achternaafmotor en een 48 V / 10 Ah (≈ 480 Wh) accu. De 20×4″ Trooper-banden geven veel grip en comfort; schijfremmen zorgen voor controle. Fabrieks/retaileropgave: ~60 km bereik per lading (afhankelijk van stand, wegdek en omstandigheden). EU-topsnelheid 25 km/u (pedelec).\r\n\r\n## Highlights\r\n\r\n- **Soepele aandrijving:** EU-gelimiteerde 250 W naafmotor (pedelec).\r\n- **Energiepakket:** 48 V / 10 Ah ≈ 480 Wh accu.\r\n- **Actieradius (claim/opgave):** ~60 km onder gunstige omstandigheden.\r\n- **Controle & comfort:** schijfremmen en brede 20×4″ Trooper-banden.\r\n- **Gebruiksgemak:** one-size moped-stijl frame; doorgaans single-speed in EU-spec.\r\n\r\n## Specificaties\r\n\r\n**E-systeem**\r\n- Motor: achternaaf 250 W (EU)\r\n- Accu: 48 V / 10 Ah ≈ 480 Wh\r\n- Ondersteuning: tot 25 km/u (EU-pedelec)\r\n\r\n**Frame & remmen**\r\n- Frame: aluminium, moped-stijl, one-size\r\n- Remmen: schijfremmen\r\n\r\n**Wielen & banden**\r\n- Wielen: 20″\r\n- Banden: 20×4″ (SUPER73 Trooper)\r\n\r\n## Actieradius\r\n\r\n**Claim/opgave:** ~60 km per lading (sterk afhankelijk van rijstand, wind/temperatuur, bandenspanning, terrein en totaalgewicht).\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Filters (voor jullie e-bike categorie)\r\n\r\n- **Merk:** SUPER73\r\n- **Model + versie:** ZX\r\n- **Prijs (EU indicatie):** € 2.499\r\n- **Heren/Dames:** Unisex\r\n- **Actieradius:** ~60 km (claim/opgave)\r\n- **Accucapaciteit:** ≈ 480 Wh (48 V / 10 Ah)\r\n- **Topsnelheid:** 25 km/u (EU)\r\n- **Wielmaat/banden:** 20″ / 20×4″\r\n- **Remmen:** Schijfremmen\r\n- **Bijzonderheden:** EU EPAC, toegankelijke Z-serie, single-speed (EU-spec)\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://eu.super73.com/products/super73-zx\r\n- **Bron(nen):** eu.super73.com",
+    "description": "# SUPER73 ZX — Fat-tire e-bike (48 V 12.8 Ah ≈ 615 Wh, 25 km/u EU)\r\n\r\n**Kort overzicht**  \r\nDe SUPER73 ZX (EU) is de toegankelijke, stadsgerichte fat-bike in de Z-serie. Hij heeft een EU-legale 250 W achternaafmotor en een 48 V / 10 Ah (≈ 480 Wh) accu. De 20×4″ Trooper-banden geven veel grip en comfort; schijfremmen zorgen voor controle. Fabrieks/retaileropgave: ~60 km bereik per lading (afhankelijk van stand, wegdek en omstandigheden). EU-topsnelheid 25 km/u (pedelec).\r\n\r\n## Highlights\r\n\r\n- **Soepele aandrijving:** EU-gelimiteerde 250 W naafmotor (pedelec).\r\n- **Energiepakket:** 48 V / 10 Ah ≈ 480 Wh accu.\r\n- **Actieradius (claim/opgave):** ~60 km onder gunstige omstandigheden.\r\n- **Controle & comfort:** schijfremmen en brede 20×4″ Trooper-banden.\r\n- **Gebruiksgemak:** one-size moped-stijl frame; doorgaans single-speed in EU-spec.\r\n\r\n## Specificaties\r\n\r\n**E-systeem**\r\n- Motor: achternaaf 250 W (EU)\r\n- Accu: 48 V / 10 Ah ≈ 480 Wh\r\n- Ondersteuning: tot 25 km/u (EU-pedelec)\r\n\r\n**Frame & remmen**\r\n- Frame: aluminium, moped-stijl, one-size\r\n- Remmen: schijfremmen\r\n\r\n**Wielen & banden**\r\n- Wielen: 20″\r\n- Banden: 20×4″ (SUPER73 Trooper)\r\n\r\n## Actieradius\r\n\r\n**Claim/opgave:** ~60 km per lading (sterk afhankelijk van rijstand, wind/temperatuur, bandenspanning, terrein en totaalgewicht).\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Filters (voor jullie e-bike categorie)\r\n\r\n- **Merk:** SUPER73\r\n- **Model + versie:** ZX\r\n- **Prijs (EU indicatie):** € 2.499\r\n- **Heren/Dames:** Unisex\r\n- **Actieradius:** ~60 km (claim/opgave)\r\n- **Accucapaciteit:** ≈ 480 Wh (48 V / 10 Ah)\r\n- **Topsnelheid:** 25 km/u (EU)\r\n- **Wielmaat/banden:** 20″ / 20×4″\r\n- **Remmen:** Schijfremmen\r\n- **Bijzonderheden:** EU EPAC, toegankelijke Z-serie, single-speed (EU-spec)\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://eu.super73.com/products/super73-zx\r\n- **Bron(nen):** eu.super73.com",
     "created_at": "2025-10-12T12:12:25.888Z",
     "updated_at": "2025-10-12T12:12:25.890Z",
     "currency": "EUR",
@@ -213,72 +239,68 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48 V / 10 Ah ≈ 480 Wh",
-        "type": "Extern, uitneembaar met sleutel (op bovenbuis)",
-        "lader": "Standaard 2 A (EU)",
-        "bereik": "~60 km (claim/opgave) – afhankelijk van stand, terrein, wind/temperatuur, bandenspanning en totaalgewicht",
-        "extender": "n.v.t."
+        "accu": "615 Wh (48V 12.8Ah)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "6–7 uur (opgave)",
+        "actieradius_claim_opgave": "40–80 km (80 km in PAS mode 1, opgave)"
       },
       "frame": {
-        "vork": "Starre voorvork (rigid)",
-        "frame": "6061-T6 aluminium, moped-stijl, one-size",
-        "banden": "SUPER73 Trooper 20×4″ (street-pattern)",
-        "wielmaat": "20″"
+        "materiaal": "aluminium",
+        "vork_vering": "rigid",
+        "bijzonderheden": "cadence sensor; 8-speed",
+        "ergonomie_zadel": "zadelhoogte 78 cm (opgave)"
       },
       "motor": {
-        "motor": "Achter-naafmotor (geared, borstelloos)",
-        "systeem": "SUPER73 controller/elektronica (EU-spec)",
-        "vermogen": "250 W nominaal (EU)",
-        "bediening": "Stuurdisplay + SUPER73-app (iOS/Android)",
-        "ondersteuning": "EU 25 km/u (pedelec)"
+        "type": "naafmotor (opgave: 250W EPAC)",
+        "vermogen_eu": "250 W (EPAC)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b. (productpagina noemt specs, geen duidelijke display-naam)"
       },
       "wielen": {
-        "crank": "n.t.b.",
-        "banden": "SUPER73 Trooper 20×4″ (street)",
-        "remmen": "Schijfremmen (mechanisch) in EU-uitvoering",
-        "aandrijving": "Single-speed (EU-spec)"
+        "remmen": "mechanisch (opgave)",
+        "wielmaat": "n.t.b. (inner tubes 20\" genoemd)",
+        "bandenmaat": "LZRD 4.5\" voor/achter; inner tubes 20\" x 4.5/5\" (opgave)",
+        "aandrijving_versnellingen": "8-speed derailleur"
       },
       "algemeen": {
-        "gewicht": "n.t.b. (EU-specificatie niet consistent gepubliceerd)",
-        "payload": "n.t.b. (raadpleeg EU-store/dealer)",
-        "categorie": "Fat-tire stads e-bike / moped-stijl",
-        "doelgroep": "Unisex",
-        "merk_model": "SUPER73 ZX"
+        "gewicht": "28 kg",
+        "prijs_eu": "€ 2.799 (getoonde EU verkoopprijs op pagina)",
+        "categorie": "comfortabele commuter (moped-style)",
+        "doelgroep": "korte/middellange ritten in stad",
+        "merk_model": "SUPER73 ZX",
+        "afmetingen_zithoogte": "68\" x 27.5\" x 42\" (opgave); zithoogte 78 cm",
+        "payload_totaal_toelaatbaar": "rider weight limit 147 kg (opgave)"
       },
       "features": {
-        "accessoires": "Optioneel: bagagedrager(s), spatborden, passagiers-voetsteunen, telefoonhouder",
-        "verlichting": "Geïntegreerde LED koplamp en achterlicht (accuvoeding)",
-        "connectiviteit": "SUPER73-app (Bluetooth)",
-        "waterdichtheid": "Spatwaterbestendig (rijden in regen oké; dompelen vermijden)"
+        "accessoires": "n.t.b.",
+        "verlichting": "LED voor/achter; bel",
+        "connectiviteit": "Bluetooth genoemd op pagina (app-ecosysteem)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
       "EU EPAC gecertificeerd",
-      "Toegankelijke Z-serie",
-      "Single-speed setup",
+      "8-speed derailleur",
       "Moped-stijl frame",
-      "Schijfremmen (mechanisch)",
-      "Trooper-banden 20×4″",
+      "Mechanische remmen",
+      "LZRD 4.5\" banden",
       "One-size fits all",
       "Geïntegreerde LED verlichting",
-      "SUPER73-app connectiviteit",
-      "Uitneembare accu met sleutel",
-      "Spatwaterbestendig",
-      "6061-T6 aluminium frame"
+      "Bluetooth connectiviteit"
     ],
-    "weight_kg": 22,
+    "weight_kg": 28,
     "wheel_size": "20\"",
-    "tire_size": "20×4″ (SUPER73 Trooper)",
-    "frame_material": "6061-T6 aluminium",
-    "motor_type": "Achter-naafmotor (geared, borstelloos)",
+    "tire_size": "LZRD 4.5\" voor/achter",
+    "frame_material": "aluminium",
+    "motor_type": "naafmotor (250W EPAC)",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "Lithium-ion",
+    "torque_nm": null,
+    "battery_type": "Li-ion",
     "battery_voltage": 48,
-    "battery_ah": 10,
-    "charging_time_hours": 4,
-    "brake_type": "Schijfremmen (mechanisch)",
-    "gear_system": "Single-speed (EU-spec)",
+    "battery_ah": 12.8,
+    "charging_time_hours": 6.5,
+    "brake_type": "mechanisch",
+    "gear_system": "8-speed derailleur",
     "suspension": "Starre voorvork (rigid)",
     "lighting": "Geïntegreerde LED koplamp en achterlicht (accuvoeding)",
     "display": "Stuurdisplay + SUPER73-app",

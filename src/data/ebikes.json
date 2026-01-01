@@ -7,9 +7,9 @@
     "price": 1099,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 499,
-    "top_speed": null,
+    "action_radius": 88.5,
+    "battery_capacity": null,
+    "top_speed": 25,
     "image_url": "/img/Lectric XP 3.0/Lectric-XP-3.0-brake-front.jpg",
     "affiliate_url": "https://lectricebikes.com/products/lectric-xp-3-0",
     "cpl_rate": 25,
@@ -17,8 +17,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "USD",
-    "action_radius_text": "72-105 km (afhankelijk van accu)",
-    "action_radius_km": 72,
+    "action_radius_text": "tot ca. 45 mi / 65 mi (≈ 72 / 105 km) afhankelijk van accuvariant (opgave)",
+    "action_radius_km": 88.5,
     "top_speed_text": "25 km/h (NL-legaal)",
     "top_speed_kmh": 25,
     "images": [
@@ -35,22 +35,62 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "n.t.b. (wel \"Standard\" of \"Long-Range\" interne 48V-accu genoemd)",
+        "type": "Li-ion, intern (48V)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "tot ca. 45 mi / 65 mi (≈ 72 / 105 km) afhankelijk van accuvariant (opgave)"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "voorvorkvering, ca. 50 mm (opgave)",
+        "bijzonderheden": "vouwfiets, hydraulische schijfremmen (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "achterwiel-hubmotor (opgave)",
+        "vermogen_eu": "n.t.b. (opgave: 500 W, piek 1000 W)",
+        "koppel_opgave": "55 Nm (opgave)",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "hydraulische schijfremmen, 180 mm rotors (opgave)",
+        "wielmaat": "20\" (opgave/typisch voor dit model; n.t.b. in bron)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "n.t.b.",
+        "categorie": "vouw e-bike / utility",
+        "doelgroep": "woon-werk, compact opbergen",
+        "merk_model": "Lectric XP 3.0",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
     "weight_kg": null,
-    "wheel_size": null,
+    "wheel_size": "20\"",
     "tire_size": null,
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
+    "motor_type": "achterwiel-hubmotor",
+    "motor_power_w": 250,
+    "torque_nm": 55,
+    "battery_type": "Li-ion, intern",
+    "battery_voltage": 48,
     "battery_ah": null,
     "charging_time_hours": null,
-    "brake_type": null,
+    "brake_type": "hydraulische schijfremmen, 180 mm rotors",
     "gear_system": null,
-    "suspension": null,
+    "suspension": "voorvorkvering, ca. 50 mm",
     "lighting": null,
     "display": null,
     "connectivity": {},
@@ -67,7 +107,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 672,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Aventon/Level2-Traditional-Feature-01.avif",
     "affiliate_url": "https://aventon.com/products/level-2",
     "cpl_rate": 25,
@@ -75,8 +115,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "USD",
-    "action_radius_text": "Tot 97 km per lading",
-    "action_radius_km": 97,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (NL-legaal)",
     "top_speed_kmh": 25,
     "images": [
@@ -90,25 +130,69 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "672 Wh (opgave)",
+        "type": "Li-ion, uitneembaar (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "verende voorvork (opgave)",
+        "bijzonderheden": "torque sensor (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "achterwiel-hubmotor (opgave)",
+        "vermogen_eu": "n.t.b. (US-klasse; EU-variant n.v.t.)",
+        "koppel_opgave": "60 Nm (opgave)",
+        "display_bediening": "kleurendisplay + bediening op stuur; app-koppeling genoemd (opgave)"
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "ca. 28 kg (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "commuter e-bike",
+        "doelgroep": "woon-werk / stadsgebruik",
+        "merk_model": "Aventon Level.2",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "geïntegreerde verlichting (opgave)",
+        "connectiviteit": "Aventon-app (opgave)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
+    "weight_kg": 28,
     "wheel_size": null,
     "tire_size": null,
-    "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "frame_material": "aluminium",
+    "motor_type": "achterwiel-hubmotor",
+    "motor_power_w": 250,
+    "torque_nm": 60,
+    "battery_type": "Li-ion, uitneembaar",
+    "battery_voltage": 48,
+    "battery_ah": 14,
     "charging_time_hours": null,
     "brake_type": null,
     "gear_system": null,
-    "suspension": null,
-    "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "suspension": "verende voorvork",
+    "lighting": "geïntegreerde verlichting",
+    "display": "kleurendisplay + bediening op stuur",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -122,7 +206,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 672,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Rad Power Bikes RadRunner 2/2022-rad-power-bikes-radrunner-2.jpg",
     "affiliate_url": "https://radpowerbikes.com/products/radrunner-2",
     "cpl_rate": 25,
@@ -130,8 +214,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "EUR",
-    "action_radius_text": "55-88 km",
-    "action_radius_km": 55,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -146,22 +230,62 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "672 Wh (48V, 14Ah) (opgave)",
+        "type": "Li-ion, extern (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "geen (opgave)",
+        "bijzonderheden": "utility/cargo inzet; achterdrager geïntegreerd (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "geared hubmotor (opgave)",
+        "vermogen_eu": "250 W (opgave)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "20\" (opgave)",
+        "bandenmaat": "20\" x 4\" (opgave)",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "29 kg (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "cargo/utility e-bike",
+        "doelgroep": "stadsritten, lichte cargo/2e passagier opties",
+        "merk_model": "Rad Power Bikes RadRunner 2 (EU)",
+        "afmetingen_zithoogte": "zadelhoogte ca. 800–1080 mm (opgave)",
+        "payload_totaal_toelaatbaar": "136 kg (opgave)"
+      },
+      "features": {
+        "accessoires": "spatborden voor/achter; achterdrager geïntegreerd; voordrager optioneel (opgave)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
-    "wheel_size": null,
-    "tire_size": null,
+    "weight_kg": 29,
+    "wheel_size": "20\"",
+    "tire_size": "20\" x 4\"",
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "motor_type": "geared hubmotor",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "battery_type": "Li-ion, extern",
+    "battery_voltage": 48,
+    "battery_ah": 14,
     "charging_time_hours": null,
     "brake_type": null,
     "gear_system": null,
-    "suspension": null,
+    "suspension": "geen",
     "lighting": null,
     "display": null,
     "connectivity": {},
@@ -176,9 +300,9 @@
     "price": 1799,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 97,
     "battery_capacity": 720,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Aventon Aventure.2/49c1de04-fdc7-433f-b352-93f0b096f104_1.avif",
     "affiliate_url": "https://aventon.com/products/aventure-2",
     "cpl_rate": 25,
@@ -186,10 +310,10 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "USD",
-    "action_radius_text": "Tot 96 km",
-    "action_radius_km": 96,
-    "top_speed_text": "32 km/h (VS)",
-    "top_speed_kmh": 32,
+    "action_radius_text": "tot ca. 60 mi (≈ 97 km) (opgave)",
+    "action_radius_km": 97,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
     "images": [
       "/img/Aventon Aventure.2/49c1de04-fdc7-433f-b352-93f0b096f104_1.avif",
       "/img/Aventon Aventure.2/9ecfecc2-4aa0-4cd5-9766-db345a76269d_1.avif",
@@ -199,25 +323,69 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "720 Wh (48V, 15Ah) (opgave; ook afleidbaar uit V×Ah)",
+        "type": "Li-ion, uitneembaar (opgave)",
+        "lader_laadtijd": "ca. 4–5 uur met 3A lader (opgave)",
+        "actieradius_claim_opgave": "tot ca. 60 mi (≈ 97 km) (opgave)"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "verende voorvork (opgave)",
+        "bijzonderheden": "torque sensor; fat tires 4\" (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "achterwiel-hubmotor (opgave)",
+        "vermogen_eu": "n.t.b. (opgave: 750W sustained / piek hoger)",
+        "koppel_opgave": "ca. 80 Nm (opgave)",
+        "display_bediening": "kleurendisplay + app-koppeling genoemd (opgave)"
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "4\" fat tires (opgave)",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "ca. 77 lb (≈ 34,9 kg) (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "fatbike / all-terrain e-bike",
+        "doelgroep": "gemengd terrein, comfort/offroad light",
+        "merk_model": "Aventon Aventure.2",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "geïntegreerde verlichting (opgave)",
+        "connectiviteit": "Aventon-app (opgave)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
+    "weight_kg": 34.9,
     "wheel_size": null,
-    "tire_size": null,
+    "tire_size": "4\" fat tires",
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
-    "charging_time_hours": null,
+    "motor_type": "achterwiel-hubmotor",
+    "motor_power_w": 250,
+    "torque_nm": 80,
+    "battery_type": "Li-ion, uitneembaar",
+    "battery_voltage": 48,
+    "battery_ah": 15,
+    "charging_time_hours": 4.5,
     "brake_type": null,
     "gear_system": null,
-    "suspension": null,
-    "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "suspension": "verende voorvork",
+    "lighting": "geïntegreerde verlichting",
+    "display": "kleurendisplay + app-koppeling",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -239,8 +407,8 @@
     "created_at": "2025-10-12T12:12:25.830Z",
     "updated_at": "2025-10-12T12:12:25.830Z",
     "currency": "EUR",
-    "action_radius_text": "Tot 80 km",
-    "action_radius_km": 100,
+    "action_radius_text": "70 km (317Wh) / 95 km (396Wh)",
+    "action_radius_km": 82.5,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -253,9 +421,49 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "317 Wh (8,8Ah/36V) of 396 Wh (11Ah/36V)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "70 km (317Wh) / 95 km (396Wh) (opgave)"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "accu uitneembaar onder bagagedrager; motor voorwiel; Walkassist + Powerassist (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "voorwielmotor (E-motion)",
+        "vermogen_eu": "n.t.b. (typisch 250 W, maar niet expliciet gevonden)",
+        "koppel_opgave": "29 Nm",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "Shimano Nexus 7 (naaf)"
+      },
+      "algemeen": {
+        "gewicht": "25,0 kg (excl. accu)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "stads/transport e-bike",
+        "doelgroep": "dagelijks stadsgebruik",
+        "merk_model": "Batavus Diva E-go",
+        "afmetingen_zithoogte": "framematen D: 50/56/62 (opgave); zithoogte n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
+    "weight_kg": 25,
     "wheel_size": null,
     "tire_size": null,
     "frame_material": null,
@@ -280,16 +488,16 @@
     "brand": "Knaap",
     "model_name": "AMS X",
     "version": "Black - Fat-tire stads e-bike",
-    "price": 1899,
+    "price": 1599,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
     "action_radius": null,
-    "battery_capacity": 720,
-    "top_speed": null,
+    "battery_capacity": 840,
+    "top_speed": 25,
     "image_url": "/img/Knaap AMS X/ebikes-33-knaap-amsx-high.webp",
     "affiliate_url": "https://knaap.nl/products/ams-x-black",
     "cpl_rate": 25,
-    "description": "# Knaap AMS X (Black) — Fat-tire stads e-bike (36 V 20 Ah ≈ 720 Wh, 25 km/u EU)\r\n\r\n**Kort overzicht**  \r\nDe Knaap AMS X (Black) is een unisex, moped-stijl fat-bike voor dagelijks stadsgebruik en fun-ritten. Hij combineert een ANANDA achternaafmotor (EU 250 W, tot ~80 Nm) met een uitneembare 36 V / 20 Ah ≈ 720 Wh accu. De 20×4.0″ banden, het lange zadel (1–2 personen) en hydraulische schijfremmen zorgen voor comfort en controle. Met Shimano 7-versnellingen, STVZO-verlichting en LCD-display is hij compleet afgemonteerd. Fabrikant/retailers communiceren een bereik tot ~140 km (sterk afhankelijk van omstandigheden). EU-topsnelheid 25 km/u (pedelec). Gewicht ~31 kg, toelaatbaar totaalgewicht ~150 kg (retaileropgave).\r\n\r\n## Highlights\r\n\r\n- **Krachtige hub-aandrijving:** ANANDA achternaafmotor, 250 W (EU) met tot ~80 Nm; ondersteuning tot 25 km/u.\r\n- **Grote accu, veel marge:** 36 V / 20 Ah ≈ 720 Wh, uitneembaar en vergrendelbaar; laadtijd ~4–6 uur.\r\n- **Stadskomfort & controle:** hydraulische schijfremmen, 20×4.0″ anti-lek streetbanden, starre voorvork voor directe stuurprecisie.\r\n- **Schakelen & gearing:** Shimano 7-speed derailleur; single-ring voor.\r\n- **Ergonomie & capaciteit:** one-size aluminium frame, lang zadel geschikt voor 1–2 personen; max. toelaatbaar ~150 kg.\r\n- **Complete uitrusting:** STVZO-LED verlichting (voor/achter), LCD-display, optie voor spatborden, dragers, passagiers-steunen.\r\n- **Bereik (claim):** tot ~140 km per lading; praktijk hangt af van stand, terrein, weer, bandenspanning en totaalgewicht.\r\n- **Onderhoudsgemak:** gesloten kettinglijn, eenvoudig te servicen remmen/derailleur; spatwaterbestendig.\r\n\r\n## Specificaties\r\n\r\n**Algemeen**\r\n- Merk/Model: Knaap AMS X (Black)\r\n- Doelgroep: Unisex (one-size, lang zadel; geschikt voor 1–2 personen)\r\n- Categorie: Fat-tire stads e-bike / moped-stijl\r\n- Gewicht: ≈ 31 kg (retaileropgave)\r\n- Payload: max. 150 kg (retaileropgave)\r\n- Afmetingen: L ~170–172 cm · B ~68 cm · Zithoogte ~83 cm\r\n\r\n**Motor**\r\n- Motor: ANANDA achternaafmotor\r\n- Vermogen: 250 W nominaal (EU)\r\n- Koppel (max): 80 Nm\r\n- Ondersteuning: EU 25 km/u (pedelec)\r\n- Bediening/Display: LCD-display (snelheid, batterij, km-teller)\r\n\r\n**Accu**\r\n- Accu: 36 V / 20 Ah ≈ 720 Wh (Lithium-ion)\r\n- Type: Uitneembaar, vergrendelbaar\r\n- Bereik (claim): tot ~140 km per lading (conditie-afhankelijk)\r\n- Laadtijd / Lader: 4–6 uur met 36 V 3 A lader\r\n\r\n**Frame**\r\n- Frame: Aluminium (gesloten buis met verstevigingsbalk), moped-stijl, one-size\r\n- Vork: Starre aluminium voorvork\r\n- Zithoogte: ca. 83 cm\r\n- Zitplaatsen: Lang zadel voor 1–2 personen\r\n\r\n**Wielen**\r\n- Wielmaat: 20″\r\n- Banden: 20×4.0″ anti-lek (street pattern)\r\n- Remmen: Hydraulische schijfremmen (voor + achter)\r\n- Aandrijving: Shimano 7-speed derailleur\r\n- Crank: Enkel blad (single-speed aandrijflijn voor)\r\n\r\n**Features**\r\n- Verlichting: LED voor (STVZO) & achter (geïntegreerd)\r\n- Accessoires: Spatborden, bagagedragers, passagiers-steunen, alarm (opties)\r\n- Connectiviteit: LCD, geen app-ecosysteem\r\n- Waterdichtheid: Spatwaterbestendig\r\n\r\n## Prijs & beschikbaarheid\r\n\r\n- **Richtprijs:** € 1.899 (EU-store, model/kleur afhankelijk)\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://knaap.nl/products/ams-x-black\r\n- **Bron(nen):** knaap.nl",
+    "description": "# Knaap AMS X (Black) — Fat-tire stads e-bike (48 V 17.5 Ah ≈ 840 Wh, 25 km/u EU)\r\n\r\n**Kort overzicht**  \r\nDe Knaap AMS X (Black) is een unisex, moped-stijl fat-bike voor dagelijks stadsgebruik en fun-ritten. Hij combineert een ANANDA achternaafmotor (EU 250 W, tot ~80 Nm) met een uitneembare 36 V / 20 Ah ≈ 720 Wh accu. De 20×4.0″ banden, het lange zadel (1–2 personen) en hydraulische schijfremmen zorgen voor comfort en controle. Met Shimano 7-versnellingen, STVZO-verlichting en LCD-display is hij compleet afgemonteerd. Fabrikant/retailers communiceren een bereik tot ~140 km (sterk afhankelijk van omstandigheden). EU-topsnelheid 25 km/u (pedelec). Gewicht ~31 kg, toelaatbaar totaalgewicht ~150 kg (retaileropgave).\r\n\r\n## Highlights\r\n\r\n- **Krachtige hub-aandrijving:** ANANDA achternaafmotor, 250 W (EU) met tot ~80 Nm; ondersteuning tot 25 km/u.\r\n- **Grote accu, veel marge:** 36 V / 20 Ah ≈ 720 Wh, uitneembaar en vergrendelbaar; laadtijd ~4–6 uur.\r\n- **Stadskomfort & controle:** hydraulische schijfremmen, 20×4.0″ anti-lek streetbanden, starre voorvork voor directe stuurprecisie.\r\n- **Schakelen & gearing:** Shimano 7-speed derailleur; single-ring voor.\r\n- **Ergonomie & capaciteit:** one-size aluminium frame, lang zadel geschikt voor 1–2 personen; max. toelaatbaar ~150 kg.\r\n- **Complete uitrusting:** STVZO-LED verlichting (voor/achter), LCD-display, optie voor spatborden, dragers, passagiers-steunen.\r\n- **Bereik (claim):** tot ~140 km per lading; praktijk hangt af van stand, terrein, weer, bandenspanning en totaalgewicht.\r\n- **Onderhoudsgemak:** gesloten kettinglijn, eenvoudig te servicen remmen/derailleur; spatwaterbestendig.\r\n\r\n## Specificaties\r\n\r\n**Algemeen**\r\n- Merk/Model: Knaap AMS X (Black)\r\n- Doelgroep: Unisex (one-size, lang zadel; geschikt voor 1–2 personen)\r\n- Categorie: Fat-tire stads e-bike / moped-stijl\r\n- Gewicht: ≈ 31 kg (retaileropgave)\r\n- Payload: max. 150 kg (retaileropgave)\r\n- Afmetingen: L ~170–172 cm · B ~68 cm · Zithoogte ~83 cm\r\n\r\n**Motor**\r\n- Motor: ANANDA achternaafmotor\r\n- Vermogen: 250 W nominaal (EU)\r\n- Koppel (max): 80 Nm\r\n- Ondersteuning: EU 25 km/u (pedelec)\r\n- Bediening/Display: LCD-display (snelheid, batterij, km-teller)\r\n\r\n**Accu**\r\n- Accu: 36 V / 20 Ah ≈ 720 Wh (Lithium-ion)\r\n- Type: Uitneembaar, vergrendelbaar\r\n- Bereik (claim): tot ~140 km per lading (conditie-afhankelijk)\r\n- Laadtijd / Lader: 4–6 uur met 36 V 3 A lader\r\n\r\n**Frame**\r\n- Frame: Aluminium (gesloten buis met verstevigingsbalk), moped-stijl, one-size\r\n- Vork: Starre aluminium voorvork\r\n- Zithoogte: ca. 83 cm\r\n- Zitplaatsen: Lang zadel voor 1–2 personen\r\n\r\n**Wielen**\r\n- Wielmaat: 20″\r\n- Banden: 20×4.0″ anti-lek (street pattern)\r\n- Remmen: Hydraulische schijfremmen (voor + achter)\r\n- Aandrijving: Shimano 7-speed derailleur\r\n- Crank: Enkel blad (single-speed aandrijflijn voor)\r\n\r\n**Features**\r\n- Verlichting: LED voor (STVZO) & achter (geïntegreerd)\r\n- Accessoires: Spatborden, bagagedragers, passagiers-steunen, alarm (opties)\r\n- Connectiviteit: LCD, geen app-ecosysteem\r\n- Waterdichtheid: Spatwaterbestendig\r\n\r\n## Prijs & beschikbaarheid\r\n\r\n- **Richtprijs:** € 1.899 (EU-store, model/kleur afhankelijk)\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://knaap.nl/products/ams-x-black\r\n- **Bron(nen):** knaap.nl",
     "created_at": "2025-10-12T12:12:25.892Z",
     "updated_at": "2025-10-12T12:12:25.894Z",
     "currency": "EUR",
@@ -369,45 +577,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "36 V / 20 Ah ≈ 720 Wh (Lithium-ion)",
-        "type": "Uitneembaar, vergrendelbaar",
-        "extender": "n.v.t.",
-        "bereik_claim": "tot ~140 km per lading (conditie-afhankelijk)",
-        "laadtijd_lader": "4–6 uur met 36 V 3 A lader"
+        "accu": "48V 17,5Ah = afgeleid 840 Wh (opgave fabrikant: 48V 17,5Ah)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "48V 2A (laadtijd n.t.b.)",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "vork": "Starre aluminium voorvork",
-        "frame": "Aluminium (gesloten buis met verstevigingsbalk), moped-stijl, one-size",
-        "zithoogte": "ca. 83 cm (accessoires kunnen dit verhogen)",
-        "zitplaatsen": "Lang zadel voor 1–2 personen"
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "voorvork (aluminium alloy fork, opgave); achtervering n.t.b.",
+        "bijzonderheden": "\"geschikt voor één of twee personen\"; maximale belasting 160 kg (opgave); 7-speed derailleur",
+        "ergonomie_zadel": "seat height 83 cm (opgave)"
       },
       "motor": {
-        "motor": "ANANDA achternaafmotor",
-        "vermogen": "250 W nominaal (EU)",
-        "koppel_max": "80 Nm",
-        "ondersteuning": "EU 25 km/u (pedelec)",
-        "bediening_display": "LCD-display (snelheid, batterij, km-teller)"
+        "type": "achternaafmotor (ANANDA)",
+        "vermogen_eu": "250 W",
+        "koppel_opgave": "80 Nm",
+        "display_bediening": "LCD (opgave)"
       },
       "wielen": {
-        "banden": "20×4.0″ anti-lek (street pattern)",
-        "remmen": "Hydraulische schijfremmen (voor + achter)",
-        "wielmaat": "20″",
-        "crank_overbrenging": "Enkel blad (single-speed aandrijflijn voor)",
-        "aandrijving_versnellingen": "Shimano 7-speed derailleur"
+        "remmen": "hydraulisch remsysteem (opgave)",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b. (anti-puncture genoemd)",
+        "aandrijving_versnellingen": "Shimano 7 versnellingen (derailleur)"
       },
       "algemeen": {
-        "gewicht": "≈ 31 kg (retaileropgave; modeljaar/uitrusting kan variëren)",
-        "payload": "max. 150 kg (retaileropgave)",
-        "categorie": "Fat-tire stads e-bike / moped-stijl",
-        "doelgroep": "Unisex (one-size, lang zadel; geschikt voor 1–2 personen)",
-        "afmetingen": "L ~170–172 cm · B ~68 cm · Zithoogte ~83 cm",
-        "merk_model": "Knaap AMS X (Black)"
+        "gewicht": "n.t.b.",
+        "prijs_eu": "€ 1.599 (getoonde prijs op fabrikantshop; kan showroom/actie zijn)",
+        "categorie": "elektrische fatbike/moped-style",
+        "doelgroep": "stadscruise, duo-gebruik",
+        "merk_model": "Knaap AMS X (AMS X26)",
+        "afmetingen_zithoogte": "lengte 170 cm; stuurhoogte 116 cm; zithoogte 83 cm (opgave)",
+        "payload_totaal_toelaatbaar": "160 kg (opgave)"
       },
       "features": {
-        "verlichting": "LED voor (STVZO) & achter (geïntegreerd)",
-        "connectiviteit": "— (LCD, geen app-ecosysteem)",
-        "waterdichtheid": "Spatwaterbestendig; officiële IP-rating niet opgegeven",
-        "accessoires_opties": "Spatborden, bagagedragers, passagiers-steunen, alarm"
+        "accessoires": "voetsteunen (opgave); n.t.b. verder",
+        "verlichting": "LED voor/achter (StVZO)",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -453,13 +659,13 @@
     "id": "phatfour-fls-detailed",
     "brand": "Phatfour",
     "model_name": "FLS",
-    "version": "Lage zit, stads fat-bike",
-    "price": 0,
+    "version": "urban e-fatbike (FLS-serie, lage zit)",
+    "price": 2540,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 630,
-    "top_speed": null,
+    "action_radius": 65,
+    "battery_capacity": 470,
+    "top_speed": 25,
     "image_url": "/img/Phatfour FLS/website_sides.235.1_1728x.webp",
     "affiliate_url": "https://phatfour.nl/products/fls",
     "cpl_rate": 25,
@@ -467,7 +673,7 @@
     "created_at": "2025-10-12T12:12:25.910Z",
     "updated_at": "2025-10-12T12:12:25.910Z",
     "currency": "EUR",
-    "action_radius_text": "470 Wh: ~25–45 km · 630 Wh: ~40–65 km (stand/condities afhankelijk)",
+    "action_radius_text": "470Wh: 25 km (full power) – 45 km (economy) / 630Wh: 40 km (full power) – 65 km (economy) (opgave)",
     "action_radius_km": 65,
     "top_speed_text": "25 km/u (EU-pedelec)",
     "top_speed_kmh": 25,
@@ -527,37 +733,43 @@
     ],
     "specifications": {
       "accu": {
-        "type": "Beide uitneembaar (Unit Pack Power), vergrendelbaar",
-        "laden": "42 V / 2 A; ~5 uur tot vol, ~80 min tot ~50%",
-        "accu_opties": "36 V / 13 Ah ≈ 470 Wh of 36 V / 17,5 Ah ≈ 630 Wh",
-        "bereik_opgave": "470 Wh: ~25–45 km · 630 Wh: ~40–65 km (stand/condities afhankelijk)"
+        "accu": "36V 13Ah (≈470Wh) of 36V 17,5Ah (≈630Wh) (470Wh is opgave; 36×13=468Wh is afgeleid)",
+        "type": "uitneembare Li-ion \"Unit Pack Power\" (opgave)",
+        "lader_laadtijd": "42V 2A – ca. 5 uur (100%) / ca. 80 min (50%) (opgave; ladervermogen afgeleid: ~84W)",
+        "actieradius_claim_opgave": "470Wh: 25 km (full power) – 45 km (economy) / 630Wh: 40 km (full power) – 65 km (economy) (opgave)"
       },
       "frame": {
-        "frame": "Staal, dubbel gecoat; handgestikt skai-leren zadel",
-        "verlichting": "LED koplamp (accuvoeding)",
-        "zithoogte_ergonomie": "lage zit (FLS-reeks); FLS+ met geveerde vork en vernieuwde elektronica (9 modi)"
+        "materiaal": "handgemaakt, dubbel gecoat stalen frame (opgave)",
+        "vork_vering": "geveerde, hydraulisch gedempte voorvork (opgave)",
+        "bijzonderheden": "lage zit (FLS+); verstelbaar stuur; vernieuwd elektronisch systeem met 9 ondersteuningsstanden (opgave)",
+        "ergonomie_zadel": "handgestikt skai (duo)zadel; zithoogte ca. 83 cm (opgave)"
       },
       "motor": {
-        "motor": "Bafang SWXH achternaaf (geared, brushless)",
-        "vermogen_eu": "250 W (pedelec)",
-        "ondersteuning": "tot 25 km/u (EU-instelling)",
-        "display_bediening": "Kleur-LCD (snelheid, accustatus, afstand, assist-niveaus) + USB-lading"
+        "type": "Bafang SWXH achterwiel-naafmotor (hub) (opgave)",
+        "vermogen_eu": "250W (opgave; EU/25 km/h)",
+        "koppel_opgave": "n.t.b. (Phatfour geeft geen Nm op voor FLS/FLS+)",
+        "display_bediening": "UKS2 kleurendisplay (snelheid/batterij/afstand/assist + USB) (opgave)"
       },
       "wielen": {
-        "banden": "Kenda 20×4,25″ (fat)",
-        "remmen": "hydraulische schijfremmen met Tektro 180 mm rotors",
-        "wielen": "20″ × 3,5″",
-        "versnellingen": "Shimano 7-speed derailleur"
+        "remmen": "hydraulische schijfremmen; 180mm Tektro remschijven (opgave)",
+        "wielmaat": "20\" (opgave; velg 20×3,5\")",
+        "bandenmaat": "20×4,25 Kenda fat tires (handleiding noemt 20×3,5; uitvoering/batch kan verschillen)",
+        "aandrijving_versnellingen": "Shimano 7-speed (opgave)"
       },
       "algemeen": {
-        "gewicht": "~35 kg incl. accu (model/batch afhankelijk)",
-        "categorie": "Stads/fun fat-bike (lage zithoogte)",
-        "doelgroep": "Unisex (one-size)",
-        "merk_model": "Phatfour FLS (serie)",
-        "rijderlengte": "~155–180 cm (opgave FLS-pagina)"
+        "gewicht": "35 kg incl. accu (opgave op Phatfour productpagina) (algemene FLS+/FLB+ handleiding noemt 27 kg; conflicterende opgave)",
+        "prijs_eu": "vanaf € 2.540 incl. btw (opgave)",
+        "categorie": "urban e-fatbike (FLS-serie, lage zit)",
+        "doelgroep": "stadsgebruik/cruisen (ook met accessoires zoals rekken/kinderzitje)",
+        "merk_model": "Phatfour FLS+ (aangenomen: huidige FLS-uitvoering op Phatfour-site; \"FLS\" wordt in praktijk vaak als FLS+ aangeboden)",
+        "afmetingen_zithoogte": "zithoogte 83 cm; lengte bestuurder 155–180 cm (productpagina) (handleiding noemt 170–200 cm; conflicterende opgave)",
+        "payload_totaal_toelaatbaar": "n.t.b. (niet gevonden in officiële productpagina/handleiding)"
       },
       "features": {
-        "poorten": "USB-uitgang aan het display"
+        "accessoires": "o.a. kinderzitje, mandje, telefoonhouder; sidecar-koppeling; surfplank-optie genoemd (opgave)",
+        "verlichting": "LED koplamp; achterlicht aanwezig/bediend via accuschakelaar; bij gemonteerd achterrek kan extra batterij-achterlicht meegeleverd worden (handleiding/opgave)",
+        "connectiviteit": "optioneel \"Phatfour Connected\" (tracker + app-lokalisatie; gebruikt voor verzekering) (opgave)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -579,18 +791,18 @@
     ],
     "weight_kg": 35,
     "wheel_size": "20\"",
-    "tire_size": "20×4,25″",
-    "frame_material": "Staal (dubbel gecoat)",
-    "motor_type": "Bafang SWXH achternaaf (geared, brushless)",
+    "tire_size": "20×4,25",
+    "frame_material": "handgemaakt, dubbel gecoat stalen frame",
+    "motor_type": "Bafang SWXH achterwiel-naafmotor (hub)",
     "motor_power_w": 250,
     "torque_nm": 0,
-    "battery_type": "Li-ion (Unit Pack Power)",
+    "battery_type": "Li-ion, uitneembaar \"Unit Pack Power\"",
     "battery_voltage": 36,
-    "battery_ah": 17.5,
+    "battery_ah": 13,
     "charging_time_hours": 5,
-    "brake_type": "Hydraulische schijfremmen (Tektro 180mm)",
-    "gear_system": "Shimano 7-speed derailleur",
-    "suspension": "Geen",
+    "brake_type": "hydraulische schijfremmen; 180mm Tektro remschijven",
+    "gear_system": "Shimano 7-speed",
+    "suspension": "geveerde, hydraulisch gedempte voorvork",
     "lighting": "LED koplamp (accuvoeding)",
     "display": "Kleur-LCD (snelheid, accustatus, afstand, assist-niveaus)",
     "connectivity": {
@@ -606,13 +818,13 @@
     "id": "phatfour-flb-detailed",
     "brand": "Phatfour",
     "model_name": "FLB",
-    "version": "Stads fat-bike",
-    "price": 0,
+    "version": "urban e-fatbike (grotere framemaat FLB; \"+\" = vernieuwd elektronisch systeem)",
+    "price": 1599,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 630,
-    "top_speed": null,
+    "action_radius": 65,
+    "battery_capacity": 470,
+    "top_speed": 25,
     "image_url": "/img/Phatfour FLB/1963638903.png",
     "affiliate_url": "https://phatfour.nl/products/flb",
     "cpl_rate": 25,
@@ -620,7 +832,7 @@
     "created_at": "2025-10-12T12:12:25.912Z",
     "updated_at": "2025-10-12T12:12:25.912Z",
     "currency": "EUR",
-    "action_radius_text": "470 Wh: ~25–45 km · 630 Wh: ~40–65 km (rijstand/condities afhankelijk)",
+    "action_radius_text": "verschilt per bron — 470Wh: 25–45 km of 35–55 km; 630Wh: 40–65 km of 50–75 km (opgave)",
     "action_radius_km": 65,
     "top_speed_text": "25 km/u (EU-pedelec)",
     "top_speed_kmh": 25,
@@ -679,42 +891,43 @@
     ],
     "specifications": {
       "accu": {
-        "type": "Beide uitneembaar (Unit Pack Power), vergrendelbaar",
-        "laden": "42 V / 2 A; ~5 uur tot 100%, ~80 min tot ~50%",
-        "accu_opties": "36 V / 13 Ah ≈ 470 Wh of 36 V / 17,5 Ah ≈ 630 Wh",
-        "actieradius_opgave": "470 Wh: ~25–45 km · 630 Wh: ~40–65 km (rijstand/condities afhankelijk)"
+        "accu": "36V 13Ah (≈468–470Wh) of 36V 17,5Ah (≈630Wh) (opgave; 470Wh is afgerond, 36×13=468Wh is afgeleid)",
+        "type": "uitneembare Li-ion \"Unit Pack Power\" (opgave)",
+        "lader_laadtijd": "ca. 5 uur (42V 2A); ~80 min tot 50% (opgave)",
+        "actieradius_claim_opgave": "verschilt per bron — 470Wh: 25–45 km of 35–55 km; 630Wh: 40–65 km of 50–75 km (opgave)"
       },
       "frame": {
-        "vork": "Starre voorvork (FLB); FLB+: geveerde, hydraulisch gedempte voorvork + verstelbaar stuur",
-        "frame": "Handgemaakt, dubbel-gecoat staal",
-        "zadel": "handgestikt skai-leer",
-        "kleuren": "Zwart en Ocean Green (andere op aanvraag)"
+        "materiaal": "handgemaakt dubbel gecoat stalen frame (Tata Steel genoemd in handleiding)",
+        "vork_vering": "geveerde, hydraulisch gedempte voorvork (opgave)",
+        "bijzonderheden": "FLB+ = doorontwikkelde FLB; 25 km/h EU-instelling; \"+\"-elektronica met 9 ondersteuningsstanden; verstelbaar stuur; sidecar-/accessoireplatform (opgave)",
+        "ergonomie_zadel": "handgestikt skai (duo)zadel; zithoogte ca. 87 cm; voor rijders ca. 170–200 cm (opgave)"
       },
       "motor": {
-        "motor": "Bafang SWXH achternaaf (geared, brushless)",
-        "vermogen_eu": "250 W (pedelec)",
-        "ondersteuning": "tot 25 km/u (EU-instelling)",
-        "versnellingen": "Shimano 7-speed (FLB-details); sommige FLB(+) listings vermelden 9 versnellingen—dat hoort bij nieuwere/Plus-trims",
-        "display_bediening": "Kleur-LCD (UKS2) met snelheid/accu/afstand + USB-laadpoort"
+        "type": "Bafang SWXH achterwiel-naafmotor (hub) (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "n.t.b. voor FLB+ (geen Nm opgegeven); oudere FLB-serie handleiding noemt \"max koppel 80N\" (onduidelijk of dit 80 Nm bedoelt)",
+        "display_bediening": "UKS2 kleurendisplay met o.a. snelheid/batterij/afstand + USB (opgave); oudere FLB-handleiding noemt Bafang C965 (variant/bouwjaar-afhankelijk)"
       },
       "wielen": {
-        "banden": "Kenda 20″ × 4,25″ (puncture-resistant street)",
-        "remmen": "Hydraulische schijfremmen met Tektro 180 mm rotors",
-        "wielen": "20″ × 3,5″",
-        "aandrijving": "Kettting met derailleur (zie versnellingen hierboven)"
+        "remmen": "hydraulische schijfremmen, 180mm Tektro rotors (opgave)",
+        "wielmaat": "20\" (opgave)",
+        "bandenmaat": "20×4,25 Kenda fat tires (opgave productpagina) of 20×3,5 Kenda (opgave handleiding; variant/batch-afhankelijk)",
+        "aandrijving_versnellingen": "Shimano 7-speed (opgave)"
       },
       "algemeen": {
-        "gewicht": "~35 kg volgens Phatfour; sommige retailers rapporteren lager (≈27–35 kg) afhankelijk van uitvoering/meetmethode",
-        "categorie": "Stads/fun fat-bike (hogere zit t.o.v. FLS)",
-        "doelgroep": "Unisex (one-size; 1–2 personen mogelijk)",
-        "merk_model": "Phatfour FLB (serie)",
-        "zithoogte_flb_plus_indicatie": "~87 cm (ter referentie voor zitgevoel t.o.v. FLS-reeks)"
+        "gewicht": "35 kg incl. accu (opgave productpagina) vs 27 kg in FLB+/FLS+ handleiding en 25 kg in oudere FLB-handleiding (uitvoering/meetwijze onduidelijk)",
+        "prijs_eu": "vanaf €1.599 incl. btw (opgave; afhankelijk van accu-optie/dealer)",
+        "categorie": "urban e-fatbike (grotere framemaat FLB; \"+\" = vernieuwd elektronisch systeem)",
+        "doelgroep": "langere rijders (±170–200 cm) die een comfortabele \"cruiser\" willen (ook met accessoires/extra lading)",
+        "merk_model": "Phatfour FLB+ (FLB-serie, zithoogte 87 cm) (aangenomen: huidige Phatfour-site-uitvoering; \"FLB\" zonder + komt vooral in oudere context voor)",
+        "afmetingen_zithoogte": "rijderslengte 170–200 cm; zithoogte ca. 87 cm (opgave)",
+        "payload_totaal_toelaatbaar": "n.t.b. officieel; retailers noemen vaak 180 kg, maar er zijn ook listings met 150 kg (opgave retailers)"
       },
       "features": {
-        "poorten": "USB-uitgang op het display",
-        "garantie": "5 jaar frame, 2 jaar op componenten (variaties per webshoptekst mogelijk)",
-        "verlichting": "LED koplamp (accuvoeding)",
-        "rijderlengte_indicatie": "~170–200 cm"
+        "accessoires": "o.a. kinderzitje, mandje, telefoonhouder, (voor/achter)rekken, sidecar; accu-diefstalslot als accessoire genoemd (opgave)",
+        "verlichting": "LED koplamp (opgave); achterlicht via accu (opgave handleiding); bij achterrek soms extra batterij-achterlicht (opgave handleiding)",
+        "connectiviteit": "optioneel \"Phatfour Connected\" tracker + app/onboarding (anti-diefstal service; niet per se standaard op de fiets)",
+        "waterdichtheid": "n.t.b. voor complete fiets; oudere FLB-handleiding noemt IP65 bij systeem/motor-controller (interpretatie: componentniveau)"
       }
     },
     "features": [
@@ -739,18 +952,18 @@
     ],
     "weight_kg": 35,
     "wheel_size": "20\"",
-    "tire_size": "20×4,25″",
-    "frame_material": "Staal (handgemaakt, dubbel-gecoat)",
-    "motor_type": "Bafang SWXH achternaaf (geared, brushless)",
+    "tire_size": "20×4,25",
+    "frame_material": "handgemaakt dubbel gecoat stalen frame (Tata Steel genoemd in handleiding)",
+    "motor_type": "Bafang SWXH achterwiel-naafmotor (hub)",
     "motor_power_w": 250,
     "torque_nm": 0,
-    "battery_type": "Li-ion (Unit Pack Power)",
+    "battery_type": "Li-ion, uitneembaar \"Unit Pack Power\"",
     "battery_voltage": 36,
-    "battery_ah": 17.5,
+    "battery_ah": 13,
     "charging_time_hours": 5,
-    "brake_type": "Hydraulische schijfremmen (Tektro 180mm)",
-    "gear_system": "Shimano 7-speed derailleur",
-    "suspension": "Geen (starre voorvork)",
+    "brake_type": "hydraulische schijfremmen, 180mm Tektro rotors",
+    "gear_system": "Shimano 7-speed",
+    "suspension": "geveerde, hydraulisch gedempte voorvork",
     "lighting": "LED koplamp (accuvoeding)",
     "display": "Kleur-LCD (UKS2) met snelheid/accu/afstand",
     "connectivity": {
@@ -766,13 +979,13 @@
     "id": "phatfour-flx-detailed",
     "brand": "Phatfour",
     "model_name": "FLX",
-    "version": "Stads/fun fat-bike",
-    "price": 0,
+    "version": "urban e-fatbike (EPAC 25 km/h)",
+    "price": 2499,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 750,
-    "top_speed": null,
+    "action_radius": 100,
+    "battery_capacity": 500,
+    "top_speed": 25,
     "image_url": "/img/Phatfour FLX/FLX (1).jpg",
     "affiliate_url": "https://phatfour.nl/products/flx",
     "cpl_rate": 25,
@@ -780,8 +993,8 @@
     "created_at": "2025-10-12T12:12:25.916Z",
     "updated_at": "2025-10-12T12:12:25.916Z",
     "currency": "EUR",
-    "action_radius_text": "~65 km (500 Wh) of ~98 km (750 Wh) in zomer, 80 kg, windstil",
-    "action_radius_km": 98,
+    "action_radius_text": "claim: tot 100 km; handleiding (zomer) 500Wh: 49 km (full power)–122 km (economy) / 750Wh: 73 km–184 km (opgave)",
+    "action_radius_km": 100,
     "top_speed_text": "25 km/u (EU-instelling)",
     "top_speed_kmh": 25,
     "images": [
@@ -843,40 +1056,43 @@
     ],
     "specifications": {
       "accu": {
-        "laden": "50 V lader, 2 A standaard / 3 A snel",
-        "configuraties": "43 V 500 Wh óf 43 V 750 Wh, uitneembaar (vergrendelbaar)",
-        "500_wh_laadtijden": "~6,8 u (2 A) / ~5 u (3 A)",
-        "750_wh_laadtijden": "~10 u (2 A) / ~6,5 u (3 A)",
-        "actieradius_opgave": "~65 km (500 Wh) · ~98 km (750 Wh) in zomer, 80 kg, windstil"
+        "accu": "43V 500Wh (standaard) óf 43V 750Wh (upgrade) (afgeleid: ~11,6Ah / ~17,4Ah)",
+        "type": "uitneembare Li-ion accu (opgave)",
+        "lader_laadtijd": "50V 2A (standaard) of 3A (snellader); 500Wh: 6,8u / 5u — 750Wh: 10u / 6,5u (opgave)",
+        "actieradius_claim_opgave": "claim: tot 100 km; handleiding (zomer) 500Wh: 49 km (full power)–122 km (economy) / 750Wh: 73 km–184 km (opgave)"
       },
       "frame": {
-        "frame": "Dubbel gecoat staal",
-        "stuur": "Aluminium",
-        "zadel": "Handgestikt skai-leer",
-        "rijderslengte": "160–200 cm"
+        "materiaal": "staal, tweelaags poedercoating (opgave)",
+        "vork_vering": "geveerde voorvork (opgave; veerweg n.t.b.)",
+        "bijzonderheden": "Direct Drive System (snelle ondersteuning vanaf start); kabels intern weggewerkt; 25 km/h EU-instelling (opgave)",
+        "ergonomie_zadel": "extra lang tweepersoons \"skai\" zadel (opgave)"
       },
       "motor": {
-        "type": "Bafang G062 achternaaf (geared, brushless)",
-        "regeling": "Direct Drive System voor soepele, snelle aanzet (Phatfour-tuning van aansturing/regelaar)",
-        "vermogen_eu": "250 W",
-        "ondersteuning": "tot 25 km/u (EU-instelling)"
+        "type": "Bafang G062 achterwiel-naafmotor (hub) (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "80 Nm (opgave)",
+        "display_bediening": "geavanceerd kleurendisplay met range-indicator + (actueel/gem.) verbruik, (actuele/gem.) snelheid, batterij% (opgave)"
       },
       "wielen": {
-        "banden": "CST Tourance 20×4.00″ (extra breed)",
-        "remmen": "Hydraulische Shimano-schijfremmen",
-        "wielen": "20″ × 3,5″"
+        "remmen": "Shimano hydraulische schijfremmen, v/a 180mm remschijven (opgave)",
+        "wielmaat": "20\" (wielen 20×3,5\" genoemd; banden 20×4,0\")",
+        "bandenmaat": "20×4.0 CST Tourance (opgave)",
+        "aandrijving_versnellingen": "single speed (opgave)"
       },
       "algemeen": {
-        "gewicht": "~35 kg incl. accu (fabrieksopgave)",
-        "kleuren": "Black, Yellow, Army Green",
-        "categorie": "Stads/fun fat-bike",
-        "doelgroep": "Unisex (one-size; lang zadel voor evt. 2 personen)",
-        "merk_model": "Phatfour FLX"
+        "gewicht": "36 kg (opgave; ook 35 kg genoemd op NL-productpagina)",
+        "prijs_eu": "€2.499 (basis); 750Wh accu +€375 (opgave; retailers kunnen hoger zitten)",
+        "categorie": "urban e-fatbike (EPAC 25 km/h)",
+        "doelgroep": "stadsritten + \"cruisen\" (ook met passagier)",
+        "merk_model": "Phatfour FLX (EU-uitvoering; accu-optie 500Wh/750Wh)",
+        "afmetingen_zithoogte": "lengte berijder 160–200 cm; framemaat 87 cm (overige maten n.t.b.)",
+        "payload_totaal_toelaatbaar": "175 kg (opgave; variant 180 kg komt voor bij retailers)"
       },
       "features": {
-        "garantie": "2 jaar op de complete fiets (fabrieksopgave)",
-        "verlichting": "LED-koplamp met daglichtstand (achterlicht aanwezig op productiesets; controleer dealerconfig)",
-        "display_connectiviteit": "Advanced color display met range-indicator, huidig/gemiddeld verbruik, snelheid, accupercentage"
+        "accessoires": "spatborden: ja (retailer-opgave); bagagedrager: nee (retailer-opgave) (rear rack met achterlicht als accessoire verkrijgbaar)",
+        "verlichting": "Phatfour custom LED-koplamp met dagrijverlichting + voor/achterlicht (opgave)",
+        "connectiviteit": "n.t.b. (wel \"Phatfour Connected\" als concept/aanbod genoemd; functies op de fiets zelf niet eenduidig bevestigd)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -899,20 +1115,20 @@
       "2 jaar complete fiets garantie",
       "Extra brede banden"
     ],
-    "weight_kg": 35,
+    "weight_kg": 36,
     "wheel_size": "20\"",
-    "tire_size": "20×4.0″",
-    "frame_material": "Staal (dubbel gecoat)",
-    "motor_type": "Bafang G062 achternaaf (geared, brushless)",
+    "tire_size": "20×4.0",
+    "frame_material": "staal, tweelaags poedercoating",
+    "motor_type": "Bafang G062 achterwiel-naafmotor (hub)",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "Li-ion",
+    "torque_nm": 80,
+    "battery_type": "Li-ion, uitneembaar",
     "battery_voltage": 43,
-    "battery_ah": 17.44,
-    "charging_time_hours": 6.5,
-    "brake_type": "Hydraulische Shimano-schijfremmen",
-    "gear_system": "Single-speed",
-    "suspension": "Geen",
+    "battery_ah": 11.6,
+    "charging_time_hours": 6.8,
+    "brake_type": "Shimano hydraulische schijfremmen, v/a 180mm remschijven",
+    "gear_system": "single speed",
+    "suspension": "geveerde voorvork",
     "lighting": "LED-koplamp met daglichtstand",
     "display": "Advanced color display met range-indicator",
     "connectivity": {
@@ -928,13 +1144,13 @@
     "id": "urban-drivestyle-uni-mk-classic-detailed",
     "brand": "Urban Drivestyle",
     "model_name": "UNI MK Classic",
-    "version": "Utility/fat-tire stads e-bike",
-    "price": 0,
+    "version": "moped-style e-fatbike (urban utility / family)",
+    "price": 2490,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 100,
     "battery_capacity": 684,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Urban Drivestyle UNI MK Classic/Urban-Drivestyle-Uni-Mk-Classic-900x900.jpg",
     "affiliate_url": "https://urbandrivestyle.com/products/uni-mk-classic",
     "cpl_rate": 25,
@@ -942,7 +1158,7 @@
     "created_at": "2025-10-12T12:12:25.918Z",
     "updated_at": "2025-10-12T12:12:25.918Z",
     "currency": "EUR",
-    "action_radius_text": "tot ~100 km (conditie-afhankelijk)",
+    "action_radius_text": "tot ca. 60–100 km (opgave; sterk afhankelijk van accucapaciteit en rijstijl)",
     "action_radius_km": 100,
     "top_speed_text": "25 km/u (pedelec, EU)",
     "top_speed_kmh": 25,
@@ -996,38 +1212,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48 V ~14,25 Ah ≈ 684 Wh (Panasonic/Samsung cells; \"Silverfish\"-vormfactor)",
-        "uitneembaar": "Ja (vergrendelbaar), onder het zadel geplaatst",
-        "opgegeven_bereik": "tot ~100 km (sterk afhankelijk van gewicht, terrein, bandenspanning, temp., rijstand)",
-        "laadtijd_indicatie": "~6–8 uur tot vol"
+        "accu": "48V Silverfish Li-ion, meestal ~684Wh (opgave; varianten gezien: 662,4Wh / 696Wh / 720Wh / 960Wh – afhankelijk van uitvoering/accu-upgrade)",
+        "type": "uitneembare Li-ion (Silverfish behuizing, opgave)",
+        "lader_laadtijd": "ca. 6–8 uur (opgave; laderdetails n.t.b.)",
+        "actieradius_claim_opgave": "tot ca. 60–100 km (opgave; sterk afhankelijk van accucapaciteit en rijstijl)"
       },
       "frame": {
-        "zit_ergo": "Lange seat-bench, geschikt voor 2; multi-rack/accessoire-opties",
-        "materiaal": "Chromoly staal (utility-platform)",
-        "verlichting": "Grote LED-koplamp + achterlicht (accuvoeding)"
+        "materiaal": "ChroMo / chromoly staal (meest genoemd in Urban Drivestyle/press) (let op: sommige refurbished/retailer listings noemen \"aluminium\")",
+        "vork_vering": "geveerde voorvork (basic/low travel; opgave in reviews)",
+        "bijzonderheden": "moped-style \"family/utility\" e-fatbike met extra lang bench-zadel; geschikt voor passagier/kinderen (opgave)",
+        "ergonomie_zadel": "extra lang bench/duo-zadel (\"extended bench seat\", opgave)"
       },
       "motor": {
-        "type": "Achternaafmotor (Bafang-familie op platform)",
-        "vermogen_eu": "250 W nominaal",
-        "ondersteuning": "tot 25 km/u (pedelec, EU)",
-        "sensoren_bediening": "(Double) torque sensor, 9 PAS-niveaus; LCD-display met snelheid/ODO e.d."
+        "type": "achterwiel-naafmotor (hub), brushless; MXUS/XMUS genoemd bij EU-aanbieders (andere listings noemen Bafang G06 — dus uitvoering-afhankelijk)",
+        "vermogen_eu": "250W (EPAC/25 km/h uitvoering, opgave)",
+        "koppel_opgave": "n.t.b. voor MXUS/XMUS-EU; 50 Nm genoemd bij Bafang G06-uitvoering (opgave) (hogere waarden zoals 80 Nm komen uit (niet-EU) reviews/varianten)",
+        "display_bediening": "LCD (Bafang LCD genoemd in listings; exact model n.t.b.)"
       },
       "wielen": {
-        "remmen": "Hydraulische schijfremmen (Tektro-familie veel gezien)",
-        "aandrijving": "7-speed mechanische derailleur",
-        "wielen_banden": "20″ wielen met 20×4.0″ (Kenda/all-terrain) banden"
+        "remmen": "schijfremmen (opgave; merk/type wisselt per bron: Shimano / Tektro / Nutt; hydraulisch vaak genoemd)",
+        "wielmaat": "20 inch",
+        "bandenmaat": "20×4.0 fat tires (opgave)",
+        "aandrijving_versnellingen": "Shimano 7-speed (opgave)"
       },
       "algemeen": {
-        "gewicht": "~33–35 kg inclusief accu (bron/uitvoering afhankelijk)",
-        "categorie": "Utility / moped-style fat-tire stads e-bike",
-        "doelgroep": "Unisex (one-size, lange zitting voor 1–2 personen)",
-        "merk_model": "Urban Drivestyle UNI MK Classic",
-        "afmetingen_zit": "171,5×71×110 cm, zithoogte ~84 cm",
-        "max_toelaatbaar_totaalgewicht": "185 kg"
+        "gewicht": "ca. 32–36 kg incl. accu (opgave; verschilt per bouwjaar/uitvoering)",
+        "prijs_eu": "ca. €2.490–€3.290 (opgave; verschilt per land/retailer/jaar)",
+        "categorie": "moped-style e-fatbike (urban utility / family)",
+        "doelgroep": "stadsgebruik + vervoer van passagier/kind(eren) of lichte cargo; fun/comfort boven \"efficiënt fietsen\"",
+        "merk_model": "Urban Drivestyle UNI MK Classic (wordt ook \"UNI Moke/Unimoke MK\" genoemd in oudere benamingen)",
+        "afmetingen_zithoogte": "lengte ca. 171–172 cm; zadelhoogte ca. 79–110 cm (opgave; exacte totale hoogte n.t.b. per uitvoering)",
+        "payload_totaal_toelaatbaar": "175 kg (opgave bij EU-aanbieder) (varianten gezien: 150 kg en 185 kg bij andere uitvoeringen/edities)"
       },
       "features": {
-        "toepassing": "For Fun, Family & Work; cargo/passagier-opties",
-        "accessoires": "Dragers, pegs/voetsteunen, tassen, kinderzit(s) compatibele set-ups (via UD-ecosysteem)"
+        "accessoires": "(afhankelijk van pakket) voetsteunen/pegs, verlengde zit/seat-extension & racks als opties; standaard vaak: bel + standaard + (soms) spatborden (opgave)",
+        "verlichting": "voorlicht/\"motorcycle style\" lamp genoemd; achterlicht vaak genoemd bij pakketten (opgave; set kan per land verschillen)",
+        "connectiviteit": "n.t.b. (geen bevestigde app-connectiviteit in gebruikte bronnen)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -1050,21 +1271,21 @@
       "UD-ecosysteem accessoires"
     ],
     "weight_kg": 34,
-    "wheel_size": "20\"",
-    "tire_size": "20×4.0″",
-    "frame_material": "Chromoly staal",
-    "motor_type": "Achternaafmotor (Bafang-familie)",
+    "wheel_size": "20 inch",
+    "tire_size": "20×4.0",
+    "frame_material": "ChroMo / chromoly staal",
+    "motor_type": "achterwiel-naafmotor (hub), brushless",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "Li-ion (Panasonic/Samsung cells)",
+    "torque_nm": 50,
+    "battery_type": "Li-ion, uitneembaar (Silverfish behuizing)",
     "battery_voltage": 48,
     "battery_ah": 14.25,
     "charging_time_hours": 7,
-    "brake_type": "Hydraulische schijfremmen (Tektro)",
-    "gear_system": "7-speed mechanische derailleur",
-    "suspension": "Geen",
-    "lighting": "Grote LED-koplamp + achterlicht",
-    "display": "LCD-display met snelheid/ODO",
+    "brake_type": "schijfremmen (merk/type wisselt per bron: Shimano / Tektro / Nutt; hydraulisch vaak genoemd)",
+    "gear_system": "Shimano 7-speed",
+    "suspension": "geveerde voorvork (basic/low travel)",
+    "lighting": "voorlicht/\"motorcycle style\" lamp; achterlicht vaak genoemd bij pakketten",
+    "display": "LCD (Bafang LCD genoemd in listings)",
     "connectivity": {
       "app": false,
       "gps": false,
@@ -1078,13 +1299,13 @@
     "id": "fiido-m1-pro-detailed",
     "brand": "Fiido",
     "model_name": "M1 Pro",
-    "version": "Vouw-fatbike / full-suspension",
-    "price": 1049,
+    "version": "vouwbare fatbike e-bike (touring/off-road)",
+    "price": 1099,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 88,
     "battery_capacity": 557,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Fiido M1 Pro 1049/20251011-091926_1000x.webp",
     "affiliate_url": "https://fiido.com/products/m1-pro",
     "cpl_rate": 25,
@@ -1092,7 +1313,7 @@
     "created_at": "2025-10-12T12:12:25.920Z",
     "updated_at": "2025-10-12T12:12:25.920Z",
     "currency": "EUR",
-    "action_radius_text": "~88 km per lading (sterk afhankelijk van stand, terrein, wind/temp., bandenspanning, gewicht)",
+    "action_radius_text": "tot 88,79 km (ECO, opgave) (ook genoemd: normaal ~73,08 km / sport ~62,56 km — opgave op Fiido infopagina)",
     "action_radius_km": 88,
     "top_speed_text": "25 km/u (EU-pedelec)",
     "top_speed_kmh": 25,
@@ -1143,41 +1364,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48 V / 11,6 Ah ≈ 556,8 Wh (Li-ion), uitneembaar en vergrendelbaar",
-        "lader": "~2 A (indicatief); laden via frame-poort",
-        "bereik_claim_opgave": "~88 km per lading (sterk afhankelijk van stand, terrein, wind/temp., bandenspanning, gewicht)"
+        "accu": "DMEGC 556,8Wh uitneembaar (opgave; afgeleid: 48V ≈ 11,6Ah) (alternatief genoemd: 48V 13Ah ≈ 625Wh bij sommige retailers — waarschijnlijk andere batch/variant)",
+        "type": "Li-ion, uitneembaar (opgave)",
+        "lader_laadtijd": "ca. 5–6 uur (opgave; lader: 48V 2A genoemd — afgeleid: ladervermogen ~110W)",
+        "actieradius_claim_opgave": "tot 88,79 km (ECO, opgave) (ook genoemd: normaal ~73,08 km / sport ~62,56 km — opgave op Fiido infopagina)"
       },
       "frame": {
-        "frame": "Aluminium vouwframe met scharnier in onderbuis",
-        "vering": "Voorvork + achterdemper (full-suspension)",
-        "vouwfunctie": "stuur/voorbouw en frame inklapbaar",
-        "geometrie_ergonomie": "rechtop, comfort-georiënteerd"
+        "materiaal": "aluminium(legering) (opgave)",
+        "vork_vering": "voorvork met 80 mm veerweg + achterdemper (opgave)",
+        "bijzonderheden": "vouwframe; torque sensor (Mivice S200 genoemd); \"fat tires\" 20×4.0; IP54 \"full-bike\" (opgave)",
+        "ergonomie_zadel": "verstelbaar; zadeltype \"VELO vacuum full-fit\" genoemd op Fiido infopagina (opgave)"
       },
       "motor": {
-        "type": "Achternaafmotor (geared, borstelloos)",
-        "vermogen_eu": "250 W nominaal",
-        "ondersteuning": "tot 25 km/u (EU-pedelec)",
-        "bediening_display": "LCD-display met snelheid, accu, rijstanden"
+        "type": "borstelloze naafmotor achter (hub) (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "50 Nm (opgave op productpagina) / 55 Nm (opgave op Fiido infopagina & sommige retailers)",
+        "display_bediening": "LCD-display (opgave; grootte verschilt per bron: 1,47\" LCD genoemd op Fiido infopagina vs 2,4\" kleur-LCD genoemd door retailer)"
       },
       "wielen": {
-        "banden": "20×4.0″ (fat, street/off-road profiel)",
-        "remmen": "Schijfremmen (EU-uitvoeringen doorgaans mechanisch)",
-        "wielmaat": "20″",
-        "aandrijving": "7-speed (Shimano-derailleur)"
+        "remmen": "hydraulische schijfremmen, (dual-piston genoemd) + motor cut-off (opgave); rotordiameter n.t.b.",
+        "wielmaat": "20 inch (opgave)",
+        "bandenmaat": "20\" × 4.0 (CST genoemd op Fiido infopagina)",
+        "aandrijving_versnellingen": "Shimano 7-speed (opgave; componenten o.a. shifter TX50 / derailleur TY300D / cassette TZ500 14–28T genoemd op Fiido infopagina)"
       },
       "algemeen": {
-        "gewicht": "ca. 25–29 kg (uitvoering/batch afhankelijk)",
-        "prijs_eu": "€ 1.049 (opgegeven)",
-        "categorie": "Vouw-fatbike / stads- & recreatief gebruik, licht off-road",
-        "doelgroep": "Unisex",
-        "merk_model": "Fiido M1 Pro",
-        "payload_max_toelaatbaar": "~120–150 kg (retaileropgave; varieert)"
+        "gewicht": "26,8 kg met accu / 23,73 kg zonder (opgave; accu ~3,07 kg)",
+        "prijs_eu": "€1.099 (Fiido EU/NL shop, opgave; kan per actie variëren)",
+        "categorie": "vouwbare fatbike e-bike (touring/off-road)",
+        "doelgroep": "gemengd gebruik (stad + off-road), comfortgericht door vering en brede banden",
+        "merk_model": "Fiido M1 Pro (aangenomen: huidige EU/NL shop-uitvoering 2024/2025 met torque sensor)",
+        "afmetingen_zithoogte": "rijderslengte 155–200 cm (opgave); zadelhoogte n.t.b. exact (retailer noemt min ~84 cm / max ~110 cm)",
+        "payload_totaal_toelaatbaar": "120 kg (opgave)"
       },
       "features": {
-        "veiligheid": "bel, reflectie; accu vergrendelbaar met sleutel",
-        "accessoires": "spatborden, standaard; optionele dragers",
-        "verlichting": "LED voor & achter (accuvoeding)",
-        "waterdichtheid": "spatwaterbestendig (IP-rating niet opgegeven)"
+        "accessoires": "in doos o.a. spatbord, zijstandaard, koplamp, (achter)reflector, snelsluiting voorwiel, gereedschap/handleiding, sleutels (opgave)",
+        "verlichting": "koplamp (opgave; achterlicht n.t.b. — wel achterreflector genoemd)",
+        "connectiviteit": "n.t.b. (Fiido heeft een app, maar modelondersteuning/functionaliteit voor M1 Pro niet eenduidig bevestigd in officiële specs)",
+        "waterdichtheid": "IP54 \"full-bike\" (opgave)"
       }
     },
     "features": [
@@ -1200,22 +1423,22 @@
       "Licht off-road geschikt",
       "Compact & draagbaar"
     ],
-    "weight_kg": 27,
-    "wheel_size": "20\"",
-    "tire_size": "20×4.0″",
-    "frame_material": "Aluminium (vouwframe)",
-    "motor_type": "Achternaafmotor (geared, borstelloos)",
+    "weight_kg": 26.8,
+    "wheel_size": "20 inch",
+    "tire_size": "20\" × 4.0",
+    "frame_material": "aluminium(legering)",
+    "motor_type": "borstelloze naafmotor achter (hub)",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "Li-ion",
+    "torque_nm": 50,
+    "battery_type": "Li-ion, uitneembaar",
     "battery_voltage": 48,
     "battery_ah": 11.6,
     "charging_time_hours": 5.5,
-    "brake_type": "Schijfremmen (mechanisch)",
-    "gear_system": "7-speed (Shimano-derailleur)",
-    "suspension": "Full-suspension (voorvork + achterdemper)",
-    "lighting": "LED voor & achter (accuvoeding)",
-    "display": "LCD-display met snelheid, accu, rijstanden",
+    "brake_type": "hydraulische schijfremmen, (dual-piston genoemd) + motor cut-off",
+    "gear_system": "Shimano 7-speed",
+    "suspension": "voorvork met 80 mm veerweg + achterdemper",
+    "lighting": "koplamp (achterreflector genoemd)",
+    "display": "LCD-display",
     "connectivity": {
       "app": false,
       "gps": false,
@@ -1229,13 +1452,13 @@
     "id": "engwe-ep2-pro-detailed",
     "brand": "ENGWE",
     "model_name": "EP-2 Pro",
-    "version": "Vouw-fatbike",
+    "version": "vouwbare fatbike e-bike (EU 25 km/h)",
     "price": 1099,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 120,
     "battery_capacity": 624,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Enigwe EP 2 PRO/Engine_Pro_2_3.webp",
     "affiliate_url": "https://engwe-bikes.eu/products/ep-2-pro",
     "cpl_rate": 25,
@@ -1299,39 +1522,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48 V / 13 Ah ≈ 624 Wh, uitneembaar en vergrendelbaar",
-        "lader_laadtijd": "48 V 2 A, ~6,5 u tot vol",
-        "actieradius_opgave": "~120 km (PAS 1) · ~40 km (vol-elektrisch) — afhankelijk van terrein, wind/temp., bandenspanning, rijdergewicht en onderhoud"
+        "accu": "48V 13Ah (624Wh) Li-ion, uitneembaar \"internal\" (opgave; Wh afgeleid uit 48V×13Ah en ook als 624Wh genoemd)",
+        "type": "Li-ion, uitneembaar in frame (opgave)",
+        "lader_laadtijd": "ca. 6,5 uur (opgave; ENGWE verkoopt een 2A-lader voor EP-2 Pro/Engine X) (laadspanning 54,6V = afgeleid voor 48V Li-ion)",
+        "actieradius_claim_opgave": "tot 120 km (PAS 1) / ca. 40 km (alleen elektrisch) (opgave)"
       },
       "frame": {
-        "vering": "aluminium voorvork met schokdemping",
-        "materiaal": "aluminium vouwframe (3-staps)",
-        "drager_spatborden": "veel sets leveren achterdrager + spatborden mee (kan per regio verschillen)"
+        "materiaal": "aluminiumlegering / \"alloy\" (opgave)",
+        "vork_vering": "geveerde voorvork (opgave; type n.t.b.)",
+        "bijzonderheden": "vouwframe (3 stappen), 20×4.0 fatbike, \"one-piece\" wielen genoemd (opgave)",
+        "ergonomie_zadel": "zadelhoogte ca. 86–102 cm; stuurhoogte ca. 120–130 cm (opgave)"
       },
       "motor": {
-        "type": "achternaafmotor (brushless, geared)",
-        "display": "LCD-display met snelheid, accu, afstand, modus",
-        "aandrijving": "Shimano 7-speed",
-        "assistentie": "0–5 PAS-niveaus · gashendel kan buiten EU-specs voorkomen (controleer lokale regels/dealer)",
-        "vermogen_eu": "250 W nominaal · topsnelheid 25 km/u (pedelec)",
-        "koppel_opgave": "~55 Nm"
+        "type": "borstelloze naafmotor (hub; achter) (hub-motor als principe genoemd in handleiding; uitvoering op productpagina niet verder gespecificeerd)",
+        "vermogen_eu": "250W (opgave; EU/25 km/h configuratie)",
+        "koppel_opgave": "55 Nm (opgave)",
+        "display_bediening": "LCD-display; toont o.a. snelheid/batterij/afstand (opgave)"
       },
       "wielen": {
-        "remmen": "mechanische schijfremmen, 160 mm voor + achter",
-        "wielen_banden": "20×4.0″ fat-banden (all-terrain)"
+        "remmen": "mechanische schijfremmen v/a, 160 mm rotors (opgave)",
+        "wielmaat": "20 inch (opgave)",
+        "bandenmaat": "20×4.0 (opgave)",
+        "aandrijving_versnellingen": "Shimano 7-speed (opgave)"
       },
       "algemeen": {
-        "categorie": "Vouw-fatbike (stads/forens/recreatie)",
-        "doelgroep": "Unisex",
-        "merk_model": "ENGWE EP-2 Pro",
-        "gewicht_fiets": "~30 kg · brutogewicht ~37,8 kg",
-        "opmerking_afmetingen": "(Vouwmaten/-gewicht kunnen per batch licht afwijken.)",
-        "afmetingen_unfolded_indicatief": "wielbasis 113,5 cm · lengte 170 cm · stuurhoogte 120–130 cm · zadelhoogte 86–102 cm",
-        "max_toelaatbaar_gewicht_payload": "150 kg"
+        "gewicht": "ca. 30 kg (fietsgewicht, opgave) (bruto/verzendgewicht ca. 37,8 kg, opgave)",
+        "prijs_eu": "ca. €1.099 (opgave; varieert per actie/bundel)",
+        "categorie": "vouwbare fatbike e-bike (EU 25 km/h)",
+        "doelgroep": "woon-werk + recreatief, ook ruwer terrein (fat tires + voorvering)",
+        "merk_model": "ENGWE EP-2 Pro (EU/250W/25 km/h aangenomen als meest gangbare EU-uitvoering)",
+        "afmetingen_zithoogte": "uitgevouwen: wielbasis 113,5 cm; lengte 170 cm; standover 69 cm; zadel 86–102 cm; stuur 120–130 cm — opgevouwen: 99×55×76 cm (opgave)",
+        "payload_totaal_toelaatbaar": "150 kg (opgave)"
       },
       "features": {
-        "overig": "inklapbare pedalen, bel; opvouwbare stuurpen/framedeel; climb ~10° (opgave)",
-        "verlichting": "geïntegreerde LED voor/achter (accuvoeding)"
+        "accessoires": "n.t.b. (wel \"cargo solutions\" genoemd; concrete meegeleverde dragers niet eenduidig in box-inhoud)",
+        "verlichting": "heldere LED-koplamp + remlicht-indicator (opgave)",
+        "connectiviteit": "n.t.b. (geen bevestigde app-/Bluetooth-functie voor EP-2 Pro in gebruikte bronnen)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -1385,13 +1612,13 @@
     "id": "engwe-x26-detailed",
     "brand": "ENGWE",
     "model_name": "X26",
-    "version": "n.t.b.",
-    "price": 0,
+    "version": "off-road fatbike e-bike met triple suspension (folding)",
+    "price": 1999,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 0,
-    "top_speed": null,
+    "action_radius": 150,
+    "battery_capacity": 1402,
+    "top_speed": 25,
     "image_url": "/img/ENGWE X26/1_d34ff54c-2a81-41cc-b0a4-a860bd1dfbd6.webp",
     "affiliate_url": "https://engwe-bikes.eu/products/x26",
     "cpl_rate": 25,
@@ -1399,8 +1626,8 @@
     "created_at": "2025-10-12T12:12:25.924Z",
     "updated_at": "2025-10-12T12:12:25.924Z",
     "currency": "EUR",
-    "action_radius_text": "n.t.b. km (claim/opgave)",
-    "action_radius_km": 0,
+    "action_radius_text": "tot 150 km \"ECO\" / ca. 100 km \"pure electric\" (opgave; miles→km afgeleid uit handleiding)",
+    "action_radius_km": 150,
     "top_speed_text": "25 km/u (EU-pedelec)",
     "top_speed_kmh": 25,
     "images": [
@@ -1464,41 +1691,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "n.t.b.",
-        "type": "n.t.b.",
-        "lader_laadtijd": "n.t.b.",
-        "actieradius_claim_opgave": "n.t.b. km"
+        "accu": "48V 19,2Ah + 48V 10Ah (dual; totaal 29,2Ah) (meest gangbare EU-uitvoering; afgeleid: ~1402Wh totaal)",
+        "type": "2× uitneembare Li-ion accu (opgave)",
+        "lader_laadtijd": "ca. 8 uur (opgave; lader: 54V 3A, afgeleid: ~162W)",
+        "actieradius_claim_opgave": "tot 150 km \"ECO\" / ca. 100 km \"pure electric\" (opgave; miles→km afgeleid uit handleiding)"
       },
       "frame": {
-        "materiaal": "n.t.b.",
-        "vork_vering": "n.t.b.",
-        "zadel_ergonomie": "n.t.b."
+        "materiaal": "6061 aluminium(legering)",
+        "vork_vering": "triple suspension: voor hydraulische schokdemper + \"middle\" mechanische schok + achter lucht-schokdemper (opgave)",
+        "bijzonderheden": "vouwfiets (foldable); 25 km/h genoemd op EU-shop (opgave)",
+        "ergonomie_zadel": "\"leather seat\", verstelbereik ca. 25 cm (opgave)"
       },
       "motor": {
-        "type": "n.t.b.",
-        "vermogen_eu": "250 W · Ondersteuning: 25 km/u (EU)",
-        "koppel_opgave": "n.t.b.",
-        "display_bediening": "n.t.b."
+        "type": "achterwiel-naafmotor (hub), brushless geared (opgave)",
+        "vermogen_eu": "niet eenduidig — opgave \"1000W\" (handleiding) vs \"1200W piek\" (EU-shop/marketing); EU-EPAC 250W uitvoering n.t.b.",
+        "koppel_opgave": "70 Nm (opgave; andere bron noemt 60 Nm)",
+        "display_bediening": "LCD-display met PAS-niveaus, lichtbediening en loop-assistent (\"push assist\") (opgave)"
       },
       "wielen": {
-        "banden": "n.t.b.",
-        "remmen": "n.t.b.",
-        "wielmaat": "n.t.b.",
-        "aandrijving": "n.t.b."
+        "remmen": "hydraulische schijfremmen (voor/achter), 160mm rotorschijf genoemd (opgave)",
+        "wielmaat": "26 inch",
+        "bandenmaat": "26×4.0 (fat tires)",
+        "aandrijving_versnellingen": "Shimano 8-speed"
       },
       "algemeen": {
-        "gewicht": "n.t.b.",
-        "prijs_eu": "n.t.b.",
-        "categorie": "n.t.b.",
-        "doelgroep": "Unisex",
-        "merk_model": "ENGWE X26",
-        "afmetingen_zithoogte": "n.t.b.",
-        "payload_totaal_toelaatbaar": "n.t.b."
+        "gewicht": "niet eenduidig — ca. 41,0 kg (handleiding/engwe.eu) vs 43,6 kg (EU-shop bij 29,2Ah) (opgave)",
+        "prijs_eu": "ca. €1.999 (ENGWE EU shop, dual-battery uitvoering)",
+        "categorie": "off-road fatbike e-bike met triple suspension (folding)",
+        "doelgroep": "lange ritten/avontuur + comfort op slecht wegdek; minder \"licht/efficiënt\" door hoog gewicht",
+        "merk_model": "ENGWE X26 (EU-shop: 29,2Ah dual batteries aangenomen)",
+        "afmetingen_zithoogte": "uitgevouwen L 196,1 cm; H 114,7 cm; wielbasis 122,1 cm; standover 76,1 cm; zadelhoogte min 93,8 cm / max 121,5 cm; opgevouwen 110×72×120 cm (opgave)",
+        "payload_totaal_toelaatbaar": "150 kg (opgave)"
       },
       "features": {
-        "accessoires": "n.t.b.",
-        "verlichting": "n.t.b.",
-        "connectiviteit_overig": "n.t.b."
+        "accessoires": "richtingaanwijzers achter (opgave); (spatborden/rek n.t.b.)",
+        "verlichting": "krachtige LED-koplamp; achterlicht/\"rear indicators\" genoemd (opgave)",
+        "connectiviteit": "n.t.b. (geen bevestigde app/Bluetooth-functies gevonden in gebruikte bronnen)",
+        "waterdichtheid": "fiets zelf n.t.b.; \"IP65 waterproof speed sensor\" genoemd (opgave, component)"
       }
     },
     "features": [
@@ -1506,29 +1735,28 @@
       "250W motor (EU-standaard)",
       "25 km/u topsnelheid (EU)",
       "Pedelec compliant",
-      "Specificaties n.t.b.",
-      "ENGWE X26 model",
-      "Unisex design",
-      "Nog te bepalen specificaties",
-      "EU-standaard waarden",
-      "Informatie ontbreekt in dataset"
+      "Triple suspension",
+      "Vouwbaar frame",
+      "Dual-battery systeem",
+      "Shimano 8-speed",
+      "Hydraulische remmen"
     ],
-    "weight_kg": 0,
-    "wheel_size": "n.t.b.",
-    "tire_size": "n.t.b.",
-    "frame_material": "n.t.b.",
-    "motor_type": "n.t.b.",
+    "weight_kg": 41.0,
+    "wheel_size": "26 inch",
+    "tire_size": "26×4.0",
+    "frame_material": "6061 aluminium(legering)",
+    "motor_type": "achterwiel-naafmotor (hub), brushless geared",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "n.t.b.",
-    "battery_voltage": 0,
-    "battery_ah": 0,
-    "charging_time_hours": 0,
-    "brake_type": "n.t.b.",
-    "gear_system": "n.t.b.",
-    "suspension": "n.t.b.",
-    "lighting": "n.t.b.",
-    "display": "n.t.b.",
+    "torque_nm": 70,
+    "battery_type": "Li-ion, uitneembaar",
+    "battery_voltage": 48,
+    "battery_ah": 29.2,
+    "charging_time_hours": 8,
+    "brake_type": "hydraulische schijfremmen (voor/achter), 160mm rotorschijf",
+    "gear_system": "Shimano 8-speed",
+    "suspension": "triple suspension: voor hydraulische schokdemper + \"middle\" mechanische schok + achter lucht-schokdemper",
+    "lighting": "krachtige LED-koplamp; achterlicht/\"rear indicators\"",
+    "display": "LCD-display met PAS-niveaus, lichtbediening en loop-assistent",
     "connectivity": {
       "app": false,
       "gps": false,
@@ -1542,13 +1770,13 @@
     "id": "engwe-m20-detailed",
     "brand": "ENGWE",
     "model_name": "M20",
-    "version": "n.t.b.",
-    "price": 0,
+    "version": "moped-style fatbike e-bike (full suspension)",
+    "price": 1099,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 0,
-    "top_speed": null,
+    "action_radius": 75,
+    "battery_capacity": 624,
+    "top_speed": 25,
     "image_url": "/img/ENGWE M20/16.webp",
     "affiliate_url": "https://engwe-bikes.eu/products/m20",
     "cpl_rate": 25,
@@ -1556,8 +1784,8 @@
     "created_at": "2025-10-12T12:12:25.942Z",
     "updated_at": "2025-10-12T12:12:25.942Z",
     "currency": "EUR",
-    "action_radius_text": "~n.t.b. km (claim/opgave)",
-    "action_radius_km": 0,
+    "action_radius_text": "tot 75 km (PAS 1, single) / tot 150 km (dual) (opgave; \"throttle only\" vaak lager)",
+    "action_radius_km": 75,
     "top_speed_text": "25 km/u (EU-pedelec)",
     "top_speed_kmh": 25,
     "images": [
@@ -1601,43 +1829,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "n.t.b.",
-        "type": "n.t.b.",
-        "lader_laadtijd": "n.t.b.",
-        "actieradius_claim_opgave": "n.t.b. km"
+        "accu": "48V 13Ah Li-ion (single) óf 2× 48V 13Ah (dual)",
+        "type": "uitneembare Li-ion (opgave)",
+        "lader_laadtijd": "ca. 5 uur (opgave; ladervariant \"2A Charger for M20/L20\" beschikbaar)",
+        "actieradius_claim_opgave": "tot 75 km (PAS 1, single) / tot 150 km (dual) (opgave; \"throttle only\" vaak lager)"
       },
       "frame": {
-        "materiaal": "n.t.b.",
-        "vork_vering": "n.t.b.",
-        "bijzonderheden": "n.t.b.",
-        "ergonomie_zadel": "n.t.b."
+        "materiaal": "6061 aluminium(legering)",
+        "vork_vering": "full suspension: voor hydraulische vork + achter luchtveer/demper (opgave)",
+        "bijzonderheden": "moped-/motorcycle-style fatbike; dual-battery optie; 25 km/h genoemd als EU-limiet (opgave)",
+        "ergonomie_zadel": "lang \"bench\"/duo-zadel; minder geschikt voor lang doortrappen (review-observatie)"
       },
       "motor": {
-        "type": "n.t.b.",
-        "vermogen_eu": "250 W · Ondersteuning: 25 km/u (EU)",
-        "koppel_opgave": "n.t.b.",
-        "display_bediening": "n.t.b."
+        "type": "borstelloze (rear geared hub motor volgens review; exacte uitvoering op EU-productpagina niet gespecificeerd)",
+        "vermogen_eu": "n.t.b. als EU-EPAC (250W) — maar meerdere ENGWE-/reviewbronnen noemen 750W nominaal / 1000W piek (dit valt doorgaans buiten EU-EPAC op openbare weg)",
+        "koppel_opgave": "55 Nm (opgave)",
+        "display_bediening": "LCD; M20-display/bediening met instellingen incl. snelheidslimiet; Bluetooth-indicator \"reserved\" (geen garantie dat het actief is)"
       },
       "wielen": {
-        "remmen": "n.t.b.",
-        "wielmaat": "n.t.b.",
-        "bandenmaat": "n.t.b.",
-        "aandrijving_versnellingen": "n.t.b."
+        "remmen": "160 mm mechanische schijfremmen (kabelbediend)",
+        "wielmaat": "20 inch (giet-/mag-wielen genoemd in reviews)",
+        "bandenmaat": "20×4.0 (fat tires; o.a. Chao Yang genoemd)",
+        "aandrijving_versnellingen": "Shimano 7-speed"
       },
       "algemeen": {
-        "gewicht": "n.t.b.",
-        "prijs_eu": "n.t.b.",
-        "categorie": "n.t.b.",
-        "doelgroep": "Unisex",
-        "merk_model": "ENGWE M20",
-        "afmetingen_zithoogte": "n.t.b.",
-        "payload_max_toelaatbaar": "n.t.b."
+        "gewicht": "ca. 34,8 kg (fietsgewicht, opgave) (bruto/verzendgewicht hoger: ~42,7 kg single / ~45,9 kg dual volgens productpagina's)",
+        "prijs_eu": "ca. €1.099 (single) / €1.299 (dual) (opgave, ENGWE EU)",
+        "categorie": "moped-style fatbike e-bike (full suspension)",
+        "doelgroep": "comfort/\"cruisen\" + licht off-road; minder gericht op efficiënt fietsen (door zithouding/gewicht)",
+        "merk_model": "ENGWE M20 (EU-shopvariant; keuze 13Ah of 26Ah/dual)",
+        "afmetingen_zithoogte": "min. zadelhoogte ca. 84 cm; standover ca. 76,2 cm; totale lengte ca. 167 cm (opgave)",
+        "payload_totaal_toelaatbaar": "120 kg (opgave)"
       },
       "features": {
-        "accessoires": "n.t.b.",
-        "verlichting": "n.t.b.",
-        "connectiviteit": "n.t.b.",
-        "waterdichtheid": "n.t.b."
+        "accessoires": "vaak genoemd: spatborden, standaard; dual-battery mogelijk (opgave/reviews)",
+        "verlichting": "LED koplamp; (reviews noemen ook achterlicht; \"dual headlight\" komt voor in reviews)",
+        "connectiviteit": "geen bevestigde app-connectiviteit; display heeft Bluetooth-indicator \"reserved\" (handleiding)",
+        "waterdichtheid": "IPX4 (claim bij retailers/third-party; niet eenduidig op officiële productpagina teruggevonden)"
       }
     },
     "features": [
@@ -1645,29 +1873,28 @@
       "250W motor (EU-standaard)",
       "25 km/u topsnelheid (EU)",
       "Pedelec compliant",
-      "Specificaties n.t.b.",
-      "ENGWE M20 model",
-      "Unisex design",
-      "Nog te bepalen specificaties",
-      "EU-standaard waarden",
-      "Informatie ontbreekt in dataset"
+      "Full suspension",
+      "Dual-battery optie",
+      "Moped-style design",
+      "Shimano 7-speed",
+      "LED verlichting"
     ],
-    "weight_kg": 0,
-    "wheel_size": "n.t.b.",
-    "tire_size": "n.t.b.",
-    "frame_material": "n.t.b.",
-    "motor_type": "n.t.b.",
+    "weight_kg": 34.8,
+    "wheel_size": "20 inch",
+    "tire_size": "20×4.0",
+    "frame_material": "6061 aluminium(legering)",
+    "motor_type": "borstelloze (rear geared hub motor)",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "n.t.b.",
-    "battery_voltage": 0,
-    "battery_ah": 0,
-    "charging_time_hours": 0,
-    "brake_type": "n.t.b.",
-    "gear_system": "n.t.b.",
-    "suspension": "n.t.b.",
-    "lighting": "n.t.b.",
-    "display": "n.t.b.",
+    "torque_nm": 55,
+    "battery_type": "Li-ion, uitneembaar",
+    "battery_voltage": 48,
+    "battery_ah": 13,
+    "charging_time_hours": 5,
+    "brake_type": "160 mm mechanische schijfremmen (kabelbediend)",
+    "gear_system": "Shimano 7-speed",
+    "suspension": "full suspension: voor hydraulische vork + achter luchtveer/demper",
+    "lighting": "LED koplamp; (reviews noemen ook achterlicht)",
+    "display": "LCD; M20-display/bediening met instellingen incl. snelheidslimiet",
     "connectivity": {
       "app": false,
       "gps": false,
@@ -1829,7 +2056,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 672,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Heren-2022-1.png",
     "affiliate_url": "https://www.radpowerbikes.com/products/radcity-5-plus-electric-commuter-bike",
     "cpl_rate": 25,
@@ -1837,10 +2064,10 @@
     "created_at": "2025-01-15T12:00:00.000Z",
     "updated_at": "2025-01-15T12:00:00.000Z",
     "currency": "USD",
-    "action_radius_text": "Up to 45 miles",
-    "action_radius_km": 72,
-    "top_speed_text": "20 mph (US)",
-    "top_speed_kmh": 32,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
+    "top_speed_text": "25 km/h (EU)",
+    "top_speed_kmh": 25,
     "images": [
       "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Heren-2022-1.png",
       "/img/Rad Power Bikes RadCity 5 Plus/Rad-Power-Bikes-RadCity-5-Plus-Step-Thru-Dames-2022-2.png"
@@ -1865,35 +2092,57 @@
       "Great value"
     ],
     "specifications": {
-      "motor": {
-        "brand": "Rad Power Bikes",
-        "type": "Hub motor",
-        "power": "750W",
-        "torque": "80Nm"
-      },
-      "battery": {
-        "capacity": "672Wh",
-        "type": "Lithium-ion",
-        "voltage": "48V",
-        "charging_time": "5-6 hours"
+      "accu": {
+        "accu": "672 Wh (48V, 14Ah) (opgave)",
+        "type": "Li-ion, semi-geïntegreerd (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
       },
       "frame": {
-        "material": "Aluminum",
-        "weight": "29kg",
-        "wheel_size": "700c"
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "stads-utility; spatborden; achterdrager geïntegreerd (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "250W geared hubmotor (opgave)",
+        "vermogen_eu": "250 W (opgave)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "27,5\" (opgave via bandmaat)",
+        "bandenmaat": "27.5\" x 2.0\" (opgave)",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "29,5 kg (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "stads e-bike / utility",
+        "doelgroep": "woon-werk + dagelijks gebruik",
+        "merk_model": "Rad Power Bikes RadCity 5 Plus (EU)",
+        "afmetingen_zithoogte": "zadelhoogte ca. 810–1055 mm (High-Step) / 750–945 mm (Step-Thru) (opgave)",
+        "payload_totaal_toelaatbaar": "125 kg (opgave)"
+      },
+      "features": {
+        "accessoires": "spatborden voor/achter; achterdrager geïntegreerd; voordrager optioneel (opgave)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
-      "750W motor",
+      "250W motor",
       "Long range",
       "Comfortable",
       "Great value"
     ],
-    "weight_kg": 29,
-    "wheel_size": "700c",
-    "tire_size": "700x45c",
-    "frame_material": "aluminium",
-    "motor_type": "Hub motor",
+    "weight_kg": 29.5,
+    "wheel_size": "27.5\"",
+    "tire_size": "27.5\" x 2.0\"",
+    "frame_material": null,
+    "motor_type": "250W geared hubmotor",
     "motor_power_w": 750,
     "torque_nm": 80,
     "battery_type": "lithium-ion",
@@ -2209,7 +2458,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 750,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Riese & Müller Charger4 GT/riese_und_muller_charger4_gt_vario_black_matt_2_.jpg",
     "affiliate_url": "https://riese-muller.com/products/charger4-gt-vario",
     "cpl_rate": 25,
@@ -2217,32 +2466,76 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "EUR",
-    "action_radius_text": "70-135 km",
-    "action_radius_km": 70,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "750 Wh (opgave)",
+        "type": "Bosch PowerTube (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "SR Suntour Mobie34, 100 mm (opgave)",
+        "bijzonderheden": "trekking/SUV-stijl; configuraties afhankelijk van \"equipment line\" (GT Vario)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance Line CX (Smart System) middenmotor (opgave)",
+        "vermogen_eu": "250 W (Bosch EU-klasse; n.t.b. expliciet op pagina)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "Bosch Kiox 300 + LED Remote (opgave)"
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "27,5\" (opgave)",
+        "bandenmaat": "Schwalbe Super Moto-X 62-584 (27.5\" x 2.4\") (opgave)",
+        "aandrijving_versnellingen": "Enviolo \"Vario\" (naaf, traploos) (afgeleid uit modelnaam; n.t.b. op bron)"
+      },
+      "algemeen": {
+        "gewicht": "30,1 kg (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "trekking/SUV e-bike",
+        "doelgroep": "woon-werk + toeren, zwaardere belasting",
+        "merk_model": "Riese & Müller Charger4 GT Vario",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "150 kg (opgave)"
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "Bosch Smart System (app-ecosysteem; n.t.b. op bron)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
-    "wheel_size": null,
-    "tire_size": null,
+    "weight_kg": 30.1,
+    "wheel_size": "27.5\"",
+    "tire_size": "Schwalbe Super Moto-X 62-584 (27.5\" x 2.4\")",
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "motor_type": "Bosch Performance Line CX (Smart System) middenmotor",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "battery_type": "Bosch PowerTube",
+    "battery_voltage": 36,
+    "battery_ah": 20.8,
     "charging_time_hours": null,
     "brake_type": null,
-    "gear_system": null,
-    "suspension": null,
+    "gear_system": "Enviolo \"Vario\" (naaf, traploos)",
+    "suspension": "SR Suntour Mobie34, 100 mm",
     "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "display": "Bosch Kiox 300 + LED Remote",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -2820,12 +3113,12 @@
     "brand": "Orbea",
     "model_name": "Vibe H30",
     "version": "Lichtgewicht commuter e-bike (Mahle X35, 248 Wh)",
-    "price": 2799,
+    "price": 3199,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
     "action_radius": null,
-    "battery_capacity": 248,
-    "top_speed": null,
+    "battery_capacity": null,
+    "top_speed": 25,
     "image_url": "/img/Orbea Vibe H30/Orbea-Vibe-H30-Crossbar-2024-Green-Electric-Bike.webp",
     "affiliate_url": "https://orbea.com/products/vibe-h30",
     "cpl_rate": 25,
@@ -2833,8 +3126,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "EUR",
-    "action_radius_text": "Tot 125 km",
-    "action_radius_km": 125,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -2844,23 +3137,63 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "n.t.b. (in specsheet wordt \"internal battery\" genoemd; capaciteit niet zichtbaar in de gebruikte bronfragmenten)",
+        "type": "Mahle/ebikemotion X35-systeem (interne accu + optionele Range Extender) (opgave)",
+        "lader_laadtijd": "n.t.b. (lader: 42V-2A uitgang)",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "aluminium (Hydro 6061) (opgave)",
+        "vork_vering": "carbon vork (rigid) (opgave)",
+        "bijzonderheden": "geschikt voor spatborden/achterdrager (opgave)",
+        "ergonomie_zadel": "Selle Royal Lift (opgave bij retailer)"
+      },
+      "motor": {
+        "type": "Mahle/ebikemotion X35 (achterwielmotor, systeemvermelding)",
+        "vermogen_eu": "n.t.b. (X35 is EU-klasse, 25 km/h; n.t.b. expliciet)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "Shimano MT200 hydraulisch (opgave)",
+        "wielmaat": "700c / \"29\" genoemd door retailer (opgave)",
+        "bandenmaat": "max 700x45 (opgave)",
+        "aandrijving_versnellingen": "Shimano Acera 8-speed (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "€ 3.199 (opgave, voorbeeldlisting)",
+        "categorie": "lichte urban/fitness e-bike",
+        "doelgroep": "stad + licht toeren",
+        "merk_model": "Orbea Vibe H30 (referentielisting: Vibe H30 EQ modeljaar 2024)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "spatborden (EQ), drager-compatibel (opgave)",
+        "verlichting": "voorlicht (StVZO) genoemd in EQ-listing (opgave)",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
     "weight_kg": null,
-    "wheel_size": null,
-    "tire_size": null,
-    "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "wheel_size": "700c",
+    "tire_size": "max 700x45",
+    "frame_material": "aluminium (Hydro 6061)",
+    "motor_type": "Mahle/ebikemotion X35 (achterwielmotor)",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
+    "battery_type": "Mahle/ebikemotion X35-systeem",
+    "battery_voltage": 42,
     "battery_ah": null,
     "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
-    "suspension": null,
-    "lighting": null,
+    "brake_type": "Shimano MT200 hydraulisch",
+    "gear_system": "Shimano Acera 8-speed",
+    "suspension": "geen",
+    "lighting": "voorlicht (StVZO)",
     "display": null,
     "connectivity": {},
     "warranty_years": null,
@@ -2876,7 +3209,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 500,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Canyon PrecedeON 7  Comfort 7/777DD2E1-8680-4494-828D81C7DCB510CF.avif",
     "affiliate_url": "https://canyon.com/products/precede-on-7",
     "cpl_rate": 25,
@@ -2884,30 +3217,70 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.939Z",
     "currency": "EUR",
-    "action_radius_text": "Tot 100 km",
-    "action_radius_km": 100,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "500 Wh (XS–M) / 625 Wh (L) (opgave)",
+        "type": "Bosch PowerTube (opgave)",
+        "lader_laadtijd": "Bosch 4A of 6A \"Fast Charger\" genoemd (opgave)",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "rigid (typisch urban; n.t.b. expliciet)",
+        "bijzonderheden": "veel integratie; (vaak) riemaandrijving + naafversnelling afhankelijk van uitvoering (n.t.b.)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance Line middenmotor (opgave)",
+        "vermogen_eu": "n.t.b.",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "naafversnelling genoemd in gebruikers-/testfeedback (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "ca. 24,5 kg (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "urban/city e-bike",
+        "doelgroep": "stad + forenzen",
+        "merk_model": "Canyon Precede:ON 7",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "verlichting-varianten (o.a. Supernova set genoemd) + rack/fenders genoemd (opgave)",
+        "verlichting": "zie hierboven (opgave)",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
+    "weight_kg": 24.5,
     "wheel_size": null,
     "tire_size": null,
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "motor_type": "Bosch Performance Line middenmotor",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "battery_type": "Bosch PowerTube",
+    "battery_voltage": 36,
+    "battery_ah": 13.9,
     "charging_time_hours": null,
     "brake_type": null,
-    "gear_system": null,
-    "suspension": null,
-    "lighting": null,
+    "gear_system": "naafversnelling",
+    "suspension": "rigid",
+    "lighting": "verlichting-varianten (o.a. Supernova set)",
     "display": null,
     "connectivity": {},
     "warranty_years": null,
@@ -2923,7 +3296,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 625,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Trek Allant+ 7 Gen 2/AllantPlus7Stag-24-41022-A-Primary.avif",
     "affiliate_url": "https://trekbikes.com/products/allant-plus-7",
     "cpl_rate": 25,
@@ -2931,8 +3304,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "EUR",
-    "action_radius_text": "Tot 145 km",
-    "action_radius_km": 145,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -2948,22 +3321,62 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "625 Wh (opgave in productnaam)",
+        "type": "geïntegreerde, uitneembare accu (\"Removable Integrated Battery\" genoemd)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "SR Suntour XCR32, coil, lockout; 63 mm travel (opgave)",
+        "bijzonderheden": "urban/trekking hybride e-bike; interne kabelrouting (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch middenmotor (opgave; exact type n.t.b.)",
+        "vermogen_eu": "n.t.b.",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "27,5\" (opgave)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "22,3 kg (opgave, framemaat M in listing)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "elektrische hybride/stadsfiets",
+        "doelgroep": "woon-werk + toeren",
+        "merk_model": "Trek Allant+ 7 Lowstep Gen 2 (625Wh)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
-    "wheel_size": null,
+    "weight_kg": 22.3,
+    "wheel_size": "27.5\"",
     "tire_size": null,
-    "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "frame_material": "aluminium",
+    "motor_type": "Bosch middenmotor",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "battery_type": "geïntegreerde, uitneembare accu",
+    "battery_voltage": 36,
+    "battery_ah": 17.4,
     "charging_time_hours": null,
     "brake_type": null,
     "gear_system": null,
-    "suspension": null,
+    "suspension": "SR Suntour XCR32, coil, lockout; 63 mm travel",
     "lighting": null,
     "display": null,
     "connectivity": {},
@@ -2980,7 +3393,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 500,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Cannondale Tesoro Neo X 3/C21_C66421M_Tesoro_Neo_X_BLK_3Q.webp",
     "affiliate_url": "https://cannondale.com/products/tesoro-neo-x-3",
     "cpl_rate": 25,
@@ -2988,8 +3401,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "EUR",
-    "action_radius_text": "113-136 km",
-    "action_radius_km": 113,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -3001,24 +3414,64 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "500 Wh (opgave)",
+        "type": "Bosch PowerTube (opgave)",
+        "lader_laadtijd": "n.t.b. (Bosch 2A lader genoemd)",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "trekking/adventure e-touring",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Active Line Plus, Smart System (25 km/h) (opgave, Cannondale NL)",
+        "vermogen_eu": "250 W (EU-klasse; n.t.b. expliciet)",
+        "koppel_opgave": "n.t.b. (let op: retailer noemt soms Performance Line 65Nm)",
+        "display_bediening": "Bosch Purion 200 (opgave)"
+      },
+      "wielen": {
+        "remmen": "Shimano MT200 hydraulisch, 180/180 mm (opgave)",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "Shimano CUES, 9-speed (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "n.t.b.",
+        "categorie": "e-touring / trekking",
+        "doelgroep": "woon-werk + langere ritten",
+        "merk_model": "Cannondale Tesoro Neo X 3",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
     "weight_kg": null,
     "wheel_size": null,
     "tire_size": null,
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "motor_type": "Bosch Active Line Plus, Smart System",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "battery_type": "Bosch PowerTube",
+    "battery_voltage": 36,
+    "battery_ah": 13.9,
     "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
+    "brake_type": "Shimano MT200 hydraulisch, 180/180 mm",
+    "gear_system": "Shimano CUES, 9-speed",
     "suspension": null,
     "lighting": null,
-    "display": null,
+    "display": "Bosch Purion 200",
     "connectivity": {},
     "warranty_years": null,
     "certification": null
@@ -3031,9 +3484,9 @@
     "price": 3298,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 105,
     "battery_capacity": 487,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Van Moof - S5/S5-Grey-product-foto-1.webp",
     "affiliate_url": "https://www.vanmoof.com/en-NL/s5",
     "cpl_rate": 35,
@@ -3042,31 +3495,76 @@
     "updated_at": "2025-10-12T12:12:25.838Z",
     "currency": "EUR",
     "action_radius_text": "60-150 km",
-    "action_radius_km": 60,
+    "action_radius_km": 105,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "487 Wh (vast geïntegreerd; uitneembaar voor servicing)",
+        "type": "Li-ion (opgave; 47V/5A)",
+        "lader_laadtijd": "48V 2A \"Gen 5 Charger\"; 0–100% 6u30, 0–50% 2u30",
+        "actieradius_claim_opgave": "60–150 km (full power ↔ economy)"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "27.5\" wielen; automatische 3-speed naaf; geïntegreerde anti-diefstal (Kick Lock), Halo Ring interface; telefoonhouder + USB-C laden",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "voorwiel-naafmotor (hub)",
+        "vermogen_eu": "250 W (EPAC)",
+        "koppel_opgave": "68 Nm (boost torque, opgave)",
+        "display_bediening": "Halo Ring (LED in stuur) + app (opgave)"
+      },
+      "wielen": {
+        "remmen": "hydraulische schijfremmen (voor/achter)",
+        "wielmaat": "27.5\"",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "volledig omsloten ketting; automatische 3-speed naaf (smart shifting)"
+      },
+      "algemeen": {
+        "gewicht": "23 kg",
+        "prijs_eu": "n.t.b.",
+        "categorie": "urban/commuter e-bike",
+        "doelgroep": "woon-werk/stad, tech-georiënteerd",
+        "merk_model": "VANMOOF S5",
+        "afmetingen_zithoogte": "rider height 165–210 cm; zithoogte n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "telefoonmount + USB-C, geïntegreerde standaard; (optionele) racks n.t.b.",
+        "verlichting": "geïntegreerde \"Hi-Vis\" verlichting (opgave)",
+        "connectiviteit": "NFC/GPS/BLE/LTE-M/NB-IoT; Apple Find My genoemd (status/uitrol n.t.b.)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
-    "wheel_size": null,
+    "weight_kg": 23,
+    "wheel_size": "27.5\"",
     "tire_size": null,
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
-    "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
+    "motor_type": "voorwiel-naafmotor (hub)",
+    "motor_power_w": 250,
+    "torque_nm": 68,
+    "battery_type": "Li-ion",
+    "battery_voltage": 47,
+    "battery_ah": 10.4,
+    "charging_time_hours": 6.5,
+    "brake_type": "hydraulische schijfremmen (voor/achter)",
+    "gear_system": "automatische 3-speed naaf (smart shifting)",
     "suspension": null,
-    "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "lighting": "geïntegreerde \"Hi-Vis\" verlichting",
+    "display": "Halo Ring (LED in stuur) + app",
+    "connectivity": {
+      "app": true,
+      "gps": true,
+      "bluetooth": true,
+      "nfc": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -3075,12 +3573,12 @@
     "brand": "Gazelle",
     "model_name": "Ultimate C8+ HMB",
     "version": "Premium stads e-bike met riemaandrijving",
-    "price": 3499,
+    "price": 3799,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 500,
-    "top_speed": null,
+    "action_radius": 110,
+    "battery_capacity": 562.5,
+    "top_speed": 25,
     "image_url": "/img/Gazelle Ultimate C8+ HMB/1280_6BfcfcP1EkZ67oEg.webp",
     "affiliate_url": "https://gazelle.nl/products/ultimate-c8-hmb",
     "cpl_rate": 25,
@@ -3102,25 +3600,69 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "500 Wh of 625 Wh (Bosch, geïntegreerd in frame)",
+        "type": "Li-ion (Bosch, opgave)",
+        "lader_laadtijd": "(opgave Gazelle) • 500Wh: 2A 7u30 / 4A 4u30 • 625Wh: 2A 9u18 / 4A 5u24",
+        "actieradius_claim_opgave": "(opgave Gazelle, per mode) • 500Wh: Eco 145 km / Tour 85 / Auto 65 / Turbo 55 • 625Wh: Eco 175 km / Tour 105 / Auto 80 / Turbo 70"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "\"Mono geïntegreerd\" (geïntegreerde voorvorkvering)",
+        "bijzonderheden": "Nexus 8 naaf + riemaandrijving; Bosch Smart System; lage zwaartepunt door intube accu",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Active Line Plus (Smart System) middenmotor",
+        "vermogen_eu": "250 W (Bosch Smart System; exact W niet op Gazelle pagina gespecificeerd)",
+        "koppel_opgave": "50 Nm",
+        "display_bediening": "Bosch Purion 200 (kleurdisplay; smartphone-koppeling via Smart System)"
+      },
+      "wielen": {
+        "remmen": "hydraulische schijfremmen",
+        "wielmaat": "28\" (gangbaar; niet expliciet op Gazelle-pagina in snippet—n.t.b. als strikt)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "Gates riem + Shimano Nexus 8 (naaf)"
+      },
+      "algemeen": {
+        "gewicht": "24,5 kg (excl. accu)",
+        "prijs_eu": "vanaf € 3.799 (Gazelle site)",
+        "categorie": "premium stads/trekking e-bike",
+        "doelgroep": "comfort + sportieve zithouding, woon-werk en toertochten",
+        "merk_model": "Gazelle Ultimate C8+ HMB",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "130 kg (maximale totaalgewicht)"
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b. (wel \"geïntegreerd\" in diverse retail-overzichten)",
+        "connectiviteit": "Bosch Smart System / smartphone (Flow-app ecosysteem)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
-    "wheel_size": null,
+    "weight_kg": 24.5,
+    "wheel_size": "28\"",
     "tire_size": null,
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
-    "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
-    "suspension": null,
-    "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "motor_type": "Bosch Active Line Plus (Smart System) middenmotor",
+    "motor_power_w": 250,
+    "torque_nm": 50,
+    "battery_type": "Li-ion (Bosch)",
+    "battery_voltage": 36,
+    "battery_ah": 13.9,
+    "charging_time_hours": 6,
+    "brake_type": "hydraulische schijfremmen",
+    "gear_system": "Gates riem + Shimano Nexus 8 (naaf)",
+    "suspension": "\"Mono geïntegreerd\" (geïntegreerde voorvorkvering)",
+    "lighting": "geïntegreerd",
+    "display": "Bosch Purion 200 (kleurdisplay; smartphone-koppeling via Smart System)",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -3182,12 +3724,12 @@
     "brand": "Koga",
     "model_name": "E-Nova Evo",
     "version": "Premium trekking e-bike met geavanceerde technologie",
-    "price": 3199,
+    "price": 2999,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 625,
-    "top_speed": null,
+    "action_radius": 157.5,
+    "battery_capacity": 400,
+    "top_speed": 25,
     "image_url": "/img/E-Nova Evo/Disc Brakes - koga 4493-small.jpg",
     "affiliate_url": "https://koga.com/products/enova-evo",
     "cpl_rate": 25,
@@ -3208,21 +3750,61 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "standaard 300 Wh (inbegrepen) of 400 Wh / 500 Wh (opties)",
+        "type": "Li-ion (Bosch PowerPack; opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "max in ECO: 400 Wh → 140 km; 500 Wh → 175 km (opgave)"
+      },
+      "frame": {
+        "materiaal": "aluminium (\"super smooth-welded\", opgave)",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "accu geïntegreerd in achterdrager (uitneembaar); Gates CDX riemaandrijving (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch \"Active Plus\" middenmotor (KOGA benaming)",
+        "vermogen_eu": "n.t.b.",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b. (riem is bevestigd; versnellingssysteem niet expliciet in bronblok)"
+      },
+      "algemeen": {
+        "gewicht": "ca. 25,6–25,7 kg (afhankelijk van framevariant)",
+        "prijs_eu": "€ 2.999 (NL prijs op KOGA site)",
+        "categorie": "luxe stads/comfort e-bike",
+        "doelgroep": "woon-werk en comfortabele tochten",
+        "merk_model": "Koga E-Nova Evo",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
+    "weight_kg": 25.65,
     "wheel_size": null,
     "tire_size": null,
-    "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "frame_material": "aluminium",
+    "motor_type": "Bosch \"Active Plus\" middenmotor",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "battery_type": "Li-ion (Bosch PowerPack)",
+    "battery_voltage": 36,
+    "battery_ah": 8.3,
     "charging_time_hours": null,
     "brake_type": null,
-    "gear_system": null,
+    "gear_system": "Gates CDX riemaandrijving",
     "suspension": null,
     "lighting": null,
     "display": null,
@@ -3407,16 +3989,16 @@
     "brand": "Knaap",
     "model_name": "RTD X",
     "version": "Full-suspension fat-tire stads e-bike",
-    "price": 2799,
+    "price": 2299,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 960,
-    "top_speed": null,
+    "action_radius": 140,
+    "battery_capacity": 840,
+    "top_speed": 25,
     "image_url": "/img/Knaap RTD X/2.webp",
     "affiliate_url": "https://knaap.nl/products/rtd-x",
     "cpl_rate": 25,
-    "description": "# Knaap RTD X — Full-suspension fat-tire stads e-bike (48 V 20 Ah ≈ 960 Wh, 250 W, 80 Nm)\r\n\r\n**Kort overzicht**  \r\nDe Knaap RTD X is de geveerde variant binnen de Knaap-lijn: voorvork- en middensuspensie (rear/centre) voor extra comfort op slecht wegdek. Aandrijving via een ANANDA achternaafmotor (EU 250 W, max. 80 Nm) en een 48 V / 20 Ah (≈ 960 Wh) accu. Fabrikant claimt tot ~140 km per lading; laadtijd ~4–6 uur met 48 V/3 A-lader. Hydraulische schijfremmen, Shimano 7-versnellingen, 20″×4″ anti-lek banden en STVZO-LED verlichting maken het pakket af. EU-topsnelheid 25 km/u (pedelec).\r\n\r\n## Highlights\r\n\r\n- **Volledig geveerd comfort:** voor- én middensuspensie dempt trillingen; ideaal voor stad en slecht wegdek.\r\n- **Krachtige hub-aandrijving:** ANANDA achternaaf, 250 W (EU), max. 80 Nm, ondersteuning tot 25 km/u.\r\n- **Grote accu:** 48 V / 20 Ah ≈ 960 Wh, 4–6 uur laden met 48 V/3 A lader.\r\n- **Controle & veiligheid:** hydraulische schijfremmen, 20×4″ anti-lek banden, STVZO-LED verlichting voor/achter.\r\n- **Schakelen & display:** Shimano 7-speed + (full-color) LCD-display met snelheid, accu en km-teller.\r\n- **Actieradius (claim):** tot ~140 km per lading (stand/condities afhankelijk).\r\n- **Gewicht & payload:** ~31–39,5 kg en max. toelaatbaar 150–160 kg, afhankelijk van batch/uitrusting.\r\n\r\n## Specificaties\r\n\r\n**Algemeen**\r\n- Merk/Model: Knaap RTD X\r\n- Doelgroep: Unisex (one-size, lang zadel; geschikt voor 1–2 personen)\r\n- Categorie: Fat-tire stads e-bike / moped-stijl, full-suspension\r\n- Gewicht: ~31–39,5 kg (bron/uitvoering afhankelijk)\r\n- Payload: ~150–160 kg (bron/uitvoering afhankelijk)\r\n- Zithoogte: ~83 cm\r\n- Afmetingen: ca. 1760 × 900 × 1160 mm\r\n\r\n**Motor**\r\n- Motor: ANANDA achternaaf (geared, borstelloos)\r\n- Vermogen: 250 W nominaal (EU)\r\n- Koppel (max): 80 Nm\r\n- Ondersteuning: EU 25 km/u (pedelec)\r\n- Sensor/bediening: LCD/(full-color) display met snelheid, accu en kilometrage\r\n\r\n**Accu**\r\n- Accu: 48 V / 20 Ah ≈ 960 Wh (Li-ion), uitneembaar en vergrendelbaar\r\n- Opgave actieradius: tot ~140 km (condities/stand afhankelijk)\r\n- Lader / laadtijd: 48 V 3 A, ~4–6 uur tot vol\r\n\r\n**Frame**\r\n- Frame: aluminium moped-stijl, one-size\r\n- Vering: voorvork-vering + centre/rear-suspension (RTD-platform)\r\n- Zitplaatsen: lang zadel voor 1–2 personen\r\n\r\n**Wielen**\r\n- Wielmaat: 20″\r\n- Banden: 20×4.0″ anti-lek (street)\r\n- Remmen: hydraulische schijfremmen (vaak Tektro bij retailers)\r\n- Aandrijving: Shimano 7-speed derailleur\r\n\r\n**Features**\r\n- Verlichting: STVZO-gecertificeerde LED koplamp & achterlicht (accuvoeding)\r\n- Display: LCD / Knaap full-color (water- & schokbestendig)\r\n- Accessoires: spatborden, dragers, passagiers-steunen, telefoonhouder (opties)\r\n- Waterdichtheid: spatwaterbestendig (IP-rating niet gespecificeerd)\r\n\r\n## Prijs & beschikbaarheid\r\n\r\n- **Richtprijs:** € 2.799 (EU-store, full-suspension variant)\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://knaap.nl/products/rtd-x\r\n- **Bron(nen):** knaap.nl",
+    "description": "# Knaap RTD X — Full-suspension fat-tire stads e-bike (48 V 17.5 Ah ≈ 840 Wh, 250 W, 80 Nm)\r\n\r\n**Kort overzicht**  \r\nDe Knaap RTD X is de geveerde variant binnen de Knaap-lijn: voorvork- en middensuspensie (rear/centre) voor extra comfort op slecht wegdek. Aandrijving via een ANANDA achternaafmotor (EU 250 W, max. 80 Nm) en een 48 V / 20 Ah (≈ 960 Wh) accu. Fabrikant claimt tot ~140 km per lading; laadtijd ~4–6 uur met 48 V/3 A-lader. Hydraulische schijfremmen, Shimano 7-versnellingen, 20″×4″ anti-lek banden en STVZO-LED verlichting maken het pakket af. EU-topsnelheid 25 km/u (pedelec).\r\n\r\n## Highlights\r\n\r\n- **Volledig geveerd comfort:** voor- én middensuspensie dempt trillingen; ideaal voor stad en slecht wegdek.\r\n- **Krachtige hub-aandrijving:** ANANDA achternaaf, 250 W (EU), max. 80 Nm, ondersteuning tot 25 km/u.\r\n- **Grote accu:** 48 V / 20 Ah ≈ 960 Wh, 4–6 uur laden met 48 V/3 A lader.\r\n- **Controle & veiligheid:** hydraulische schijfremmen, 20×4″ anti-lek banden, STVZO-LED verlichting voor/achter.\r\n- **Schakelen & display:** Shimano 7-speed + (full-color) LCD-display met snelheid, accu en km-teller.\r\n- **Actieradius (claim):** tot ~140 km per lading (stand/condities afhankelijk).\r\n- **Gewicht & payload:** ~31–39,5 kg en max. toelaatbaar 150–160 kg, afhankelijk van batch/uitrusting.\r\n\r\n## Specificaties\r\n\r\n**Algemeen**\r\n- Merk/Model: Knaap RTD X\r\n- Doelgroep: Unisex (one-size, lang zadel; geschikt voor 1–2 personen)\r\n- Categorie: Fat-tire stads e-bike / moped-stijl, full-suspension\r\n- Gewicht: ~31–39,5 kg (bron/uitvoering afhankelijk)\r\n- Payload: ~150–160 kg (bron/uitvoering afhankelijk)\r\n- Zithoogte: ~83 cm\r\n- Afmetingen: ca. 1760 × 900 × 1160 mm\r\n\r\n**Motor**\r\n- Motor: ANANDA achternaaf (geared, borstelloos)\r\n- Vermogen: 250 W nominaal (EU)\r\n- Koppel (max): 80 Nm\r\n- Ondersteuning: EU 25 km/u (pedelec)\r\n- Sensor/bediening: LCD/(full-color) display met snelheid, accu en kilometrage\r\n\r\n**Accu**\r\n- Accu: 48 V / 20 Ah ≈ 960 Wh (Li-ion), uitneembaar en vergrendelbaar\r\n- Opgave actieradius: tot ~140 km (condities/stand afhankelijk)\r\n- Lader / laadtijd: 48 V 3 A, ~4–6 uur tot vol\r\n\r\n**Frame**\r\n- Frame: aluminium moped-stijl, one-size\r\n- Vering: voorvork-vering + centre/rear-suspension (RTD-platform)\r\n- Zitplaatsen: lang zadel voor 1–2 personen\r\n\r\n**Wielen**\r\n- Wielmaat: 20″\r\n- Banden: 20×4.0″ anti-lek (street)\r\n- Remmen: hydraulische schijfremmen (vaak Tektro bij retailers)\r\n- Aandrijving: Shimano 7-speed derailleur\r\n\r\n**Features**\r\n- Verlichting: STVZO-gecertificeerde LED koplamp & achterlicht (accuvoeding)\r\n- Display: LCD / Knaap full-color (water- & schokbestendig)\r\n- Accessoires: spatborden, dragers, passagiers-steunen, telefoonhouder (opties)\r\n- Waterdichtheid: spatwaterbestendig (IP-rating niet gespecificeerd)\r\n\r\n## Prijs & beschikbaarheid\r\n\r\n- **Richtprijs:** € 2.799 (EU-store, full-suspension variant)\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://knaap.nl/products/rtd-x\r\n- **Bron(nen):** knaap.nl",
     "created_at": "2025-10-12T12:12:25.898Z",
     "updated_at": "2025-10-12T12:12:25.932Z",
     "currency": "EUR",
@@ -3483,43 +4065,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48 V / 20 Ah ≈ 960 Wh (Li-ion), uitneembaar en vergrendelbaar",
-        "extender": "n.v.t.",
-        "lader_laadtijd": "48 V 3 A, ~4–6 uur tot vol",
-        "opgave_actieradius": "tot ~140 km (condities/stand afhankelijk)"
+        "accu": "48V 17,5Ah = afgeleid 840 Wh (opgave fabrikant: 48V 17,5Ah)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "48V 3A (laadtijd n.t.b.)",
+        "actieradius_claim_opgave": "\"tot 140 km\" genoemd op pagina (claim); verdere condities n.t.b."
       },
       "frame": {
-        "frame": "aluminium moped-stijl, one-size",
-        "vering": "voorvork-vering + centre/rear-suspension (RTD-platform)",
-        "zitplaatsen": "lang zadel voor 1–2 personen"
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "voorvering + achtervering (opgave)",
+        "bijzonderheden": "geschikt voor 1–2 personen; max belasting 160 kg (opgave); 7-speed; display \"waterproof/shockproof\" genoemd op pagina",
+        "ergonomie_zadel": "seat height 90 cm (bovenaan specs) — elders op dezelfde pagina wordt 83 cm genoemd als \"comfort seat\" (variant/tekstconflict)"
       },
       "motor": {
-        "motor": "ANANDA achternaaf (geared, borstelloos)",
-        "vermogen": "250 W nominaal (EU)",
-        "koppel_max": "80 Nm",
-        "ondersteuning": "EU 25 km/u (pedelec)",
-        "sensor_bediening": "LCD/(full-color) display met snelheid, accu en kilometrage"
+        "type": "achternaafmotor (ANANDA)",
+        "vermogen_eu": "250 W",
+        "koppel_opgave": "80 Nm",
+        "display_bediening": "LCD (opgave)"
       },
       "wielen": {
-        "banden": "20×4.0″ anti-lek (street)",
-        "remmen": "hydraulische schijfremmen (vaak Tektro bij retailers)",
-        "wielmaat": "20″",
-        "aandrijving_versnellingen": "Shimano 7-speed derailleur"
+        "remmen": "hydraulisch remsysteem (opgave)",
+        "wielmaat": "n.t.b. (20\" banden worden genoemd in sectie op pagina)",
+        "bandenmaat": "n.t.b. (\"anti-lek\" genoemd; 20\" tires sectie aanwezig)",
+        "aandrijving_versnellingen": "Shimano 7 versnellingen (derailleur)"
       },
       "algemeen": {
-        "gewicht": "~31–39,5 kg (bron/uitvoering afhankelijk)",
-        "payload": "~150–160 kg (bron/uitvoering afhankelijk)",
-        "categorie": "Fat-tire stads e-bike / moped-stijl, full-suspension",
-        "doelgroep": "Unisex (one-size, lang zadel; geschikt voor 1–2 personen)",
-        "zithoogte": "~83 cm",
-        "afmetingen": "ca. 1760 × 900 × 1160 mm",
-        "merk_model": "Knaap RTD X"
+        "gewicht": "n.t.b.",
+        "prijs_eu": "€ 2.299 (getoonde prijs op fabrikantpagina)",
+        "categorie": "elektrische fatbike/moped-style",
+        "doelgroep": "stadscruise, duo-gebruik",
+        "merk_model": "Knaap RTD X (RTD X26)",
+        "afmetingen_zithoogte": "lengte 176 cm; stuurhoogte 116 cm; zithoogte 90 cm (opgave, zie specblok)",
+        "payload_totaal_toelaatbaar": "160 kg (opgave)"
       },
       "features": {
-        "display": "LCD / Knaap full-color (water- & schokbestendig)",
-        "verlichting": "STVZO-gecertificeerde LED koplamp & achterlicht (accuvoeding)",
-        "waterdichtheid": "spatwaterbestendig (IP-rating niet gespecificeerd)",
-        "accessoires_opties": "spatborden, dragers, passagiers-steunen, telefoonhouder"
+        "accessoires": "voetsteunen (opgave)",
+        "verlichting": "LED voor/achter (StVZO)",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "display \"waterproof\" genoemd; rest n.t.b."
       }
     },
     "features": [
@@ -3728,10 +4310,10 @@
     "brand": "Knaap",
     "model_name": "BCN",
     "version": "Black - Full-suspension fat-tire stads e-bike",
-    "price": 2549,
+    "price": 1599,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 140,
     "battery_capacity": 960,
     "top_speed": null,
     "image_url": "/img/Knaap BCN/17292455812.jpg",
@@ -3801,40 +4383,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48 V / 20 Ah ≈ 960 Wh, uitneembaar en vergrendelbaar",
-        "laden": "~4–6 uur; retailers noemen 3 A lader (specificatie varieert)",
-        "bereik_opgave": "tot ~140 km (stand/condities afhankelijk)"
+        "accu": "48V 20Ah Li-ion (opgave; afgeleid: ≈960Wh)",
+        "type": "uitneembare Li-ion (opgave; \"removable battery\", met diefstalbeveiliging/slot)",
+        "lader_laadtijd": "48V 2A lader (opgave) + claim: 4–6 uur 0–100% (let op: 20Ah @ 2A klinkt theoretisch langer; opgave is niet volledig consistent)",
+        "actieradius_claim_opgave": "tot 140 km (opgave) (retailer claimt max tot 180 km; gemiddelde ~120 km)"
       },
       "frame": {
-        "frame": "Aluminium moped-stijl, one-size",
-        "vering": "voorvork + achterschokdemper (double-suspension)",
-        "ergonomie_afwerking": "verstelbaar stuur, leren zadel en handvatten"
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "voor- én achtervering (opgave; voor \"(geveerde) aluminium voorvork\", achtervering niet gespecificeerd)",
+        "bijzonderheden": "geschikt voor 1 of 2 personen; opklapbare voetsteunen; 5 ondersteuningsstanden; rotatiesensor genoemd door retailer/review (opgave)",
+        "ergonomie_zadel": "lange buddyseat/duozadel; zithoogte: 83 cm genoemd (zadelbasis) vs 90 cm bij \"afmetingen\" op productpagina (opgave, conflict)"
       },
       "motor": {
-        "motor": "ANANDA achternaaf (brushless, geared)",
-        "vermogen": "250 W nominaal (EU)",
-        "ondersteuning": "25 km/u (EU-pedelec)",
-        "display_bediening": "Full-color LCD met USB-poort (snelheid, accu, km-teller)",
-        "koppel_max_opgave": "~80 Nm"
+        "type": "Ananda achternaafmotor (rear hub), brushless (opgave)",
+        "vermogen_eu": "250W (opgave; ondersteuning tot 25 km/h)",
+        "koppel_opgave": "80 Nm (opgave fabrikant) vs 60 Nm (opgave Mantel/variant)",
+        "display_bediening": "(full color) LCD; toont o.a. verbruik/snelheid/km-stand; USB-aansluiting genoemd door retailers; display \"waterproof/shockproof\" geclaimd (opgave)"
       },
       "wielen": {
-        "banden": "20×4.0 (street/urban)",
-        "remmen": "hydraulische schijfremmen (Knaap); sommige retailers vermelden Tektro-sets (nauwkeurige typeaanduiding verschilt per batch)",
-        "wielmaat": "20″",
-        "aandrijving": "Shimano 7-speed derailleur"
+        "remmen": "hydraulische schijfremmen v/a (opgave; merk/rotordiameter n.t.b.)",
+        "wielmaat": "20 inch (opgave)",
+        "bandenmaat": "20×4.0 (Innova \"slick\" genoemd)",
+        "aandrijving_versnellingen": "Shimano 7-speed derailleur (opgave)"
       },
       "algemeen": {
-        "gewicht": "39,5 kg (Knaap spec) *Sommige aanbieders melden lager rijklaar gewicht; reken met 31–39,5 kg afhankelijk van uitvoering.",
-        "prijs_eu": "€ 2.549 (Knaap shop)",
-        "categorie": "Fat-tire stads e-bike, full-suspension",
-        "doelgroep": "Unisex",
-        "afmetingen": "compact moped-stijl; verstelbaar stuur",
-        "merk_model": "Knaap BCN (Black)"
+        "gewicht": "n.t.b.",
+        "prijs_eu": "ca. €1.599 (Knaap shop; eerdere/adviesprijs €2.549) (retailers vaak ~€1.899–€2.549)",
+        "categorie": "elektrische fatbike / \"moped-style\" tweezitter (EPAC 25 km/h)",
+        "doelgroep": "stadsritten + comfort (full suspension), ook met passagier",
+        "merk_model": "Knaap BCN (Barcelona) (aangenomen: huidige Knaap shop-uitvoering 48V 20Ah / Ananda rear hub)",
+        "afmetingen_zithoogte": "lengte 176 cm; stuurhoogte 116 cm; zadelhoogte 90 cm (opgave) (zadelbasis 83 cm ook genoemd; zie conflict hierboven)",
+        "payload_totaal_toelaatbaar": "160 kg (opgave fabrikant) (varianten: 163 kg bij retailer; 160 kg is meest gezaghebbend)"
       },
       "features": {
-        "overig": "removable battery, brushless motor; accessoires zoals spatborden/dragers beschikbaar",
-        "verlichting": "LED koplamp & achterlicht",
-        "waterdichtheid": "water-/schokbestendig display; spatwaterbestendige opbouw"
+        "accessoires": "opklapbare voetsteunen; accu met diefstalbeveiliging/slot (opgave) (spatborden: \"ja\" bij retailer; bagagedrager: \"nee\" bij retailer — n.t.b. als standaard bij Knaap)",
+        "verlichting": "LED voor + achter, StVZO-gecertificeerd (opgave); koplamp 1200 lumen genoemd (opgave)",
+        "connectiviteit": "n.t.b. (geen app/GPS-tracker genoemd in fabrikant-specs voor BCN)",
+        "waterdichtheid": "n.t.b. (alleen \"waterproof display\" geclaimd; geen IP-rating voor fiets/systeem)"
       }
     },
     "features": [
@@ -3885,13 +4470,13 @@
     "id": "knaap-nyc-detailed",
     "brand": "Knaap",
     "model_name": "NYC",
-    "version": "Belt-drive stads e-bike",
-    "price": 3199,
+    "version": "elektrische stadsfiets (urban/comfort)",
+    "price": 1799,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 504,
-    "top_speed": null,
+    "action_radius": 140,
+    "battery_capacity": 468,
+    "top_speed": 25,
     "image_url": "/img/Knaap NYC/NEW-KNAAP-NYC-achterkant.png",
     "affiliate_url": "https://knaap.nl/products/nyc",
     "cpl_rate": 25,
@@ -3899,8 +4484,8 @@
     "created_at": "2025-10-12T12:12:25.906Z",
     "updated_at": "2025-10-12T12:12:25.906Z",
     "currency": "EUR",
-    "action_radius_text": "tot ~100 km per lading (conditie-afhankelijk)",
-    "action_radius_km": 100,
+    "action_radius_text": "80–90 km realistisch, tot 140 km max (opgave)",
+    "action_radius_km": 140,
     "top_speed_text": "25 km/u (EU-pedelec)",
     "top_speed_kmh": 25,
     "images": [
@@ -3960,37 +4545,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "36 V / 14 Ah ≈ 504 Wh (uitneembaar)",
-        "track_trace": "Compatibel met FRIS Opsporing (app)",
-        "bereik_retaileropgave": "tot ~100 km (afhankelijk van stand/terrein/weer/bandenspanning/gewicht)"
+        "accu": "36V 13Ah ≈ 468Wh (opgave; afgeleid 36×13) (variant: 504Wh bij o.a. Mantel/Fietsoptimaal — vermoedelijk 36V 14Ah)",
+        "type": "Li-ion, in-frame, uitneembaar (opgave)",
+        "lader_laadtijd": "ca. 6–7 uur (afgeleid; 36V/2A lader) (variant: 4–6 uur genoemd door sommige retailers)",
+        "actieradius_claim_opgave": "80–90 km realistisch, tot 140 km max (opgave)"
       },
       "frame": {
-        "frame": "Aluminium, geïntegreerde verlichting & kabelvoering",
-        "zadel": "comfortzadel, krasbestendige cover (serie-eigenschap)"
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "ongeveerde voorvork (opgave)",
+        "bijzonderheden": "riemaandrijving (belt), 8-versn. naaf (geïntegreerd), geïntegreerde verlichting v/a, compatibel met track & trace / KN·APP GPS-tracker, Fris Opsporing Service (opgave)",
+        "ergonomie_zadel": "rechtop zithouding; geveerde zadelpen; zithoogte ca. 83 cm (opgave)"
       },
       "motor": {
-        "motor": "Ananda middenmotor",
-        "vermogen": "250 W (EU)",
-        "aandrijving": "Riem (belt drive)",
-        "koppel_opgave": "tot 120 Nm",
-        "ondersteuning": "25 km/u (EU-pedelec)",
-        "versnellingen": "8 geïntegreerd in het achterwiel (interne naaf)"
+        "type": "Ananda middenmotor 36V (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "120 Nm (opgave)",
+        "display_bediening": "\"digital\"/stuurbediening aanwezig (opgave; exact displaymodel n.t.b.)"
       },
       "wielen": {
-        "remmen": "Hydraulische schijfremmen vóór/achter",
-        "wielmaat_banden": "26×2.4″ (ca. 60 mm breed) — stabiel en comfortabel in de stad"
+        "remmen": "hydraulische schijfremmen v/a (opgave; rotormaat n.t.b.)",
+        "wielmaat": "26 inch (opgave)",
+        "bandenmaat": "26×2.4\" (≈60 mm breed) (opgave)",
+        "aandrijving_versnellingen": "belt drive + 8-versn. naaf (opgave; Shimano Nexus 8 genoemd door retailer)"
       },
       "algemeen": {
-        "gewicht": "n.t.b. (fabrikant-/retailerinfo varieert; controleer bij dealer)",
-        "prijs_eu": "€ 3.199 (Knaap shop, indicatie)",
-        "categorie": "Stads/commuter e-bike (riem + IGH)",
-        "doelgroep": "Unisex",
-        "zithoogte": "~83 cm (comfort seat)",
-        "merk_model": "Knaap NYC"
+        "gewicht": "ca. 32 kg (opgave; incl. accu) (variant: 23 kg zonder accu genoemd door retailer)",
+        "prijs_eu": "ca. €1.799–€1.999 (opgave; retailer vs. fabrikantprijs)",
+        "categorie": "elektrische stadsfiets (urban/comfort)",
+        "doelgroep": "woon-werk en stadsritten, onderhoudsarm (riem + naaf)",
+        "merk_model": "Knaap NYC (aangenomen: EU-versie zoals op Knaap/Mantel: 26×2.4, Ananda middenmotor, belt + 8-naaf)",
+        "afmetingen_zithoogte": "One Size; aanbevolen lichaamslengte ±170–190 cm (opgave; overige maten n.t.b.)",
+        "payload_totaal_toelaatbaar": "120 kg (opgave; varianten tot 180 kg circuleren online, mogelijk verwarring met andere Knaap-modellen)"
       },
       "features": {
-        "display_app": "Knaap-display; FRIS app-compatibel (track-&-trace)",
-        "verlichting": "Geïntegreerde LED voor & achter (accuvoeding)"
+        "accessoires": "standaard o.a. pedalen + standaard; geen slot meegeleverd (opgave)",
+        "verlichting": "geïntegreerde LED voor/achter, gevoed door e-bike accu (opgave)",
+        "connectiviteit": "track & trace compatible; KN·APP GPS tracker compatibel; app-compatibel met Fris Opsporing Service (opgave; tracker doorgaans optioneel)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -4010,22 +4601,22 @@
       "26×2.4″ banden",
       "Onderhoudsarm systeem"
     ],
-    "weight_kg": 0,
-    "wheel_size": "26\"",
-    "tire_size": "26×2.4″",
-    "frame_material": "Aluminium",
-    "motor_type": "Ananda middenmotor",
+    "weight_kg": 32,
+    "wheel_size": "26 inch",
+    "tire_size": "26×2.4\"",
+    "frame_material": "aluminium",
+    "motor_type": "Ananda middenmotor 36V",
     "motor_power_w": 250,
     "torque_nm": 120,
-    "battery_type": "Li-ion",
+    "battery_type": "Li-ion, in-frame, uitneembaar",
     "battery_voltage": 36,
-    "battery_ah": 14,
-    "charging_time_hours": 4,
-    "brake_type": "Hydraulische schijfremmen vóór/achter",
-    "gear_system": "8-versnellingsnaaf (IGH)",
-    "suspension": "Geen",
-    "lighting": "Geïntegreerde LED voor & achter",
-    "display": "Knaap-display",
+    "battery_ah": 13,
+    "charging_time_hours": 6.5,
+    "brake_type": "hydraulische schijfremmen v/a",
+    "gear_system": "belt drive + 8-versn. naaf (Shimano Nexus 8)",
+    "suspension": "ongeveerde voorvork",
+    "lighting": "geïntegreerde LED voor/achter, gevoed door e-bike accu",
+    "display": "\"digital\"/stuurbediening aanwezig",
     "connectivity": {
       "app": true,
       "gps": true,
@@ -4040,13 +4631,13 @@
     "id": "knaap-lax-detailed",
     "brand": "Knaap",
     "model_name": "LAX",
-    "version": "Low-step stads e-bike",
-    "price": 3199,
+    "version": "elektrische stadsfiets (urban/comfort)",
+    "price": 1799,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 504,
-    "top_speed": null,
+    "action_radius": 140,
+    "battery_capacity": 468,
+    "top_speed": 25,
     "image_url": "/img/Knaap LAX/NEW-KNAAP-LAX-achterkant-qps9q5xsk18v0e3c2ea9uoqetnz8chxhqerj25hdms.png",
     "affiliate_url": "https://knaap.nl/products/lax",
     "cpl_rate": 25,
@@ -4054,7 +4645,7 @@
     "created_at": "2025-10-12T12:12:25.908Z",
     "updated_at": "2025-10-12T12:12:25.908Z",
     "currency": "EUR",
-    "action_radius_text": "varieert per bron; Knaap generieke specs noemen tot ~140 km, retailers communiceren doorgaans lager/afhankelijk van omstandigheden",
+    "action_radius_text": "80–90 km realistisch, tot 140 km max (opgave)",
     "action_radius_km": 140,
     "top_speed_text": "25 km/u (EU-pedelec)",
     "top_speed_kmh": 25,
@@ -4116,37 +4707,43 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "36 V / 14 Ah ≈ 504 Wh (Li-ion), uitneembaar",
-        "lader": "36 V 2 A inbegrepen",
-        "bereik_opgave_in_de_markt": "varieert per bron; Knaap generieke specs noemen tot ~140 km, retailers communiceren doorgaans lager/afhankelijk van omstandigheden"
+        "accu": "36V 13Ah ≈ 468Wh (opgave; afgeleid 36×13) (variant: 504Wh bij o.a. Mantel/Fietsoptimaal — vermoedelijk 36V 14Ah)",
+        "type": "Li-ion, in-frame, uitneembaar (opgave)",
+        "lader_laadtijd": "ca. 6–7 uur (afgeleid; 36V/2A lader) (variant: 4–6 uur genoemd door sommige retailers)",
+        "actieradius_claim_opgave": "80–90 km realistisch, tot 140 km max (opgave)"
       },
       "frame": {
-        "frame": "aluminium, low-step",
-        "zitpositie": "rechtop, stadsgeoriënteerd"
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "ongeveerde voorvork (opgave)",
+        "bijzonderheden": "riemaandrijving (belt), 8-versn. naaf (geïntegreerd), geïntegreerde verlichting v/a, compatibel met track & trace / KN·APP GPS-tracker, Fris Opsporing Service (opgave)",
+        "ergonomie_zadel": "rechtop zithouding; geveerde zadelpen (opgave)"
       },
       "motor": {
-        "motor": "Ananda middenmotor",
-        "vermogen": "250 W (EU)",
-        "koppel_max": "tot 120 Nm",
-        "ondersteuning": "25 km/u (EU-pedelec)",
-        "display_bediening": "Knaap-display (snelheid/accu/kilometrage)"
+        "type": "Ananda middenmotor 36V (opgave)",
+        "vermogen_eu": "250W (opgave)",
+        "koppel_opgave": "120 Nm (opgave)",
+        "display_bediening": "\"digital\"/stuurbediening aanwezig (opgave; exact displaymodel n.t.b.)"
       },
       "wielen": {
-        "banden": "26×2.4″ (ca. 60 mm) stadsbanden",
-        "remmen": "hydraulische schijfremmen (voor/achter)",
-        "wielmaat": "26″",
-        "aandrijving_config_afhankelijk": "Belt drive + 8-versnellingsnaaf (retailer/2024-modellen), of Shimano 8-speed (derailleur/shifter) volgens Knaap-specpagina"
+        "remmen": "hydraulische schijfremmen v/a (opgave; rotormaat n.t.b.)",
+        "wielmaat": "26 inch (opgave)",
+        "bandenmaat": "26×2.4\" (≈60 mm breed) (opgave)",
+        "aandrijving_versnellingen": "belt drive + 8-versn. naaf (opgave; Shimano Nexus 8 genoemd door retailer)"
       },
       "algemeen": {
-        "gewicht": "~32 kg (indicatie; bron/uitvoering afhankelijk)",
-        "prijs_eu": "€ 3.199 (Knaap shop)",
-        "categorie": "Stads/commuter e-bike (low-step)",
-        "doelgroep": "Unisex",
-        "merk_model": "Knaap LAX"
+        "gewicht": "ca. 32 kg (opgave; incl. accu) (variant: 23 kg zonder accu genoemd door retailer)",
+        "prijs_eu": "ca. €1.799–€1.999 (opgave; retailer vs. fabrikantprijs)",
+        "categorie": "elektrische stadsfiets (urban/comfort)",
+        "doelgroep": "woon-werk en stadsritten, onderhoudsarm (riem + naaf)",
+        "merk_model": "Knaap LAX (aangenomen: EU-versie zoals op Knaap/Mantel: 26×2.4, Ananda middenmotor, belt + 8-naaf)",
+        "afmetingen_zithoogte": "One Size; aanbevolen lichaamslengte ±170–190 cm (opgave; overige maten n.t.b.)",
+        "payload_totaal_toelaatbaar": "120 kg (opgave; varianten tot 180 kg circuleren online, mogelijk verwarring met andere Knaap-modellen)"
       },
       "features": {
-        "verlichting": "LED voor & achter (accuvoeding)",
-        "connectiviteit_veiligheid": "track-&-trace-compatibel (dealerinformatie)"
+        "accessoires": "standaard o.a. pedalen + standaard; geen slot meegeleverd (opgave)",
+        "verlichting": "geïntegreerde LED voor/achter, gevoed door e-bike accu (opgave)",
+        "connectiviteit": "track & trace compatible; KN·APP GPS tracker compatibel; app-compatibel met Fris Opsporing Service (opgave; tracker doorgaans optioneel)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
@@ -4167,21 +4764,21 @@
       "Configuratie-afhankelijke aandrijving"
     ],
     "weight_kg": 32,
-    "wheel_size": "26\"",
-    "tire_size": "26×2.4″",
-    "frame_material": "Aluminium",
-    "motor_type": "Ananda middenmotor",
+    "wheel_size": "26 inch",
+    "tire_size": "26×2.4\"",
+    "frame_material": "aluminium",
+    "motor_type": "Ananda middenmotor 36V",
     "motor_power_w": 250,
     "torque_nm": 120,
-    "battery_type": "Li-ion",
+    "battery_type": "Li-ion, in-frame, uitneembaar",
     "battery_voltage": 36,
-    "battery_ah": 14,
-    "charging_time_hours": 7,
-    "brake_type": "Hydraulische schijfremmen (voor/achter)",
-    "gear_system": "8-versnellingsnaaf (IGH) / Shimano 8-speed (config-afhankelijk)",
-    "suspension": "Geen",
-    "lighting": "LED voor & achter",
-    "display": "Knaap-display (snelheid/accu/kilometrage)",
+    "battery_ah": 13,
+    "charging_time_hours": 6.5,
+    "brake_type": "hydraulische schijfremmen v/a",
+    "gear_system": "belt drive + 8-versn. naaf (Shimano Nexus 8)",
+    "suspension": "ongeveerde voorvork",
+    "lighting": "geïntegreerde LED voor/achter, gevoed door e-bike accu",
+    "display": "\"digital\"/stuurbediening aanwezig",
     "connectivity": {
       "app": false,
       "gps": false,
@@ -5433,9 +6030,9 @@
     "price": 3499,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 100,
     "battery_capacity": 960,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Super73 S2/Super73-Z-Miami-Panthro-side.webp",
     "affiliate_url": "https://eu.super73.com/products/super73-s2-bone-white",
     "cpl_rate": 25,
@@ -5495,40 +6092,66 @@
       }
     ],
     "specifications": {
-      "e_systeem": {
-        "accu": "48 V / 20 Ah ≈ 960 Wh",
-        "motor": "achternaaf 250 W (EU)",
-        "ondersteuning": "tot 25 km/u (EU-pedelec)"
+      "accu": {
+        "accu": "960 Wh (48V 20Ah)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "6–7 uur (opgave)",
+        "actieradius_claim_opgave": "80–120 km (120 km in PAS mode 1, opgave)"
       },
-      "frame_remmen": {
-        "frame": "aluminium, moped-stijl, one-size",
-        "remmen": "hydraulische schijfremmen"
+      "frame": {
+        "materiaal": "aluminium",
+        "vork_vering": "voorvering, achter rigid",
+        "bijzonderheden": "cadence sensor; 8-speed; \"Smart Display\" + app functies (navigatie/OTA)",
+        "ergonomie_zadel": "zadelhoogte 78 cm (opgave)"
       },
-      "wielen_maten": {
-        "banden": "20×4,5–5,0″ (SUPER73 BDGR)",
-        "wielen": "20″"
+      "motor": {
+        "type": "naafmotor (opgave: 250W EPAC)",
+        "vermogen_eu": "250 W (EPAC)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "Smart display + app (Bluetooth) (opgave)"
+      },
+      "wielen": {
+        "remmen": "hydraulisch",
+        "wielmaat": "n.t.b. (binnenband 20\" genoemd)",
+        "bandenmaat": "MAXXIS SuperSucker 4.5\" voor / 5\" achter; inner tubes 20\" x 4.5/5\" (opgave)",
+        "aandrijving_versnellingen": "8-speed derailleur"
+      },
+      "algemeen": {
+        "gewicht": "33 kg",
+        "prijs_eu": "n.t.b.",
+        "categorie": "\"moped-style\" urban cruiser",
+        "doelgroep": "stadscruisen/comfort",
+        "merk_model": "SUPER73 S2",
+        "afmetingen_zithoogte": "68\" x 27.5\" x 42\" (LxBxH, opgave); zithoogte 78 cm",
+        "payload_totaal_toelaatbaar": "rider weight limit 147 kg (opgave)"
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "LED voor/achter; claxon (horn)",
+        "connectiviteit": "Bluetooth (iOS/Android)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
       "EU EPAC gecertificeerd",
       "Geïntegreerde verlichting",
-      "Single-speed setup",
+      "8-speed derailleur",
       "Moped-stijl frame",
       "Hydraulische schijfremmen",
       "Fat-tire banden",
-      "One-size fits all"
+      "Smart Display + app"
     ],
-    "weight_kg": 25.5,
+    "weight_kg": 33,
     "wheel_size": "20\"",
-    "tire_size": "20×4,5–5,0″",
-    "frame_material": "Aluminium",
-    "motor_type": "Achternaaf 250 W (EU)",
+    "tire_size": "MAXXIS SuperSucker 4.5\" voor / 5\" achter",
+    "frame_material": "aluminium",
+    "motor_type": "naafmotor (250W EPAC)",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "Lithium-ion",
+    "torque_nm": null,
+    "battery_type": "Li-ion",
     "battery_voltage": 48,
     "battery_ah": 20,
-    "charging_time_hours": 6,
+    "charging_time_hours": 6.5,
     "brake_type": "Hydraulische schijfremmen",
     "gear_system": "Single-speed",
     "suspension": "Geen",
@@ -5550,13 +6173,14 @@
     "price": 2499,
     "build_date": "2024-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 480,
-    "top_speed": null,
+    "action_radius": 60,
+    "battery_capacity": 615,
+    "top_speed": 25,
     "image_url": "/img/Super73 ZX/Super73-Z-Miami-Panthro-side.webp",
     "affiliate_url": "https://eu.super73.com/products/super73-zx",
     "cpl_rate": 25,
-    "description": "# SUPER73 ZX — Fat-tire e-bike (48 V 10 Ah ≈ 480 Wh, 25 km/u EU)\r\n\r\n**Kort overzicht**  \r\nDe SUPER73 ZX (EU) is de toegankelijke, stadsgerichte fat-bike in de Z-serie. Hij heeft een EU-legale 250 W achternaafmotor en een 48 V / 10 Ah (≈ 480 Wh) accu. De 20×4″ Trooper-banden geven veel grip en comfort; schijfremmen zorgen voor controle. Fabrieks/retaileropgave: ~60 km bereik per lading (afhankelijk van stand, wegdek en omstandigheden). EU-topsnelheid 25 km/u (pedelec).\r\n\r\n## Highlights\r\n\r\n- **Soepele aandrijving:** EU-gelimiteerde 250 W naafmotor (pedelec).\r\n- **Energiepakket:** 48 V / 10 Ah ≈ 480 Wh accu.\r\n- **Actieradius (claim/opgave):** ~60 km onder gunstige omstandigheden.\r\n- **Controle & comfort:** schijfremmen en brede 20×4″ Trooper-banden.\r\n- **Gebruiksgemak:** one-size moped-stijl frame; doorgaans single-speed in EU-spec.\r\n\r\n## Specificaties\r\n\r\n**E-systeem**\r\n- Motor: achternaaf 250 W (EU)\r\n- Accu: 48 V / 10 Ah ≈ 480 Wh\r\n- Ondersteuning: tot 25 km/u (EU-pedelec)\r\n\r\n**Frame & remmen**\r\n- Frame: aluminium, moped-stijl, one-size\r\n- Remmen: schijfremmen\r\n\r\n**Wielen & banden**\r\n- Wielen: 20″\r\n- Banden: 20×4″ (SUPER73 Trooper)\r\n\r\n## Actieradius\r\n\r\n**Claim/opgave:** ~60 km per lading (sterk afhankelijk van rijstand, wind/temperatuur, bandenspanning, terrein en totaalgewicht).\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Filters (voor jullie e-bike categorie)\r\n\r\n- **Merk:** SUPER73\r\n- **Model + versie:** ZX\r\n- **Prijs (EU indicatie):** € 2.499\r\n- **Heren/Dames:** Unisex\r\n- **Actieradius:** ~60 km (claim/opgave)\r\n- **Accucapaciteit:** ≈ 480 Wh (48 V / 10 Ah)\r\n- **Topsnelheid:** 25 km/u (EU)\r\n- **Wielmaat/banden:** 20″ / 20×4″\r\n- **Remmen:** Schijfremmen\r\n- **Bijzonderheden:** EU EPAC, toegankelijke Z-serie, single-speed (EU-spec)\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://eu.super73.com/products/super73-zx\r\n- **Bron(nen):** eu.super73.com",
+    "price": 2799,
+    "description": "# SUPER73 ZX — Fat-tire e-bike (48 V 12.8 Ah ≈ 615 Wh, 25 km/u EU)\r\n\r\n**Kort overzicht**  \r\nDe SUPER73 ZX (EU) is de toegankelijke, stadsgerichte fat-bike in de Z-serie. Hij heeft een EU-legale 250 W achternaafmotor en een 48 V / 10 Ah (≈ 480 Wh) accu. De 20×4″ Trooper-banden geven veel grip en comfort; schijfremmen zorgen voor controle. Fabrieks/retaileropgave: ~60 km bereik per lading (afhankelijk van stand, wegdek en omstandigheden). EU-topsnelheid 25 km/u (pedelec).\r\n\r\n## Highlights\r\n\r\n- **Soepele aandrijving:** EU-gelimiteerde 250 W naafmotor (pedelec).\r\n- **Energiepakket:** 48 V / 10 Ah ≈ 480 Wh accu.\r\n- **Actieradius (claim/opgave):** ~60 km onder gunstige omstandigheden.\r\n- **Controle & comfort:** schijfremmen en brede 20×4″ Trooper-banden.\r\n- **Gebruiksgemak:** one-size moped-stijl frame; doorgaans single-speed in EU-spec.\r\n\r\n## Specificaties\r\n\r\n**E-systeem**\r\n- Motor: achternaaf 250 W (EU)\r\n- Accu: 48 V / 10 Ah ≈ 480 Wh\r\n- Ondersteuning: tot 25 km/u (EU-pedelec)\r\n\r\n**Frame & remmen**\r\n- Frame: aluminium, moped-stijl, one-size\r\n- Remmen: schijfremmen\r\n\r\n**Wielen & banden**\r\n- Wielen: 20″\r\n- Banden: 20×4″ (SUPER73 Trooper)\r\n\r\n## Actieradius\r\n\r\n**Claim/opgave:** ~60 km per lading (sterk afhankelijk van rijstand, wind/temperatuur, bandenspanning, terrein en totaalgewicht).\r\n\r\n## Wettelijke noot (NL/EU)\r\n\r\nDeze fiets is een **pedelec**: ondersteuning tot 25 km/u, max. 250 W continu, geen gashendel > 6 km/u.\r\n\r\n## Filters (voor jullie e-bike categorie)\r\n\r\n- **Merk:** SUPER73\r\n- **Model + versie:** ZX\r\n- **Prijs (EU indicatie):** € 2.499\r\n- **Heren/Dames:** Unisex\r\n- **Actieradius:** ~60 km (claim/opgave)\r\n- **Accucapaciteit:** ≈ 480 Wh (48 V / 10 Ah)\r\n- **Topsnelheid:** 25 km/u (EU)\r\n- **Wielmaat/banden:** 20″ / 20×4″\r\n- **Remmen:** Schijfremmen\r\n- **Bijzonderheden:** EU EPAC, toegankelijke Z-serie, single-speed (EU-spec)\r\n\r\n## Links\r\n\r\n- **Waar te koop:** https://eu.super73.com/products/super73-zx\r\n- **Bron(nen):** eu.super73.com",
     "created_at": "2025-10-12T12:12:25.888Z",
     "updated_at": "2025-10-12T12:12:25.890Z",
     "currency": "EUR",
@@ -5628,72 +6252,68 @@
     ],
     "specifications": {
       "accu": {
-        "accu": "48 V / 10 Ah ≈ 480 Wh",
-        "type": "Extern, uitneembaar met sleutel (op bovenbuis)",
-        "lader": "Standaard 2 A (EU)",
-        "bereik": "~60 km (claim/opgave) – afhankelijk van stand, terrein, wind/temperatuur, bandenspanning en totaalgewicht",
-        "extender": "n.v.t."
+        "accu": "615 Wh (48V 12.8Ah)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "6–7 uur (opgave)",
+        "actieradius_claim_opgave": "40–80 km (80 km in PAS mode 1, opgave)"
       },
       "frame": {
-        "vork": "Starre voorvork (rigid)",
-        "frame": "6061-T6 aluminium, moped-stijl, one-size",
-        "banden": "SUPER73 Trooper 20×4″ (street-pattern)",
-        "wielmaat": "20″"
+        "materiaal": "aluminium",
+        "vork_vering": "rigid",
+        "bijzonderheden": "cadence sensor; 8-speed",
+        "ergonomie_zadel": "zadelhoogte 78 cm (opgave)"
       },
       "motor": {
-        "motor": "Achter-naafmotor (geared, borstelloos)",
-        "systeem": "SUPER73 controller/elektronica (EU-spec)",
-        "vermogen": "250 W nominaal (EU)",
-        "bediening": "Stuurdisplay + SUPER73-app (iOS/Android)",
-        "ondersteuning": "EU 25 km/u (pedelec)"
+        "type": "naafmotor (opgave: 250W EPAC)",
+        "vermogen_eu": "250 W (EPAC)",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b. (productpagina noemt specs, geen duidelijke display-naam)"
       },
       "wielen": {
-        "crank": "n.t.b.",
-        "banden": "SUPER73 Trooper 20×4″ (street)",
-        "remmen": "Schijfremmen (mechanisch) in EU-uitvoering",
-        "aandrijving": "Single-speed (EU-spec)"
+        "remmen": "mechanisch (opgave)",
+        "wielmaat": "n.t.b. (inner tubes 20\" genoemd)",
+        "bandenmaat": "LZRD 4.5\" voor/achter; inner tubes 20\" x 4.5/5\" (opgave)",
+        "aandrijving_versnellingen": "8-speed derailleur"
       },
       "algemeen": {
-        "gewicht": "n.t.b. (EU-specificatie niet consistent gepubliceerd)",
-        "payload": "n.t.b. (raadpleeg EU-store/dealer)",
-        "categorie": "Fat-tire stads e-bike / moped-stijl",
-        "doelgroep": "Unisex",
-        "merk_model": "SUPER73 ZX"
+        "gewicht": "28 kg",
+        "prijs_eu": "€ 2.799 (getoonde EU verkoopprijs op pagina)",
+        "categorie": "comfortabele commuter (moped-style)",
+        "doelgroep": "korte/middellange ritten in stad",
+        "merk_model": "SUPER73 ZX",
+        "afmetingen_zithoogte": "68\" x 27.5\" x 42\" (opgave); zithoogte 78 cm",
+        "payload_totaal_toelaatbaar": "rider weight limit 147 kg (opgave)"
       },
       "features": {
-        "accessoires": "Optioneel: bagagedrager(s), spatborden, passagiers-voetsteunen, telefoonhouder",
-        "verlichting": "Geïntegreerde LED koplamp en achterlicht (accuvoeding)",
-        "connectiviteit": "SUPER73-app (Bluetooth)",
-        "waterdichtheid": "Spatwaterbestendig (rijden in regen oké; dompelen vermijden)"
+        "accessoires": "n.t.b.",
+        "verlichting": "LED voor/achter; bel",
+        "connectiviteit": "Bluetooth genoemd op pagina (app-ecosysteem)",
+        "waterdichtheid": "n.t.b."
       }
     },
     "features": [
       "EU EPAC gecertificeerd",
-      "Toegankelijke Z-serie",
-      "Single-speed setup",
+      "8-speed derailleur",
       "Moped-stijl frame",
-      "Schijfremmen (mechanisch)",
-      "Trooper-banden 20×4″",
+      "Mechanische remmen",
+      "LZRD 4.5\" banden",
       "One-size fits all",
       "Geïntegreerde LED verlichting",
-      "SUPER73-app connectiviteit",
-      "Uitneembare accu met sleutel",
-      "Spatwaterbestendig",
-      "6061-T6 aluminium frame"
+      "Bluetooth connectiviteit"
     ],
-    "weight_kg": 22,
+    "weight_kg": 28,
     "wheel_size": "20\"",
-    "tire_size": "20×4″ (SUPER73 Trooper)",
-    "frame_material": "6061-T6 aluminium",
-    "motor_type": "Achter-naafmotor (geared, borstelloos)",
+    "tire_size": "LZRD 4.5\" voor/achter",
+    "frame_material": "aluminium",
+    "motor_type": "naafmotor (250W EPAC)",
     "motor_power_w": 250,
-    "torque_nm": 0,
-    "battery_type": "Lithium-ion",
+    "torque_nm": null,
+    "battery_type": "Li-ion",
     "battery_voltage": 48,
-    "battery_ah": 10,
-    "charging_time_hours": 4,
-    "brake_type": "Schijfremmen (mechanisch)",
-    "gear_system": "Single-speed (EU-spec)",
+    "battery_ah": 12.8,
+    "charging_time_hours": 6.5,
+    "brake_type": "mechanisch",
+    "gear_system": "8-speed derailleur",
     "suspension": "Starre voorvork (rigid)",
     "lighting": "Geïntegreerde LED koplamp en achterlicht (accuvoeding)",
     "display": "Stuurdisplay + SUPER73-app",
@@ -6090,7 +6710,7 @@
     "gender_type": "unisex",
     "action_radius": null,
     "battery_capacity": 625,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/CUBE Kathmandu Hybrid Pro 625/812200_D_00.jpg",
     "affiliate_url": "https://cube.eu/products/kathmandu-hybrid-pro-625",
     "cpl_rate": 25,
@@ -6098,8 +6718,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.938Z",
     "currency": "EUR",
-    "action_radius_text": "Tot 130 km",
-    "action_radius_km": 130,
+    "action_radius_text": "n.t.b.",
+    "action_radius_km": null,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -6113,24 +6733,64 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "625 Wh (opgave)",
+        "type": "Bosch PowerTube (opgave)",
+        "lader_laadtijd": "n.t.b. (Bosch Compact Charger 2A genoemd)",
+        "actieradius_claim_opgave": "n.t.b."
+      },
+      "frame": {
+        "materiaal": "aluminium (opgave)",
+        "vork_vering": "Suntour NVX30, 100 mm (opgave)",
+        "bijzonderheden": "trekking met bagagedrager/spatborden (typisch; n.t.b. in bronfragment)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance Line CX Gen4 middenmotor (opgave)",
+        "vermogen_eu": "250 W (EU-klasse; n.t.b. expliciet)",
+        "koppel_opgave": "85 Nm (opgave)",
+        "display_bediening": "Bosch Intuvia (opgave)"
+      },
+      "wielen": {
+        "remmen": "Shimano BR-MT200 hydraulisch (opgave)",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "bandbreedte 55 mm genoemd (opgave)",
+        "aandrijving_versnellingen": "Shimano Deore 11-speed (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "26 kg (opgave)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "trekking e-bike",
+        "doelgroep": "woon-werk + toeren met bagage",
+        "merk_model": "CUBE Kathmandu Hybrid Pro 625",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
+    "weight_kg": 26,
     "wheel_size": null,
-    "tire_size": null,
-    "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "tire_size": "bandbreedte 55 mm",
+    "frame_material": "aluminium",
+    "motor_type": "Bosch Performance Line CX Gen4 middenmotor",
+    "motor_power_w": 250,
+    "torque_nm": 85,
+    "battery_type": "Bosch PowerTube",
+    "battery_voltage": 36,
+    "battery_ah": 17.4,
     "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
-    "suspension": null,
+    "brake_type": "Shimano BR-MT200 hydraulisch",
+    "gear_system": "Shimano Deore 11-speed",
+    "suspension": "Suntour NVX30, 100 mm",
     "lighting": null,
-    "display": null,
+    "display": "Bosch Intuvia",
     "connectivity": {},
     "warranty_years": null,
     "certification": null
@@ -6520,9 +7180,9 @@
     "price": 4499,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 500,
-    "top_speed": null,
+    "action_radius": 148.3,
+    "battery_capacity": 600,
+    "top_speed": 25,
     "image_url": "/img/Gazelle Ultimate C380 HMB/1280_2hhfPK3Xx51kEISe.webp",
     "affiliate_url": "https://gazelle.nl/products/ultimate-c380-hmb",
     "cpl_rate": 25,
@@ -6530,8 +7190,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "EUR",
-    "action_radius_text": "130-155 km",
-    "action_radius_km": 130,
+    "action_radius_text": "540 Wh: Eco 120 km / Turbo 50 km; 600 Wh: Eco 140 km / Turbo 55 km; 800 Wh: Eco 185 km / Turbo 70 km",
+    "action_radius_km": 148.3,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -6543,25 +7203,69 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "keuze 540 / 600 / 800 Wh (opgave, Gazelle)",
+        "type": "Bosch Smart System PowerTube, geïntegreerd in frame (opgave)",
+        "lader_laadtijd": "540 Wh: 7u42 (2A) / 4u54 (4A); 600 Wh: 9u18 (2A) / 5u24 (4A); 800 Wh: 12u24 (2A) / 6u54 (4A) (opgave, Gazelle)",
+        "actieradius_claim_opgave": "540 Wh: Eco 120 km / Turbo 50 km; 600 Wh: Eco 140 km / Turbo 55 km; 800 Wh: Eco 185 km / Turbo 70 km (opgave, Gazelle – per accu en modus)"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "Enviolo Trekking traploos + Gates riem; \"Bosch PX\"/Smart System positionering (opgave)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Bosch Performance Line PX middenmotor (Smart System) (opgave)",
+        "vermogen_eu": "250 W (EU-klasse; n.t.b. expliciet)",
+        "koppel_opgave": "85 Nm (met optie tot 90 Nm via app genoemd) (opgave)",
+        "display_bediening": "Bosch Kiox 500 kleurendisplay (opgave)"
+      },
+      "wielen": {
+        "remmen": "Magura MT-C4 hydraulische schijfremmen (opgave in shoplisting)",
+        "wielmaat": "28\" (opgave in shoplisting)",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "Gates riem + Enviolo Trekking (traploos) (opgave)"
+      },
+      "algemeen": {
+        "gewicht": "25,6 kg excl. accu (opgave in shoplisting)",
+        "prijs_eu": "n.t.b.",
+        "categorie": "trekking/toer e-bike",
+        "doelgroep": "sportief comfort toeren, woon-werk",
+        "merk_model": "Gazelle Ultimate C380 HMB (referentie: Ultimate C380 NL + HMB 2025 shoplisting)",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "MIK HD achterdrager (opgave in shoplisting)",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "Bluetooth + smartphone-koppeling genoemd; navigatie via Kiox 500 genoemd (opgave)",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
-    "weight_kg": null,
-    "wheel_size": null,
+    "weight_kg": 25.6,
+    "wheel_size": "28\"",
     "tire_size": null,
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
-    "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
+    "motor_type": "Bosch Performance Line PX middenmotor (Smart System)",
+    "motor_power_w": 250,
+    "torque_nm": 85,
+    "battery_type": "Bosch Smart System PowerTube, geïntegreerd in frame",
+    "battery_voltage": 36,
+    "battery_ah": 16.7,
+    "charging_time_hours": 5.4,
+    "brake_type": "Magura MT-C4 hydraulische schijfremmen",
+    "gear_system": "Gates riem + Enviolo Trekking (traploos)",
     "suspension": null,
     "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "display": "Bosch Kiox 500 kleurendisplay",
+    "connectivity": {
+      "app": true,
+      "gps": false,
+      "bluetooth": true
+    },
     "warranty_years": null,
     "certification": null
   },
@@ -6667,12 +7371,12 @@
     "brand": "Giant",
     "model_name": "Explore E+",
     "version": "Trekking/avontuur e-bike (625–800 Wh, lange actieradius)",
-    "price": 3399,
+    "price": 4099,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
+    "action_radius": 110,
     "battery_capacity": 625,
-    "top_speed": null,
+    "top_speed": 25,
     "image_url": "/img/Giant Explore E+/GIANT_Explore_E_System-8744-2048x1365.jpg.webp",
     "affiliate_url": "https://giant-bicycles.com/products/explore-e-plus",
     "cpl_rate": 25,
@@ -6680,8 +7384,8 @@
     "created_at": "2025-10-12T12:12:25.826Z",
     "updated_at": "2025-10-12T12:12:25.826Z",
     "currency": "EUR",
-    "action_radius_text": "70-150 km",
-    "action_radius_km": 70,
+    "action_radius_text": "zwaar 50 km / goed 100 km / ideaal 180 km (opgave)",
+    "action_radius_km": 110,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -6698,18 +7402,58 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "EnergyPak Smart 625 (opgave)",
+        "type": "Li-ion (EnergyPak) (opgave)",
+        "lader_laadtijd": "n.t.b.",
+        "actieradius_claim_opgave": "(opgave) zwaar 50 km / goed 100 km / ideaal 180 km"
+      },
+      "frame": {
+        "materiaal": "n.t.b.",
+        "vork_vering": "n.t.b.",
+        "bijzonderheden": "trekking/\"toer\" e-bike",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "SyncDrive Sport 2 (opgave)",
+        "vermogen_eu": "n.t.b.",
+        "koppel_opgave": "n.t.b.",
+        "display_bediening": "n.t.b."
+      },
+      "wielen": {
+        "remmen": "n.t.b.",
+        "wielmaat": "n.t.b.",
+        "bandenmaat": "n.t.b.",
+        "aandrijving_versnellingen": "n.t.b."
+      },
+      "algemeen": {
+        "gewicht": "n.t.b.",
+        "prijs_eu": "€ 4.099 (opgave)",
+        "categorie": "trekking e-bike",
+        "doelgroep": "toeren/woon-werk",
+        "merk_model": "Giant Explore E+ 2 Heren (2026) als proxy voor \"Explore E+\"",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "n.t.b.",
+        "verlichting": "n.t.b.",
+        "connectiviteit": "n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
     "weight_kg": null,
     "wheel_size": null,
     "tire_size": null,
     "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
+    "motor_type": "SyncDrive Sport 2",
+    "motor_power_w": 250,
     "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
+    "battery_type": "Li-ion (EnergyPak)",
+    "battery_voltage": 36,
+    "battery_ah": 17.4,
     "charging_time_hours": null,
     "brake_type": null,
     "gear_system": null,
@@ -6725,12 +7469,12 @@
     "brand": "Giant",
     "model_name": "Explore E+ 1",
     "version": "Trekking e-bike met betrouwbare aandrijving",
-    "price": 2799,
+    "price": 3799,
     "build_date": "2022-01-01T00:00:00.000Z",
     "gender_type": "unisex",
-    "action_radius": null,
-    "battery_capacity": 500,
-    "top_speed": null,
+    "action_radius": 110,
+    "battery_capacity": 625,
+    "top_speed": 25,
     "image_url": "/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg",
     "affiliate_url": "https://giant-bicycles.com/products/explore-e-plus-1",
     "cpl_rate": 25,
@@ -6738,8 +7482,8 @@
     "created_at": "2025-10-12T12:12:25.830Z",
     "updated_at": "2025-10-12T12:12:25.830Z",
     "currency": "EUR",
-    "action_radius_text": "Tot 90 km",
-    "action_radius_km": 90,
+    "action_radius_text": "zwaar 50 km / goed 100 km / ideaal 180 km",
+    "action_radius_km": 110,
     "top_speed_text": "25 km/h (EU)",
     "top_speed_kmh": 25,
     "images": [
@@ -6751,25 +7495,70 @@
     ],
     "colors": [],
     "highlights": [],
-    "specifications": {},
+    "specifications": {
+      "accu": {
+        "accu": "625 Wh (EnergyPak Smart, geïntegreerd)",
+        "type": "Li-ion (opgave)",
+        "lader_laadtijd": "variant (bronnen verschillen): 6A (2022 retailer) of 4A (2023 retailer)",
+        "actieradius_claim_opgave": "(Giant range table, 625 / SyncDrive Sport 2) zwaar 50 km / goed 100 km / ideaal 180 km (opgave)"
+      },
+      "frame": {
+        "materiaal": "ALUXX aluminium (opgave)",
+        "vork_vering": "SR Suntour NEX E25 63 mm (2022 retail) of SR Suntour XCM34 100 mm (2023 retail)",
+        "bijzonderheden": "duidelijke modeljaar-variant: \"SyncDrive Sport 70Nm\" (2022 retail) vs \"SyncDrive Sport (2) 75Nm\" (Giant 2023)",
+        "ergonomie_zadel": "n.t.b."
+      },
+      "motor": {
+        "type": "Giant SyncDrive Sport (Yamaha) middenmotor",
+        "vermogen_eu": "250 W klasse (niet expliciet als \"250W\" op Giant NL pagina, wel EPAC-context)",
+        "koppel_opgave": "70 Nm (2022 retail) of 75 Nm (Giant 2023)",
+        "display_bediening": "RideControl Dash 2-in-1 (kleurdisplay + bediening; ANT+ genoemd door Giant)"
+      },
+      "wielen": {
+        "remmen": "Shimano BR-MT200 hydraulische schijfremmen, 180 mm (2022 retail)",
+        "wielmaat": "28\" (700c)",
+        "bandenmaat": "GIANT Crosscut Gravel 2, 700x45c (2022 retail) of 700x57C (2023 retail—afhankelijk van uitvoering)",
+        "aandrijving_versnellingen": "2022 retail: Shimano Deore (2x10 = 20) / ketting; 2023 retail verschilt per listing (9/10-speed genoemd)"
+      },
+      "algemeen": {
+        "gewicht": "n.t.b. (niet eenduidig gevonden)",
+        "prijs_eu": "€ 3.799 (Giant NL pagina, 2023)",
+        "categorie": "trekking / toer e-bike",
+        "doelgroep": "woon-werk + langere tochten buiten de stad",
+        "merk_model": "Giant Explore E+ 1",
+        "afmetingen_zithoogte": "n.t.b.",
+        "payload_totaal_toelaatbaar": "n.t.b."
+      },
+      "features": {
+        "accessoires": "MIK rack (2022 retail); spatborden/standaard (afhankelijk van uitvoering)",
+        "verlichting": "AXA BlueLine Steady E6 50 lux (2022 retail)",
+        "connectiviteit": "ANT+ (Giant noemt op RideControl Dash); app n.t.b.",
+        "waterdichtheid": "n.t.b."
+      }
+    },
     "features": [],
     "weight_kg": null,
-    "wheel_size": null,
-    "tire_size": null,
-    "frame_material": null,
-    "motor_type": null,
-    "motor_power_w": null,
-    "torque_nm": null,
-    "battery_type": null,
-    "battery_voltage": null,
-    "battery_ah": null,
-    "charging_time_hours": null,
-    "brake_type": null,
-    "gear_system": null,
-    "suspension": null,
-    "lighting": null,
-    "display": null,
-    "connectivity": {},
+    "wheel_size": "28\" (700c)",
+    "tire_size": "GIANT Crosscut Gravel 2, 700x45c",
+    "frame_material": "ALUXX aluminium",
+    "motor_type": "Giant SyncDrive Sport (Yamaha) middenmotor",
+    "motor_power_w": 250,
+    "torque_nm": 72.5,
+    "battery_type": "Li-ion",
+    "battery_voltage": 36,
+    "battery_ah": 17.4,
+    "charging_time_hours": 3.5,
+    "brake_type": "Shimano BR-MT200 hydraulische schijfremmen, 180 mm",
+    "gear_system": "Shimano Deore (2x10 = 20) / ketting",
+    "suspension": "SR Suntour NEX E25 63 mm of SR Suntour XCM34 100 mm",
+    "lighting": "AXA BlueLine Steady E6 50 lux",
+    "display": "RideControl Dash 2-in-1 (kleurdisplay + bediening; ANT+)",
+    "connectivity": {
+      "app": false,
+      "gps": false,
+      "bluetooth": false,
+      "ant": true
+    },
     "warranty_years": null,
     "certification": null
   },
