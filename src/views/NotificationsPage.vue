@@ -235,13 +235,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, defineAsyncComponent } from 'vue'
 import { useNotificationStore } from '../stores/notifications'
 import { useAuthStore } from '../stores/auth'
 import { useRouter } from 'vue-router'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 const notificationStore = useNotificationStore()
 const authStore = useAuthStore()

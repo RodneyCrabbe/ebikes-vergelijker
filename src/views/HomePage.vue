@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { onMounted, ref, computed } from 'vue'
+import { onMounted, ref, computed, defineAsyncComponent } from 'vue'
 import { useEBikesStore } from '../stores/ebikes-simple'
 import { useScrollAnimations, useParallax } from '../composables/useScrollAnimations'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
 import LazyImage from '../components/LazyImage.vue'
 import EBikeSkeleton from '../components/EBikeSkeleton.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 const ebikeStore = useEBikesStore()
 const currentSlide = ref(0)
@@ -25,9 +27,7 @@ const heroImage = ref({
 useScrollAnimations()
 useParallax()
 
-onMounted(async () => {
-  await ebikeStore.fetchEBikes()
-})
+// Data is already loaded in App.vue, no need to fetch again
 
 const handleAffiliateClick = async (ebike: any) => {
   await ebikeStore.trackLead(ebike.id)

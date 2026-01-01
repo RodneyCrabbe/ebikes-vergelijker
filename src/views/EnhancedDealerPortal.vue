@@ -236,7 +236,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, defineAsyncComponent } from 'vue'
 import { useAuthStore } from '../stores/auth'
 import { useDealerAnalyticsStore } from '../stores/dealerAnalytics'
 import { useDealerLeadsStore } from '../stores/dealerLeads'
@@ -245,7 +245,9 @@ import { useDealerCommissionsStore } from '../stores/dealerCommissions'
 import { useDealerSettingsStore } from '../stores/dealerSettings'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 // Import component placeholders (to be created)
 import DealerInventoryManagement from '../components/dealer/DealerInventoryManagement.vue'

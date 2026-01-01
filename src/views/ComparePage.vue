@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, defineAsyncComponent } from 'vue'
 import { useComparisonStore } from '../stores/comparison'
 import { useAuthStore } from '../stores/auth'
 import { useRouter } from 'vue-router'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 const comparisonStore = useComparisonStore()
 const authStore = useAuthStore()

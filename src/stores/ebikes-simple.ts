@@ -12,27 +12,42 @@ export const useEBikesStore = defineStore('ebikes', () => {
   const loading = ref(false)
   const error = ref<string | null>(null)
   const initialized = ref(false)
+  const fetching = ref(false) // Guard to prevent concurrent fetches
 
-  // Convert and cache all e-bikes data
-  const allEBikes: EBike[] = allEBikesData.map((item: any) => ({
-    ...item,
-    build_date: item.build_date ? new Date(item.build_date) : undefined,
-    created_at: new Date(item.created_at),
-    updated_at: new Date(item.updated_at),
-    images: item.images || [item.image_url || '/api/placeholder/600/600']
-  })) as EBike[]
+  // Lazy data transformation - only convert when needed
+  let allEBikesCache: EBike[] | null = null
+  
+  const getAllEBikes = (): EBike[] => {
+    if (!allEBikesCache) {
+      allEBikesCache = allEBikesData.map((item: any) => ({
+        ...item,
+        build_date: item.build_date ? new Date(item.build_date) : undefined,
+        created_at: new Date(item.created_at),
+        updated_at: new Date(item.updated_at),
+        images: item.images || [item.image_url || '/api/placeholder/600/600']
+      })) as EBike[]
+    }
+    return allEBikesCache
+  }
 
   // Computed properties
-  const totalEBikes = computed(() => allEBikes.length)
+  const totalEBikes = computed(() => getAllEBikes().length)
   const isLoading = computed(() => loading.value)
   const hasError = computed(() => !!error.value)
 
   // Load all e-bikes with error handling
   async function fetchEBikes(filters?: EBikeFilters) {
+    // Prevent concurrent fetches
+    if (fetching.value) {
+      logger.log('Fetch already in progress, skipping...')
+      return
+    }
+
     if (initialized.value && !filters) {
       return // Already loaded
     }
 
+    fetching.value = true
     loading.value = true
     error.value = null
 
@@ -42,7 +57,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
       // Simulate small delay to prevent blocking
       await new Promise(resolve => setTimeout(resolve, 100))
 
-      let filteredData = [...allEBikes]
+      let filteredData = [...getAllEBikes()]
 
       // Apply filters if provided
       if (filters) {
@@ -59,7 +74,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
       
       // Fallback: try to load at least some e-bikes
       try {
-        ebikes.value = allEBikes.slice(0, 20) // Load first 20 as fallback
+        ebikes.value = getAllEBikes().slice(0, 20) // Load first 20 as fallback
         initialized.value = true
         logger.log('Loaded fallback e-bikes')
       } catch (fallbackErr) {
@@ -68,6 +83,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
       }
     } finally {
       loading.value = false
+      fetching.value = false
     }
   }
 
@@ -128,7 +144,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
     }
 
     // If not found, search in all e-bikes
-    ebike = allEBikes.find(e => e.id === id)
+    ebike = getAllEBikes().find(e => e.id === id)
     if (ebike) {
       currentEBike.value = ebike
       return ebike
@@ -145,7 +161,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
   // Search e-bikes
   async function searchEBikes(query: string): Promise<EBike[]> {
     const searchQuery = query.toLowerCase()
-    return allEBikes.filter(ebike => 
+    return getAllEBikes().filter(ebike => 
       ebike.brand.toLowerCase().includes(searchQuery) ||
       ebike.model_name.toLowerCase().includes(searchQuery) ||
       (ebike.description && ebike.description.toLowerCase().includes(searchQuery))
@@ -154,7 +170,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
 
   function getEBikesByIds(ids: string[]): EBike[] {
     const set = new Set(ids)
-    return allEBikes.filter(ebike => set.has(ebike.id))
+    return getAllEBikes().filter(ebike => set.has(ebike.id))
   }
 
   // Auto-refresh functionality
@@ -166,7 +182,7 @@ export const useEBikesStore = defineStore('ebikes', () => {
       if (initialized.value) {
         fetchEBikes()
       }
-    }, 60000) // 60 seconds
+    }, 300000) // 5 minutes (reduced frequency for better performance)
   }
 
   function stopAutoRefresh() {

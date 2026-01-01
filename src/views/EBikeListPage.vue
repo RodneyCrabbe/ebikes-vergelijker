@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, computed, watch } from 'vue'
+import { onMounted, onUnmounted, ref, computed, watch, shallowRef, defineAsyncComponent } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useEBikesStore } from '../stores/ebikes-simple'
 import { useComparisonStore } from '../stores/comparison'
@@ -8,11 +8,15 @@ import { useAuthStore } from '../stores/auth'
 import type { EBikeFilters } from '../types/ebike'
 import { getEBikeImageUrl } from '../utils/imagePlaceholder'
 import { topicalPages, getTopicalPageBySlug } from '../data/topicalPages'
+import { useDebounce } from '../composables/useDebounce'
+import { useVirtualizer } from '@tanstack/vue-virtual'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
 import LazyImage from '../components/LazyImage.vue'
 import EBikeSkeleton from '../components/EBikeSkeleton.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 const ebikeStore = useEBikesStore()
 const comparisonStore = useComparisonStore()
@@ -24,8 +28,8 @@ const authStore = useAuthStore()
 // Mobile filter state
 const showMobileFilters = ref(false)
 
-// Enhanced filters with comprehensive options
-const filters = ref<EBikeFilters>({
+// Enhanced filters with comprehensive options (using shallowRef for better performance)
+const filters = shallowRef<EBikeFilters>({
   // Basic filters
   brand: undefined,
   gender_type: undefined,
@@ -82,8 +86,9 @@ const filters = ref<EBikeFilters>({
   free_shipping: undefined
 })
 
-// Search
+// Search with debouncing
 const searchQuery = ref('')
+const debouncedSearchQuery = useDebounce(searchQuery, 300) // 300ms debounce delay
 const route = useRoute()
 const router = useRouter()
 
@@ -166,69 +171,60 @@ const torqueRanges = ['<50Nm', '50-70Nm', '70-85Nm', '85-100Nm', '>100Nm']
 const warrantyRanges = ['1 jaar', '2 jaar', '3 jaar', '4 jaar', '5+ jaar']
 const specialFeatures = ['opvouwbaar', 'lichtgewicht', 'goedkoop', 'premium', 'nieuw', 'outlet', 'gratis-verzending']
 
-// Filtered and sorted e-bikes
+// Optimized single-pass filter predicate function
+const createFilterPredicate = () => {
+  const searchQuery = debouncedSearchQuery.value?.toLowerCase() || ''
+  const filterValues = filters.value
+
+  return (ebike: any): boolean => {
+    // Topical page filter
+    if (topicalIdSet.value && !topicalIdSet.value.has(ebike.id)) {
+      return false
+    }
+
+    // Search filter (single pass)
+    if (searchQuery) {
+      const matchesSearch =
+        ebike.brand.toLowerCase().includes(searchQuery) ||
+        ebike.model_name.toLowerCase().includes(searchQuery) ||
+        (ebike.version && ebike.version.toLowerCase().includes(searchQuery)) ||
+        (ebike.description && ebike.description.toLowerCase().includes(searchQuery)) ||
+        (ebike.bike_type && ebike.bike_type.toLowerCase().includes(searchQuery)) ||
+        (ebike.color && ebike.color.toLowerCase().includes(searchQuery)) ||
+        (ebike.motor_location && ebike.motor_location.toLowerCase().includes(searchQuery))
+      if (!matchesSearch) return false
+    }
+
+    // All filters in single pass
+    if (filterValues.brand && ebike.brand !== filterValues.brand) return false
+    if (filterValues.gender_type && ebike.gender_type !== filterValues.gender_type) return false
+    if (filterValues.bike_type && ebike.bike_type !== filterValues.bike_type) return false
+    if (filterValues.color && ebike.color !== filterValues.color) return false
+    if (filterValues.motor_location && ebike.motor_location !== filterValues.motor_location) return false
+    if (filterValues.removable_battery !== undefined && ebike.removable_battery !== filterValues.removable_battery) return false
+    if (filterValues.on_sale !== undefined && ebike.on_sale !== filterValues.on_sale) return false
+
+    // Range filters
+    if (filterValues.min_price !== undefined && (!ebike.price || ebike.price < filterValues.min_price)) return false
+    if (filterValues.max_price !== undefined && (!ebike.price || ebike.price > filterValues.max_price)) return false
+    if (filterValues.min_action_radius !== undefined && (!ebike.action_radius_km || ebike.action_radius_km < filterValues.min_action_radius)) return false
+    if (filterValues.max_action_radius !== undefined && (!ebike.action_radius_km || ebike.action_radius_km > filterValues.max_action_radius)) return false
+    if (filterValues.min_battery_capacity !== undefined && (!ebike.battery_capacity || ebike.battery_capacity < filterValues.min_battery_capacity)) return false
+    if (filterValues.max_battery_capacity !== undefined && (!ebike.battery_capacity || ebike.battery_capacity > filterValues.max_battery_capacity)) return false
+
+    return true
+  }
+}
+
+// Filtered and sorted e-bikes (optimized single-pass filtering)
 const filteredEBikes = computed(() => {
   if (!ebikeStore.ebikes || !Array.isArray(ebikeStore.ebikes)) {
     return []
   }
-  let result = topicalIdSet.value
-    ? ebikeStore.ebikes.filter(e => topicalIdSet.value?.has(e.id))
-    : [...ebikeStore.ebikes]
 
-  // Apply search
-  if (searchQuery.value) {
-    const query = searchQuery.value.toLowerCase()
-    result = result.filter(ebike =>
-      ebike.brand.toLowerCase().includes(query) ||
-      ebike.model_name.toLowerCase().includes(query) ||
-      (ebike.version && ebike.version.toLowerCase().includes(query)) ||
-      (ebike.description && ebike.description.toLowerCase().includes(query)) ||
-      (ebike.bike_type && ebike.bike_type.toLowerCase().includes(query)) ||
-      (ebike.color && ebike.color.toLowerCase().includes(query)) ||
-      (ebike.motor_location && ebike.motor_location.toLowerCase().includes(query))
-    )
-  }
-
-  // Apply filters
-  if (filters.value.brand) {
-    result = result.filter(e => e.brand === filters.value.brand)
-  }
-  if (filters.value.gender_type) {
-    result = result.filter(e => e.gender_type === filters.value.gender_type)
-  }
-  if (filters.value.min_price !== undefined) {
-    result = result.filter(e => e.price && e.price >= filters.value.min_price!)
-  }
-  if (filters.value.max_price !== undefined) {
-    result = result.filter(e => e.price && e.price <= filters.value.max_price!)
-  }
-  if (filters.value.min_action_radius !== undefined) {
-    result = result.filter(e => e.action_radius_km && e.action_radius_km >= filters.value.min_action_radius!)
-  }
-  if (filters.value.max_action_radius !== undefined) {
-    result = result.filter(e => e.action_radius_km && e.action_radius_km <= filters.value.max_action_radius!)
-  }
-  if (filters.value.min_battery_capacity !== undefined) {
-    result = result.filter(e => e.battery_capacity && e.battery_capacity >= filters.value.min_battery_capacity!)
-  }
-  if (filters.value.max_battery_capacity !== undefined) {
-    result = result.filter(e => e.battery_capacity && e.battery_capacity <= filters.value.max_battery_capacity!)
-  }
-  if (filters.value.bike_type) {
-    result = result.filter(e => e.bike_type === filters.value.bike_type)
-  }
-  if (filters.value.color) {
-    result = result.filter(e => e.color === filters.value.color)
-  }
-  if (filters.value.motor_location) {
-    result = result.filter(e => e.motor_location === filters.value.motor_location)
-  }
-  if (filters.value.removable_battery !== undefined) {
-    result = result.filter(e => e.removable_battery === filters.value.removable_battery)
-  }
-  if (filters.value.on_sale !== undefined) {
-    result = result.filter(e => e.on_sale === filters.value.on_sale)
-  }
+  // Single-pass filtering
+  const predicate = createFilterPredicate()
+  let result = ebikeStore.ebikes.filter(predicate)
 
   // Apply sorting
   result.sort((a, b) => {
@@ -405,6 +401,38 @@ const toggleFavorite = async (ebike: any) => {
 const navigateToDetail = (ebikeId: string) => {
   router.push(`/e-bikes/${ebikeId}`)
 }
+
+// Virtual scrolling setup for grid layout
+const gridContainerRef = ref<HTMLElement>()
+const itemsPerRow = computed(() => {
+  // Calculate based on screen size (matching grid-cols classes)
+  if (typeof window === 'undefined') return 5
+  const width = window.innerWidth
+  if (width >= 1536) return 5 // 2xl
+  if (width >= 1280) return 4 // xl
+  if (width >= 1024) return 3 // lg
+  if (width >= 640) return 2  // sm
+  return 1 // mobile
+})
+
+// Calculate rows for virtual scrolling
+const rows = computed(() => {
+  const items = filteredEBikes.value
+  const perRow = itemsPerRow.value
+  const rowCount = Math.ceil(items.length / perRow)
+  return Array.from({ length: rowCount }, (_, i) => {
+    const start = i * perRow
+    const end = start + perRow
+    return items.slice(start, end)
+  })
+})
+
+const rowVirtualizer = useVirtualizer({
+  count: computed(() => rows.value.length),
+  getScrollElement: () => gridContainerRef.value || undefined,
+  estimateSize: () => 320, // Estimated row height
+  overscan: 5, // Render 5 extra rows for smooth scrolling
+})
 
 onMounted(async () => {
   await ebikeStore.fetchEBikes()
@@ -891,19 +919,42 @@ onMounted(async () => {
               </button>
             </div>
 
-            <!-- E-bike Grid -->
+            <!-- E-bike Grid with Virtual Scrolling -->
             <div v-else class="px-6">
               <!-- Count indicator -->
               <div class="mb-4 text-sm text-gray-600">
                 {{ filteredEBikes.length }} van {{ totalPool }} e-bikes
               </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
               <div
-                v-for="ebike in filteredEBikes"
-                :key="ebike.id"
-                @click="navigateToDetail(ebike.id)"
-                class="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border border-gray-100/50 cursor-pointer"
+                ref="gridContainerRef"
+                class="overflow-auto"
+                style="height: calc(100vh - 300px);"
               >
+                <div
+                  :style="{
+                    height: `${rowVirtualizer.getTotalSize()}px`,
+                    position: 'relative',
+                  }"
+                >
+                  <div
+                    v-for="virtualRow in rowVirtualizer.getVirtualItems()"
+                    :key="virtualRow.key"
+                    :style="{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: `${virtualRow.size}px`,
+                      transform: `translateY(${virtualRow.start}px)`,
+                    }"
+                  >
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 pb-4">
+                      <div
+                        v-for="ebike in rows[virtualRow.index]"
+                        :key="ebike.id"
+                        @click="navigateToDetail(ebike.id)"
+                        class="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border border-gray-100/50 cursor-pointer"
+                      >
                 <!-- Image -->
                 <div class="relative h-40 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
                   <LazyImage
@@ -1024,12 +1075,12 @@ onMounted(async () => {
                   </div>
                   </div>
                 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-
-          </div>
-        </div>
 
         <!-- Mobile Filter Modal -->
         <Transition name="slide-up">

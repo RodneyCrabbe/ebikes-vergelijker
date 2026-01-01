@@ -1103,7 +1103,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, defineAsyncComponent } from 'vue'
 import { useAuthStore } from '../stores/auth'
 import { useUserProfileStore } from '../stores/userProfile'
 import { useComparisonStore } from '../stores/comparison'
@@ -1114,7 +1114,9 @@ import { useReviewsStore } from '../stores/reviews'
 import { supabase } from '../lib/supabase'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 const authStore = useAuthStore()
 const userProfileStore = useUserProfileStore()

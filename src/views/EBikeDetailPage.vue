@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, computed } from 'vue'
+import { onMounted, onUnmounted, ref, computed, defineAsyncComponent } from 'vue'
 import { useRoute } from 'vue-router'
 import { useEBikesStore } from '../stores/ebikes'
 import { useComparisonStore } from '../stores/comparison'
@@ -9,8 +9,10 @@ import { eventTrackingService } from '../services/eventTrackingService'
 import { getEBikeImageUrl } from '../utils/imagePlaceholder'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
 import MarkdownRenderer from '../components/common/MarkdownRenderer.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 const route = useRoute()
 const ebikeStore = useEBikesStore()

@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, defineAsyncComponent } from 'vue'
 import { useScrollAnimations } from '../composables/useScrollAnimations'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 useScrollAnimations()
 

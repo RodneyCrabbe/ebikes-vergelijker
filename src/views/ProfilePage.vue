@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, defineAsyncComponent } from 'vue'
 import { useAuthStore } from '../stores/auth'
 import { useComparisonStore } from '../stores/comparison'
 import { useEBikesStore } from '../stores/ebikes'
@@ -8,9 +8,11 @@ import { useLocationStore } from '../stores/location'
 import { useAppointmentStore } from '../stores/appointments'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
-import EnhancedAIChatbot from '../components/EnhancedAIChatbot.vue'
 import LocationSelector from '../components/LocationSelector.vue'
 import EBikeModal from '../components/EBikeModal.vue'
+
+// Lazy load AI Chatbot only when needed
+const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
 
 const authStore = useAuthStore()
 const comparisonStore = useComparisonStore()
