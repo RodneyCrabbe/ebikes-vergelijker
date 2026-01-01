@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, computed, watch, shallowRef, defineAsyncComponent } from 'vue'
+import { onMounted, onUnmounted, ref, computed, watch, defineAsyncComponent } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useEBikesStore } from '../stores/ebikes-simple'
 import { useComparisonStore } from '../stores/comparison'
@@ -27,8 +27,8 @@ const authStore = useAuthStore()
 // Mobile filter state
 const showMobileFilters = ref(false)
 
-// Enhanced filters with comprehensive options (using shallowRef for better performance)
-const filters = shallowRef<EBikeFilters>({
+// Initial filter state (used for resetting)
+const initialFilterState: EBikeFilters = {
   // Basic filters
   brand: undefined,
   gender_type: undefined,
@@ -83,7 +83,10 @@ const filters = shallowRef<EBikeFilters>({
   new_collection: undefined,
   outlet: undefined,
   free_shipping: undefined
-})
+}
+
+// Enhanced filters with comprehensive options (using ref for proper reactivity)
+const filters = ref<EBikeFilters>({ ...initialFilterState })
 
 // Search with debouncing
 const searchQuery = ref('')
@@ -170,6 +173,97 @@ const torqueRanges = ['<50Nm', '50-70Nm', '70-85Nm', '85-100Nm', '>100Nm']
 const warrantyRanges = ['1 jaar', '2 jaar', '3 jaar', '4 jaar', '5+ jaar']
 const specialFeatures = ['opvouwbaar', 'lichtgewicht', 'goedkoop', 'premium', 'nieuw', 'outlet', 'gratis-verzending']
 
+// Helper functions for filter matching
+const normalizeString = (value: string | undefined | null): string => {
+  if (!value) return ''
+  return value.toLowerCase().trim().replace(/[^\w\s]/g, '')
+}
+
+const parseTorque = (value: string | number | undefined | null): number | null => {
+  if (typeof value === 'number') return value
+  if (!value) return null
+  
+  const str = String(value).toLowerCase()
+  // Extract number from strings like "55 Nm", "50-70Nm", "55Nm"
+  const match = str.match(/(\d+(?:\.\d+)?)\s*nm/i) || str.match(/(\d+(?:\.\d+)?)/)
+  if (match) {
+    const num = parseFloat(match[1])
+    return isNaN(num) ? null : num
+  }
+  return null
+}
+
+const parseWeight = (value: string | number | undefined | null): number | null => {
+  if (typeof value === 'number') return value
+  if (!value) return null
+  
+  const str = String(value).toLowerCase()
+  // Extract number from strings like "25 kg", "25kg", "25"
+  const match = str.match(/(\d+(?:\.\d+)?)\s*kg/i) || str.match(/(\d+(?:\.\d+)?)/)
+  if (match) {
+    const num = parseFloat(match[1])
+    return isNaN(num) ? null : num
+  }
+  return null
+}
+
+const matchesRange = (value: number | null, range: string | undefined): boolean => {
+  if (!range || value === null) return false
+  
+  if (range.startsWith('<')) {
+    const max = parseFloat(range.replace('<', '').replace('Nm', '').trim())
+    return !isNaN(max) && value < max
+  } else if (range.startsWith('>')) {
+    const min = parseFloat(range.replace('>', '').replace('Nm', '').trim())
+    return !isNaN(min) && value > min
+  } else if (range.includes('-')) {
+    const [minStr, maxStr] = range.split('-')
+    const min = parseFloat(minStr.replace('Nm', '').trim())
+    const max = parseFloat(maxStr.replace('Nm', '').trim())
+    return !isNaN(min) && !isNaN(max) && value >= min && value <= max
+  }
+  return false
+}
+
+const containsAny = (text: string | undefined | null, searchTerms: string[]): boolean => {
+  if (!text || !searchTerms || searchTerms.length === 0) return false
+  const normalizedText = normalizeString(text)
+  return searchTerms.some(term => normalizedText.includes(normalizeString(term)))
+}
+
+const containsText = (text: string | undefined | null, search: string | undefined): boolean => {
+  if (!text || !search) return false
+  return normalizeString(text).includes(normalizeString(search))
+}
+
+const parseWarrantyYears = (value: string | number | undefined | null): number | null => {
+  if (typeof value === 'number') return value
+  if (!value) return null
+  
+  const str = String(value).toLowerCase()
+  // Extract number from strings like "2 jaar", "2 jaar", "2"
+  const match = str.match(/(\d+)/)
+  if (match) {
+    const num = parseInt(match[1], 10)
+    return isNaN(num) ? null : num
+  }
+  return null
+}
+
+const matchesWarrantyRange = (ebikeWarranty: number | null, range: string | undefined): boolean => {
+  if (!range || ebikeWarranty === null) return false
+  
+  const rangeYears = parseWarrantyYears(range)
+  if (rangeYears === null) return false
+  
+  // For ranges like "1 jaar", "2 jaar", check if ebike warranty >= range
+  // For "5+ jaar", check if ebike warranty >= 5
+  if (range.includes('+')) {
+    return ebikeWarranty >= rangeYears
+  }
+  return ebikeWarranty >= rangeYears
+}
+
 // Optimized single-pass filter predicate function
 const createFilterPredicate = () => {
   const searchQuery = debouncedSearchQuery.value?.toLowerCase() || ''
@@ -194,7 +288,7 @@ const createFilterPredicate = () => {
       if (!matchesSearch) return false
     }
 
-    // All filters in single pass
+    // Basic filters
     if (filterValues.brand && ebike.brand !== filterValues.brand) return false
     if (filterValues.gender_type && ebike.gender_type !== filterValues.gender_type) return false
     if (filterValues.bike_type && ebike.bike_type !== filterValues.bike_type) return false
@@ -202,14 +296,130 @@ const createFilterPredicate = () => {
     if (filterValues.motor_location && ebike.motor_location !== filterValues.motor_location) return false
     if (filterValues.removable_battery !== undefined && ebike.removable_battery !== filterValues.removable_battery) return false
     if (filterValues.on_sale !== undefined && ebike.on_sale !== filterValues.on_sale) return false
+    if (filterValues.new_collection !== undefined && ebike.new_collection !== filterValues.new_collection) return false
+    if (filterValues.outlet !== undefined && ebike.outlet !== filterValues.outlet) return false
+    if (filterValues.free_shipping !== undefined && ebike.free_shipping !== filterValues.free_shipping) return false
 
-    // Range filters
+    // Price and performance range filters
     if (filterValues.min_price !== undefined && (!ebike.price || ebike.price < filterValues.min_price)) return false
     if (filterValues.max_price !== undefined && (!ebike.price || ebike.price > filterValues.max_price)) return false
     if (filterValues.min_action_radius !== undefined && (!ebike.action_radius_km || ebike.action_radius_km < filterValues.min_action_radius)) return false
     if (filterValues.max_action_radius !== undefined && (!ebike.action_radius_km || ebike.action_radius_km > filterValues.max_action_radius)) return false
     if (filterValues.min_battery_capacity !== undefined && (!ebike.battery_capacity || ebike.battery_capacity < filterValues.min_battery_capacity)) return false
     if (filterValues.max_battery_capacity !== undefined && (!ebike.battery_capacity || ebike.battery_capacity > filterValues.max_battery_capacity)) return false
+    
+    // Top speed filters
+    const topSpeed = ebike.top_speed_kmh || ebike.top_speed
+    if (filterValues.min_top_speed !== undefined && (!topSpeed || topSpeed < filterValues.min_top_speed)) return false
+    if (filterValues.max_top_speed !== undefined && (!topSpeed || topSpeed > filterValues.max_top_speed)) return false
+
+    // Torque filters
+    const torque = ebike.torque_nm || parseTorque(ebike.specifications?.motor?.koppel_opgave)
+    if (filterValues.min_torque !== undefined && (torque === null || torque < filterValues.min_torque)) return false
+    if (filterValues.max_torque !== undefined && (torque === null || torque > filterValues.max_torque)) return false
+    if (filterValues.torque_range) {
+      if (!matchesRange(torque, filterValues.torque_range)) return false
+    }
+
+    // Weight filters
+    const weight = ebike.weight_kg || parseWeight(ebike.specifications?.algemeen?.gewicht)
+    if (filterValues.min_weight !== undefined && (weight === null || weight < filterValues.min_weight)) return false
+    if (filterValues.max_weight !== undefined && (weight === null || weight > filterValues.max_weight)) return false
+
+    // Motor specifications
+    if (filterValues.motor_brand) {
+      const motorType = ebike.specifications?.motor?.type || ebike.motor_type || ''
+      if (!containsText(motorType, filterValues.motor_brand)) return false
+    }
+    if (filterValues.motor_type) {
+      const motorType = ebike.specifications?.motor?.type || ebike.motor_type || ''
+      if (!containsText(motorType, filterValues.motor_type)) return false
+    }
+    if (filterValues.drive_type) {
+      const driveType = ebike.specifications?.motor?.type || ebike.motor_type || ''
+      if (!containsText(driveType, filterValues.drive_type)) return false
+    }
+
+    // Drivetrain and mechanics
+    if (filterValues.gear_type) {
+      const gearType = ebike.specifications?.wielen?.aandrijving_versnellingen || ebike.gear_system || ''
+      if (!containsText(gearType, filterValues.gear_type)) return false
+    }
+    if (filterValues.brake_type) {
+      const brakeType = ebike.specifications?.wielen?.remmen || ebike.brake_type || ''
+      if (!containsText(brakeType, filterValues.brake_type)) return false
+    }
+    if (filterValues.frame_material) {
+      const frameMaterial = ebike.specifications?.frame?.materiaal || ebike.frame_material || ''
+      if (!containsText(frameMaterial, filterValues.frame_material)) return false
+    }
+    if (filterValues.wheel_size) {
+      const wheelSize = ebike.specifications?.wielen?.wielmaat || ebike.wheel_size || ''
+      // Normalize wheel sizes for comparison (e.g., "20\"" vs "20 inch" vs "20")
+      const normalizedFilter = normalizeString(filterValues.wheel_size).replace(/[""]/g, '')
+      const normalizedWheel = normalizeString(wheelSize).replace(/[""]/g, '')
+      if (!normalizedWheel.includes(normalizedFilter) && !normalizedFilter.includes(normalizedWheel)) return false
+    }
+    if (filterValues.suspension_type) {
+      const suspension = ebike.specifications?.frame?.vork_vering || ebike.suspension || ''
+      if (!containsText(suspension, filterValues.suspension_type)) return false
+    }
+
+    // Battery specifications
+    if (filterValues.battery_type) {
+      const batteryType = ebike.specifications?.accu?.type || ebike.battery_type || ''
+      if (!containsText(batteryType, filterValues.battery_type)) return false
+    }
+    if (filterValues.battery_position) {
+      const batteryPos = ebike.specifications?.accu?.accu || ebike.description || ''
+      if (!containsText(batteryPos, filterValues.battery_position)) return false
+    }
+
+    // Features and accessories
+    if (filterValues.seating_position) {
+      const seating = ebike.specifications?.frame?.ergonomie_zadel || ebike.description || ''
+      if (!containsText(seating, filterValues.seating_position)) return false
+    }
+    if (filterValues.lighting_type) {
+      const lighting = ebike.specifications?.features?.verlichting || ebike.lighting || ''
+      if (!containsText(lighting, filterValues.lighting_type)) return false
+    }
+    if (filterValues.display_type) {
+      const display = ebike.specifications?.motor?.display_bediening || ebike.display || ''
+      if (!containsText(display, filterValues.display_type)) return false
+    }
+    if (filterValues.connectivity_type) {
+      const connectivity = ebike.specifications?.features?.connectiviteit || JSON.stringify(ebike.connectivity || {}) || ''
+      if (!containsText(connectivity, filterValues.connectivity_type)) return false
+    }
+
+    // Special features
+    if (filterValues.special_features && Array.isArray(filterValues.special_features) && filterValues.special_features.length > 0) {
+      const category = ebike.specifications?.algemeen?.categorie || ''
+      const doelgroep = ebike.specifications?.algemeen?.doelgroep || ''
+      const description = ebike.description || ''
+      const combinedText = `${category} ${doelgroep} ${description}`.toLowerCase()
+      
+      // Check if any special feature matches
+      const matches = filterValues.special_features.some(feature => {
+        const normalizedFeature = normalizeString(feature)
+        return combinedText.includes(normalizedFeature) ||
+               (feature === 'opvouwbaar' && containsText(combinedText, 'vouw')) ||
+               (feature === 'lichtgewicht' && containsText(combinedText, 'licht')) ||
+               (feature === 'goedkoop' && containsText(combinedText, 'goedkoop')) ||
+               (feature === 'premium' && containsText(combinedText, 'premium')) ||
+               (feature === 'nieuw' && containsText(combinedText, 'nieuw')) ||
+               (feature === 'outlet' && (ebike.outlet === true || containsText(combinedText, 'outlet'))) ||
+               (feature === 'gratis-verzending' && (ebike.free_shipping === true || containsText(combinedText, 'gratis verzending')))
+      })
+      if (!matches) return false
+    }
+
+    // Warranty range
+    if (filterValues.warranty_range) {
+      const warrantyYears = ebike.warranty_years || parseWarrantyYears(ebike.specifications?.algemeen?.warranty)
+      if (!matchesWarrantyRange(warrantyYears, filterValues.warranty_range)) return false
+    }
 
     return true
   }
@@ -267,21 +477,7 @@ const totalPool = computed(() => {
 
 // Clear filters
 const clearFilters = () => {
-  filters.value = {
-    brand: undefined,
-    gender_type: undefined,
-    min_price: undefined,
-    max_price: undefined,
-    min_action_radius: undefined,
-    max_action_radius: undefined,
-    min_battery_capacity: undefined,
-    max_battery_capacity: undefined,
-    bike_type: undefined,
-    color: undefined,
-    motor_location: undefined,
-    removable_battery: undefined,
-    on_sale: undefined
-  }
+  filters.value = { ...initialFilterState }
   searchQuery.value = ''
 }
 
