@@ -73,13 +73,30 @@ export const useEBikesStore = defineStore('ebikes', () => {
           return []
         }
         
-        allEBikesCache = data.map((item: any) => ({
-          ...item,
-          build_date: item.build_date ? new Date(item.build_date) : undefined,
-          created_at: new Date(item.created_at),
-          updated_at: new Date(item.updated_at),
-          images: item.images || [item.image_url || '/api/placeholder/600/600']
-        })) as EBike[]
+        allEBikesCache = data.map((item: any) => {
+          // Ensure images array is properly set
+          const images = item.images && Array.isArray(item.images) && item.images.length > 0
+            ? item.images
+            : (item.image_url ? [item.image_url] : []);
+          
+          // Log Giant products for debugging
+          if (item.brand === 'Giant' && (item.model_name === 'Explore E+' || item.model_name === 'Explore E+ 1' || item.model_name === 'Trance E+ 3')) {
+            console.log(`[Giant Debug] ${item.model_name}:`, {
+              image_url: item.image_url,
+              images_count: item.images ? item.images.length : 0,
+              final_images_count: images.length,
+              first_image: images[0]
+            });
+          }
+          
+          return {
+            ...item,
+            build_date: item.build_date ? new Date(item.build_date) : undefined,
+            created_at: new Date(item.created_at),
+            updated_at: new Date(item.updated_at),
+            images: images
+          } as EBike;
+        })
         
         logger.log(`Successfully transformed ${allEBikesCache.length} e-bikes`)
         console.log('E-bikes data loaded:', allEBikesCache.length, 'items')
