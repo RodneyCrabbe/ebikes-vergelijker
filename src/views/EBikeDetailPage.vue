@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, computed, defineAsyncComponent } from 'vue'
 import { useRoute } from 'vue-router'
-import { useEBikesStore } from '../stores/ebikes'
+import { useEBikesStore } from '../stores/ebikes-simple'
 import { useComparisonStore } from '../stores/comparison'
 import { useFavoritesStore } from '../stores/favorites'
 import { useAuthStore } from '../stores/auth'
@@ -194,7 +194,8 @@ onMounted(async () => {
   if (!fetchedEBike && isNaN(Number(id))) {
     // Ensure all ebikes are loaded
     await ebikeStore.fetchEBikes()
-    const allEBikes = ebikeStore.getAllEBikes()
+    // Use the ebikes from the store directly
+    const allEBikes = ebikeStore.ebikes
     
     // Simple slug matching logic
     fetchedEBike = allEBikes.find(e => {
