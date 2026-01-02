@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Giant Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .product-card {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            background: #f0f0f0;
+            margin-bottom: 10px;
+        }
+        .product-info {
+            text-align: center;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 5px 0;
+            font-size: 12px;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .status.loading {
+            background: #fff3cd;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Giant Product Images Test</h1>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const giantProducts = [
+            {
+                brand: 'Giant',
+                model: 'Explore E+',
+                imageUrl: '/img/Giant Explore E+/GIANT_Explore_E_System-8744-2048x1365.jpg.webp',
+                images: [
+                    '/img/Giant Explore E+/GIANT_Explore_E_System-8744-2048x1365.jpg.webp',
+                    '/img/Giant Explore E+/GIANT_Explore_E_System-8794-2048x1366.jpg.webp',
+                    '/img/Giant Explore E+/GIANT_Explore_E_System-8803-2048x1365.jpg.webp'
+                ]
+            },
+            {
+                brand: 'Giant',
+                model: 'Explore E+ 1',
+                imageUrl: '/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg',
+                images: [
+                    '/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg',
+                    '/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D2.jpg',
+                    '/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest_D3.jpg'
+                ]
+            },
+            {
+                brand: 'Giant',
+                model: 'Trance E+ 3',
+                imageUrl: '/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg',
+                images: [
+                    '/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg'
+                ]
+            }
+        ];
+
+        async function testImage(url) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => resolve({ success: true, url });
+                img.onerror = () => resolve({ success: false, url });
+                img.src = url;
+            });
+        }
+
+        async function testAllImages() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<p>Testing images...</p>';
+
+            for (const product of giantProducts) {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                
+                const title = document.createElement('h2');
+                title.textContent = `${product.brand} ${product.model}`;
+                card.appendChild(title);
+
+                const img = document.createElement('img');
+                img.className = 'product-image';
+                img.src = product.imageUrl;
+                img.alt = `${product.brand} ${product.model}`;
+                card.appendChild(img);
+
+                const status = document.createElement('div');
+                status.className = 'status loading';
+                status.textContent = 'Testing...';
+                card.appendChild(status);
+
+                const info = document.createElement('div');
+                info.className = 'product-info';
+                info.innerHTML = `<p><strong>Image URL:</strong><br><code>${product.imageUrl}</code></p>`;
+                card.appendChild(info);
+
+                resultsDiv.appendChild(card);
+
+                // Test main image
+                const mainResult = await testImage(product.imageUrl);
+                status.className = mainResult.success ? 'status success' : 'status error';
+                status.textContent = mainResult.success 
+                    ? '✓ Main image loaded successfully' 
+                    : '✗ Main image failed to load';
+
+                // Test all images
+                const allResults = await Promise.all(product.images.map(url => testImage(url)));
+                const successCount = allResults.filter(r => r.success).length;
+                const totalCount = allResults.length;
+
+                const allStatus = document.createElement('div');
+                allStatus.className = successCount === totalCount ? 'status success' : 'status error';
+                allStatus.textContent = `Images: ${successCount}/${totalCount} loaded`;
+                card.appendChild(allStatus);
+            }
+
+            // Test JSON data
+            try {
+                const jsonResponse = await fetch('/ebikes-data.json');
+                const jsonData = await jsonResponse.json();
+                const giantProductsInJson = jsonData.filter(e => e.brand === 'Giant' && 
+                    (e.model_name === 'Explore E+' || e.model_name === 'Explore E+ 1' || e.model_name === 'Trance E+ 3'));
+                
+                const jsonInfo = document.createElement('div');
+                jsonInfo.className = 'product-card';
+                jsonInfo.innerHTML = `
+                    <h2>JSON Data Check</h2>
+                    <p><strong>Found ${giantProductsInJson.length} Giant products in JSON</strong></p>
+                    ${giantProductsInJson.map(e => `
+                        <div style="margin: 10px 0; padding: 10px; background: #f9f9f9; border-radius: 4px;">
+                            <strong>${e.brand} ${e.model_name}</strong><br>
+                            Image URL: <code>${e.image_url}</code><br>
+                            Images count: ${e.images ? e.images.length : 0}
+                        </div>
+                    `).join('')}
+                `;
+                resultsDiv.appendChild(jsonInfo);
+            } catch (error) {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'status error';
+                errorDiv.textContent = `Failed to load JSON: ${error.message}`;
+                resultsDiv.appendChild(errorDiv);
+            }
+        }
+
+        testAllImages();
+    </script>
+</body>
+</html>
+

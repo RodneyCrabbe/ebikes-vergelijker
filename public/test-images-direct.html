@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct Image Test</title>
+    <style>
+        body { padding: 20px; font-family: Arial; }
+        .test { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        img { max-width: 300px; margin: 10px; border: 2px solid #333; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Direct Image Loading Test</h1>
+    
+    <div class="test">
+        <h2>Giant Explore E+</h2>
+        <p>Testing: <code>/img/Giant Explore E+/GIANT_Explore_E_System-8744-2048x1365.jpg.webp</code></p>
+        <img src="/img/Giant Explore E+/GIANT_Explore_E_System-8744-2048x1365.jpg.webp" 
+             alt="Giant Explore E+" 
+             onload="this.nextElementSibling.textContent='✓ Loaded successfully'; this.nextElementSibling.className='success'"
+             onerror="this.nextElementSibling.textContent='✗ Failed to load'; this.nextElementSibling.className='error'">
+        <p class="loading">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>Giant Explore E+ 1</h2>
+        <p>Testing: <code>/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg</code></p>
+        <img src="/img/Giant Explore E+ 1/MY23ExploreEplus1DD_ColorAMistyForest.jpg" 
+             alt="Giant Explore E+ 1"
+             onload="this.nextElementSibling.textContent='✓ Loaded successfully'; this.nextElementSibling.className='success'"
+             onerror="this.nextElementSibling.textContent='✗ Failed to load'; this.nextElementSibling.className='error'">
+        <p class="loading">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>Giant Trance E+ 3</h2>
+        <p>Testing: <code>/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg</code></p>
+        <img src="/img/Giant Trance E+ 3/MY22TranceXEplus3Pro29_ColorABlackDiamond.jpg" 
+             alt="Giant Trance E+ 3"
+             onload="this.nextElementSibling.textContent='✓ Loaded successfully'; this.nextElementSibling.className='success'"
+             onerror="this.nextElementSibling.textContent='✗ Failed to load'; this.nextElementSibling.className='error'">
+        <p class="loading">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>JSON Data Test</h2>
+        <button onclick="testJSON()">Load JSON and Check Giant Products</button>
+        <div id="json-results"></div>
+    </div>
+    
+    <script>
+        async function testJSON() {
+            const results = document.getElementById('json-results');
+            results.innerHTML = '<p>Loading JSON...</p>';
+            
+            try {
+                const response = await fetch('/ebikes-data.json');
+                const data = await response.json();
+                const giantProducts = data.filter(e => 
+                    e.brand === 'Giant' && 
+                    (e.model_name === 'Explore E+' || e.model_name === 'Explore E+ 1' || e.model_name === 'Trance E+ 3')
+                );
+                
+                results.innerHTML = `
+                    <h3>Found ${giantProducts.length} Giant products:</h3>
+                    ${giantProducts.map(e => `
+                        <div style="margin: 10px 0; padding: 10px; background: #f0f0f0;">
+                            <strong>${e.brand} ${e.model_name}</strong><br>
+                            ID: ${e.id}<br>
+                            Image URL: <code>${e.image_url}</code><br>
+                            Images: ${e.images ? e.images.length : 0} images<br>
+                            ${e.images && e.images.length > 0 ? `First: <code>${e.images[0]}</code>` : ''}
+                        </div>
+                    `).join('')}
+                `;
+            } catch (error) {
+                results.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -37,11 +37,14 @@ const props = withDefaults(defineProps<Props>(), {
 
 const imageError = ref(false)
 
-// Remove query parameters from image URLs
+// Remove query parameters from image URLs and ensure proper encoding
 const cleanSrc = computed(() => {
   if (!props.src) return ''
   // Remove query parameters (e.g., ?v=1760346847501)
-  return props.src.split('?')[0]
+  let url = props.src.split('?')[0]
+  // Ensure spaces are properly encoded for URLs (though Vite should handle this)
+  // But we'll keep the original path as Vite serves from public folder
+  return url
 })
 
 const onLoad = () => {

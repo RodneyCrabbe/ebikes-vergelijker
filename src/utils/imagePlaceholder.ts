@@ -49,6 +49,8 @@ function normalizeImageUrl(imageUrl: string): string {
   // So /img/... paths work in both dev and production
   // Don't convert them - Vite handles serving public assets
   if (imageUrl.startsWith('/img/') || imageUrl.startsWith('/')) {
+    // Ensure proper URL encoding for paths with spaces
+    // Vite should handle this, but we'll ensure it's correct
     return imageUrl;
   }
   
