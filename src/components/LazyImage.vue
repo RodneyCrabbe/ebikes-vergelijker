@@ -37,7 +37,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 const imageError = ref(false)
 
-// Remove query parameters from image URLs and ensure proper encoding
+// Remove query parameters from image URLs
+// Note: URLs are already encoded by imagePlaceholder utility functions, so we don't encode again here
 const cleanSrc = computed(() => {
   if (!props.src) return ''
   
@@ -47,22 +48,8 @@ const cleanSrc = computed(() => {
   }
   
   // Remove query parameters (e.g., ?v=1760346847501)
-  let url = props.src.split('?')[0]
-  
-  // Properly encode URL path segments for production deployment
-  // Split by '/' and encode each segment separately to preserve '/' characters
-  if (url.startsWith('/')) {
-    const parts = url.split('/')
-    const encodedParts = parts.map((part, index) => {
-      // Don't encode the first empty part (before the leading /)
-      if (index === 0) return part
-      // Encode each path segment to handle spaces and special characters
-      return encodeURIComponent(part)
-    })
-    return encodedParts.join('/')
-  }
-  
-  return url
+  // URLs are already properly encoded by encodeImageUrl() in imagePlaceholder.ts
+  return props.src.split('?')[0]
 })
 
 const onLoad = () => {
