@@ -814,7 +814,7 @@
               >
                 <div class="text-center">
                   <img 
-                    :src="ebike.image_url || '/placeholder-bike.png'" 
+                    :src="encodeImageUrl(ebike.image_url || '/placeholder-bike.png')" 
                     :alt="ebike.model_name"
                     class="w-20 h-20 object-cover rounded-lg mx-auto mb-3 shadow-md"
                   />
@@ -1114,6 +1114,7 @@ import { useReviewsStore } from '../stores/reviews'
 import { supabase } from '../lib/supabase'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
+import { encodeImageUrl } from '../utils/imagePlaceholder'
 
 // Lazy load AI Chatbot only when needed
 const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))

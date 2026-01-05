@@ -29,10 +29,10 @@ export function generateEBikePlaceholder(brand: string, model: string, width = 3
 }
 
 /**
- * Normalize image URLs for both development and production
- * Images in /public/img/ are served by Vite/Vercel, so keep them as-is
+ * Encode image URL path segments to handle spaces and special characters
+ * This is crucial for production deployments where URLs need to be properly encoded
  */
-function normalizeImageUrl(imageUrl: string): string {
+export function encodeImageUrl(imageUrl: string): string {
   if (!imageUrl) return imageUrl;
   
   // If already a full URL (http/https), return as is
@@ -46,16 +46,30 @@ function normalizeImageUrl(imageUrl: string): string {
   }
   
   // Images in /public/img/ are served by Vite/Vercel at the root
-  // So /img/... paths work in both dev and production
-  // Don't convert them - Vite handles serving public assets
+  // Properly encode path segments to handle spaces and special characters
   if (imageUrl.startsWith('/img/') || imageUrl.startsWith('/')) {
-    // Ensure proper URL encoding for paths with spaces
-    // Vite should handle this, but we'll ensure it's correct
-    return imageUrl;
+    // Split by '/' and encode each segment separately to preserve '/' characters
+    const parts = imageUrl.split('/');
+    const encodedParts = parts.map((part, index) => {
+      // Don't encode the first empty part (before the leading /)
+      if (index === 0) return part;
+      // Encode each path segment to handle spaces and special characters
+      return encodeURIComponent(part);
+    });
+    return encodedParts.join('/');
   }
   
   // For relative paths without leading slash, add one
-  return `/${imageUrl}`;
+  return `/${encodeURIComponent(imageUrl)}`;
+}
+
+/**
+ * Normalize image URLs for both development and production
+ * Images in /public/img/ are served by Vite/Vercel
+ * Properly encode path segments to handle spaces and special characters
+ */
+function normalizeImageUrl(imageUrl: string): string {
+  return encodeImageUrl(imageUrl);
 }
 
 export function getEBikeImageUrl(ebike: any): string {

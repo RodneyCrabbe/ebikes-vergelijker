@@ -138,7 +138,7 @@
             >
               <div class="flex items-center gap-3">
                 <img
-                  :src="alert.ebike.image_url || '/placeholder-bike.png'"
+                  :src="encodeImageUrl(alert.ebike.image_url || '/placeholder-bike.png')"
                   :alt="alert.ebike.model_name"
                   class="w-12 h-12 rounded object-cover"
                 />
@@ -241,6 +241,7 @@ import { useAuthStore } from '../stores/auth'
 import { useRouter } from 'vue-router'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
+import { encodeImageUrl } from '../utils/imagePlaceholder'
 
 // Lazy load AI Chatbot only when needed
 const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))

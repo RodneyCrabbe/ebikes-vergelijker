@@ -10,6 +10,7 @@ import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
 import LocationSelector from '../components/LocationSelector.vue'
 import EBikeModal from '../components/EBikeModal.vue'
+import { encodeImageUrl } from '../utils/imagePlaceholder'
 
 // Lazy load AI Chatbot only when needed
 const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
@@ -1081,7 +1082,7 @@ onMounted(async () => {
                   <td class="p-4">
                     <div class="flex items-center space-x-4">
                       <img
-                        :src="ebike.image_url || '/placeholder-bike.jpg'"
+                        :src="encodeImageUrl(ebike.image_url || '/placeholder-bike.jpg')"
                         :alt="ebike.model_name"
                         class="w-16 h-16 object-contain rounded-lg"
                       />

@@ -6,7 +6,7 @@ import { useComparisonStore } from '../stores/comparison'
 import { useFavoritesStore } from '../stores/favorites'
 import { useAuthStore } from '../stores/auth'
 import { eventTrackingService } from '../services/eventTrackingService'
-import { getEBikeImageUrl } from '../utils/imagePlaceholder'
+import { getEBikeImageUrl, encodeImageUrl } from '../utils/imagePlaceholder'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
 import MarkdownRenderer from '../components/common/MarkdownRenderer.vue'
@@ -413,6 +413,20 @@ const formatValue = (value: string | null | undefined): string => {
 const isEmptyValue = (value: string | null | undefined): boolean => {
   return !value || value === 'n.t.b.' || value === 'n.t.b'
 }
+
+// Computed property to get encoded images array
+const encodedImages = computed(() => {
+  if (!ebike.value?.images || !Array.isArray(ebike.value.images)) {
+    return []
+  }
+  return ebike.value.images.map(img => encodeImageUrl(img))
+})
+
+// Helper to get encoded image URL
+const getEncodedImageUrl = (imageUrl: string | undefined): string => {
+  if (!imageUrl) return getEBikeImageUrl(ebike.value)
+  return encodeImageUrl(imageUrl)
+}
 </script>
 
 <template>
@@ -442,7 +456,7 @@ const isEmptyValue = (value: string | null | undefined): boolean => {
               @click="openImageCarousel(selectedImage)"
             >
               <img 
-                :src="ebike.images && ebike.images.length > 0 ? ebike.images[selectedImage] : getEBikeImageUrl(ebike)" 
+                :src="ebike.images && ebike.images.length > 0 ? getEncodedImageUrl(ebike.images[selectedImage]) : getEBikeImageUrl(ebike)" 
                 :alt="ebike.model_name" 
                 class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
               />
@@ -464,7 +478,7 @@ const isEmptyValue = (value: string | null | undefined): boolean => {
                 class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden border-2 transition-all duration-200 focus:outline-none relative group"
                 :class="selectedImage === index ? 'border-blue-600 ring-2 ring-blue-200' : 'border-transparent hover:border-gray-300'"
               >
-                <img :src="image" :alt="`${ebike.model_name} view ${index + 1}`" class="w-full h-full object-cover" />
+                <img :src="getEncodedImageUrl(image)" :alt="`${ebike.model_name} view ${index + 1}`" class="w-full h-full object-cover" />
                 <div v-if="index === 3 && ebike.images.length > 4" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                   <span class="text-white font-medium text-lg">+{{ ebike.images.length - 4 }}</span>
                 </div>
@@ -754,7 +768,7 @@ const isEmptyValue = (value: string | null | undefined): boolean => {
       <div class="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center p-8" @click.stop>
         <img
           v-if="ebike?.images?.[carouselImageIndex]"
-          :src="ebike.images[carouselImageIndex]"
+          :src="getEncodedImageUrl(ebike.images[carouselImageIndex])"
           :alt="`${ebike.model_name} - Image ${carouselImageIndex + 1}`"
           class="max-w-full max-h-full object-contain"
         />
@@ -790,7 +804,7 @@ const isEmptyValue = (value: string | null | undefined): boolean => {
               : 'border-white border-opacity-50 hover:border-opacity-75'
           ]"
         >
-          <img :src="image" :alt="`${ebike.model_name} view ${index + 1}`" class="w-full h-full object-cover" />
+          <img :src="getEncodedImageUrl(image)" :alt="`${ebike.model_name} view ${index + 1}`" class="w-full h-full object-cover" />
         </button>
       </div>
     </div>

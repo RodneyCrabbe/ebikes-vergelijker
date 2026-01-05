@@ -5,6 +5,7 @@ import { useAuthStore } from '../stores/auth'
 import { useRouter } from 'vue-router'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
+import { encodeImageUrl } from '../utils/imagePlaceholder'
 
 // Lazy load AI Chatbot only when needed
 const EnhancedAIChatbot = defineAsyncComponent(() => import('../components/EnhancedAIChatbot.vue'))
@@ -180,7 +181,7 @@ const priceDifferences = computed(() => {
                     <div class="h-40 w-full bg-gray-200 rounded mb-3 flex items-center justify-center">
                       <img
                         v-if="ebike.image_url"
-                        :src="ebike.image_url"
+                        :src="encodeImageUrl(ebike.image_url)"
                         :alt="ebike.model_name"
                         class="h-full w-full object-contain rounded"
                       />
