@@ -2,10 +2,8 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://ebike-platform.com/sitemap.xml
-Sitemap: https://ebike-platform.com/sitemap-ebikes.xml
-Sitemap: https://ebike-platform.com/sitemap-categories.xml
-Sitemap: https://ebike-platform.com/sitemap-brands.xml
+Sitemap: https://ebikesvergelijker.nl/sitemap.xml
+Sitemap: https://ebikesvergelijker.nl/sitemap-topical.xml
 
 # Disallow private areas
 Disallow: /admin/
@@ -16,11 +14,17 @@ Disallow: /dealer/
 Disallow: /subscription/
 
 # Allow important pages
-Allow: /ebikes
+Allow: /e-bikes
 Allow: /reviews
-Allow: /community
-Allow: /vergelijken
-Allow: /ebike/
+Allow: /vergelijk
+Allow: /beste-e-bikes/
+Allow: /e-bikes-voor/
+Allow: /motor/
+Allow: /aandrijving/
+Allow: /gebruik/
+Allow: /fatbikes/
+Allow: /bakfietsen/
+Allow: /vergelijk/
 
 # Crawl delay
 Crawl-delay: 1

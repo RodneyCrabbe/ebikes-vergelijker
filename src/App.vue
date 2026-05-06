@@ -3,6 +3,7 @@ import { onMounted, onUnmounted } from 'vue'
 import { useAuthStore } from './stores/auth'
 import { useCookieConsentStore } from './stores/cookieConsent'
 import { useEBikesStore } from './stores/ebikes-simple'
+import { useSEO } from './composables/useSEO'
 import { startupHealthCheck } from './utils/startupHealthCheck'
 import CookieBanner from './components/CookieBanner.vue'
 import CookieSettings from './components/CookieSettings.vue'
@@ -11,6 +12,7 @@ import ErrorBoundary from './components/ErrorBoundary.vue'
 const authStore = useAuthStore()
 const cookieStore = useCookieConsentStore()
 const ebikeStore = useEBikesStore()
+useSEO()
 
 onMounted(async () => {
   try {

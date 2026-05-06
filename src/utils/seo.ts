@@ -12,7 +12,9 @@ export interface SEOConfig {
 
 export class SEOOptimizer {
   private static instance: SEOOptimizer
-  private baseUrl = 'https://ebike-platform.com'
+  private baseUrl = 'https://ebikesvergelijker.nl'
+  private siteName = 'E-bikes Vergelijker'
+  private defaultImage = 'https://ebikesvergelijker.nl/og-image.jpg'
 
   static getInstance(): SEOOptimizer {
     if (!SEOOptimizer.instance) {
@@ -22,7 +24,7 @@ export class SEOOptimizer {
   }
 
   // Update page title
-  updateTitle(title: string, siteName = 'E-Bike Platform'): void {
+  updateTitle(title: string, siteName = this.siteName): void {
     const fullTitle = title ? `${title} | ${siteName}` : siteName
     document.title = fullTitle
     
@@ -86,6 +88,18 @@ export class SEOOptimizer {
     }
   }
 
+  updateCanonical(url: string): void {
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement
+
+    if (!canonical) {
+      canonical = document.createElement('link')
+      canonical.rel = 'canonical'
+      document.head.appendChild(canonical)
+    }
+
+    canonical.href = url
+  }
+
   // Add structured data
   addStructuredData(data: any): void {
     const script = document.createElement('script')
@@ -121,7 +135,7 @@ export class SEOOptimizer {
         availability: 'https://schema.org/InStock',
         seller: {
           '@type': 'Organization',
-          name: 'E-Bike Platform'
+          name: this.siteName
         }
       },
       category: this.mapCategoryToSchema(ebike.category),
@@ -155,21 +169,11 @@ export class SEOOptimizer {
     return {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'E-Bike Platform',
+      name: this.siteName,
       url: this.baseUrl,
       logo: `${this.baseUrl}/logo.png`,
-      description: 'De grootste e-bike vergelijkingssite van Nederland. Vind de perfecte e-bike voor jouw behoeften.',
-      contactPoint: {
-        '@type': 'ContactPoint',
-        telephone: '+31-20-123-4567',
-        contactType: 'customer service',
-        availableLanguage: ['Dutch', 'English']
-      },
-      sameAs: [
-        'https://www.facebook.com/ebikeplatform',
-        'https://www.instagram.com/ebikeplatform',
-        'https://www.twitter.com/ebikeplatform'
-      ]
+      description: 'Nederlandse vergelijkingssite voor elektrische fietsen, fatbikes, bakfietsen en e-bike koopadvies.',
+      availableLanguage: ['Dutch']
     }
   }
 
@@ -266,20 +270,20 @@ Disallow: /dealer/`
   generatePageSEO(page: string, data?: any): SEOConfig {
     const configs: Record<string, SEOConfig> = {
       home: {
-        title: 'E-Bike Platform - De grootste e-bike vergelijkingssite',
-        description: 'Vind de perfecte e-bike voor jouw behoeften. Vergelijk prijzen, specificaties en reviews van honderden e-bikes van topmerken.',
-        keywords: ['e-bike', 'elektrische fiets', 'fiets vergelijken', 'e-bike kopen', 'elektrische fietsen'],
+        title: 'E-bike vergelijken en kopen',
+        description: 'Vergelijk elektrische fietsen op prijs, actieradius, motor, accu en reviews. Vind snel de e-bike die past bij woon-werk, stad, gezin of recreatie.',
+        keywords: ['e-bike vergelijken', 'elektrische fiets vergelijken', 'e-bike kopen', 'beste e-bike', 'elektrische fietsen'],
         type: 'website'
       },
       ebikes: {
-        title: 'Alle E-Bikes - Vergelijk en vind jouw perfecte e-bike',
-        description: 'Bekijk alle e-bikes in onze database. Filter op merk, prijs, categorie en meer om de perfecte e-bike te vinden.',
-        keywords: ['e-bike overzicht', 'alle e-bikes', 'e-bike database', 'elektrische fietsen vergelijken'],
+        title: 'Alle e-bikes vergelijken',
+        description: 'Bekijk en filter e-bikes op merk, prijs, actieradius, accucapaciteit, motorpositie en fietstype. Vergelijk modellen naast elkaar.',
+        keywords: ['alle e-bikes', 'e-bike overzicht', 'elektrische fietsen vergelijken', 'e-bike database'],
         type: 'website'
       },
       'ebike-detail': {
-        title: `${data?.model_name || 'E-Bike'} - ${data?.brand || 'Merk'} | E-Bike Platform`,
-        description: data?.description || `Bekijk de ${data?.model_name || 'e-bike'} van ${data?.brand || 'dit merk'}. Prijzen, specificaties en reviews.`,
+        title: `${data?.brand || 'E-bike'} ${data?.model_name || 'model'} vergelijken`,
+        description: data?.description || `Bekijk specificaties, prijs, actieradius en afbeeldingen van de ${data?.brand || ''} ${data?.model_name || 'e-bike'}.`,
         keywords: [
           data?.model_name?.toLowerCase(),
           data?.brand?.toLowerCase(),
@@ -291,22 +295,66 @@ Disallow: /dealer/`
         type: 'product'
       },
       comparison: {
-        title: 'E-Bike Vergelijking - Vergelijk e-bikes naast elkaar',
-        description: 'Vergelijk e-bikes naast elkaar. Bekijk specificaties, prijzen en reviews van verschillende e-bikes.',
+        title: 'E-bikes naast elkaar vergelijken',
+        description: 'Vergelijk geselecteerde e-bikes naast elkaar op prijs, accu, actieradius, motor, gewicht en praktische specificaties.',
         keywords: ['e-bike vergelijking', 'e-bikes vergelijken', 'elektrische fiets vergelijking'],
         type: 'website'
       },
       reviews: {
-        title: 'E-Bike Reviews - Echte ervaringen van gebruikers',
-        description: 'Lees echte reviews van e-bike gebruikers. Ontdek wat anderen vinden van hun e-bike.',
+        title: 'E-bike reviews en ervaringen',
+        description: 'Lees ervaringen met elektrische fietsen en ontdek waar je op moet letten bij comfort, accu, motor, onderhoud en dagelijks gebruik.',
         keywords: ['e-bike reviews', 'elektrische fiets reviews', 'e-bike ervaringen'],
         type: 'website'
       },
       community: {
-        title: 'E-Bike Community - Vraag en deel je ervaringen',
-        description: 'Word onderdeel van de e-bike community. Stel vragen, deel ervaringen en help andere e-bike liefhebbers.',
+        title: 'E-bike community',
+        description: 'Stel vragen over elektrische fietsen, deel ervaringen en leer van andere e-bike rijders.',
         keywords: ['e-bike community', 'e-bike forum', 'elektrische fiets community'],
         type: 'website'
+      },
+      about: {
+        title: 'Over E-bikes Vergelijker',
+        description: 'Lees hoe E-bikes Vergelijker helpt bij het kiezen van een elektrische fiets met filters, vergelijkingen en koopadvies.',
+        keywords: ['over e-bikes vergelijker', 'e-bike koopadvies', 'elektrische fiets hulp'],
+        type: 'website'
+      },
+      contact: {
+        title: 'Contact',
+        description: 'Neem contact op met E-bikes Vergelijker voor vragen over elektrische fietsen, vergelijkingen of het platform.',
+        keywords: ['contact e-bikes vergelijker', 'e-bike vragen'],
+        type: 'website'
+      },
+      topical: {
+        title: data?.title || 'E-bike selectie',
+        description: data?.description || 'Bekijk een samengestelde selectie elektrische fietsen op basis van gebruik, budget of specificaties.',
+        keywords: [
+          data?.title?.toLowerCase(),
+          data?.template?.toLowerCase(),
+          'e-bike vergelijken',
+          'elektrische fiets'
+        ].filter(Boolean),
+        url: data?.slug ? `${this.baseUrl}${data.slug}` : undefined,
+        type: 'website',
+        structuredData: data ? {
+          '@context': 'https://schema.org',
+          '@graph': [
+            this.generateOrganizationStructuredData(),
+            {
+              '@type': 'CollectionPage',
+              name: data.title,
+              description: data.description,
+              url: `${this.baseUrl}${data.slug}`,
+              about: data.criteria?.map((criterion: string) => ({
+                '@type': 'Thing',
+                name: criterion
+              })) || []
+            },
+            this.generateBreadcrumbStructuredData([
+              { name: 'Home', url: '/' },
+              { name: data.title, url: data.slug }
+            ])
+          ]
+        } : undefined
       }
     }
 
@@ -318,19 +366,23 @@ Disallow: /dealer/`
     this.updateTitle(config.title)
     this.updateDescription(config.description)
     this.updateKeywords(config.keywords)
+
+    const canonicalUrl = config.url || window.location.href.split('#')[0]
+    const image = config.image || this.defaultImage
+    this.updateCanonical(canonicalUrl)
     
     this.updateOpenGraph({
       title: config.title,
       description: config.description,
-      image: config.image,
-      url: config.url || window.location.href,
+      image,
+      url: canonicalUrl,
       type: config.type
     })
     
     this.updateTwitterCard({
       title: config.title,
       description: config.description,
-      image: config.image,
+      image,
       card: 'summary_large_image'
     })
     

@@ -7,6 +7,7 @@ import { useFavoritesStore } from '../stores/favorites'
 import { useAuthStore } from '../stores/auth'
 import { eventTrackingService } from '../services/eventTrackingService'
 import { getEBikeImageUrl, encodeImageUrl } from '../utils/imagePlaceholder'
+import { useSEO } from '../composables/useSEO'
 import Header from '../components/common/Header.vue'
 import Footer from '../components/common/Footer.vue'
 import MarkdownRenderer from '../components/common/MarkdownRenderer.vue'
@@ -19,6 +20,7 @@ const ebikeStore = useEBikesStore()
 const comparisonStore = useComparisonStore()
 const favoritesStore = useFavoritesStore()
 const authStore = useAuthStore()
+const { updateEBikeSEO } = useSEO()
 const ebike = ref<any>(null)
 
 // Interactive features
@@ -208,6 +210,7 @@ onMounted(async () => {
 
   if (fetchedEBike) {
     ebike.value = fetchedEBike
+    updateEBikeSEO(fetchedEBike)
     // Pre-select first image if available
     if (fetchedEBike.images && fetchedEBike.images.length > 0) {
       selectedImage.value = 0

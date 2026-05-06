@@ -8,7 +8,7 @@ export interface SitemapPage {
 }
 
 export class SitemapGenerator {
-  private baseUrl = 'https://ebike-platform.com'
+  private baseUrl = 'https://ebikesvergelijker.nl'
 
   generateSitemap(pages: SitemapPage[]): string {
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -30,13 +30,13 @@ ${pages.map(page => this.generateUrlEntry(page)).join('\n')}
         priority: 1.0
       },
       {
-        url: '/ebikes',
+        url: '/e-bikes',
         lastmod: now,
         changefreq: 'daily',
         priority: 0.9
       },
       {
-        url: '/vergelijken',
+        url: '/vergelijk',
         lastmod: now,
         changefreq: 'weekly',
         priority: 0.8
@@ -84,7 +84,7 @@ ${pages.map(page => this.generateUrlEntry(page)).join('\n')}
     const now = new Date().toISOString().split('T')[0]
     
     return ebikes.map(ebike => ({
-      url: `/ebike/${ebike.id}`,
+      url: `/e-bikes/${ebike.id}`,
       lastmod: now,
       changefreq: 'weekly',
       priority: 0.8
@@ -99,7 +99,7 @@ ${pages.map(page => this.generateUrlEntry(page)).join('\n')}
     ]
     
     return categories.map(category => ({
-      url: `/ebikes?categorie=${category}`,
+      url: `/e-bikes?categorie=${category}`,
       lastmod: now,
       changefreq: 'weekly',
       priority: 0.7
@@ -110,7 +110,7 @@ ${pages.map(page => this.generateUrlEntry(page)).join('\n')}
     const now = new Date().toISOString().split('T')[0]
     
     return brands.map(brand => ({
-      url: `/ebikes?merk=${encodeURIComponent(brand)}`,
+      url: `/e-bikes?merk=${encodeURIComponent(brand)}`,
       lastmod: now,
       changefreq: 'weekly',
       priority: 0.6
@@ -128,7 +128,7 @@ ${pages.map(page => this.generateUrlEntry(page)).join('\n')}
     ]
     
     return priceRanges.map(range => ({
-      url: `/ebikes?prijs=${range.label}`,
+      url: `/e-bikes?prijs=${range.label}`,
       lastmod: now,
       changefreq: 'weekly',
       priority: 0.5
@@ -161,9 +161,7 @@ Allow: /
 
 # Sitemaps
 Sitemap: ${this.baseUrl}/sitemap.xml
-Sitemap: ${this.baseUrl}/sitemap-ebikes.xml
-Sitemap: ${this.baseUrl}/sitemap-categories.xml
-Sitemap: ${this.baseUrl}/sitemap-brands.xml
+Sitemap: ${this.baseUrl}/sitemap-topical.xml
 
 # Disallow private areas
 Disallow: /admin/
@@ -174,10 +172,9 @@ Disallow: /dealer/
 Disallow: /subscription/
 
 # Allow important pages
-Allow: /ebikes
+Allow: /e-bikes
 Allow: /reviews
-Allow: /community
-Allow: /vergelijken
+Allow: /vergelijk
 
 # Crawl delay
 Crawl-delay: 1`

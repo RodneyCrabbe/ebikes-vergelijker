@@ -2,6 +2,7 @@ import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { seoOptimizer } from '../utils/seo'
 import { sitemapGenerator } from '../utils/sitemapGenerator'
+import { getTopicalPageBySlug } from '../data/topicalPages'
 import type { EBike } from '../types/ebike'
 
 export function useSEO() {
@@ -13,7 +14,11 @@ export function useSEO() {
   // Update page SEO based on route
   const updatePageSEO = (pageData?: any) => {
     const pageName = getPageNameFromRoute(route.path)
-    const seoConfig = seoOptimizer.generatePageSEO(pageName, pageData)
+    const topicalPage = getTopicalPageBySlug(route.path)
+    const seoConfig = seoOptimizer.generatePageSEO(
+      topicalPage ? 'topical' : pageName,
+      topicalPage || pageData
+    )
     
     seoOptimizer.applySEO(seoConfig)
     
@@ -49,9 +54,9 @@ export function useSEO() {
   // Get page name from route
   const getPageNameFromRoute = (path: string): string => {
     if (path === '/') return 'home'
-    if (path.startsWith('/ebike/')) return 'ebike-detail'
-    if (path === '/ebikes') return 'ebikes'
-    if (path === '/vergelijken') return 'comparison'
+    if (path.startsWith('/e-bikes/')) return 'ebike-detail'
+    if (path === '/e-bikes') return 'ebikes'
+    if (path === '/vergelijk') return 'comparison'
     if (path === '/reviews') return 'reviews'
     if (path === '/community') return 'community'
     if (path === '/over-ons') return 'about'

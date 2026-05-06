@@ -108,6 +108,24 @@ const topicalIdSet = computed(() => {
 const topicalTitle = computed(() => topicalPage.value?.title ?? 'Alle e-bikes')
 const topicalDescription = computed(() => topicalPage.value?.description ?? 'Vind de beste e-bikes met onze filters en vergelijkingen.')
 const topicalIntent = computed(() => topicalPage.value?.intent)
+const topicalFaqs = computed(() => {
+  if (!topicalPage.value) return []
+
+  return [
+    {
+      question: `Hoe selecteert E-bikes Vergelijker modellen voor ${topicalPage.value.title.toLowerCase()}?`,
+      answer: `We filteren op ${topicalPage.value.criteria.join(', ').toLowerCase()} en tonen daarna modellen die je verder kunt vergelijken op prijs, accu, bereik en uitvoering.`
+    },
+    {
+      question: 'Moet ik alleen op prijs vergelijken?',
+      answer: 'Nee. Kijk ook naar actieradius, motorpositie, accucapaciteit, remmen, gewicht en service. Een goedkopere e-bike is niet altijd de beste keuze voor dagelijks gebruik.'
+    },
+    {
+      question: 'Kan ik deze e-bikes naast elkaar vergelijken?',
+      answer: 'Ja. Gebruik de vergelijkknop bij een model om specificaties, prijs en praktische eigenschappen naast elkaar te bekijken.'
+    }
+  ]
+})
 
 // Initialize search from URL query parameter
 onMounted(() => {
@@ -635,6 +653,15 @@ onMounted(async () => {
             <p class="text-white/90 max-w-4xl text-sm lg:text-base">
               {{ topicalDescription }}
             </p>
+            <div class="grid gap-2 pt-2 text-sm text-white/90 md:grid-cols-3">
+              <div
+                v-for="criterion in topicalPage.criteria"
+                :key="criterion"
+                class="rounded-xl bg-white/15 px-3 py-2"
+              >
+                {{ criterion }}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1193,9 +1220,37 @@ onMounted(async () => {
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
-        </div>
+
+        <section
+          v-if="topicalPage"
+          class="mx-6 lg:mx-8 mt-10 mb-8 rounded-2xl bg-white p-6 shadow-sm border border-gray-100"
+          aria-labelledby="topical-faq-title"
+        >
+          <div class="grid gap-6 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">Koopadvies</p>
+              <h2 id="topical-faq-title" class="mt-2 text-2xl font-bold text-gray-900">
+                Waar let je op bij {{ topicalTitle.toLowerCase() }}?
+              </h2>
+              <p class="mt-3 text-gray-600">
+                Gebruik deze selectie als startpunt en vergelijk daarna de specificaties die voor jouw ritten het zwaarst wegen.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                v-for="faq in topicalFaqs"
+                :key="faq.question"
+                class="border-b border-gray-100 pb-4 last:border-b-0 last:pb-0"
+              >
+                <h3 class="font-semibold text-gray-900">{{ faq.question }}</h3>
+                <p class="mt-2 text-sm leading-6 text-gray-600">{{ faq.answer }}</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- Mobile Filter Modal -->
         <Transition name="slide-up">
