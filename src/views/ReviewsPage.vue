@@ -38,7 +38,7 @@
           <div class="lg:col-span-2 space-y-6">
             <div class="flex justify-between items-center">
               <h2 class="text-2xl font-bold text-gray-900">Recente Reviews</h2>
-              <select v-model="selectedFilter" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <select v-model="selectedFilter" aria-label="Reviews filteren op beoordeling" class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 <option value="all">Alle reviews</option>
                 <option value="5">5 sterren</option>
                 <option value="4">4 sterren</option>
@@ -140,6 +140,7 @@
                       :key="i"
                       type="button"
                       @click="reviewForm.rating = i"
+                      :aria-label="`${i} sterren`"
                       class="text-2xl focus:outline-none"
                       :class="i <= reviewForm.rating ? 'text-yellow-400' : 'text-gray-300'"
                     >
@@ -264,9 +265,9 @@ const ebikes = ref([
 ])
 
 const popularEbikes = ref([
-  { id: 1, name: 'Gazelle Ultimate C380 HMB', image: '/img/Gazelle Ultimate C380 HMB/20230372A00_Gazelle_Ultimate_C380_HMB_500Wh.avif', reviews: 45 },
-  { id: 2, name: 'Trek Allant+ 7 Gen 2', image: '/img/Trek Allant+ 7 Gen 2/23_36560_A_Allant_7_Gen2_BL_Detail_Battery.jpeg', reviews: 32 },
-  { id: 3, name: 'Riese & Müller Charger4 GT', image: '/img/Riese & Müller Charger4 GT/charger4_gt_touring_HS_front_side.jpg', reviews: 28 }
+  { id: 1, name: 'Gazelle Ultimate C380 HMB', image: '/img/Gazelle Ultimate C380 HMB/1280_2hhfPK3Xx51kEISe.webp', reviews: 45 },
+  { id: 2, name: 'Trek Allant+ 7 Gen 2', image: '/img/Trek Allant+ 7 Gen 2/AllantPlus7Stag-24-41022-A-Primary.avif', reviews: 32 },
+  { id: 3, name: 'Riese & Müller Charger4 GT', image: '/img/Riese & Müller Charger4 GT/riese_und_muller_charger4_gt_vario_black_matt_2_.jpg', reviews: 28 }
 ])
 
 const filteredReviews = computed(() => {

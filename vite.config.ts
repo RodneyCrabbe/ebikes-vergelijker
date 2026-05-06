@@ -14,8 +14,8 @@ export default defineConfig({
   assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp', '**/*.avif', '**/*.json'],
   server: {
     host: '127.0.0.1',
-    port: 5195,
-    strictPort: true, // Force port 5195
+    port: 5173,
+    strictPort: true,
     open: false,
     cors: true,
     hmr: {

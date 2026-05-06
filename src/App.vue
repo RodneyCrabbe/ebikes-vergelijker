@@ -45,9 +45,9 @@ onUnmounted(() => {
 <template>
   <ErrorBoundary>
     <div id="app" class="min-h-screen bg-background flex flex-col">
-      <main class="flex-1">
+      <div class="flex-1">
         <RouterView />
-      </main>
+      </div>
       
       <!-- Cookie Components -->
       <CookieBanner />

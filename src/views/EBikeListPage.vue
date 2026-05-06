@@ -615,6 +615,7 @@ onMounted(async () => {
       <div class="w-full">
         <!-- Add spacing at the top -->
         <div class="mb-8 lg:mb-12"></div>
+        <h1 v-if="!topicalPage" class="sr-only">Alle e-bikes vergelijken</h1>
 
         <!-- Topical banner -->
         <div
@@ -691,7 +692,7 @@ onMounted(async () => {
                 <!-- Sorting - Moved to top -->
                 <div class="pb-4 border-b border-gray-200">
                   <label class="block text-sm font-medium text-gray-700 mb-2">Sorteren op</label>
-                  <select v-model="sortBy" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="sortBy" aria-label="E-bikes sorteren" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option value="created_at">Nieuwste eerst</option>
                     <option value="price">Prijs (laag-hoog)</option>
                     <option value="action_radius">Bereik (hoog-laag)</option>
@@ -702,7 +703,7 @@ onMounted(async () => {
                 <!-- Brand Filter -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">Merk</label>
-                  <select v-model="filters.brand" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="filters.brand" aria-label="Filter op merk" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option :value="undefined">Alle merken</option>
                     <option v-for="brand in brands" :key="brand" :value="brand">{{ brand }}</option>
                   </select>
@@ -711,7 +712,7 @@ onMounted(async () => {
                 <!-- Bike Type Filter -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">Type</label>
-                  <select v-model="filters.bike_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="filters.bike_type" aria-label="Filter op fietstype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option :value="undefined">Alle types</option>
                     <option v-for="type in bikeTypes" :key="type" :value="type">{{ type }}</option>
                   </select>
@@ -720,7 +721,7 @@ onMounted(async () => {
                 <!-- Gender Type Filter -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">Doelgroep</label>
-                  <select v-model="filters.gender_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="filters.gender_type" aria-label="Filter op frametype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option :value="undefined">Alle</option>
                     <option v-for="gender in genderTypes" :key="gender" :value="gender">{{ gender }}</option>
                   </select>
@@ -786,7 +787,7 @@ onMounted(async () => {
                 <!-- Color Filter -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">Kleur</label>
-                  <select v-model="filters.color" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="filters.color" aria-label="Filter op kleur" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option :value="undefined">Alle kleuren</option>
                     <option v-for="color in colors" :key="color" :value="color">{{ color }}</option>
                   </select>
@@ -795,7 +796,7 @@ onMounted(async () => {
                 <!-- Motor Location -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">Motorpositie</label>
-                  <select v-model="filters.motor_location" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="filters.motor_location" aria-label="Filter op motorpositie" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option :value="undefined">Alle posities</option>
                     <option v-for="location in motorLocations" :key="location" :value="location">{{ location }}</option>
                   </select>
@@ -804,7 +805,7 @@ onMounted(async () => {
                 <!-- Removable Battery -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">Verwijderbare accu</label>
-                  <select v-model="filters.removable_battery" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="filters.removable_battery" aria-label="Filter op verwijderbare accu" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option :value="undefined">Alle</option>
                     <option :value="true">Ja</option>
                     <option :value="false">Nee</option>
@@ -814,7 +815,7 @@ onMounted(async () => {
                 <!-- On Sale -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">Aanbieding</label>
-                  <select v-model="filters.on_sale" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select v-model="filters.on_sale" aria-label="Filter op aanbieding" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option :value="undefined">Alle</option>
                     <option :value="true">Alleen aanbiedingen</option>
                     <option :value="false">Geen aanbiedingen</option>
@@ -828,7 +829,7 @@ onMounted(async () => {
                   <!-- Motor Brand -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Motormerk</label>
-                    <select v-model="filters.motor_brand" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.motor_brand" aria-label="Filter op motormerk" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle merken</option>
                       <option v-for="brand in motorBrands" :key="brand" :value="brand">{{ brand }}</option>
                   </select>
@@ -837,7 +838,7 @@ onMounted(async () => {
                   <!-- Motor Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Motortype</label>
-                    <select v-model="filters.motor_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.motor_type" aria-label="Filter op motortype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in motorTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -846,7 +847,7 @@ onMounted(async () => {
                   <!-- Torque Range -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Koppel (Nm)</label>
-                    <select v-model="filters.torque_range" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.torque_range" aria-label="Filter op koppel" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle koppel</option>
                       <option v-for="range in torqueRanges" :key="range" :value="range">{{ range }}</option>
                     </select>
@@ -860,7 +861,7 @@ onMounted(async () => {
                   <!-- Gear Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Versnelling</label>
-                    <select v-model="filters.gear_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.gear_type" aria-label="Filter op versnelling" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in gearTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -869,7 +870,7 @@ onMounted(async () => {
                   <!-- Brake Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Remsysteem</label>
-                    <select v-model="filters.brake_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.brake_type" aria-label="Filter op remsysteem" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in brakeTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -878,7 +879,7 @@ onMounted(async () => {
                   <!-- Drive Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Aandrijving</label>
-                    <select v-model="filters.drive_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.drive_type" aria-label="Filter op aandrijving" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in driveTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -887,7 +888,7 @@ onMounted(async () => {
                   <!-- Frame Material -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Framemateriaal</label>
-                    <select v-model="filters.frame_material" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.frame_material" aria-label="Filter op framemateriaal" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle materialen</option>
                       <option v-for="material in frameMaterials" :key="material" :value="material">{{ material }}</option>
                     </select>
@@ -896,7 +897,7 @@ onMounted(async () => {
                   <!-- Wheel Size -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Wielmaat</label>
-                    <select v-model="filters.wheel_size" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.wheel_size" aria-label="Filter op wielmaat" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle maten</option>
                       <option v-for="size in wheelSizes" :key="size" :value="size">{{ size }}</option>
                     </select>
@@ -905,7 +906,7 @@ onMounted(async () => {
                   <!-- Suspension Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Vering</label>
-                    <select v-model="filters.suspension_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.suspension_type" aria-label="Filter op vering" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in suspensionTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -919,7 +920,7 @@ onMounted(async () => {
                   <!-- Battery Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Accutype</label>
-                    <select v-model="filters.battery_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.battery_type" aria-label="Filter op accutype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in batteryTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -928,7 +929,7 @@ onMounted(async () => {
                   <!-- Battery Position -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Accupositie</label>
-                    <select v-model="filters.battery_position" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.battery_position" aria-label="Filter op accupositie" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle posities</option>
                       <option v-for="position in batteryPositions" :key="position" :value="position">{{ position }}</option>
                     </select>
@@ -942,7 +943,7 @@ onMounted(async () => {
                   <!-- Seating Position -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Zithouding</label>
-                    <select v-model="filters.seating_position" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.seating_position" aria-label="Filter op zithouding" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle houdingen</option>
                       <option v-for="position in seatingPositions" :key="position" :value="position">{{ position }}</option>
                     </select>
@@ -951,7 +952,7 @@ onMounted(async () => {
                   <!-- Lighting Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Verlichting</label>
-                    <select v-model="filters.lighting_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.lighting_type" aria-label="Filter op verlichting" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in lightingTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -960,7 +961,7 @@ onMounted(async () => {
                   <!-- Display Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Display</label>
-                    <select v-model="filters.display_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.display_type" aria-label="Filter op display" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in displayTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -969,7 +970,7 @@ onMounted(async () => {
                   <!-- Connectivity Type -->
                   <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Connectiviteit</label>
-                    <select v-model="filters.connectivity_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.connectivity_type" aria-label="Filter op connectiviteit" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in connectivityTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -996,7 +997,7 @@ onMounted(async () => {
                   <!-- Warranty Range -->
                   <div class="mt-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Garantie</label>
-                    <select v-model="filters.warranty_range" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.warranty_range" aria-label="Filter op garantie" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle garanties</option>
                       <option v-for="range in warrantyRanges" :key="range" :value="range">{{ range }}</option>
                     </select>
@@ -1090,6 +1091,7 @@ onMounted(async () => {
                   <!-- Favorite Button -->
                   <button
                     @click.prevent="toggleFavorite(ebike)"
+                    :aria-label="isInFavorites(ebike.id) ? `${ebike.brand} ${ebike.model_name} verwijderen uit favorieten` : `${ebike.brand} ${ebike.model_name} toevoegen aan favorieten`"
                     class="absolute top-2 left-2 w-7 h-7 glass-badge rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-md"
                   >
                     <svg
@@ -1211,6 +1213,7 @@ onMounted(async () => {
                 <h3 class="text-xl font-bold text-gray-900">Filters</h3>
                 <button
                   @click="closeMobileFilters"
+                  aria-label="Filters sluiten"
                   class="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-md"
                 >
                   <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1225,7 +1228,7 @@ onMounted(async () => {
                   <!-- Sorting - Moved to top -->
                   <div class="pb-4 border-b border-gray-200">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Sorteren op</label>
-                    <select v-model="sortBy" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="sortBy" aria-label="E-bikes sorteren" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option value="created_at">Nieuwste eerst</option>
                       <option value="price">Prijs (laag-hoog)</option>
                       <option value="action_radius">Bereik (hoog-laag)</option>
@@ -1236,7 +1239,7 @@ onMounted(async () => {
                   <!-- Brand Filter -->
                   <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Merk</label>
-                    <select v-model="filters.brand" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.brand" aria-label="Filter op merk" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle merken</option>
                       <option v-for="brand in brands" :key="brand" :value="brand">{{ brand }}</option>
                     </select>
@@ -1245,7 +1248,7 @@ onMounted(async () => {
                   <!-- Bike Type Filter -->
                   <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Type</label>
-                    <select v-model="filters.bike_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.bike_type" aria-label="Filter op fietstype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle types</option>
                       <option v-for="type in bikeTypes" :key="type" :value="type">{{ type }}</option>
                     </select>
@@ -1254,7 +1257,7 @@ onMounted(async () => {
                   <!-- Gender Type Filter -->
                   <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Doelgroep</label>
-                    <select v-model="filters.gender_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.gender_type" aria-label="Filter op frametype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle</option>
                       <option v-for="gender in genderTypes" :key="gender" :value="gender">{{ gender }}</option>
                     </select>
@@ -1320,7 +1323,7 @@ onMounted(async () => {
                   <!-- Color Filter -->
                   <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Kleur</label>
-                    <select v-model="filters.color" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.color" aria-label="Filter op kleur" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle kleuren</option>
                       <option v-for="color in colors" :key="color" :value="color">{{ color }}</option>
                     </select>
@@ -1329,7 +1332,7 @@ onMounted(async () => {
                   <!-- Motor Location -->
                   <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Motorpositie</label>
-                    <select v-model="filters.motor_location" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.motor_location" aria-label="Filter op motorpositie" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle posities</option>
                       <option v-for="location in motorLocations" :key="location" :value="location">{{ location }}</option>
                     </select>
@@ -1338,7 +1341,7 @@ onMounted(async () => {
                   <!-- Removable Battery -->
                   <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Verwijderbare accu</label>
-                    <select v-model="filters.removable_battery" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.removable_battery" aria-label="Filter op verwijderbare accu" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle</option>
                       <option :value="true">Ja</option>
                       <option :value="false">Nee</option>
@@ -1348,7 +1351,7 @@ onMounted(async () => {
                   <!-- On Sale -->
                   <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Aanbieding</label>
-                    <select v-model="filters.on_sale" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <select v-model="filters.on_sale" aria-label="Filter op aanbieding" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option :value="undefined">Alle</option>
                       <option :value="true">Alleen aanbiedingen</option>
                       <option :value="false">Geen aanbiedingen</option>
@@ -1362,7 +1365,7 @@ onMounted(async () => {
                     <!-- Motor Brand -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Motormerk</label>
-                      <select v-model="filters.motor_brand" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.motor_brand" aria-label="Filter op motormerk" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle merken</option>
                         <option v-for="brand in motorBrands" :key="brand" :value="brand">{{ brand }}</option>
                       </select>
@@ -1371,7 +1374,7 @@ onMounted(async () => {
                     <!-- Motor Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Motortype</label>
-                      <select v-model="filters.motor_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.motor_type" aria-label="Filter op motortype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in motorTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1380,7 +1383,7 @@ onMounted(async () => {
                     <!-- Torque Range -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Koppel (Nm)</label>
-                      <select v-model="filters.torque_range" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.torque_range" aria-label="Filter op koppel" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle koppel</option>
                         <option v-for="range in torqueRanges" :key="range" :value="range">{{ range }}</option>
                       </select>
@@ -1394,7 +1397,7 @@ onMounted(async () => {
                     <!-- Gear Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Versnelling</label>
-                      <select v-model="filters.gear_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.gear_type" aria-label="Filter op versnelling" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in gearTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1403,7 +1406,7 @@ onMounted(async () => {
                     <!-- Brake Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Remsysteem</label>
-                      <select v-model="filters.brake_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.brake_type" aria-label="Filter op remsysteem" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in brakeTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1412,7 +1415,7 @@ onMounted(async () => {
                     <!-- Drive Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Aandrijving</label>
-                      <select v-model="filters.drive_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.drive_type" aria-label="Filter op aandrijving" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in driveTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1421,7 +1424,7 @@ onMounted(async () => {
                     <!-- Frame Material -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Framemateriaal</label>
-                      <select v-model="filters.frame_material" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.frame_material" aria-label="Filter op framemateriaal" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle materialen</option>
                         <option v-for="material in frameMaterials" :key="material" :value="material">{{ material }}</option>
                       </select>
@@ -1430,7 +1433,7 @@ onMounted(async () => {
                     <!-- Wheel Size -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Wielmaat</label>
-                      <select v-model="filters.wheel_size" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.wheel_size" aria-label="Filter op wielmaat" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle maten</option>
                         <option v-for="size in wheelSizes" :key="size" :value="size">{{ size }}</option>
                       </select>
@@ -1439,7 +1442,7 @@ onMounted(async () => {
                     <!-- Suspension Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Vering</label>
-                      <select v-model="filters.suspension_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.suspension_type" aria-label="Filter op vering" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in suspensionTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1453,7 +1456,7 @@ onMounted(async () => {
                     <!-- Battery Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Accutype</label>
-                      <select v-model="filters.battery_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.battery_type" aria-label="Filter op accutype" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in batteryTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1462,7 +1465,7 @@ onMounted(async () => {
                     <!-- Battery Position -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Accupositie</label>
-                      <select v-model="filters.battery_position" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.battery_position" aria-label="Filter op accupositie" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle posities</option>
                         <option v-for="position in batteryPositions" :key="position" :value="position">{{ position }}</option>
                       </select>
@@ -1476,7 +1479,7 @@ onMounted(async () => {
                     <!-- Seating Position -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Zithouding</label>
-                      <select v-model="filters.seating_position" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.seating_position" aria-label="Filter op zithouding" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle houdingen</option>
                         <option v-for="position in seatingPositions" :key="position" :value="position">{{ position }}</option>
                       </select>
@@ -1485,7 +1488,7 @@ onMounted(async () => {
                     <!-- Lighting Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Verlichting</label>
-                      <select v-model="filters.lighting_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.lighting_type" aria-label="Filter op verlichting" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in lightingTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1494,7 +1497,7 @@ onMounted(async () => {
                     <!-- Display Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Display</label>
-                      <select v-model="filters.display_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.display_type" aria-label="Filter op display" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in displayTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1503,7 +1506,7 @@ onMounted(async () => {
                     <!-- Connectivity Type -->
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Connectiviteit</label>
-                      <select v-model="filters.connectivity_type" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.connectivity_type" aria-label="Filter op connectiviteit" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle types</option>
                         <option v-for="type in connectivityTypes" :key="type" :value="type">{{ type }}</option>
                       </select>
@@ -1530,7 +1533,7 @@ onMounted(async () => {
                     <!-- Warranty Range -->
                     <div class="mt-4">
                       <label class="block text-sm font-medium text-gray-700 mb-2">Garantie</label>
-                      <select v-model="filters.warranty_range" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select v-model="filters.warranty_range" aria-label="Filter op garantie" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option :value="undefined">Alle garanties</option>
                         <option v-for="range in warrantyRanges" :key="range" :value="range">{{ range }}</option>
                       </select>
@@ -1572,7 +1575,7 @@ onMounted(async () => {
                   class="flex items-center gap-2 bg-blue-50 px-3 py-1 rounded-full text-sm"
                 >
                   <span class="truncate max-w-32">{{ ebike.brand }} {{ ebike.model_name }}</span>
-                  <button @click="comparisonStore.removeFromComparison(ebike.id)" class="text-red-500 hover:text-red-700 flex-shrink-0">
+                  <button @click="comparisonStore.removeFromComparison(ebike.id)" :aria-label="`${ebike.brand} ${ebike.model_name} verwijderen uit vergelijking`" class="text-red-500 hover:text-red-700 flex-shrink-0">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>

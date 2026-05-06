@@ -208,6 +208,7 @@ onMounted(() => {
           <div class="scroll-reveal glass-card p-6">
             <div class="aspect-video rounded-lg overflow-hidden">
               <iframe
+                title="Kaart met locatie van E-Bike Vergelijker in Amsterdam"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.476961783373!2d4.9041399!3d52.3675734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c91a3c5cdf%3A0x4700c5a18c23d5c2!2sDam%2C%20Amsterdam!5e0!3m2!1sen!2snl!4v1699123456789!5m2!1sen!2snl"
                 width="100%"
                 height="100%"
@@ -333,21 +334,23 @@ onMounted(() => {
                       </label>
                       <div class="flex space-x-4">
                         <label class="flex items-center">
-                          <input
-                            v-model="contactForm.preferredContact"
-                            type="radio"
-                            value="email"
-                            class="mr-2"
-                          />
+                        <input
+                          v-model="contactForm.preferredContact"
+                          type="radio"
+                          value="email"
+                          aria-label="Voorkeur contact via e-mail"
+                          class="mr-2"
+                        />
                           <span class="text-text-secondary text-sm">E-mail</span>
                         </label>
                         <label class="flex items-center">
-                          <input
-                            v-model="contactForm.preferredContact"
-                            type="radio"
-                            value="phone"
-                            class="mr-2"
-                          />
+                        <input
+                          v-model="contactForm.preferredContact"
+                          type="radio"
+                          value="phone"
+                          aria-label="Voorkeur contact via telefoon"
+                          class="mr-2"
+                        />
                           <span class="text-text-secondary text-sm">Telefoon</span>
                         </label>
                       </div>
